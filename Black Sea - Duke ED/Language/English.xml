@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!--Job.xml-->
+  <jobName.Pilot>Iron Rider</jobName.Pilot>
+  <jobdescription.Pilot>Elite in the Europa League,good at driving mechas to perform various special assault missions.</jobdescription.Pilot>
+  <talenttree.bwbr1>Gun sword prayer</talenttree.bwbr1>
+  <talenttree.bwbr2>Iron Cult</talenttree.bwbr2>
+  <talenttree.bwbr3>Techno Barbarians</talenttree.bwbr3>
+  <talentname.advancedsplicingbw>Alien Conqueror</talentname.advancedsplicingbw>
+  <talentname.collegeathleticsbw>Physical Athletes</talentname.collegeathleticsbw>
+  <talentname.bountyhunterbw>Executioner</talentname.bountyhunterbw>
+  <talentdescription.crafthighqualitypistols>Pistols you fabricate are of [qualitybonus] higher quality.</talentdescription.crafthighqualitypistols>
+  <talentdescription.bountyhunterbw>When using a pistol or iron fist,causes additional [probability]% damage and [armorpenetration]% armor penetration.</talentdescription.bountyhunterbw>
+  <talentname.justascratchbw>Strengthen Bones</talentname.justascratchbw>
+  <talentdescription.quickdrawbw>Every [seconds] seconds,the damage caused by the next Power Combat System damage will become [damage] times.</talentdescription.quickdrawbw>
+  <talentname.sailorwithnonamebw>Old Sailor</talentname.sailorwithnonamebw>
+  <talentname.tumblebw>Spare Arms</talentname.tumblebw>
+  <talentdescription.tumblebw>Your pistol and iron fist damage increase [damage]%.</talentdescription.tumblebw>
+  <talentname.firstaidtrainingbw>Battlefield First Aid</talentname.firstaidtrainingbw>
+  <talentname.physicalconditioningbw>Physique</talentname.physicalconditioningbw>
+  <talentname.trustbuildingbw>Veteran</talentname.trustbuildingbw>
+  <talentdescription.trustbuildingbw>Every time you complete a task, you increase [smallgain]% of your maximum life. If all crew members survive, increase the maximum life of [largegain]%, up to [maxgain]%. </talentdescription.trustbuildingbw>
+  <talentname.buccaneerbw>White Soldier Battle</talentname.buccaneerbw>
+  <talentname.enforcerbw>Reload Hunter</talentname.enforcerbw>
+  <talentdescription.enforcerbw>When attacking with a shotgun,causes additional [damage]% damage and [armorpenetration]% armor penetration.</talentdescription.enforcerbw>
+  <talentname.steelruler>Steel Ruler</talentname.steelruler>
+  <talentdescription.steelruler>When driving a mech,attack power increased [value]%,[stattype] increased [amount]%,damage taken reduced [value]%.</talentdescription.steelruler>
+  <talentname.bythebookbw>Mercenary</talentname.bythebookbw>
+  <talentname.navydiverbw>Aquatic</talentname.navydiverbw>
+  <talentname.deepseaslayerbw>Deep Sea Hunter</talentname.deepseaslayerbw>
+  <talentname.olympianbw>Combat Mastery</talentname.olympianbw>
+  <talentname.warlordbw>Ace</talentname.warlordbw>
+  <talentdescription.chanceofextraweapondamagebw2>When using weapons,additional [probability]% damage and [armorpenetration]% armor penetration are caused.</talentdescription.chanceofextraweapondamagebw2>
+  <talentname.laststand>Last Stand</talentname.laststand>
+  <talentdescription.laststand> When your life is lower than [health]%, you will quickly restore your health. </talentdescription.laststand>
+  <talentname.implacablebw>Iron Will</talentname.implacablebw>
+  <talentname.deadeyebw>I See Dead Eye</talentname.deadeyebw>
+  <talentdescription.deadeyebw>When you launch an Experimental Precise Gun,damage increases [powerincrease]%.You can also recover from bleeding faster.Whenever you complete a task,get the following supplies.</talentdescription.deadeyebw>
+  <talentname.stonewallbw>Shield Barrier</talentname.stonewallbw>
+  <talentdescription.stonewallbw>When you are attacked,within [seconds] your physical damage resistance increases [physicaldamagereduction]%,stun resistance increases [stunresistance]%,and melee damage increases [amount]%.</talentdescription.stonewallbw>
+  <talentname.munitionsexpertisebw>High Permission</talentname.munitionsexpertisebw>
+  <talentname.gunsmithbw>Artisan</talentname.gunsmithbw>
+  <talentname.duelistbw>Heart of the Storm</talentname.duelistbw>
+  <talentdescription.chanceofextraweapondamagebw>When attacking with a CQB SMG or Power Axe,[probability]% probability will cause double damage and [amount]% more armor penetration.</talentdescription.chanceofextraweapondamagebw>
+  <talentname.optimizedpowerflowbw>Modified circuit</talentname.optimizedpowerflowbw>
+  <talentdescription.optimizedpowerflowbw>Turret energy consumption and charging speed reduce your electrical skills by [statamount]%.</talentdescription.optimizedpowerflowbw>
+  <talentdescription.crafthighqualitylaserbw>The quality of the energy weapons you make is improved [qualitybonus].</talentdescription.crafthighqualitylaserbw>
+  <talentname.custommachinebw>Modified machinery</talentname.custommachinebw>
+  <talentdescription.crafthighqualityhmgbw>The quality of the machine gun weapons you make is improved [qualitybonus].</talentdescription.crafthighqualityhmgbw>
+  <!--AXE.xml-->
+  <entityname.PFbw>Power Combat System</entityname.PFbw>
+  <entitydescription.PFbw>With powerful melee system support,even fist can break stone.</entitydescription.PFbw>
+  <entityname.stunbatonbw>Heat Saber</entityname.stunbatonbw>
+  <entitydescription.stunbatonbw>Powerful stun weapon,can load battry or X01 oxygen cell to cause additional heat damage,but can't penetrate heavy armor.</entitydescription.stunbatonbw>
+  <entityname.hammer_bw>The Hammer</entityname.hammer_bw>
+  <entitydescription.hammer_bw>Steel hammer,can load hammer detonator to cause additional explosion.</entitydescription.hammer_bw>
+  <entityname.uex2>Hammer Detonator</entityname.uex2>
+  <entitydescription.uex2>Detonator with uex to cause additional hammer explosion.</entitydescription.uex2>
+  <entityname.bw_axe>Power AXE</entityname.bw_axe>
+  <entitydescription.bw_axe>An old fashion weapon,can easily tear your target apart.</entitydescription.bw_axe>
+  <entityname.bwgs>Winter Star</entityname.bwgs>
+  <entitydescription.bwgs>Long sword from ancient memory.Cold and pround.</entitydescription.bwgs>
+  <entityname.tachi>Conquest</entityname.tachi>
+  <entitydescription.tachi>Tachi from ancient memory.Sharp and swift.</entitydescription.tachi>
+  <!--BA.xml-->
+  <entityname.corsairar_bw>Corsair</entityname.corsairar_bw>
+  <entitydescription.corsairar_bw>Old type military armor,fast but low defense.Although retired from army,pirates still use it to robber merchant ships.Use normal oxygentank.</entitydescription.corsairar_bw>
+  <entityname.armored_miningsuit_bw>Hammer Mining Armor</entityname.armored_miningsuit_bw>
+  <entitydescription.armored_miningsuit_bw>Heavy mining armor suit design for high-pressure environment.Used power cycle design,work with batteries.Can install extra hammer container.</entitydescription.armored_miningsuit_bw>
+  <entityname.toolbox_bw>Hammer Container</entityname.toolbox_bw>
+  <entitydescription.toolbox_bw>Thick container can transfer dangerous goods safety,even railgun shells.</entitydescription.toolbox_bw>
+  <entityname.armored_hardsuit_bw>X01 Battle Armor</entityname.armored_hardsuit_bw>
+  <entitydescription.armored_hardsuit_bw>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Can hold one weapon inside.</entitydescription.armored_hardsuit_bw>
+  <entityname.oxygen_cell_bw>X01 Oxygen Cell</entityname.oxygen_cell_bw>
+  <entitydescription.oxygen_cell_bw>Experimental oxygen cell, resistant to puncture and heat.</entitydescription.oxygen_cell_bw>
+  <entityname.laser_bw>Laser</entityname.laser_bw>
+  <entityname.armored_hardsuit_bwl>X01 Battle Armor(Leader)</entityname.armored_hardsuit_bwl>
+  <entitydescription.armored_hardsuit_bwl>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Leader unit has more powerful sonar sysytem.</entitydescription.armored_hardsuit_bwl>
+  <entityname.armored_hardsuit_bw2>X01 Battle Armor(Veteran)</entityname.armored_hardsuit_bw2>
+  <entitydescription.armored_hardsuit_bw2>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Veteran unit has more personalized decoration and additional slot for iron fist.</entitydescription.armored_hardsuit_bw2>
+  <entityname.knight_hardsuit_bw>Silver Knight</entityname.knight_hardsuit_bw>
+  <entitydescription.knight_hardsuit_bw>Mysterious armor crafted with alien material,can endure lots of damage.Can hold one weapon inside.Use alien power cell.</entitydescription.knight_hardsuit_bw>
+  <entityname.pio_bw>Pioneer Custom</entityname.pio_bw>
+  <entitydescription.pio_bw>Armor designed for large-scale projects,also good at maintain submarines.Use normal oxygentank.</entitydescription.pio_bw>
+  <entityname.pio_bw2>Pioneer</entityname.pio_bw2>
+  <entitydescription.pio_bw2>Armor designed for large-scale projects,also good at maintain submarines.Use normal oxygentank.</entitydescription.pio_bw2>
+  <entityname.armored_miningsuit_bw2>Hercules</entityname.armored_miningsuit_bw2>
+  <entitydescription.armored_miningsuit_bw2>Heavy military mech,can carry a large amount of ammunition.Very awkward in the water,automatically charge when not activated.</entitydescription.armored_miningsuit_bw2>
+  <entityname.corsairar_bp>X00 Prototype Armor</entityname.corsairar_bp>
+  <entitydescription.corsairar_bp>Experimental prototype with extremely high attack performance.Use X01 oxygen cell.</entitydescription.corsairar_bp>
+  <entityname.armored_miningsuit_bw3>Hercules Mk.II(Hercules Mk.II)</entityname.armored_miningsuit_bw3>
+  <entitydescription.armored_miningsuit_bw3>Heavy military engineering armor modification,slightly improved speed and experimental energy circulation furnace.</entitydescription.armored_miningsuit_bw3>
+  <!--Shield.xml-->
+  <entityname.bwapc>Reverse Engineering Alien Power Cell</entityname.bwapc>
+  <entitydescription.bwapc>A man-made alien power cell.</entitydescription.bwapc>
+  <entityname.rgcbw>Thunder Cannon Support Device</entityname.rgcbw>
+  <entitydescription.rgcbw>Can load 4 railgun shell or thunder cannon.</entitydescription.rgcbw>
+  <entityname.shield_bw>Boarding Shield</entityname.shield_bw>
+  <entitydescription.shield_bw>More armor,more safety.</entitydescription.shield_bw>
+  <entityname.harpoongunbw>Rapid Harpoongun</entityname.harpoongunbw>
+  <entitydescription.harpoongunbw>Fast fire harpoongun.use spear.</entitydescription.harpoongunbw>
+  <entityname.spearbw>Tattered Spear</entityname.spearbw>
+  <entitydescription.spearbw>Special piercing spear.</entitydescription.spearbw>
+  <entityname.plasmacutterbw>MEGA Plasma</entityname.plasmacutterbw>
+  <entitydescription.plasmacutterbw>Advanced cutting tools,also good to cut flesh.</entitydescription.plasmacutterbw>
+  <entityname.bwpower>Alien Charger</entityname.bwpower>
+  <entitydescription.bwpower>Can power up alien power cell.</entitydescription.bwpower>
+  <entityname.ancientweaponbw>Conqueror</entityname.ancientweaponbw>
+  <entitydescription.ancientweaponbw>Powerful energy weapon.Attack mode depend on which kind of alien power cell it uses.</entitydescription.ancientweaponbw>
+  <entityname.relic_bw>Relic Fragment</entityname.relic_bw>
+  <entityname.cell_bw>Closed Circulatory System Cell</entityname.cell_bw>
+  <entitydescription.cell_bw>The power battery combined with Alien Technology can provide unlimited power for hammerhead,corsair, and pioneer armor.</entitydescription.cell_bw>
+  <!--Boarding Torpedo.xml-->
+  <entityname.boarding_torpedo_bw>Boarding Torpedo</entityname.boarding_torpedo_bw>
+  <entitydescription.boarding_torpedo_bw>Remember,red go fasta,WAGHHHH!</entitydescription.boarding_torpedo_bw>
+  <entityname.jetscooterbw>Engineering Motor</entityname.jetscooterbw>
+  <entitydescription.jetscooterbw>Heavy engine for auxiliary heavy mech.</entitydescription.jetscooterbw>
+  <entityname.divingknifebw>Armor Breaker</entityname.divingknifebw>
+  <entitydescription.divingknifebw>Small single-molecule blade,can actually cause damage.</entitydescription.divingknifebw>
+  <entityname.railbw>Titanium Railgun Shell</entityname.railbw>
+  <entityname.rg_bw>Thunder Cannon</entityname.rg_bw>
+  <entitydescription.rg_bw>Forcibly converted into a portable main gun,has many shortcomings.Use railgun shells other than nuclear shell.</entitydescription.rg_bw>
+  <!--Guns.xml-->
+  <entityname.HMG1_bp6>Revolution</entityname.HMG1_bp6>
+  <entitydescription.HMG1_bp6>Military reformation improve barrage performance.</entitydescription.HMG1_bp6>
+  <entityname.HMG1_bw>Sickle HMG</entityname.HMG1_bw>
+  <entitydescription.HMG1_bw>Heavy rapid-fire weapon,but need cooldown after barrage.Fire 14.5mm rounds.</entitydescription.HMG1_bw>
+  <entityname.HMG1_mag_bw>14.5 Ammo Box</entityname.HMG1_mag_bw>
+  <entitydescription.HMG1_mag_bw>Old-fashioned high penetration rounds.</entitydescription.HMG1_mag_bw>
+  <entityname.HMG1_ammo_bw>14.5 Ammo Box</entityname.HMG1_ammo_bw>
+  <entitydescription.HMG1_ammo_bw>Old-fashioned high penetration rounds.</entitydescription.HMG1_ammo_bw>
+  <entityname.minichaingun_bw>Experimental Chaingun</entityname.minichaingun_bw>
+  <entitydescription.minichaingun_bw>Heavy weapon,but very expensive.Use experimental chaingun ammo box.</entitydescription.minichaingun_bw>
+  <entityname.chaingun_ammo_bw>Experimental Chaingun Ammo Box</entityname.chaingun_ammo_bw>
+  <entitydescription.chaingun_ammo_bw>1000 rounds,rain like hell!!!</entitydescription.chaingun_ammo_bw>
+  <entityname.chaingun_round_bw>Experimental Chaingun Round</entityname.chaingun_round_bw>
+  <!--Laser Cannon.xml-->
+  <entityname.lasercannon_bw>Experimental Laser Cannon</entityname.lasercannon_bw>
+  <entitydescription.lasercannon_bw>Heavily armed laser weapon,can melt both flesh and metal.Good at against door than structure.Required X01 Oxygen Cell.</entitydescription.lasercannon_bw>
+  <entityname.explosivespearbw>Iron Fist</entityname.explosivespearbw>
+  <entitydescription.explosivespearbw>Single used weapon,go for a hard punch.</entitydescription.explosivespearbw>
+  <entityname.ifbw>Fist</entityname.ifbw>
+  <entityname.esg_bw>Experimental Precise Gun</entityname.esg_bw>
+  <entitydescription.esg_bw>Heavy gun developed for coalition special operations,fire precise bullet.</entitydescription.esg_bw>
+  <entityname.SG_ammo>Precise Bullet Clip</entityname.SG_ammo>
+  <entityname.esg_bw2>Experimental Precise Gun Mk.II</entityname.esg_bw2>
+  <entitydescription.esg_bw2>Improved heavy gun,aiming faster.Use precise bullet.</entitydescription.esg_bw2>
+  <entityname.lasercannon_bp3>Disaster</entityname.lasercannon_bp3>
+  <entitydescription.lasercannon_bp3>Modified laser cannon with a compact frame,has the defect of being prone to overheating.</entitydescription.lasercannon_bp3>
+  <!--Guns.xml-->
+  <entityname.lmground_bw>Lmg Round</entityname.lmground_bw>
+  <entityname.lmground_bw2>Lmg Round2</entityname.lmground_bw2>
+  <entityname.lmgmagazine_bw>Linked 7.62mm Magzine</entityname.lmgmagazine_bw>
+  <entitydescription.lmgmagazine_bw>Trigger happy hero!!!</entitydescription.lmgmagazine_bw>
+  <entityname.lmgmagazine_bw2>Linked Autofilled 7.62mm Magzine</entityname.lmgmagazine_bw2>
+  <entitydescription.lmgmagazine_bw2>Living metal provide limitless rounds,but halfed the damage.</entitydescription.lmgmagazine_bw2>
+  <entityname.lmg_bw>Tactical LMG</entityname.lmg_bw>
+  <entitydescription.lmg_bw>A reliable auto-fire weapon,can deal massive damage to soft target.Use linked 7.62mm magazine.</entitydescription.lmg_bw>
+  <!--PRG.xml-->
+  <entityname.battlecannon_bw>Axe Rocket Cannon</entityname.battlecannon_bw>
+  <entitydescription.battlecannon_bw>Heavy cannon fires HE rockets,use rocket shell.</entitydescription.battlecannon_bw>
+  <entityname.cannonshell_bw>Rocket Shell</entityname.cannonshell_bw>
+  <entitydescription.cannonshell_bw>Storm the line.Deal good burn damage on impact.</entitydescription.cannonshell_bw>
+  <entityname.prg_bw>Experimental Portable Rail Gun</entityname.prg_bw>
+  <entitydescription.prg_bw>Heavy shoulder-fired launcher developed for coalition special operations, unwieldy and expensive but packs a punch.</entitydescription.prg_bw>
+  <entityname.prg_ammo>Experimental PRG Storm Shell</entityname.prg_ammo>
+  <entitydescription.prg_ammo>Dumbfire railgun with an armor piercing warhead.</entitydescription.prg_ammo>
+  <!--SG.xml-->
+  <entityname.shotgunshellbw>Double Shotgunshell</entityname.shotgunshellbw>
+  <entityname.shotgununiquebw>DOOM</entityname.shotgununiquebw>
+  <entitydescription.shotgununiquebw>Double-barreled shotgun.Fire double shotgunshell.</entitydescription.shotgununiquebw>
+  <entityname.grenadelauncher_bw>Drum Hybrid Barrel</entityname.grenadelauncher_bw>
+  <entitydescription.grenadelauncher_bw>Coalition auto gun.Can fire 25mm grenade or shotgun shell.</entitydescription.grenadelauncher_bw>
+  <entityname.bw_shotgun_drum>Drum Shotgun Shell</entityname.bw_shotgun_drum>
+  <entitydescription.bw_shotgun_drum>Buckshot ammunition for a shotgun.</entitydescription.bw_shotgun_drum>
+  <entityname.bw_shotgun_shell>Drum Shotgun Shell</entityname.bw_shotgun_shell>
+  <entitydescription.bw_shotgun_shell>Buckshot ammunition for a shotgun.</entitydescription.bw_shotgun_shell>
+  <entityname.bw_grenade_drum>Drum 25mm Grenade</entityname.bw_grenade_drum>
+  <entitydescription.bw_grenade_drum>Fire in the hole!!!</entitydescription.bw_grenade_drum>
+  <entityname.bw_grenade>Drum 25mm Grenade</entityname.bw_grenade>
+  <entitydescription.bw_grenade>Fire in the hole!!!</entitydescription.bw_grenade>
+  <!--Mods\BWeapons\SMG\Guns.xml-->
+  <entityname.smground_bw>Smg Round</entityname.smground_bw>
+  <entityname.smgmagazine_bw>7.62mm Magzine</entityname.smgmagazine_bw>
+  <entitydescription.smgmagazine_bw>Little friend.</entitydescription.smgmagazine_bw>
+  <entityname.smg_bw>CQB SMG</entityname.smg_bw>
+  <entitydescription.smg_bw>Fast auto-fire weapon,can be dual wielded.Use 7.62mm magazine.</entitydescription.smg_bw>
+  <entityname.smgmagazine_bw2>7.62mm Autofilled Magzine</entityname.smgmagazine_bw2>
+  <entitydescription.>Living metal provide limitless rounds,but halfed the damage.</entitydescription.>
+  <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
+  <!--tactical Scanner.xml-->
+  <entityname.divingsuitlockerbw>Apron</entityname.divingsuitlockerbw>
+  <entityname.shellbagbw>Dreadnought Support System</entityname.shellbagbw>
+  <entitydescription.shellbagbw>Infantry support bag design for boarding battle,can not take high water pressure.X01 oxygen cell can active underwater oxygen supply system.</entitydescription.shellbagbw>
+  <entityname.shellshieldbw>Dreadnought PCIA</entityname.shellshieldbw>
+  <entitydescription.shellshieldbw>Powered combat infantry armor design for protect high rank officers,slow but as solid as a rock.X01 oxygen cell can active underwater oxygen supply system.</entitydescription.shellshieldbw>
+  <entityname.ballistichelmetbw>Armored helmet</entityname.ballistichelmetbw>
+  <entitydescription.ballistichelmetbw>A symbol of footman.Can not salvage.</entitydescription.ballistichelmetbw>
+  <entityname.captainscapbw>Military cap</entityname.captainscapbw>
+  <entitydescription.captainscapbw>A symbol of leadership.Can not salvage.</entitydescription.captainscapbw>
+  <entityname.weldingtoolbw>Smart Arc</entityname.weldingtoolbw>
+  <entitydescription.weldingtoolbw>Smart system can avoid to damage biological,use batterycell,fulguriumbatterycell,or X01 oxygen cell.</entitydescription.weldingtoolbw>
+  <entityname.captainsuniformbw>Battle Armor</entityname.captainsuniformbw>
+  <entitydescription.captainsuniformbw>A symbol of loyalty.Can not salvage.</entitydescription.captainsuniformbw>
+  <entityname.tatical_scanner>tactical Scanner</entityname.tatical_scanner>
+  <entitydescription.tatical_scanner>Tactical Scanner not only show for situation,but also can inject medicine to save your life.</entitydescription.tatical_scanner>
+  <entityname.revolver_bw>Dead Rock</entityname.revolver_bw>
+  <entitydescription.revolver_bw>Old-fashioned weapon,can be dual wielded.Use 14.5mm round.</entitydescription.revolver_bw>
+  <entityname.revolverammobw>14.5mm Round Clip</entityname.revolverammobw>
+  <entityname.revolverammobw2>14.5mm Concussion Round Clip</entityname.revolverammobw2>
+  <entityname.revolverammobw3>14.5mm Flare Round Clip</entityname.revolverammobw3>
+  <entityname.coilgunammo_bw>Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
+  <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
+  <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>
+  <entitydescription.bandolierbw2>Symbol of courage,increase melee attack speed.Cannot be disassembled.</entitydescription.bandolierbw2>
+  <entityname.bandolierbw3>Shield Support System</entityname.bandolierbw3>
+  <entitydescription.bandolierbw3>Symbol of courage,increase defense power.Cannot be disassembled. </entitydescription.bandolierbw3>
+  <entityname.bandolierbw4>Assault Support System</entityname.bandolierbw4>
+  <entitydescription.bandolierbw4>Symbol of courage,increase melee attack speed and defense power.Cannot be disassembled.</entitydescription.bandolierbw4>
+  <entityname.bandolierbw>Tactical Bandolier</entityname.bandolierbw>
+  <entitydescription.bandolierbw>A symbol of courage,increase range weapons attack speed.Cannot be disassembled.</entitydescription.bandolierbw>
+  <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>
+  <entitydescription.bandolierbw2>A symbol of courage,increases attack speed of range and melee weapons.Cannot be disassembled.</entitydescription.bandolierbw2>
+  <entityname.bandolierbw3>Shield Support System</entityname.bandolierbw3>
+  <entitydescription.bandolierbw3> Symbol of courage, increasing defense power and attack speed of range weapons.Cannot be disassembled.</entitydescription.bandolierbw3>
+  <entityname.bandolierbw4>Assault Support System</entityname.bandolierbw4>
+  <entitydescription.bandolierbw4>A symbol of courage,strengthens the attack speed and defense of range and melee weapons.Cannot be disassembled.</entitydescription.bandolierbw4>
+  <entityname.handcannonbw>Peace Keeper</entityname.handcannonbw>
+  <entitydescription.handcannonbw>This large-caliber handcannon is full of intimidation.</entitydescription.handcannonbw>
+  <!--Affliction-->
+  <Afflictionname.architect>Architect</Afflictionname.architect>
+  <Afflictiondescription.architect>Repair speed and health increased 25%.</Afflictiondescription.architect>
+  <Afflictionname.architect2>Fortification Architect</Afflictionname.architect2>
+  <Afflictiondescription.architect2>Repair speed increased 25%,health increased 50%,very slowly repairs itself.</Afflictiondescription.architect2>
+  <Afflictionname.Swift>Swift</Afflictionname.Swift>
+  <Afflictiondescription.Swift>Attack speed increased 20%.</Afflictiondescription.Swift>
+  <Afflictionname.Alienpw>Toughness</Afflictionname.Alienpw>
+  <Afflictiondescription.Alienpw>Health increased 50%,very slowly repairs itself.</Afflictiondescription.Alienpw>
+  <Afflictionname.X01>Advanced Armor</Afflictionname.X01>
+  <Afflictiondescription.X01>Damage increased by 10%,health increased by 25%.</Afflictiondescription.X01>
+  <Afflictionname.X01>Living Armor</Afflictionname.X01>
+  <Afflictiondescription.X01>Damage increased by 10%,health increased by 25%,very slowly repairs itself.</Afflictiondescription.X01>
+  <Afflictionname.Hammer>Self repair</Afflictionname.Hammer>
+  <Afflictiondescription.Hammer>Health increased 25%,very slowly repairs itself.</Afflictiondescription.Hammer>
+  <Afflictionname.PCIA>Biological health care system</Afflictionname.PCIA>
+  <Afflictiondescription.PCIA>Very slowly repairs itself.</Afflictiondescription.PCIA>
+  <Afflictionname.DEFbw>Extra Armor</Afflictionname.DEFbw>
+  <Afflictiondescription.DEFbw>Increases health 50% and physical damage resistance increased 30%.</Afflictiondescription.DEFbw>
+  <Afflictionname.DEFbw2>Additional Armor</Afflictionname.DEFbw2>
+  <Afflictiondescription.DEFbw2>Increases health 25% and physical damage resistance increased 15%.</Afflictiondescription.DEFbw2>
+  <Afflictionname.Swift2>Assault armor</Afflictionname.Swift2>
+  <Afflictiondescription.Swift2>Damage increased 10%,attack speed increased 20%,health increases 25%.</Afflictiondescription.Swift2>
+  <Afflictionname.steelruler>Steel ruler</Afflictionname.steelruler>
+  <Afflictionname.quickdrawingbw>A full blow</Afflictionname.quickdrawingbw>
+  <Afflictionname.stonewallbw>Hold the line</Afflictionname.stonewallbw>
+  <Afflictionname.sup1>Support system</Afflictionname.sup1>
+  <Afflictiondescription.sup1>Ranged attack speed increased 20%.</Afflictiondescription.sup1>
+  <Afflictionname.sup2>Support system</Afflictionname.sup2>
+  <Afflictiondescription.sup2>Attack speed increased 20%.</Afflictiondescription.sup2>
+  <Afflictionname.sup3>Assault Support System</Afflictionname.sup3>
+  <Afflictiondescription.sup3>Attack speed increased 20%,health increased 25%,physical damage resistance increased 15%.</Afflictiondescription.sup3>
+  <entityname.railgunshellbw2>Empty Shell</entityname.railgunshellbw2>
+</infotexts>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="Pilot">
+    <SubTree identifier="bwbr1">
+      <TalentOptions>
+        <TalentOption identifier="firstaidtrainingbw" />
+        <TalentOption identifier="physicalconditioningbw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="optimizedpowerflowbw" />
+        <TalentOption identifier="custommachinebw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="swordwarriorbw" />
+        <TalentOption identifier="deadeyebw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="trustbuildingbw" />
+        <TalentOption identifier="collegeathleticsbw" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="bwbr2">
+      <TalentOptions>
+        <TalentOption identifier="sailorwithnonamebw" />
+        <TalentOption identifier="enforcerbw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="bythebookbw" />
+        <TalentOption identifier="munitionsexpertisebw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="stonewallbw" />
+        <TalentOption identifier="steelruler" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="implacablebw" />
+        <TalentOption identifier="bountyhunterbw" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="bwbr3">
+      <TalentOptions>
+        <TalentOption identifier="tumblebw" />
+        <TalentOption identifier="justascratchbw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="olympianbw" />
+        <TalentOption identifier="gunsmithbw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="duelistbw" />
+        <TalentOption identifier="laststand" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warlordbw" />
+        <TalentOption identifier="advancedsplicingbw" />
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+</TalentTrees>

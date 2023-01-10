@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="PFbw" category="Equipment" Tags="smallitem,weapon,gunsmith,meleeweapon,finalblow" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="50">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/AXE/PF.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/PF.png" sourcerect="0,0,4,4" origin="0.5,0.5" />
+    <Body width="200" height="150" density="50" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="1.5" range="120" combatPriority="50" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.5" itemdamage="20" structuredamage="20" structuresoundtype="StructureSlash" penetration="0.5">
+        <Affliction identifier="lacerations" strength="30" />
+        <Affliction identifier="blunttrauma" strength="50" />
+        <Affliction identifier="stun" strength="5" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1.5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="stunbatonbw" category="Equipment" Tags="smallitem,weapon,stunner,gunsmith,meleeweapon" description="" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.35" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="stunbaton" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="stunbaton" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/AXE/sword.png" sourcerect="0,0,192,64" />
+    <Sprite texture="%ModDir%/AXE/sword.png" sourcerect="0,0,192,64" depth="0.55" origin="0.4954025,0.7936202" />
+    <Body width="170" height="30" density="30" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-30,15" holdangle="20" reload="1" range="100" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
+      <Attack targetimpulse="5" itemdamage="0" penetration="0.3">
+        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+        <Affliction identifier="stun" strength="10" />
+      </Attack>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="burn" strength="2" />
+        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <RequiredItem items="batterycell" type="Contained" />
+        <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
+        <Conditional mass="lt 60" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="burn" strength="3" />
+        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
+        <Conditional mass="lt 150" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="burn" strength="6" />
+        <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
+        <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+        <Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
+        <Conditional mass="lt 150" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-25.0" disabledeltatime="true">
+        <RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-16.7" disabledeltatime="true">
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-10" disabledeltatime="true">
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery,oxygen_cell_bw" />
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="hammer_bw" category="Equipment" Tags="smallitem,weapon,stunner,gunsmith,meleeweapon" Scale="0.4" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="350" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.35" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" depth="0.55" />
+    <Body width="250" height="150" density="60" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-20" handle1="-30,-3" handle2="15,3" holdangle="45" reload="2" range="200" combatPriority="40" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
+      <Attack targetimpulse="5" severlimbsprobability="0.5" structuredamage="0" itemdamage="0" penetration="0.5">
+        <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+        <Affliction identifier="blunttrauma" strength="40" />
+        <Affliction identifier="stun" strength="4" />
+        <RequiredItem items="hammeruex" type="Contained" msg="ItemMsgHammerUexRequired" />
+      </Attack>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+        <Affliction identifier="stun" strength="0.3" />
+        <RequiredItem items="uex2" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
+        <Conditional mass="lt 60" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" Condition="-25" />
+      <StatusEffect type="OnUse" target="Usetarget" Condition="-25" disabledeltatime="true">
+        <Explosion range="300.0" structuredamage="100" force="10.0" itemdamage="100" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="burn" strength="75" />
+        </Explosion>
+        <RequiredItem items="uex2" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+    </MeleeWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="uex2" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="2000" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="uex2" category="Equipment" Scale="0.5" description="" Tags="smallitem,explosive,gunsmith" maxstacksize="1" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="800">
+      <Price locationtype="outpost" multiplier="1.4" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="uex" />
+      <Item identifier="uex" />
+      <Item identifier="uex" />
+      <Item identifier="uex" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="detonator" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/AXE/hammeruex.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/hammeruex.png" depth="0.8" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Body width="45" height="30" density="20" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true"></StatusEffect>
+      <StatusEffect type="OnUse" target="Usetarget" disabledeltatime="true">
+        <Affliction identifier="blunttrauma" strength="40" penetration="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="" identifier="bw_axe" aliases="axe" scale="0.5" category="Equipment" tags="smgammotype,smallitem,weapon,gunsmith,meleeweapon" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="700">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="50">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/AXE/AXE.png" sourcerect="0,0,300,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/AXE.png" sourcerect="0,0,300,100" depth="0.55" origin="0.8,0.35" />
+    <Body width="225" height="32" density="45" />
+    <MeleeWeapon slots="RightHand,LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="80" combatPriority="45" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="6" severlimbsprobability="0.5" structuredamage="15" itemdamage="15" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="lacerations" strength="30" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="stun" strength="1.5" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.05" />
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="bwgs" category="Equipment" Tags="mediumitem,weapon,gunsmith,meleeweapon,swordwarrior" Scale="0.2" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
+    <Price baseprice="2500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.35" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="fulgurium" />
+      <Item identifier="physicorium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <Item identifier="relic_bw" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="fulgurium" />
+      <Item identifier="physicorium" />
+    </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Worn" texture="%ModDir%/AXE/bwgs2.png" sourcerect="0,0,700,200" depth="0.55" origin="0.7,0.1" canbehiddenbyotherwearables="false" rotation="45" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
+    </Wearable>
+    <InventoryIcon texture="%ModDir%/AXE/bwgs.png" sourcerect="0,0,700,200" origin="0.5,0.3" />
+    <Sprite texture="%ModDir%/AXE/bwgs.png" sourcerect="0,0,700,200" depth="0.55" origin="0.5,0.3" />
+    <Body width="300" height="150" density="50" />
+    <MeleeWeapon slots="Any,RightHand" aimpos="50,0" handle1="-50,-3" handle2="-45,3" holdangle="35" reload="1.2" range="245" combatPriority="99" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="10" itemdamage="100" penetration="0.65">
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        <Affliction identifier="lacerations" strength="140" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="bleeding" strength="15" />
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="tachi" category="Equipment" Tags="mediumitem,weapon,gunsmith,meleeweapon,swordwarrior" Scale="0.3" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
+    <Price baseprice="2500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.35" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="fulgurium" />
+      <Item identifier="physicorium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <Item identifier="relic_bw" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="fulgurium" />
+      <Item identifier="physicorium" />
+    </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Worn" texture="%ModDir%/AXE/tachi2.png" sourcerect="0,0,700,200" depth="0.55" origin="0.6,0.2" canbehiddenbyotherwearables="false" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.3" />
+    </Wearable>
+    <InventoryIcon texture="%ModDir%/AXE/tachi.png" sourcerect="0,0,700,200" origin="0.5,0.3" />
+    <Sprite texture="%ModDir%/AXE/tachi.png" sourcerect="0,0,700,200" depth="0.55" origin="0.5,0.4" />
+    <Body width="450" height="200" density="100" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-50,-3" handle2="-10,0" holdangle="35" reload="0.9" range="250" combatPriority="99" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="10" itemdamage="100" penetration="0.6">
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        <Affliction identifier="lacerations" strength="120" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="bleeding" strength="15" />
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+    </Quality>
+  </Item>
+</Items>

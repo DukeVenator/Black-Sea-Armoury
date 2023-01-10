@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Mechno's Maddened Black Sea Armory - DUKE" modversion="1.0.8" corepackage="False" steamworkshopid="2909219915" gameversion="0.20.16.1">
+  <Jobs file="%ModDir%/Job/Content/Jobs.xml" />
+  <TalentTrees file="%ModDir%/Job/Content/TalentTrees.xml" />
+  <Talents file="%ModDir%/Job/TalentsBP.xml" />
+  <Afflictions file="%ModDir%/Job/AfflictionsBP.xml" />
+  <Particles file="%ModDir%/Particles/ParticlePrefabs.xml" />
+  <Item file="%ModDir%/Chaingun/Guns.xml" />
+  <Item file="%ModDir%/LMG/Guns.xml" />
+  <Item file="%ModDir%/PRG/PRG.xml" />
+  <Item file="%ModDir%/BA/BA.xml" />
+  <Item file="%ModDir%/LC/Laser Cannon.xml" />
+  <Item file="%ModDir%/BT/Boarding Torpedo.xml" />
+  <Item file="%ModDir%/SMG/Guns.xml" />
+  <Item file="%ModDir%/SG/SG.xml" />
+  <Item file="%ModDir%/AXE/AXE.xml" />
+  <Item file="%ModDir%/TS/Tatical Scanner.xml" />
+  <Item file="%ModDir%/Boarding Shield/Shield.xml" />
+  <Afflictions file="%ModDir%/Skill/Afflictions.xml" />
+  <Text file="%ModDir%/Language/English.xml" />
+  <Text file="%ModDir%/Language/TraditionalChinese.xml" />
+  <Text file="%ModDir%/Language/SimplifiedChinese.xml" />
+  <Text file="%ModDir%/Language/Russian.xml" />
+  <Item file="%ModDir%/Enemy/Over.xml" />
+  <Character file="%ModDir%/Enemy/Fractalguardian/Fractalguardian.xml" />
+  <Character file="%ModDir%/Enemy/Fractalguardian2/Fractalguardian2.xml" />
+</contentpackage>

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="shotgunshellbw" category="Equipment" maxstacksize="20" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammobw,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="5">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="shotgunshell" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/DS.png" sourcerect="0,0,24,24" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/DS.png" sourcerect="0,0,24,24" depth="0.55" origin="0.5,0.5" />
+    <Body width="23" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="10">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.5" targetforce="3.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
+        <Affliction identifier="bleeding" strength="3" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="80.0" structuredamage="1" force="0.5" itemdamage="1" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="burn" strength="1" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-8" Condition="-8" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="shotgununiquebw" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
+    <Price baseprice="1431" soldeverywhere="false" canbespecial="false">
+      <Price locationtype="outpost" sold="false" />
+      <Price locationtype="city" sold="false" />
+      <Price locationtype="research" sold="false" />
+      <Price locationtype="military" sold="false" />
+      <Price locationtype="mine" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="shotgununique" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="80">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="shotgununique" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SG2.png" sourcerect="0,0,182,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SG2.png" sourcerect="0,0,184,52" depth="0.55" origin="0.5,0.5" />
+    <Body width="180" height="45" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="90,13" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="1.0">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <RequiredItems items="shotgunammobw" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="10" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="shotgunammobw" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.25" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="grenadelauncher_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
+    <Price baseprice="1200" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" />
+      <Item identifier="shotgun" />
+      <Item identifier="grenadelauncher" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="80">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="shotgun" />
+      <RequiredItem identifier="grenadelauncher" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
+    <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
+    <Body width="272" height="64" density="50" />
+    <Holdable slots="Any,RightHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.5" barrelpos="95,13" spread="1" unskilledspread="16" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="bw_shotgun_drum,bw_grenade_drum" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="bw_shotgun_drum,bw_grenade_drum" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="bw_shotgun_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <Price baseprice="400" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="2" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="1" />
+    </Price>
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="lead" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="lead" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="bw_shotgun_shell" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="bw_shotgun_shell" />
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <SpawnItem identifiers="bw_shotgun_shell" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="bw_grenade_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="400" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" />
+      <Price locationtype="military" multiplier="0.9" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="1" />
+    </Price>
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="1" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="bw_grenade" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="bw_grenade" />
+      <StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
+        <SpawnItem identifiers="bw_grenade" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="bw_shotgun_shell" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Buck shot." tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="20" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
+    <Price baseprice="20" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGSS.png" sourcerect="0,0,24,12" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="16" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="-90" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="14" removeonhit="true" spread="20">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.4" itemdamage="10" stun="0.1" targetforce="2.0" severlimbsprobability="0.25" penetration="0.1">
+        <Affliction identifier="bleeding" strength="1" />
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="stun" strength="0.02" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.25">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="1.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-1.5" Condition="-1.5" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+    </Projectile>
+  </Item>
+  <Item name="" identifier="bw_grenade" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Fire in the hole!!!" tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="8" hideinmenus="true" nonplayerteaminteractable="True">
+    <Price baseprice="50" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGGS.png" depth="0.56" sourcerect="0,0,24,10" origin="0.5,0.5" />
+    <Body width="38" height="15" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false" spread="8">
+      <Attack structuredamage="1" penetration="0.25">
+        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+      <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+      <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+      <StatusEffect type="OnImpact" disabledeltatime="true">
+        <Explosion range="180.0" ballastfloradamage="50" structuredamage="50" levelwalldamage="50" itemdamage="50" force="3.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="explosiondamage" strength="40" />
+          <Affliction identifier="stun" strength="4" />
+        </Explosion>
+        <sound file="Content/Items/Weapons/StunGrenade.ogg" />
+      </StatusEffect>
+      <!--Destroy this after exploding-->
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="2">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20" Condition="-20" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

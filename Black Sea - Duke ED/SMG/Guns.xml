@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Smg Round" identifier="smground_bw" category="Misc" interactthroughwalls="true" tags="smgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
+    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <Body width="160" height="10" density="15" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.5" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.3" penetration="0.05">
+        <Affliction identifier="gunshotwound" strength="12" />
+        <Affliction identifier="bleeding" strength="2" />
+        <Affliction identifier="stun" strength="0.02" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact">
+        <ParticleEmitter particle="bubbles" anglemin="-180" anglemax="180" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="-10" velocitymax="-300" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-1" Condition="-1" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+    </Projectile>
+  </Item>
+  <Item name="" identifier="smgmagazine_bw" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,smgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="8">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.25" />
+    <Price baseprice="100" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="3" />
+      <Price locationtype="city" multiplier="1.25" minavailable="3" />
+      <Price locationtype="research" multiplier="1.25" minavailable="3" />
+      <Price locationtype="military" multiplier="0.9" minavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="3" />
+    </Price>
+    <Deconstruct time="1">
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="steel" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
+    <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="smground_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-3.33" disabledeltatime="true">
+        <SpawnItem identifiers="smground_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="smg_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="smgtype,smallitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="500" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="smg" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="smg" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.1" barrelpos="14,6" spread="8" unskilledspread="18" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="smgmagazine_bw,smgmagazine_bw2" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="smgmagazine_bw,smgmagazine_bw2" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="smgmagazine_bw2" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,smgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="2">
+    <Price baseprice="800" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="plastic" />
+      <Item identifier="fulgurium" />
+      <Item identifier="dementonite" />
+      <Item identifier="physicorium" />
+      <Item identifier="incendium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="dementonite" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="incendium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SMG/smg mag2.png" sourcerect="0,0,36,44" />
+    <Sprite texture="%ModDir%/SMG/smg mag2.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_bw2" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="smground_bw2" />
+      <StatusEffect type="OnUse" target="This" condition="-3.33" disabledeltatime="true">
+        <SpawnItem identifiers="smground_bw2" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="1">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1.75" stackable="false" />
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Smg Round2" identifier="smground_bw2" category="Misc" interactthroughwalls="true" tags="smgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
+    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <Body width="160" height="10" density="15" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
+      <Attack structuredamage="0.5" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.3" penetration="0.05">
+        <Affliction identifier="gunshotwound" strength="6" />
+        <Affliction identifier="bleeding" strength="1" />
+        <Affliction identifier="stun" strength="0.02" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact">
+        <ParticleEmitter particle="bubbles" anglemin="-180" anglemax="180" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="-10" velocitymax="-300" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-1" Condition="-1" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+    </Projectile>
+  </Item>
+</Items>

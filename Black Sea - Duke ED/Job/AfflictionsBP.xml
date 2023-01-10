@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction identifier="steelruler" type="steelruler" isbuff="true" limbspecific="false" maxstrength="1" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,7" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="stonewallbw" type="stonewallbw" isbuff="true" limbspecific="false" maxstrength="4" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="4" strengthchange="-1" resistancefor="damage,stun" minresistance="0.4" maxresistance="0.4">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.4" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="1,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="quickdrawingbw" type="quickdrawingbw" isbuff="true" limbspecific="false" showiconthreshold="8" maxstrength="10" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="5.7" maxstrength="6" strengthchange="0" />
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

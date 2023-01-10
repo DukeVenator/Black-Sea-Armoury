@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="boarding_torpedo_bw" category="Equipment" Tags="smallitem,provocative,scooter,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="uex" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="uex" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/BT/BT.png" sourcerect="0,0,140,102" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/BT/BT.png" depth="0.55" sourcerect="0,0,140,102" />
+    <Body width="120" height="60" density="10.2" />
+    <Holdable slots="RightHand+LeftHand" aimpos="90,0" handle1="-25,32" handle2="-27,34" msg="ItemMsgPickUpSelect" />
+    <Propulsion force="1000" usablein="water" particles="bubbles">
+      <StatusEffect type="OnUse" target="This" Condition="-66" />
+      <StatusEffect type="Always" target="This" Condition="3">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" type="OnUse" selectionmode="Random" range="10000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" type="OnUse" selectionmode="Random" range="10000" />
+        <Explosion range="600.0" structuredamage="10000" ballastfloradamage="10000" itemdamage="10000" force="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="200" />
+          <Affliction identifier="stun" strength="10" />
+          <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100" Condition="-100" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <sound file="Content/Items/Diving/ScooterLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <LightComponent LightColor="1.0,1.0,1.0,0.8" range="1000">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="-0.01, 0.5" size="1.0,1.0" />
+      </LightComponent>
+    </Propulsion>
+    <AiTarget soundrange="3000" maxsightrange="3000" />
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="" identifier="jetscooterbw" aliases="experimentalscooterbw" category="Equipment" Tags="gunsmith,smallitem,provocative,scooter,underwaterscooter,light" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="800" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.1" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1.25" sold="false" />
+      <Price locationtype="mine" multiplier="0.9" sold="false" />
+    </Price>
+    <Deconstruct time="25">
+      <Item identifier="oxygen_cell_bw" />
+      <Item identifier="underwaterscooter" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="handheldsonar" />
+      <RequiredItem identifier="oxygen_cell_bw" />
+      <RequiredItem identifier="underwaterscooter" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/BT/jetbw.png" sourcerect="0,0,320,160" />
+    <Sprite texture="%ModDir%/BT/jetbw.png" depth="0.55" sourcerect="0,0,320,160" />
+    <Body width="228" height="96" density="10" />
+    <Holdable slots="Any,LeftHand" aimpos="180,0" handle1="-50,55" handle2="-54,59" msg="ItemMsgPickUpSelect" />
+    <Propulsion force="250" usablein="water" particles="bubbles">
+      <StatusEffect type="OnUse" targettype="This" Condition="-3.0" />
+      <StatusEffect type="Always" targettype="This" Voltage="1.0" setvalue="true" />
+      <StatusEffect type="Always" target="This" Condition="1.5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="1" disabledeltatime="true" delay="1" stackable="false" />
+      <sound file="Content/Items/Diving/ScooterLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <LightComponent LightColor="1.0,1.0,1.0,0.8" range="1000">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <Sonar range="3000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+        <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
+        <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
+        <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+        <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+        <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+        <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+        <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+        <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+        <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+        <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+        <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+        <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5" />
+        <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5" />
+        <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5" />
+        <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5" />
+        <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5" />
+        <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
+        <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
+      </Sonar>
+    </Propulsion>
+    <AiTarget soundrange="2000" />
+  </Item>
+  <Item name="" identifier="divingknifebw" category="Equipment" Tags="meleeweapon,smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.8" impactsoundtag="impact_metal_light" RequireAimToUse="True" spritecolor="90,100,90">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="300">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" />
+      <Price locationtype="military" multiplier="0.9" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="fuelrod" mincondition="0.0" maxcondition="0.1" usecondition="false" />
+      <RequiredItem identifier="divingknife" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/BT/knife.png" sourcerect="0,0,80,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/BT/knife.png" sourcerect="0,0,160,20" origin="0.5,0.5" />
+    <Body width="65" height="15" density="50" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="0.8" range="50" combatPriority="35" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="0.1" itemdamage="30" structuredamage="5" structuresoundtype="StructureSlash" penetration="0.7">
+        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="stun" strength="0.2" />
+        <StatusEffect type="OnUse" target="Character">
+          <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+          <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="rg_bw" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="4000" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" sold="false" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="physicorium" />
+      <Item identifier="physicorium" />
+      <Item identifier="flamerunique" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="120">
+      <RequiredSkill identifier="weapons" level="90" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="flamerunique" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="batterycell" />
+      <RequiredItem identifier="rg_bw" mincondition="0.0" maxcondition="1.0" usecondition="false" />
+    </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+    </Wearable>
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <Body width="254" height="96" density="40" />
+    <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <sound file="Content/Items/Weapons/Railgun1.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun2.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun3.ogg" range="6000" type="OnUse" />
+      <StatusEffect type="OnUse" target="This" Condition="-1500" />
+      <StatusEffect type="OnUse">
+        <Explosion range="100.0" force="6" decal="explosion" decalsize="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" structuredamage="100" itemdamage="100" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Usetarget" disabledeltatime="true">
+        <Explosion range="100.0" structuredamage="50" force="10.0" itemdamage="100" severlimbsprobability="0.5" decal="blackblood" decalsize="0.5">
+          <Affliction identifier="lacerations" strength="800" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="Always" target="Character" SpeedMultiplier="0.4" setvalue="true" />
+      <RequiredItems identifier="railgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" canbeselected="false" hideitems="true">
+      <Containable identifiers="railgunammo" excludeditems="nuclearshell" />
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="railbw" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="railgunammocontainer" minamount="3" maxamount="6" />
+    <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="3" spawnprobability="0.33" />
+    <Price baseprice="150">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="2" />
+      <Price locationtype="city" multiplier="1.25" minavailable="2" />
+      <Price locationtype="research" multiplier="1.25" minavailable="2" />
+      <Price locationtype="military" multiplier="0.9" minavailable="4" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/BT/RG4.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/BT/RG3.png" sourcerect="0,0,216,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="80.0" maxtargetstohit="1">
+      <Attack structuredamage="150" itemdamage="150" severlimbsprobability="1.5" penetration="0.6">
+        <Affliction identifier="lacerations" strength="600" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <Explosion range="300.0" structuredamage="200" itemdamage="200" force="50.0" severlimbsprobability="1.5" decal="explosion">
+          <Affliction identifier="explosiondamage" strength="500" />
+          <Affliction identifier="stun" strength="5" />
+          <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100" Condition="-100" />
+          <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="smallitem" />
+    </ItemContainer>
+  </Item>
+</Items>

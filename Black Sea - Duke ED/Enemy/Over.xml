@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Override>
+    <Item name="apc" identifier="guardiansteamcannon" category="hidden" Tags="smallitem,weapon,gun" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="True" nonplayerteaminteractable="True">
+      <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="214,514,130,64" depth="0.55" origin="0.5,0.5" />
+      <Body width="100" height="35" density="50" />
+      <Holdable slots="Any,RightHand" controlpose="false" aimpos="120,0" handle1="-55,0" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnActive" target="This">
+          <SpawnItem identifiers="alienprojectile" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </Holdable>
+      <RangedWeapon reload="5" barrelpos="34,6" spread="10" unskilledspread="15">
+        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <sound file="Content/Items/Alien/AlienTurret1.ogg" type="OnUse" range="250.0" loop="false" />
+        <ParticleEmitter particle="muzzleflashnucleargun" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemultiplier="0.5,0.5" colormultiplier="255,200,200,200" scalemin="0.0" scalemax="0.6" />
+      </RangedWeapon>
+      <Projectile characterusable="false" launchimpulse="12.0" sticktocharacters="true">
+        <StatusEffect type="OnActive" target="This" setvalue="true" condition="25" disabledeltatime="true" />
+        <StatusEffect type="OnActive" target="This">
+          <SpawnItem identifiers="alienprojectile" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </Projectile>
+      <ItemContainer itempos="0,0" autofill="False" hideitems="true" capacity="1" maxstacksize="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+        <Containable items="alienprojectile" />
+      </ItemContainer>
+    </Item>
+  </Override>
+  <Override>
+    <Item name="aph" identifier="guardianhookcannon" category="hidden" tags="" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="True" nonplayerteaminteractable="True">
+      <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="409,520,92,42" depth="0.55" origin="0.5,0.5" />
+      <Body width="80" height="25" density="50" />
+      <Holdable slots="Any,RightHand" controlpose="false" aimpos="150,0" handle1="-50,-2" holdangle="0" usehandrotationforholdangle="true" msg="ItemMsgPickUpSelect" />
+      <RangedWeapon barrelpos="45,0" spread="10" drawhudwhenequipped="true" crosshairscale="0.2">
+        <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+        <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+        <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
+        <Sound file="Content/Items/Weapons/HarpoonGun2.ogg" type="OnUse" />
+        <Sound file="Content/Items/Weapons/HarpoonGun3.ogg" type="OnUse" />
+        <StatusEffect type="OnUse">
+          <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+        </StatusEffect>
+        <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+          <SpawnItem identifier="guardianspear" spawnposition="ThisInventory" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+          <SpawnItem identifier="guardianspear" spawnposition="ThisInventory" />
+        </StatusEffect>
+      </RangedWeapon>
+      <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="spear">
+        <Containable items="guardianspear" />
+      </ItemContainer>
+    </Item>
+  </Override>
+  <Override>
+    <Item identifier="guardianspear" category="hidden" interactthroughwalls="true" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+      <Sprite texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="395,609,117,40" depth="0.55" origin="0.3,0.5" />
+      <Body width="70" height="20" density="20" />
+      <Rope sourcepullforce="0" targetpullforce="150" projectilepullforce="5" maxlength="100" snaponcollision="true" spritewidth="8" tile="true" origin="0.30,0.5" targetminmass="0" lerpforces="true" SnapWhenNotAimed="False">
+        <Sprite name="Guardian rope component" texture="Content/Characters/Fractalguardian/Fractalguardian.png" sourcerect="343,622,32,15" depth="0.57" origin="0.5,0.5" />
+        <!-- Remove 1 second after snapping -->
+        <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true">
+          <Conditional Snapped="true" />
+          <Remove />
+        </StatusEffect>
+        <!-- Snap after 1 seconds if not stuck to anything -->
+        <StatusEffect type="OnUse" target="This" Snapped="true" delay="1" checkconditionalalways="true">
+          <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" Snapped="true" delay="30" />
+      </Rope>
+      <Projectile characterusable="false" launchimpulse="25.0" sticktocharacters="true" sticktoitems="false" sticktostructures="false" stickpermanently="true" sticktodeflective="true">
+        <Attack structuredamage="10" itemdamage="50" targetforce="10" severlimbsprobability="0" penetration="0.6">
+          <Affliction identifier="bleeding" strength="25" />
+          <Affliction identifier="lacerations" strength="25" />
+          <Affliction identifier="stun" strength="0.3" />
+        </Attack>
+        <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" comparison="And">
+          <Conditional Snapped="false" />
+          <Conditional mass="lt 50" />
+          <Affliction identifier="drag" strength="5" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget,This" checkconditionalalways="true" comparison="And">
+          <Explosion range="250.0" ballastfloradamage="0" structuredamage="0" levelwalldamage="0" itemdamage="0" stun="1" force="13.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+            <Affliction identifier="burn" strength="25" />
+            <Affliction identifier="explosiondamage" strength="25" />
+          </Explosion>
+        </StatusEffect>
+      </Projectile>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+  </Override>
+  <Item name="TRAP" identifier="c4blockbw" category="Equipment" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="8" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft" nonplayerteaminteractable="True">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="768,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.8" sourcerect="51,478,48,33" origin="0.5,0.5" />
+    <Body width="45" height="30" density="20" />
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="4.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="10000" selectionmode="All" />
+      <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="10000" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="350.0" ballastfloradamage="0" structuredamage="0" levelwalldamage="0" itemdamage="0" stun="1" force="20.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+          <Affliction identifier="burn" strength="25" />
+          <Affliction identifier="explosiondamage" strength="25" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  <Item name="" identifier="railgunshellbw2" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="30" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="80.0" maxtargetstohit="1">
+      <Attack structuredamage="55" itemdamage="55" severlimbsprobability="1.5" penetration="0.6">
+        <Affliction identifier="lacerations" strength="25" />
+        <Affliction identifier="bleeding" strength="25" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+</Items>

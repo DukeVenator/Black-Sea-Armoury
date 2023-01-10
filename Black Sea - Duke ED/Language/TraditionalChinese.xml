@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Traditional Chinese" nowhitespace="false" translatedname="中文(繁體)">
+  <!--Job.xml-->
+  <jobName.Pilot>鐵騎兵</jobName.Pilot>
+  <jobdescription.Pilot>木衛二聯盟中的精銳，擅長駕駛機甲執行各式特種突擊任務。</jobdescription.Pilot>
+  <talenttree.bwbr1>槍劍禱告</talenttree.bwbr1>
+  <talenttree.bwbr2>鋼鐵崇拜</talenttree.bwbr2>
+  <talenttree.bwbr3>科技蠻族</talenttree.bwbr3>
+  <talentname.advancedsplicingbw>異星征服者</talentname.advancedsplicingbw>
+  <talentname.collegeathleticsbw>體能健將</talentname.collegeathleticsbw>
+  <talentname.bountyhunterbw>鐵腕處置</talentname.bountyhunterbw>
+  <talentdescription.crafthighqualitypistols>你製造的手槍品質提升[qualitybonus]。</talentdescription.crafthighqualitypistols>
+  <talentdescription.bountyhunterbw>使用手槍與鐵拳攻擊時，額外造成[probability]%傷害與[armorpenetration]%穿甲。</talentdescription.bountyhunterbw>
+  <talentname.justascratchbw>強化骨骼</talentname.justascratchbw>
+  <talentdescription.quickdrawbw>每過[seconds]秒，下一次強力近戰系統造成的傷害提升[damage]倍。</talentdescription.quickdrawbw>
+  <talentname.sailorwithnonamebw>滄桑水手</talentname.sailorwithnonamebw>
+  <talentname.tumblebw>備用武裝</talentname.tumblebw>
+  <talentdescription.tumblebw>你的手槍與鐵拳傷害提升[damage]%。</talentdescription.tumblebw>
+  <talentname.firstaidtrainingbw>戰地急救</talentname.firstaidtrainingbw>
+  <talentname.physicalconditioningbw>強健體魄</talentname.physicalconditioningbw>
+  <talentname.trustbuildingbw>歷戰老兵</talentname.trustbuildingbw>
+  <talentdescription.trustbuildingbw>每當你完成一項任務，你增加[smallgain]%最大生命。若所有船員都倖存，則再增加[largegain]%的最大生命，上限為[maxgain]%。</talentdescription.trustbuildingbw>
+  <talentname.swordwarriorbw>長劍修士</talentname.swordwarriorbw>
+  <talentdescription.crafthighqualityswordwarriorbw>你製造的長劍武器品質提升[qualitybonus]。</talentdescription.crafthighqualityswordwarriorbw>
+  <talentdescription.swordwarriorbw>近戰武器攻擊時，你攜帶的每個[itemname]都會提升[powerincrease]%傷害，上限為[maxpowerincrease]%。</talentdescription.swordwarriorbw>
+  <talentname.enforcerbw>重裝獵手</talentname.enforcerbw>
+  <talentdescription.enforcerbw>使用霰彈攻擊時，額外造成[damage]%傷害與[armorpenetration]%穿甲。</talentdescription.enforcerbw>
+  <talentname.steelruler>鋼鐵統御</talentname.steelruler>
+  <talentdescription.steelruler>駕駛機甲時，武器攻擊力提升[value]%，[stattype]提升[amount]%，受到傷害減少[value]%。</talentdescription.steelruler>
+  <talentname.bythebookbw>兼職傭兵</talentname.bythebookbw>
+  <talentname.olympianbw>戰鬥精通</talentname.olympianbw>
+  <talentname.warlordbw>深淵王牌</talentname.warlordbw>
+  <talentdescription.chanceofextraweapondamagebw2>使用武器攻擊時，額外造成[probability]%傷害與[armorpenetration]%穿甲。</talentdescription.chanceofextraweapondamagebw2>
+  <talentname.laststand>永不放棄</talentname.laststand>
+  <talentdescription.laststand>當你的生命低於[health]%時，會快速回復生命值。</talentdescription.laststand>
+  <talentname.implacablebw>鋼鐵意志</talentname.implacablebw>
+  <talentname.deadeyebw>死眼絕射</talentname.deadeyebw>
+  <talentdescription.deadeyebw>當你使用試驗狙擊砲時，攻擊提升[powerincrease]%。你也能更快地從出血狀態中恢復過來。每當你完成一項任務，獲得以下補給。</talentdescription.deadeyebw>
+  <talentname.stonewallbw>持盾護衛</talentname.stonewallbw>
+  <talentdescription.stonewallbw>當你受到攻擊後，[seconds]內你的物理傷害抗性提升[physicaldamagereduction]%，擊暈抗性提升[stunresistance]%，近戰傷害提升[amount]%。</talentdescription.stonewallbw>
+  <talentname.munitionsexpertisebw>權限許可</talentname.munitionsexpertisebw>
+  <talentname.gunsmithbw>戰爭鐵匠</talentname.gunsmithbw>
+  <talentname.duelistbw>風暴之心</talentname.duelistbw>
+  <talentdescription.chanceofextraweapondamagebw>使用近身戰衝鋒槍或動力斧攻擊時，[probability]%機率造成雙倍傷害與額外[amount]%穿甲力。</talentdescription.chanceofextraweapondamagebw>
+  <talentname.optimizedpowerflowbw>改裝電路</talentname.optimizedpowerflowbw>
+  <talentdescription.optimizedpowerflowbw>砲塔耗能與充能速度降低你電器技能的[statamount]%。</talentdescription.optimizedpowerflowbw>
+  <talentdescription.crafthighqualitylaserbw>你製造的能量武器品質提升[qualitybonus]。</talentdescription.crafthighqualitylaserbw>
+  <talentname.custommachinebw>改裝機械</talentname.custommachinebw>
+  <talentdescription.crafthighqualityhmgbw>你製造的機槍武器品質提升[qualitybonus]。</talentdescription.crafthighqualityhmgbw>
+  <!--AXE.xml-->
+  <entityname.PFbw>強力近戰系統(Power Combat System)</entityname.PFbw>
+  <entitydescription.PFbw>在精密計算輔助下，即便巨岩也能輕鬆粉碎。</entitydescription.PFbw>
+  <entityname.stunbatonbw>熱能軍刀(Heat Saber)</entityname.stunbatonbw>
+  <entitydescription.stunbatonbw>強力暈眩武器，裝上X01氧氣電池後能造成額外熱能傷害，但無法穿透重裝甲。</entitydescription.stunbatonbw>
+  <entityname.hammer_bw>鐵鎚(The Hammer)</entityname.hammer_bw>
+  <entitydescription.hammer_bw>鋼鐵之鎚，裝入火藥後能造成大範圍爆炸。</entitydescription.hammer_bw>
+  <entityname.uex2>鐵鎚引爆器(Hammer Detonator)</entityname.uex2>
+  <entitydescription.uex2>裝入通用炸藥的引爆器，能造成大範圍爆炸。</entitydescription.uex2>
+  <entityname.bw_axe>動力斧(Power AXE)</entityname.bw_axe>
+  <entitydescription.bw_axe>一種老式武器，依然可以輕鬆切碎敵人。</entitydescription.bw_axe>
+  <entityname.bwgs>歲星(Winter Star)</entityname.bwgs>
+  <entitydescription.bwgs>彷彿自古代而來的長劍，冷酷且高傲。</entitydescription.bwgs>
+  <entityname.tachi>天征(Conquest)</entityname.tachi>
+  <entitydescription.tachi>彷彿自古代而來的太刀，鋒銳且迅捷。</entitydescription.tachi>
+  <!--BA.xml-->
+  <entityname.corsairar_bw>劫盜式(Corsair)</entityname.corsairar_bw>
+  <entitydescription.corsairar_bw>淘汰的軍用裝甲，大量流入黑市導致海盜猖獗。使用氧氣瓶。</entitydescription.corsairar_bw>
+  <entityname.armored_miningsuit_bw>鎚頭礦機(Hammer Mining Armor)</entityname.armored_miningsuit_bw>
+  <entitydescription.armored_miningsuit_bw>重型挖礦機甲，只要裝入電池便能維持氧氣循環系統，可以裝載鎚頭集裝箱。</entitydescription.armored_miningsuit_bw>
+  <entityname.toolbox_bw>鎚頭集裝箱(Hammer Container)</entityname.toolbox_bw>
+  <entitydescription.toolbox_bw>厚實的集裝箱，可以安全裝載軌道砲之類的危險易爆物。</entitydescription.toolbox_bw>
+  <entityname.armored_hardsuit_bw>X01戰鬥裝甲(X01 Battle Armor)</entityname.armored_hardsuit_bw>
+  <entitydescription.armored_hardsuit_bw>為了執行多種軍事任務而誕生的先進裝甲，使用X01氧氣電池。可以裝載一把重武器。</entitydescription.armored_hardsuit_bw>
+  <entityname.oxygen_cell_bw>X01 氧氣電池(X01 Oxygen Cell)</entityname.oxygen_cell_bw>
+  <entitydescription.oxygen_cell_bw>實驗性氧氣電池，可以承受高熱與衝撞。</entitydescription.oxygen_cell_bw>
+  <entityname.armored_hardsuit_bwl>X01戰鬥裝甲(隊長機) X01 Battle Armor(Leader)</entityname.armored_hardsuit_bwl>
+  <entitydescription.armored_hardsuit_bwl>為了執行多種軍事任務而誕生的先進裝甲，使用X01氧氣電池。隊長機有著更好的聲納系統。</entitydescription.armored_hardsuit_bwl>
+  <entityname.armored_hardsuit_bw2>X01戰鬥裝甲(老兵機) X01 Battle Armor(Veteran)</entityname.armored_hardsuit_bw2>
+  <entitydescription.armored_hardsuit_bw2>為了執行多種軍事任務而誕生的先進裝甲，使用X01氧氣電池。老兵機擁有個性塗裝，還能掛上額外的鐵拳。</entitydescription.armored_hardsuit_bw2>
+  <entityname.knight_hardsuit_bw>銀騎士(Silver Knight)</entityname.knight_hardsuit_bw>
+  <entitydescription.knight_hardsuit_bw>以外星材料打造的神祕護甲，非常堅韌。可以裝載一把重武器。使用外星電池。</entitydescription.knight_hardsuit_bw>
+  <entityname.pio_bw>先鋒式改(Pioneer Custom)</entityname.pio_bw>
+  <entitydescription.pio_bw>專精於建造大型工程項目的裝甲，對於潛艦維護也十分在行。使用氧氣瓶。</entitydescription.pio_bw>
+  <entityname.pio_bw2>先鋒式(Pioneer)</entityname.pio_bw2>
+  <entitydescription.pio_bw2>專精於建造大型工程項目的裝甲，對於潛艦維護也十分在行。使用氧氣瓶。</entitydescription.pio_bw2>
+  <entityname.armored_miningsuit_bw2>大力神(Hercules)</entityname.armored_miningsuit_bw2>
+  <entitydescription.armored_miningsuit_bw2>重型軍用工程機甲，可以搬運大量彈藥。在水中十分笨拙，不被啟用時自動充電。</entitydescription.armored_miningsuit_bw2>
+  <entityname.corsairar_bp>X00原型裝甲(X00 Prototype Armor)</entityname.corsairar_bp>
+  <entitydescription.corsairar_bp>實驗性原型機，具有極高的攻擊性能。使用X01氧氣電池。</entitydescription.corsairar_bp>
+  <entityname.armored_miningsuit_bw3>大力神 Mk.II(Hercules Mk.II)</entityname.armored_miningsuit_bw3>
+  <entitydescription.armored_miningsuit_bw3>重型軍用工程機甲改裝，稍微改善速度與試驗型能量循環爐。</entitydescription.armored_miningsuit_bw3>
+  <!--Shield.xml-->
+  <entityname.bwapc>逆向工程外星電池(Reverse Engineering Alien Power Cell)</entityname.bwapc>
+  <entitydescription.bwapc>人工增強的外星電池。</entitydescription.bwapc>
+  <entityname.rgcbw>雷霆砲輔助裝置(Thunder Cannon Support Device)</entityname.rgcbw>
+  <entitydescription.rgcbw>可以裝載4發軌道砲砲彈或雷霆砲。</entitydescription.rgcbw>
+  <entityname.shield_bw>登艦盾(Boarding Shield)</entityname.shield_bw>
+  <entitydescription.shield_bw>裝甲是越厚越好。</entitydescription.shield_bw>
+  <entityname.harpoongunbw>連發魚叉槍(Rapid Harpoongun)</entityname.harpoongunbw>
+  <entitydescription.harpoongunbw>快速連射魚叉槍。使用魚叉。</entitydescription.harpoongunbw>
+  <entityname.spearbw>碎裂魚叉(Tattered Spear)</entityname.spearbw>
+  <entitydescription.spearbw>穿甲魚叉。</entitydescription.spearbw>
+  <entityname.plasmacutterbw>超級等離子切割器(MEGA Plasma)</entityname.plasmacutterbw>
+  <entitydescription.plasmacutterbw>先進切割工具，也很適合拿來烤肉。</entitydescription.plasmacutterbw>
+  <entityname.bwpower>異星充能器(Alien Charger)</entityname.bwpower>
+  <entitydescription.bwpower>可以替異星電池充電。</entitydescription.bwpower>
+  <entityname.ancientweaponbw>征服者(Conqueror)</entityname.ancientweaponbw>
+  <entitydescription.ancientweaponbw>強力能量武器。依據使用的外星電池進行不同攻擊模式。</entitydescription.ancientweaponbw>
+  <entityname.relic_bw>聖物碎片(Relic Fragment)</entityname.relic_bw>
+  <entityname.cell_bw>閉鎖循環電路系統(Closed Circulatory System Cell)</entityname.cell_bw>
+  <entitydescription.cell_bw>結合異星科技的動力電池，能供給錘頭、劫盜式與先鋒式無限電力。</entitydescription.cell_bw>
+  <!--Boarding Torpedo.xml-->
+  <entityname.boarding_torpedo_bw>登艦魚雷(Boarding Torpedo)</entityname.boarding_torpedo_bw>
+  <entitydescription.boarding_torpedo_bw>小子們給偶聽好嘞，紅色跑得快，WAGHHHHHHHHHHHHHH！！！</entitydescription.boarding_torpedo_bw>
+  <entityname.jetscooterbw>工程摩托(Engineering Motor)</entityname.jetscooterbw>
+  <entitydescription.jetscooterbw>輔助重型機甲用的重型引擎。</entitydescription.jetscooterbw>
+  <entityname.divingknifebw>破甲者(Armor Breaker)</entityname.divingknifebw>
+  <entitydescription.divingknifebw>小型單分子刃，能確實造成傷害。</entitydescription.divingknifebw>
+  <entityname.railbw>鈦合金軌道砲砲彈(Titanium Railgun Shell)</entityname.railbw>
+  <entityname.rg_bw>雷霆砲(Thunder Cannon)</entityname.rg_bw>
+  <entitydescription.rg_bw>強行改裝成攜帶式的船艦主砲，存在諸多缺點。使用核彈以外的軌道砲砲彈。</entitydescription.rg_bw>
+  <!--Guns.xml-->
+  <entityname.HMG1_bp6>革命(Revolution)</entityname.HMG1_bp6>
+  <entitydescription.HMG1_bp6>軍事化再改造提升連射性能。</entitydescription.HMG1_bp6>
+  <entityname.HMG1_bw>鐮刀重機槍(Sickle HMG)</entityname.HMG1_bw>
+  <entitydescription.HMG1_bw>重型自動火力，但容易過熱。使用14.5mm機槍彈藥。</entitydescription.HMG1_bw>
+  <entityname.HMG1_mag_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_mag_bw>
+  <entitydescription.HMG1_mag_bw>老舊，但致命。</entitydescription.HMG1_mag_bw>
+  <entityname.HMG1_ammo_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_ammo_bw>
+  <entitydescription.HMG1_ammo_bw>老舊，但致命。</entitydescription.HMG1_ammo_bw>
+  <entityname.minichaingun_bw>試驗鏈砲(Experimental Chaingun)</entityname.minichaingun_bw>
+  <entitydescription.minichaingun_bw>昂貴的重型武器。使用鏈砲彈藥。</entitydescription.minichaingun_bw>
+  <entityname.chaingun_ammo_bw>鏈砲彈藥(Experimental Chaingun Ammo Box)</entityname.chaingun_ammo_bw>
+  <entitydescription.chaingun_ammo_bw>1000發子彈裝，槍林彈雨！！！</entitydescription.chaingun_ammo_bw>
+  <!--Laser Cannon.xml-->
+  <entityname.lasercannon_bw>試驗雷射砲(Experimental Laser Cannon)</entityname.lasercannon_bw>
+  <entitydescription.lasercannon_bw>重裝雷射砲，可以輕易融化血肉之軀，對門與甲板有奇效。使用X01 氧氣電池。</entitydescription.lasercannon_bw>
+  <entityname.explosivespearbw>鐵拳(Iron Fist)</entityname.explosivespearbw>
+  <entitydescription.explosivespearbw>單次使用反裝甲武器，能造成強大破壞。</entitydescription.explosivespearbw>
+  <entityname.ifbw>Fist</entityname.ifbw>
+  <entityname.esg_bw>試驗狙擊砲(Experimental Precise Gun)</entityname.esg_bw>
+  <entitydescription.esg_bw>為了長程支援而開發的重型砲。使用精準彈。</entitydescription.esg_bw>
+  <entityname.SG_ammo>精準彈彈夾(Precise Bullet Clip)</entityname.SG_ammo>
+  <entityname.esg_bw2>試驗狙擊砲Mk.II(Experimental Precise Gun Mk.II)</entityname.esg_bw2>
+  <entitydescription.esg_bw2>改良後的重型砲，加快瞄準速度。使用精準彈。</entitydescription.esg_bw2>
+  <entityname.lasercannon_bp3>災禍(Disaster)</entityname.lasercannon_bp3>
+  <entitydescription.lasercannon_bp3>緊湊槍身改裝的雷射砲，有著容易過熱的缺陷。</entitydescription.lasercannon_bp3>
+  <!--Guns.xml-->
+  <entityname.lmground_bw>Lmg Round</entityname.lmground_bw>
+  <entityname.lmground_bw2>Lmg Round2</entityname.lmground_bw2>
+  <entityname.lmgmagazine_bw>雙連7.62mm彈匣(Linked 7.62mm Magzine)</entityname.lmgmagazine_bw>
+  <entitydescription.lmgmagazine_bw>快樂扳機指！！！</entitydescription.lmgmagazine_bw>
+  <entityname.lmgmagazine_bw2>雙連7.62mm再生彈匣(Linked Autofilled 7.62mm Magzine)</entityname.lmgmagazine_bw2>
+  <entitydescription.lmgmagazine_bw2>活體金屬能自動再生彈藥，但威力減半。</entitydescription.lmgmagazine_bw2>
+  <entityname.lmg_bw>戰術輕機槍(Tactical LMG)</entityname.lmg_bw>
+  <entitydescription.lmg_bw>可信賴的好夥伴，能對輕型目標造成有效傷害。使用雙連7.62mm彈匣。</entitydescription.lmg_bw>
+  <!--PRG.xml-->
+  <entityname.battlecannon_bw>伐木砲(Axe Rocket Cannon)</entityname.battlecannon_bw>
+  <entitydescription.battlecannon_bw>能發射爆破彈的重型砲。使用火箭彈。</entitydescription.battlecannon_bw>
+  <entityname.cannonshell_bw>火箭彈(Rocket Shell)</entityname.cannonshell_bw>
+  <entitydescription.cannonshell_bw>如颶風般的火力，能持續造成優秀的燒傷與爆炸傷害。</entitydescription.cannonshell_bw>
+  <entityname.prg_bw>試驗可攜式軌道砲(Experimental Portable Rail Gun)</entityname.prg_bw>
+  <entitydescription.prg_bw>重型肩射主砲，難以駕馭但有著強大火力。使用PRG風暴彈頭。</entitydescription.prg_bw>
+  <entityname.prg_ammo>PRG風暴彈頭(Experimental PRG Storm Shell)</entityname.prg_ammo>
+  <entitydescription.prg_ammo>強大的穿甲彈頭。</entitydescription.prg_ammo>
+  <!--SG.xml-->
+  <entityname.shotgunshellbw>雙重霰彈(Double Shotgunshell)</entityname.shotgunshellbw>
+  <entityname.shotgununiquebw>毀滅戰士(DOOM)</entityname.shotgununiquebw>
+  <entitydescription.shotgununiquebw>雙管獵槍。經典。使用雙重霰彈。</entitydescription.shotgununiquebw>
+  <entityname.grenadelauncher_bw>多用途彈鼓槍(Drum Hybrid Barrel)</entityname.grenadelauncher_bw>
+  <entitydescription.grenadelauncher_bw>能發射不同用途的自動槍。使用彈鼓霰彈或25mm榴彈。</entitydescription.grenadelauncher_bw>
+  <entityname.bw_shotgun_drum>彈鼓霰彈(Drum Shotgun Shell)</entityname.bw_shotgun_drum>
+  <entitydescription.bw_shotgun_drum>獵鹿彈。</entitydescription.bw_shotgun_drum>
+  <entityname.bw_shotgun_shell>彈鼓霰彈(Drum Shotgun Shell)</entityname.bw_shotgun_shell>
+  <entitydescription.bw_shotgun_shell>獵鹿彈。</entitydescription.bw_shotgun_shell>
+  <entityname.bw_grenade_drum>25mm榴彈(Drum 25mm Grenade)</entityname.bw_grenade_drum>
+  <entitydescription.bw_grenade_drum>榴彈！！！全自動！！！</entitydescription.bw_grenade_drum>
+  <entityname.bw_grenade>25mm榴彈(Drum 25mm Grenade)</entityname.bw_grenade>
+  <entitydescription.bw_grenade>榴彈！！！全自動！！！</entitydescription.bw_grenade>
+  <!--Mods\BWeapons\SMG\Guns.xml-->
+  <entityname.smground_bw>Smg Round</entityname.smground_bw>
+  <entityname.smgmagazine_bw>7.62彈匣(7.62mm Magzine)</entityname.smgmagazine_bw>
+  <entitydescription.smgmagazine_bw>''小''朋友。</entitydescription.smgmagazine_bw>
+  <entityname.smg_bw>近身戰衝鋒槍(CQB SMG)</entityname.smg_bw>
+  <entitydescription.smg_bw>可以雙持的快速火力。使用7.62mm彈匣。</entitydescription.smg_bw>
+  <entityname.smgmagazine_bw2>7.62mm再生彈匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
+  <entitydescription.>活體金屬能自動再生彈藥，但威力減半。</entitydescription.>
+  <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
+  <!--tactical Scanner.xml-->
+  <entityname.divingsuitlockerbw>機坪(Apron)</entityname.divingsuitlockerbw>
+  <entityname.shellbagbw>無畏輔助系統(Dreadnought Support System)</entityname.shellbagbw>
+  <entitydescription.shellbagbw>為了艦內作戰而設計的步兵支援系統，不能承受高水壓。使用X01氧氣電池的話能在水中提供氧氣。</entitydescription.shellbagbw>
+  <entityname.shellshieldbw>無畏步兵動力裝甲(Dreadnought PCIA)</entityname.shellshieldbw>
+  <entitydescription.shellshieldbw>為了保護艦內高階軍官而設計的動力裝甲，可以承受強大水壓。使用X01氧氣電池的話能在水中提供氧氣。</entitydescription.shellshieldbw>
+  <entityname.ballistichelmetbw>裝甲頭盔(Armored helmet)</entityname.ballistichelmetbw>
+  <entitydescription.ballistichelmetbw>步兵的象徵。不能拆解。</entitydescription.ballistichelmetbw>
+  <entityname.captainscapbw>軍帽(Military cap)</entityname.captainscapbw>
+  <entitydescription.captainscapbw>指揮的象徵。不能拆解。</entitydescription.captainscapbw>
+  <entityname.weldingtoolbw>智慧電弧(Smart Arc)</entityname.weldingtoolbw>
+  <entitydescription.weldingtoolbw>搭載智慧系統可以避免誤傷生物。使用電池或X01氧氣電池。</entitydescription.weldingtoolbw>
+  <entityname.captainsuniformbw>前線裝甲(Battle Armor)</entityname.captainsuniformbw>
+  <entitydescription.captainsuniformbw>忠誠的象徵。不能拆解。</entitydescription.captainsuniformbw>
+  <entityname.tatical_scanner>戰術掃描儀(Tactical Scanner)</entityname.tatical_scanner>
+  <entitydescription.tatical_scanner>不僅能掃描生物健康狀態，還能在危急時救你一命。</entitydescription.tatical_scanner>
+  <entityname.revolver_bw>死亡搖滾(Dead Rock)</entityname.revolver_bw>
+  <entitydescription.revolver_bw>老式武器，使用14.5mm彈頭。</entitydescription.revolver_bw>
+  <entityname.revolverammobw>14.5mm彈頭彈夾(14.5mm Round Clip)</entityname.revolverammobw>
+  <entityname.revolverammobw2>14.5mm震盪彈頭彈夾(14.5mm Concussion Round Clip)</entityname.revolverammobw2>
+  <entityname.revolverammobw3>14.5mm照明彈頭彈夾(14.5mm Flare Round Clip)</entityname.revolverammobw3>
+  <entityname.coilgunammo_bw>再生金屬電磁槍彈藥箱(紅) Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>再生金屬電磁槍彈藥箱(黃) Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
+  <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
+  <entityname.bandolierbw>戰術背帶(Tactical Bandolier)</entityname.bandolierbw>
+  <entitydescription.bandolierbw>勇氣的象徵，提升遠距武器射擊速度。不能拆解。</entitydescription.bandolierbw>
+  <entityname.bandolierbw2>戰術支援系統(Tactical Support System)</entityname.bandolierbw2>
+  <entitydescription.bandolierbw2>勇氣的象徵，提升遠距與近距武器攻擊速度。不能拆解。</entitydescription.bandolierbw2>
+  <entityname.bandolierbw3>堅盾支援系統(Shield Support System)</entityname.bandolierbw3>
+  <entitydescription.bandolierbw3>勇氣的象徵，增加防禦力與遠距武器射擊速度。不能拆解。</entitydescription.bandolierbw3>
+  <entityname.bandolierbw4>突擊支援系統(Assault Support System)</entityname.bandolierbw4>
+  <entitydescription.bandolierbw4>勇氣的象徵，加強遠距與近距武器攻擊速度與防禦力。不能拆解。</entitydescription.bandolierbw4>
+  <entityname.handcannonbw>平定者(Peace Keeper)</entityname.handcannonbw>
+  <entitydescription.handcannonbw>大口徑手砲，威嚇力十足。</entitydescription.handcannonbw>
+  <!--Affliction-->
+  <Afflictionname.architect>建築師</Afflictionname.architect>
+  <Afflictiondescription.architect>維修加快25%。</Afflictiondescription.architect>
+  <Afflictionname.architect2>堡壘建築師</Afflictionname.architect2>
+  <Afflictiondescription.architect2>維修加快25%，生命值提高50%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.architect2>
+  <Afflictionname.Swift>迅捷</Afflictionname.Swift>
+  <Afflictiondescription.Swift>攻擊速度提高20%。</Afflictiondescription.Swift>
+  <Afflictionname.Alienpw>堅韌</Afflictionname.Alienpw>
+  <Afflictiondescription.Alienpw>生命值提高50%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.Alienpw>
+  <Afflictionname.X01>先進裝甲</Afflictionname.X01>
+  <Afflictiondescription.X01>傷害提高10%，生命值提高25%。</Afflictiondescription.X01>
+  <Afflictionname.X01D>活性裝甲</Afflictionname.X01D>
+  <Afflictiondescription.X01D>傷害提高10%，生命值提高25%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.X01D>
+  <Afflictionname.Hammer>修復</Afflictionname.Hammer>
+  <Afflictiondescription.Hammer>生命值提高25%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.Hammer>
+  <Afflictionname.PCIA>生物保健系統</Afflictionname.PCIA>
+  <Afflictiondescription.PCIA>受到傷害後非常緩慢地自我修復。</Afflictiondescription.PCIA>
+  <Afflictionname.DEFbw>額外裝甲</Afflictionname.DEFbw>
+  <Afflictiondescription.DEFbw>生命值提高50%，物理傷害減免30%。</Afflictiondescription.DEFbw>
+  <Afflictionname.DEFbw2>附加裝甲</Afflictionname.DEFbw2>
+  <Afflictiondescription.DEFbw2>生命值提高25%，物理傷害減免15%。</Afflictiondescription.DEFbw2>
+  <Afflictionname.Swift2>突擊裝甲</Afflictionname.Swift2>
+  <Afflictiondescription.Swift2>傷害提高10%，攻擊速度提高20%，生命值提升25%。</Afflictiondescription.Swift2>
+  <Afflictionname.steelruler>鋼鐵統馭</Afflictionname.steelruler>
+  <Afflictionname.quickdrawingbw>全力一擊</Afflictionname.quickdrawingbw>
+  <Afflictionname.stonewallbw>堅守陣線</Afflictionname.stonewallbw>
+  <Afflictionname.sup1>支援系統</Afflictionname.sup1>
+  <Afflictiondescription.sup1>遠程攻擊速度提高20%。</Afflictiondescription.sup1>
+  <Afflictionname.sup2>支援系統</Afflictionname.sup2>
+  <Afflictiondescription.sup2>攻擊速度提高20%。</Afflictiondescription.sup2>
+  <Afflictionname.sup3>突擊支援系統</Afflictionname.sup3>
+  <Afflictiondescription.sup3>攻擊速度提高20%，生命值提高25%，物理傷害減免15%。</Afflictiondescription.sup3>
+  <entityname.railgunshellbw2>空包彈(Empty Shell)</entityname.railgunshellbw2>
+</infotexts>
