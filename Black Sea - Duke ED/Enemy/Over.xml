@@ -9,7 +9,7 @@
           <SpawnItem identifiers="alienprojectile" spawnposition="ThisInventory" />
         </StatusEffect>
       </Holdable>
-      <RangedWeapon reload="5" barrelpos="34,6" spread="10" unskilledspread="15">
+      <RangedWeapon reload="10" barrelpos="34,6" spread="10" unskilledspread="15">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <sound file="Content/Items/Alien/AlienTurret1.ogg" type="OnUse" range="250.0" loop="false" />

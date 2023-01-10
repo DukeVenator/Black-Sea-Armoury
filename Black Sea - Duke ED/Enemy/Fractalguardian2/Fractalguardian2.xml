@@ -3,7 +3,7 @@
   <Character speciesname="Fractalguardian2" humanoid="False" caninteract="True" blooddecal="blood" speciestranslationoverride="" displayname="" group="ancientalien" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="False" usebosshealthbar="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="True" sonardisruption="0" distantsonarrange="0" disabledistance="25000" soundinterval="10" caneat="False">
     <ragdolls folder="default" />
     <animations folder="default" />
-    <health vitality="1250" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="100" burnreduction="1" constanthealthregeneration="2" healthregenerationwheneating="0" stunimmunity="true">
+    <health vitality="600" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="100" burnreduction="1" constanthealthregeneration="2" healthregenerationwheneating="0" stunimmunity="true">
       <Limb name="Torso">
         <VitalityMultiplier type="bleeding" multiplier="0" />
         <VitalityMultiplier type="burn" multiplier="0.60" />
@@ -14,11 +14,11 @@
       </Limb>
       <Limb name="Head">
         <VitalityMultiplier type="bleeding" multiplier="0" />
-        <VitalityMultiplier type="burn" multiplier="0.50" />
-        <VitalityMultiplier type="gunshotwound" multiplier="0.50" />
-        <VitalityMultiplier type="lacerations" multiplier="0.50" />
-        <VitalityMultiplier type="bitewounds" multiplier="0.50" />
-        <VitalityMultiplier type="explosiondamage" multiplier="0.50" />
+        <VitalityMultiplier type="burn" multiplier="0.10" />
+        <VitalityMultiplier type="gunshotwound" multiplier="0.10" />
+        <VitalityMultiplier type="lacerations" multiplier="0.10" />
+        <VitalityMultiplier type="bitewounds" multiplier="0.10" />
+        <VitalityMultiplier type="explosiondamage" multiplier="0.10" />
       </Limb>
       <Limb name="RightArm">
         <VitalityMultiplier type="bleeding" multiplier="0" />
@@ -39,11 +39,11 @@
       <Limb>
         <!-- Tail -->
         <VitalityMultiplier type="bleeding" multiplier="0" />
-        <VitalityMultiplier type="burn" multiplier="0.50" />
-        <VitalityMultiplier type="gunshotwound" multiplier="0.50" />
-        <VitalityMultiplier type="lacerations" multiplier="0.50" />
-        <VitalityMultiplier type="bitewounds" multiplier="0.50" />
-        <VitalityMultiplier type="explosiondamage" multiplier="0.50" />
+        <VitalityMultiplier type="burn" multiplier="0.40" />
+        <VitalityMultiplier type="gunshotwound" multiplier="0.40" />
+        <VitalityMultiplier type="lacerations" multiplier="0.40" />
+        <VitalityMultiplier type="bitewounds" multiplier="0.40" />
+        <VitalityMultiplier type="explosiondamage" multiplier="0.40" />
       </Limb>
     </health>
     <sound file="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle1.ogg" state="Idle" range="3000" volume="1" gender="None" />
