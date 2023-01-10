@@ -99,7 +99,7 @@
         <AbilityConditionAttackData tags="pistolammoitem" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.4" addedpenetration="0.05" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.03" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
@@ -357,7 +357,7 @@
         <AbilityConditionAttackData tags="shotgun" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25" addedpenetration="0.1" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" addedpenetration="0.1" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="shotgunshell" />
