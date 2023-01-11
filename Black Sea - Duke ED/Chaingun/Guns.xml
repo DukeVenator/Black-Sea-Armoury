@@ -203,13 +203,15 @@
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="1">
-      <Item identifier="steel" />
+      <Item identifier="steel" />]
       <Item identifier="lead" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="plastic" />
