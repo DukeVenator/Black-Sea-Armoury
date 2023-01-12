@@ -231,7 +231,7 @@
     <Sprite texture="%ModDir%/AXE/AXE.png" sourcerect="0,0,300,100" depth="0.55" origin="0.8,0.35" />
     <Body width="225" height="32" density="45" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="80" combatPriority="45" msg="ItemMsgPickUpSelect">
-      <Attack targetimpulse="6" severlimbsprobability="0.5" structuredamage="15" itemdamage="15" penetration="0.5">
+      <Attack targetimpulse="6" severlimbsprobability="0.1" structuredamage="15" itemdamage="15" penetration="0.5">
         <Affliction identifier="blunttrauma" strength="20" />
         <Affliction identifier="lacerations" strength="30" />
         <Affliction identifier="bleeding" strength="10" />
