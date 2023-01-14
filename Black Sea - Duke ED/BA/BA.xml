@@ -214,13 +214,13 @@
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="False">
         <StatValue stattype="FlowResistance" value="1.0" />
         <StatValue stattype="SwimmingSpeed" value="0.5" />
         <StatValue stattype="WalkingSpeed" value="0" />
         <Affliction identifier="Hammer" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.2" setvalue="true">
         <Conditional InWater="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -254,6 +254,18 @@
         <RequiredItem identifier="oxygenitetank" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.0" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="batterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.15" comparison="Or" targetslot="0">
+        <Conditional IsDead="false" />
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
