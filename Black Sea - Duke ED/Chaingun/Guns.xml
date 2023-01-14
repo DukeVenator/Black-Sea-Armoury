@@ -34,6 +34,24 @@
       <StatusEffect type="OnUse">
         <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 25" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
       <StatusEffect type="OnUse" target="This" Condition="-250" />
       <StatusEffect type="Always" target="This" Condition="6">
         <Conditional condition="gt 0" />
@@ -185,13 +203,15 @@
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="1">
-      <Item identifier="steel" />
+      <Item identifier="steel" />]
       <Item identifier="lead" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="plastic" />
