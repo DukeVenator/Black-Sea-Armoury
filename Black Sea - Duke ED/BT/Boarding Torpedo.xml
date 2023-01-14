@@ -218,6 +218,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Broken at this time. Found issue with conidition statements-->
   <Item name="" identifier="railbw" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" minamount="3" maxamount="6" />
     <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="3" spawnprobability="0.33" />
