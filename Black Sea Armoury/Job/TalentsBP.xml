@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Alien conquer -->
 <Talents>
   <Talent identifier="advancedsplicingbw">
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,6" sheetelementsize="128,128" />
@@ -45,27 +46,29 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="advancedgenesplicer" />
   </Talent>
+  <!-- Physical Athletes stats are edited -->
   <Talent identifier="collegeathleticsbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,1" sheetelementsize="128,128" />
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="35" color="gui.green" />
+      <Replace tag="[amount]" value="15" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.swimmingspeed" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.walkingspeed" color="gui.orange" />
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.35" />
-        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.2" />
-        <CharacterAbilityGiveStat stattype="WalkingSpeed" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.15" />
+        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.1" />
+        <CharacterAbilityGiveStat stattype="WalkingSpeed" value="0.1" />
       </Abilities>
     </AbilityGroupEffect>
+  <!-- Executioner  edited stats but not sure of addeddamagemultiplier="0.1" if it's truly 10% dmg  -->
   </Talent>
   <Talent identifier="bountyhunterbw">
     <Description tag="talentdescription.unlockrecipe">
@@ -75,8 +78,8 @@
       <Replace tag="[qualitybonus]" value="1" color="gui.green" />
     </Description>
     <Description tag="talentdescription.bountyhunterbw">
-      <Replace tag="[armorpenetration]" value="5" color="gui.green" />
-      <Replace tag="[probability]" value="40" color="gui.green" />
+      <Replace tag="[armorpenetration]" value="0.05" color="gui.green" />
+      <Replace tag="[probability]" value="10" color="gui.green" />
     </Description>
     <Description tag="talentdescription.bountyhunter">
       <Replace tag="[percentage]" value="5" color="gui.green" />
@@ -99,7 +102,7 @@
         <AbilityConditionAttackData tags="pistolammoitem" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.03" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.05" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
@@ -131,6 +134,7 @@
     <AddedRecipe itemidentifier="handcannon" />
     <AddedRecipe itemidentifier="handcannonround" />
   </Talent>
+  <!-- strengthen bones not sure how to change if under 50 you heal need it to be under 20% hp and every 30 seconds should be 60 sec -->
   <Talent identifier="justascratchbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,3" sheetelementsize="128,128" />
     <Description tag="talentdescription.lowhealth.regenerate">
@@ -183,30 +187,32 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+<!-- Old Sailor edited stats -->
   <Talent identifier="sailorwithnonamebw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.cigar" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="5" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalresistanceself">
-      <Replace tag="[amount]" value="50" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
       <Replace tag="[affliction]" value="afflictionname.chemaddiction" color="gui.orange" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,1" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2" />
-        <CharacterAbilityGiveResistance resistanceid="chemaddiction" multiplier="0.5" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.05" />
+        <CharacterAbilityGiveResistance resistanceid="chemaddiction" multiplier="0.2" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="cigar" />
   </Talent>
+<!-- spare arms edited stats -->
   <Talent identifier="tumblebw">
     <Description tag="talentdescription.tumblebw">
-      <Replace tag="[damage]" value="40" color="gui.green" />
+      <Replace tag="[damage]" value="10" color="gui.green" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,0" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -214,10 +220,11 @@
         <AbilityConditionAttackData tags="pistolammoitem" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.4" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <!-- Battlefield first aid  edited stats-->
   <Talent identifier="firstaidtrainingbw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.combatstimulantsyringe" color="gui.orange" />
@@ -227,7 +234,7 @@
       <Replace tag="[skillname]" value="skillname.medical" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.medicaleffectiveness">
-      <Replace tag="[amount]" value="35" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,2" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="None">
@@ -238,19 +245,20 @@
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="15" />
-        <CharacterAbilityGiveStat stattype="MedicalItemEffectivenessMultiplier" value="0.35" />
+        <CharacterAbilityGiveStat stattype="MedicalItemEffectivenessMultiplier" value="0.10" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="combatstimulantsyringe" />
   </Talent>
+  <!-- Physique  edited stats-->
   <Talent identifier="physicalconditioningbw">
     <Description tag="talentdescription.firemanscarry" />
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.meleeattackspeed" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.meleeattackmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
@@ -258,32 +266,33 @@
       <Replace tag="[stattype]" value="stattypenames.movementspeed" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalresistanceself">
-      <Replace tag="[amount]" value="50" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
       <Replace tag="[affliction]" value="afflictionname.oxygenlow" color="gui.orange" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,2" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging" />
-        <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.1" />
         <CharacterAbilityGiveStat stattype="MovementSpeed" value="0.1" />
-        <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.2" />
-        <CharacterAbilityGiveResistance resistanceid="oxygenlow" multiplier="0.5" />
+        <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.1" />
+        <CharacterAbilityGiveResistance resistanceid="oxygenlow" multiplier="0.2" />
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <!-- Veteran  edited stats-->
   <Talent identifier="trustbuildingbw">
     <Description tag="talentdescription.trustbuildingbw">
-      <Replace tag="[smallgain]" value="2.5" color="gui.green" />
-      <Replace tag="[largegain]" value="2.5" color="gui.green" />
-      <Replace tag="[maxgain]" value="75" color="gui.green" />
+      <Replace tag="[smallgain]" value="1.5" color="gui.green" />
+      <Replace tag="[largegain]" value="1.5" color="gui.green" />
+      <Replace tag="[maxgain]" value="25" color="gui.green" />
     </Description>
     <Description tag="talentdescription.bonuslostondeath" />
     <Description tag="talentdescription.assistantsdontcount" />
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,1" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
       <Abilities>
-        <CharacterAbilityGivePermanentStat statidentifier="trustbuildingbw" stattype="MaximumHealthMultiplier" value="0.025" maxvalue="0.75" targetallies="false" />
+        <CharacterAbilityGivePermanentStat statidentifier="trustbuildingbw" stattype="MaximumHealthMultiplier" value="0.015" maxvalue="0.25" targetallies="false" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
@@ -291,10 +300,11 @@
         <AbilityConditionNoCrewDied />
       </Conditions>
       <Abilities>
-        <CharacterAbilityGivePermanentStat statidentifier="trustbuildingbw" stattype="MaximumHealthMultiplier" value="0.025" maxvalue="0.75" targetallies="false" />
+        <CharacterAbilityGivePermanentStat statidentifier="trustbuildingbw" stattype="MaximumHealthMultiplier" value="0.015" maxvalue="0.25" targetallies="false" />
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+ <!-- SwordWarriorBw edited stats Check the stun value if did it correct should be 15 -->
   <Talent identifier="swordwarriorbw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.bwgs,entityname.tachi" color="gui.orange" />
@@ -308,11 +318,11 @@
       <Replace tag="[itemname]" value="entityname.relic_bw" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.meleeattackmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalresistanceself">
-      <Replace tag="[amount]" value="35" color="gui.green" />
+      <Replace tag="[amount]" value="15" color="gui.green" />
       <Replace tag="[affliction]" value="afflictionname.stun" color="gui.orange" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,2" sheetelementsize="128,128" />
@@ -326,30 +336,31 @@
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.2" />
-        <CharacterAbilityGiveResistance resistanceid="stun" multiplier="0.65" />
+        <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.1" />
+        <CharacterAbilityGiveResistance resistanceid="stun" multiplier="0.85" />
         <CharacterAbilityGivePermanentStat statidentifier="swordwarrior" stattype="IncreaseFabricationQuality" value="1" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="bwgs" />
     <AddedRecipe itemidentifier="tachi" />
   </Talent>
+ <!-- Reload Hunter -->
   <Talent identifier="enforcerbw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.shotgunshell" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.enforcerbw">
-      <Replace tag="[damage]" value="25" color="gui.green" />
-      <Replace tag="[armorpenetration]" value="10" color="gui.green" />
+      <Replace tag="[damage]" value="10" color="gui.green" />
+      <Replace tag="[armorpenetration]" value="5" color="gui.green" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,2" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -357,21 +368,22 @@
         <AbilityConditionAttackData tags="shotgun" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" addedpenetration="0.1" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.10" addedpenetration="0.05" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="shotgunshell" />
   </Talent>
+ <!-- Steelruler Can't find the steelruler buff check description what it should be it gives 25 attack power, max hp and reduced dmg taken should 10,10 and 5 to reduced dmg -->
   <Talent identifier="steelruler">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,2" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.corsairar_bp" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.steelruler">
-      <Replace tag="[value]" value="25" color="gui.green" />
-      <Replace tag="[amount]" value="25" color="gui.green" />
+      <Replace tag="[value]" value="10" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
-      <Replace tag="[physicalresistance]" value="25" color="gui.green" />
+      <Replace tag="[physicalresistance]" value="5" color="gui.green" />
     </Description>
     <AbilityGroupInterval>
       <Conditions>
@@ -397,6 +409,7 @@
     </AbilityGroupInterval>
     <AddedRecipe itemidentifier="corsairar_bp" />
   </Talent>
+ <!-- Mercenary -->
   <Talent identifier="bythebookbw">
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="1,3" sheetelementsize="128,128" />
     <Description tag="talentdescription.bythebook">
@@ -436,6 +449,7 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+ <!-- Modified machinery you may need to adjust this perk -->
   <Talent identifier="custommachinebw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,2" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">
@@ -465,6 +479,7 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="HMG1_bp6" />
   </Talent>
+  <!-- Modified Circuit may need adjustment -->
   <Talent identifier="optimizedpowerflowbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="4,0" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">
@@ -495,6 +510,7 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="lasercannon_bp3" />
   </Talent>
+ <!-- Combat Mastery This talent needs SOME NERF -->
   <Talent identifier="olympianbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
     <Description tag="talentdescription.olympian">
@@ -511,27 +527,29 @@
       </Abilities>
     </AbilityGroupInterval>
   </Talent>
+  <!-- Ace  Edited stats-->
   <Talent identifier="warlordbw">
     <Description tag="talentdescription.chanceofextraweapondamagebw2">
       <Replace tag="[armorpenetration]" value="5" color="gui.green" />
-      <Replace tag="[probability]" value="20" color="gui.green" />
+      <Replace tag="[probability]" value="10" color="gui.green" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,4" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" addedpenetration="0.05" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.05" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1" />
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <!-- Last Stand may need adjustment -->
   <Talent identifier="laststand">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,2" sheetelementsize="128,128" />
     <Description tag="talentdescription.laststand">
@@ -564,12 +582,13 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <!-- Iron Will edited stats -->
   <Talent identifier="implacablebw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.autoshotgun" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.cannotfallunconsciousforseconds">
@@ -593,17 +612,18 @@
     </AbilityGroupInterval>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="autoshotgun" />
   </Talent>
+ <!-- I see dead eye -->
   <Talent identifier="deadeyebw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.esg_bw2" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.deadeyebw">
-      <Replace tag="[powerincrease]" value="50" color="gui.green" />
+      <Replace tag="[powerincrease]" value="10" color="gui.green" />
     </Description>
     <Description tag="talentdescription.gainitem">
       <Replace tag="[amount]" value="1" color="gui.green" />
@@ -615,7 +635,7 @@
         <AbilityConditionAttackData tags="deadeyebw" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupInterval>
@@ -632,16 +652,18 @@
     <AddedRecipe itemidentifier="esg_bw2" />
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
       <Abilities>
-        <CharacterAbilityPutItem itemidentifier="SG_ammo" amount="1" />
+        <CharacterAbilityPutItem itemidentifier="SG_ammo_bw" amount="1"/>
       </Abilities>
     </AbilityGroupEffect>
+    </AbilityGroupEffect>
   </Talent>
+  <!-- Shield barrier may have broken the identifier tag line 660 Also need adjustment  -->
   <Talent identifier="stonewallbw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.bandolierbw3" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.additionalstattypeself">
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="10" color="gui.green" />
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.stonewallbw">
@@ -664,11 +686,12 @@
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2" />
+        <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="bandolierbw3" />
   </Talent>
+ <!-- High permission -->
   <Talent identifier="munitionsexpertisebw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.smgmagazinedepletedfuel,entityname.revolverrounddepletedfuel,entityname.dirtybomb,entityname.shotgunslugexplosive,entityname.nucleargun,entityname.depletedfuel,entityname.coilgunammoboxdepletedfuel,entityname.wrenchhardened,entityname.screwdriverhardened,entityname.crowbarhardened,entityname.divingknifehardened" color="gui.orange" />
@@ -697,6 +720,7 @@
     <AddedRecipe itemidentifier="smgmagazinedepletedfuel" />
     <AddedRecipe itemidentifier="revolverrounddepletedfuel" />
   </Talent>
+  <!-- Artisan -->
   <Talent identifier="gunsmithbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128" />
     <Description tag="talentdescription.crafthighqualityweapons">
@@ -735,22 +759,23 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+ <!-- Heart of storm Edited stats-->
   <Talent identifier="duelistbw">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.bandolierbw2" color="gui.orange" />
     </Description>
     <Description tag="talentdescription.chanceofextraweapondamagebw">
-      <Replace tag="[probability]" value="35" color="gui.green" />
-      <Replace tag="[amount]" value="10" color="gui.green" />
+      <Replace tag="[probability]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="5" color="gui.green" />
     </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Conditions>
-        <AbilityConditionServerRandom randomchance="0.35" />
+        <AbilityConditionServerRandom randomchance="0.5" />
         <AbilityConditionAttackData tags="smgammotype" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="1.0" addedpenetration="0.1" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="1.0" addedpenetration="0.05" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="bandolierbw2" />

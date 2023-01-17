@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Mechno's Maddened Black Sea Armory - DUKE" modversion="1.1.2" corepackage="False" steamworkshopid="2909219915" gameversion="0.20.16.1">
+<contentpackage name="Mechno's and Duke's Maddened Black Sea Armory" modversion="1.1.1" corepackage="False" steamworkshopid="2891792017" gameversion="0.20.16.1">
   <Jobs file="%ModDir%/Job/Content/Jobs.xml" />
   <TalentTrees file="%ModDir%/Job/Content/TalentTrees.xml" />
   <Talents file="%ModDir%/Job/TalentsBP.xml" />
