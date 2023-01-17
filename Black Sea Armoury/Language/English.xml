@@ -51,7 +51,7 @@
   <entityname.PFbw>Power Combat System</entityname.PFbw>
   <entitydescription.PFbw>With powerful melee system support,even fist can break stone.</entitydescription.PFbw>
   <entityname.stunbatonbw>Heat Saber</entityname.stunbatonbw>
-  <entitydescription.stunbatonbw>Powerful stun weapon,can load battry or X01 oxygen cell to cause additional heat damage,but can't penetrate heavy armor.</entitydescription.stunbatonbw>
+  <entitydescription.stunbatonbw>Powerful stun weapon,can load battry or X01 oxygen cell to cause additional heat damage,but can't penetrate heavy armor. However does nothing with no power source :) </entitydescription.stunbatonbw>
   <entityname.hammer_bw>The Hammer</entityname.hammer_bw>
   <entitydescription.hammer_bw>Steel hammer,can load hammer detonator to cause additional explosion.</entitydescription.hammer_bw>
   <entityname.uex2>Hammer Detonator</entityname.uex2>
