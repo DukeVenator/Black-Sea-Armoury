@@ -14,6 +14,7 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="50">
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/AXE/PF.png" sourcerect="0,0,120,120" origin="0.5,0.5" />
@@ -64,7 +65,7 @@
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-30,15" holdangle="20" reload="1" range="100" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
       <Attack targetimpulse="5" itemdamage="0" penetration="0.3">
         <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
-        <Affliction identifier="stun" strength="10" />
+        <Affliction identifier="blunttrauma" strength="5" />
       </Attack>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
         <Affliction identifier="stun" strength="0.3" />
@@ -89,7 +90,7 @@
         <Conditional mass="lt 150" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
-        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="stun" strength="0.5" />
         <Affliction identifier="burn" strength="6" />
         <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
         <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />

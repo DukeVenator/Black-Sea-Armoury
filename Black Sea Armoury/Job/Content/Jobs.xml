@@ -26,10 +26,6 @@
       <Item identifier="bandolierbw" equip="true" />
       <Item identifier="captainscapbw" equip="true" />
       <Item identifier="shellbagbw" equip="true" />
-      <Item identifier="tatical_scanner" equip="true" showpreview="false">
-        <Item identifier="batterycell" showpreview="false" />
-        <Item identifier="antidama2" showpreview="false" />
-      </Item>
       <PreviewSprites dims="120,109">
         <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
         <sprite texture="Content/Items/Jobgear/Security/securityofficer_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
