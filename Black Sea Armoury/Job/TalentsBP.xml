@@ -655,7 +655,6 @@
         <CharacterAbilityPutItem itemidentifier="SG_ammo_bw" amount="1"/>
       </Abilities>
     </AbilityGroupEffect>
-    </AbilityGroupEffect>
   </Talent>
   <!-- Shield barrier may have broken the identifier tag line 660 Also need adjustment  -->
   <Talent identifier="stonewallbw">
