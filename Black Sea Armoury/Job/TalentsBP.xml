@@ -652,7 +652,7 @@
     <AddedRecipe itemidentifier="esg_bw2" />
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
       <Abilities>
-        <CharacterAbilityPutItem itemidentifier="SG_ammo_bw" amount="1"/>
+        <CharacterAbilityPutItem itemidentifier="SG_ammo" amount="1"/>
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
