@@ -1113,20 +1113,12 @@
       <RequiredItem identifier="abyssdivingsuit" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
-<<<<<<< HEAD
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,640,1040" depth="0.55" origin="0.5,0.52" scale="0.500" />
-=======
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
->>>>>>> parent of 653780c (Experimental code to adjust head size)
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/PIC2.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
-<<<<<<< HEAD
-      <sprite texture="%ModDir%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="true" inherittexturescale="true" ignorelimbscale="true" scale="0.5" sourcerect="0,0,440,480" origin="0.7,0.55">
-=======
       <sprite texture="%ModDir%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
->>>>>>> parent of 653780c (Experimental code to adjust head size)
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
             <Conditional IsDead="false" />
@@ -1135,11 +1127,11 @@
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/PI2/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
-      <sprite texture="%ModDir%/BA/PI2/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" scale="0.500" />
+      <sprite texture="%ModDir%/BA/PI2/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
       <!--0.4897959,0.6111111-->
-      <sprite texture="%ModDir%/BA/PI2/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" scale="0.500" />
+      <sprite texture="%ModDir%/BA/PI2/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
-      <sprite texture="%ModDir%/BA/PI2/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" scale="0.500" >
+      <sprite texture="%ModDir%/BA/PI2/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
             <Conditional IsDead="false" />
