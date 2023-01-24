@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Corsair -->
   <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -311,6 +312,7 @@
     </ItemContainer>
     <aitarget maxsightrange="4000" />
   </Item>
+  <!-- Hammer Container -->
   <Item name="" identifier="toolbox_bw" category="Equipment" tags="smallitem,mobilecontainer,tool" description="" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -480,7 +482,7 @@
     </ItemContainer>
     <aitarget maxsightrange="1500" />
   </Item>
-  <!-- Oxygen BW1 Cell-->
+  <!-- Oxygen BW1 Cell (X01 Oxygen Cell)-->
   <Item name="" identifier="oxygen_cell_bw" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="4">
     <Price baseprice="650" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -519,7 +521,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <!-- Laser-->
+  <!-- Laser "Bullet" -->
   <Item name="Laser" identifier="laser_bw" category="Misc" interactthroughwalls="true" tags="smallitem,round,energyammotype" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
     <InventoryIcon texture="Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -1334,8 +1336,8 @@
     </ItemContainer>
     <aitarget maxsightrange="4000" />
   </Item>
-  <!-- Corsair -->
-  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <!-- X00 Prototype Armor why is it named corsair lol -->
+  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="2500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />

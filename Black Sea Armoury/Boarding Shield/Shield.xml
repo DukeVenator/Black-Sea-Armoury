@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Thunder Cannon Support Device  -->
   <Item name="" identifier="rgcbw" aliases="experimentalscooterbw" category="Equipment" Tags="Equipment,mediumitem,mobilecontainer,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.1" sold="false" />
@@ -66,6 +67,7 @@
     </LightComponent>
     <AiTarget soundrange="2000" />
   </Item>
+  <!-- Boarding Shield -->
   <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith,mediumitem" description="" tags="weapon,smallitem,clothing" impactsoundtag="impact_metal_light">
     <Price baseprice="300" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -109,6 +111,7 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Rapid Harpoongun -->
   <Item name="" identifier="harpoongunbw" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="200" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -150,6 +153,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Tattered Spear (Harpoongun Ammo) -->
   <Item name="" identifier="spearbw" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="50" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -178,6 +182,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- MEGA Plasma -->
   <Item name="" identifier="plasmacutterbw" category="Equipment" Tags="smallitem,cuttingequipment,tool,weapon,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.8" impactsoundtag="impact_metal_light">
     <Price baseprice="200">
       <Price locationtype="outpost" multiplier="1" sold="false" />
@@ -238,6 +243,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Upgrade gameversion="0.14.0.0"></Upgrade>
   </Item>
+  <!-- Alien Charger -->
   <Item name="" identifier="bwpower" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True" hideinmenus="true">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="0" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer primary="ruinstoragelarge" minamount="0" maxamount="1" spawnprobability="0.02" />
@@ -278,6 +284,7 @@
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Alienprojectile override? idk -->
   <Override>
     <Item name="" identifier="alienprojectile" nameidentifier="alienturretammo" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,energyammotype" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5" nonplayerteaminteractable="True">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
@@ -301,7 +308,8 @@
       </Projectile>
     </Item>
   </Override>
-  <Item name="" identifier="ancientweaponbw" category="Alien" Tags="energytype,alien,mediumitem,weapon,gunsmith" scale="0.7" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <!-- Conqueror -->
+  <Item name="" identifier="ancientweaponbw" category="Alien" Tags="energytype,alien,mediumitem,weapon,gunsmith" scale="0.7" impactsoundtag="impact_metal_light" hideinmenus="false">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -322,6 +330,7 @@
       <RequiredItem identifier="relic_bw" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="1">
+	  <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="ancientweaponbw" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
@@ -370,6 +379,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.15" />
     </Quality>
   </Item>
+  <!-- Reverse Engineering Alien Power Cell -->
   <Item name="" identifier="bwapc" category="Alien" maxstacksize="1" Tags="alien,smallitem" scale="0.3" impactsoundtag="impact_metal_light">
     <Price baseprice="1000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1" sold="false" />
@@ -398,6 +408,7 @@
       </StatusEffect>
     </ItemContainer>
   </Item>
+  <!-- Conqueror Bullet / "Bullet" in Reverse Engineered Alien Power Cell -->
   <Item name="apbolt" identifier="bwap" category="Misc" scale="0.5" tags="smallitem,energyammotype" sonarsize="2" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
     <Body width="170" height="10" density="20" />
@@ -435,7 +446,8 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
   </Item>
-  <Item name="" identifier="relic_bw" category="Material" maxstacksize="32" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <!-- Relic Fragment -->
+  <Item name="" identifier="relic_bw" category="Material" maxstacksize="32" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="false">
     <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="0" maxamount="1" spawnprobability="0.075" />
     <PreferredContainer primary="ruinstoragelarge" minamount="0" maxamount="1" spawnprobability="0.15" />
     <Price baseprice="300" soldeverywhere="false">
@@ -454,6 +466,7 @@
       </StatusEffect>
     </Holdable>
   </Item>
+  <!-- Closed Circulatory System Cell -->
   <Item name="" identifier="cell_bw" aliases="cell_bw" category="Equipment,Misc" Tags="smallitem,oxygensource,loadable" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="1">
     <Price baseprice="1" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Experimental Laser Cannon -->
   <Item name="" identifier="lasercannon_bw" aliases="laser cannon" category="Equipment,weapon" Tags="energytype,mediumitem,gunsmith,weapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" soldeverywhere="false" minleveldifficulty="33">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -63,6 +64,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
+  <!-- Iron Fist -->
   <Item name="" identifier="explosivespearbw" category="Equipment" maxstacksize="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,gunsmith" description="" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <Upgrade gameversion="0.9.3.0" scale="0.5" />
     <Price baseprice="150" soldeverywhere="false">
@@ -115,6 +117,7 @@
       <Containable items="ifbw" />
     </ItemContainer>
   </Item>
+  <!-- Iron Fist "Bullet" -->
   <Item name="Fist" identifier="ifbw" category="Misc" interactthroughwalls="true" tags="smallitem,round,pistolammoitem" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/LC/IF2.png" sourcerect="0,0,64,64" depth="0.55" />
     <Sprite texture="%ModDir%/LC/IF3.png" sourcerect="0,0,52,32" origin="0.5,0.5" />
@@ -149,6 +152,7 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
   </Item>
+  <!-- Experimental Precise Gun -->
   <Item name="" identifier="esg_bw" aliases="sniper_gun" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="snipergun,smallitem,weapon,gun,gunsmith" Scale="0.7" impactsoundtag="impact_metal_heavy">
     <Price baseprice="2000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -202,6 +206,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Precise Bullet Clip (Precise Gun Magazine) -->
   <Item name="" identifier="SG_ammo" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammo,smallitem,SG_ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="60" />
@@ -224,6 +229,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Precise Gun Bullet -->
   <Item name="SG" identifier="SG_ammo_bw" category="Equipment" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,SG_ammo_bw,gunsmith,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/LC/sgun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/LC/sgun round.png" sourcerect="0,0,36,8" origin="0.5,0.5" />
@@ -255,6 +261,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Experimental Precise Gun Mk.II -->
   <Item name="" identifier="esg_bw2" aliases="sniper_gun" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="snipergun,smallitem,weapon,gun,gunsmith" Scale="0.7" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="2200" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -307,6 +314,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Disaster (Upgraded Experimental Laser Cannon) -->
   <Item name="" identifier="lasercannon_bp3" aliases="laser cannonboss" category="Equipment,weapon" Tags="energytype,mediumitem,gunsmith,weapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <Price baseprice="3500" soldeverywhere="false" minleveldifficulty="33">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />

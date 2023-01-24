@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- LMG Bullet (Bullet for Linked 7.62mm magazine) -->
   <Item name="Lmg Round" identifier="lmground_bw" category="Misc" interactthroughwalls="true" tags="hmgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -30,6 +31,7 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
   </Item>
+  <!-- Autofilled LMG Bullet (Bullet for Linked Autofilled 7.62mm magazine) -->
   <Item name="Lmg Round2" identifier="lmground_bw2" category="Misc" interactthroughwalls="true" tags="hmgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -60,6 +62,7 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
   </Item>
+  <!-- Linked 7.62mm magazine -->
   <Item name="" identifier="lmgmagazine_bw" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,lmgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.08" />
@@ -82,10 +85,9 @@
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="1">
       <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
-      <RequiredItem identifier="lead" mincondition="1" usecondition="true" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="steel" mincondition="0.5" usecondition="true" />
+      <RequiredItem identifier="lead" mincondition="0.5" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.5" usecondition="true" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/LMG/lmg mag.png" sourcerect="0,0,36,46" />
     <Sprite texture="%ModDir%/LMG/lmg mag.png" depth="0.54" sourcerect="0,0,35,45" origin="0.5,0.5" />
@@ -103,6 +105,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Linked Autofilled 7.62mm magazine -->
   <Item name="" identifier="lmgmagazine_bw2" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,lmgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="1">
     <Price baseprice="1600" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -149,6 +152,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Tactical LMG -->
   <Item name="" identifier="lmg_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,smallitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />

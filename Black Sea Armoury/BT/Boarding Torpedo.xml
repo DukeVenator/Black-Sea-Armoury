@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Boarding Torpedo -->
   <Item name="" identifier="boarding_torpedo_bw" category="Equipment" Tags="smallitem,provocative,scooter,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Price baseprice="300">
@@ -48,6 +49,7 @@
       <QualityStat stattype="ExplosionRadius" value="0.1" />
     </Quality>
   </Item>
+  <!-- Engineering Motor -->
   <Item name="" identifier="jetscooterbw" aliases="experimentalscooterbw" category="Equipment" Tags="gunsmith,smallitem,provocative,scooter,underwaterscooter,light" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
     <Price baseprice="800" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.1" sold="false" />
@@ -104,6 +106,7 @@
     </Propulsion>
     <AiTarget soundrange="2000" />
   </Item>
+  <!-- Armor Breaker -->
   <Item name="" identifier="divingknifebw" category="Equipment" Tags="meleeweapon,smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.8" impactsoundtag="impact_metal_light" RequireAimToUse="True" spritecolor="90,100,90">
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
@@ -148,6 +151,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Thunder Cannon -->
   <Item name="" identifier="rg_bw" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -171,7 +175,7 @@
       <RequiredItem identifier="flamerunique" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
-      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="batterycell" />
       <RequiredItem identifier="rg_bw" mincondition="0.0" maxcondition="1.0" usecondition="false" />
     </Fabricate>
@@ -218,7 +222,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <!-- Broken at this time. Found issue with conidition statements-->
+  <!-- Titanium Railgun Shell fixed but just a slightly stronger Railgun shell -->
   <Item name="" identifier="railbw" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" minamount="3" maxamount="6" />
     <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="3" spawnprobability="0.33" />
@@ -256,7 +260,7 @@
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
         <Explosion range="300.0" structuredamage="200" itemdamage="200" force="50.0" severlimbsprobability="1.5" decal="explosion">
           <Affliction identifier="explosiondamage" strength="500" />
           <Affliction identifier="stun" strength="5" />

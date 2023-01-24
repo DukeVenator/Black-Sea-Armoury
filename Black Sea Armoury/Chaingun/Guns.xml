@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="" identifier="HMG1_bp6" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <!-- Revolution (Sickle HMG upgrade) -->
+  <Item name="" identifier="HMG1_bp6" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="false">
     <Price baseprice="3000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -84,6 +85,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Sickle HMG -->
   <Item name="" identifier="HMG1_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light">
     <Price baseprice="1000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -153,6 +155,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- HMG Bullet -->
   <Item name="" identifier="HMG1_ammo_bw" aliases="HMG Ammo Box" scale="0.5" tags="ammobox,smallitem,HMG1_ammo_bw,gunsmith,hmgammotype" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="30" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="3" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -191,6 +194,7 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="1" />
     </Projectile>
   </Item>
+  <!-- 14.5 Ammo Box -->
   <Item name="" identifier="HMG1_mag_bw" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,smallitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="2">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -231,6 +235,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Experimental Chaingun -->
   <Item name="" identifier="minichaingun_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.2" impactsoundtag="impact_metal_light">
     <Price baseprice="3000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -295,6 +300,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Experimental Chaingun Ammo Box -->
   <Item name="" identifier="chaingun_ammo_bw" aliases="Chaingun Ammo Box" scale="0.5" tags="ammobox,smallitem,mobilecontainer,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy">
     <Price baseprice="800" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -337,6 +343,7 @@
       <Containable identifiers="chaingun_round_bw" />
     </ItemContainer>
   </Item>
+  <!-- Chaingun Bullet -->
   <Item name="Experimental Chaingun Round" identifier="chaingun_round_bw" category="Misc" interactthroughwalls="true" tags="smallitem,round,hmgammotype" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />

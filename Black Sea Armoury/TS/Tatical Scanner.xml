@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Peace Keeper -->
   <Item name="" identifier="handcannonbw" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,gunsmith,pistolitem" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
     <Price baseprice="2600" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -46,6 +47,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.3" />
     </Quality>
   </Item>
+  <!-- Override of handcannonrounds -->
   <Override>
     <Item name="" identifier="handcannonround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolitem" impactsoundtag="impact_metal_light">
       <Price baseprice="115" soldeverywhere="false">
@@ -89,6 +91,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
   </Override>
+  <!-- Mech Suit Locker -->
   <Item name="" identifier="divingsuitlockerbw" tags="container,divingsuitcontainer,divingsuitcontainerhorizontal,securecontainer" pickdistance="50" scale="0.6">
     <Sprite name="Large Diving Suit Locker Horizontal" texture="%ModDir%/TS/DivingSuitLocker.png" depth="0.84" sourcerect="0,0,260,340" origin="0.5,0.5" />
     <Powered powerconsumption="10" currpowerconsumption="10" isactive="true">
@@ -114,6 +117,7 @@
       <Containable items="mech" />
     </ItemContainer>
   </Item>
+  <!-- Dreadnought Support System -->
   <Item name="" identifier="shellbagbw" category="Equipment" tags="smallitem,clothing,gunsmith" impactsoundtag="impact_metal_light" description="" scale="0.5" allowasextracargo="true">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Price baseprice="1000" soldeverywhere="false" canbespecial="false">
@@ -173,6 +177,7 @@
     </Wearable>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
   </Item>
+  <!-- Assault Support System -->
   <Item name="" identifier="bandolierbw4" category="Equipment" tags="smallitem,clothing,gunsmith,tacsupbag" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Price baseprice="2000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -205,6 +210,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,bandolier,tacsupbag,weapon" />
     </ItemContainer>
   </Item>
+  <!-- Shield Support System -->
   <Item name="" identifier="bandolierbw3" category="Equipment" tags="smallitem,clothing,gunsmith,tacsupbag" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Price baseprice="1000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -236,6 +242,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,bandolier,tacsupbag,weapon" />
     </ItemContainer>
   </Item>
+  <!-- Tactical Support System -->
   <Item name="" identifier="bandolierbw2" category="Equipment" tags="smallitem,clothing,gunsmith,tacsupbag" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Price baseprice="1000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -267,6 +274,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,bandolier,tacsupbag,weapon" />
     </ItemContainer>
   </Item>
+  <!-- Dreadnought PCIA -->
   <Item name="" identifier="shellshieldbw" category="Equipment" tags="smallitem,clothing,gunsmith" impactsoundtag="impact_metal_light" description="" scale="0.5" allowasextracargo="true">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Price baseprice="2000" soldeverywhere="false" canbespecial="false">
@@ -338,6 +346,7 @@
     </Wearable>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
+  <!-- Armored Helmet -->
   <Item name="" identifier="ballistichelmetbw" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="500">
@@ -362,6 +371,7 @@
       <sprite name="Armored helmet Wearable" texture="%ModDir%/TS/BC3.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidewearablesoftype="hair" sourcerect="208,214,92,81" origin="0.6,0.6" />
     </Wearable>
   </Item>
+  <!-- Military Cap -->
   <Item name="" identifier="captainscapbw" aliases="captainscap" category="Equipment" tags="smallitem,clothing,gunsmith" cargocontaineridentifier="metalcrate" description="" scale="0.4">
     <Price baseprice="500">
       <Price locationtype="outpost" multiplier="1" sold="false" />
@@ -386,6 +396,7 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" />
     </Wearable>
   </Item>
+  <!-- Smart Arc -->
   <Item name="" identifier="weldingtoolbw" category="Equipment" Tags="smallitem,weldingequipment,gunsmith,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -450,6 +461,7 @@
       <ItemContainer itempos="8,-35" />
     </Upgrade>
   </Item>
+  <!-- Battle Armor -->
   <Item name="" identifier="captainsuniformbw" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,gunsmith" description="" scale="0.5" impactsoundtag="impact_soft">
     <Price baseprice="500">
       <Price locationtype="outpost" multiplier="1" sold="false" />
@@ -490,6 +502,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter" />
     </ItemContainer>
   </Item>
+  <!-- Tactical Bandolier -->
   <Item name="" identifier="bandolierbw" category="Equipment" tags="smallitem,clothing,gunsmith,tacsupbag" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -522,6 +535,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,bandolier,tacsupbag,weapon" />
     </ItemContainer>
   </Item>
+  <!-- Tactical Scanner -->
   <Item name="" identifier="tatical_scanner" scale="0.5" category="Equipment" tags="smallitem,gunsmith" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <Price baseprice="400" soldeverywhere="false">
@@ -567,6 +581,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
+  <!-- Dead Rock -->
   <Item name="" identifier="revolver_bw" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,pistolitem,gun,gunsmith" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="revolver" />
@@ -606,6 +621,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Round Clip -->
   <Item name="" identifier="revolverammobw" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,revolverammobw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="10">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
       <RequiredSkill identifier="weapons" level="30" />
@@ -629,6 +645,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Normal Bullet (Bullet for 14.5mm Round Clip) -->
   <Item name="round1" identifier="revolverroundbw" category="Equipment" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw,gunsmith,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -656,6 +673,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Concussion Round Clip -->
   <Item name="" identifier="revolverammobw2" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,revolverammobw2,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="10">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
       <RequiredSkill identifier="weapons" level="75" />
@@ -678,6 +696,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Concussion Bullet (Bullet for 14.5mm Concussion Round Clip) -->
   <Item name="round2" identifier="revolverroundbw2" category="Equipment" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw2,gunsmith,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,8" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -712,6 +731,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Flare Round Clip -->
   <Item name="" identifier="revolverammobw3" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,revolverammobw3,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="10">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
       <RequiredSkill identifier="weapons" level="30" />
@@ -733,6 +753,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- 14.5mm Flare Bullet (Bullet for 14.5mm Flare Round Clip) -->
   <Item name="round3" identifier="revolverroundbw3" category="Equipment" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw3,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Chaingun/chaingun round3.png" sourcerect="0,0,4,4" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/chaingun round3.png" sourcerect="0,0,4,4" origin="0.5,0.5" />
@@ -764,6 +785,7 @@
       </StatusEffect>
     </LightComponent>
   </Item>
+  <!-- Autofilled Coilgun Ammunition Box (Red) -->
   <Item name="" identifier="coilgunammo_bw" aliases="Autofilled Coilgun Ammunition" scale="0.5" tags="coilgunequipment,coilgunammo,extendedcoilgunammo,crate,gunsmith" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="800">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -787,6 +809,7 @@
       <RequiredItem identifier="aluminium" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="1">
+	  <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="coilgunammo_bw" mincondition="0.0" maxcondition="1.0" usecondition="false" />
     </Fabricate>
     <Sprite texture="%ModDir%/TS/ATMR.png" depth="0.54" sourcerect="0,0,116,172" origin="0.5,0.5" />
@@ -811,6 +834,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
   </Item>
+  <!-- Autofilled Coilgun Ammunition Box (Yellow) -->
   <Item name="" identifier="coilgunammo_bw2" aliases="Autofilled Coilgun Ammunition" scale="0.5" tags="coilgunequipment,coilgunammo,extendedcoilgunammo,crate,gunsmith" category="Equipment" linkable="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="800">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
@@ -834,6 +858,7 @@
       <RequiredItem identifier="aluminium" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="1">
+	  <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="coilgunammo_bw2" mincondition="0.0" maxcondition="1.0" usecondition="false" />
     </Fabricate>
     <Sprite texture="%ModDir%/TS/ATMY.png" depth="0.54" sourcerect="0,0,116,172" origin="0.5,0.5" />
@@ -858,6 +883,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
   </Item>
+  <!-- Autofilled Coilgun Bullet (Red) -->
   <Item name="coilgunboltbw" identifier="coilgunboltbw" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true">
     <Sprite texture="%ModDir%/TS/TurretsAndDepthCharges.png" sourcerect="143,310,369,66" depth="0.55" />
     <Body width="170" height="10" density="10" />
@@ -889,6 +915,7 @@
       <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-1" Condition="-1" />
     </Projectile>
   </Item>
+  <!-- Autofilled Coilgun Bullet (Yellow) -->
   <Item name="coilgunboltbw2" identifier="coilgunboltbw2" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true">
     <Sprite texture="%ModDir%/TS/TurretsAndDepthCharges.png" sourcerect="143,310,369,66" depth="0.55" />
     <Body width="170" height="10" density="10" />
