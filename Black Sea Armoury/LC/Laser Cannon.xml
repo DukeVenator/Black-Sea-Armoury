@@ -30,7 +30,7 @@
     <Sprite texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="165,22" spread="1" unskilledspread="32" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="12">
+    <RangedWeapon barrelpos="165,22" spread="1" unskilledspread="17" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
