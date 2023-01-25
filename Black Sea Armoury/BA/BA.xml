@@ -530,9 +530,9 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" />
       <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
-      <Attack structuredamage="120" targetforce="10" itemdamage="120" severlimbsprobability="0.5" penetration="0.5">
-        <Affliction identifier="burn" strength="150" />
-        <Affliction identifier="stun" strength="4" />
+      <Attack structuredamage="100" targetforce="10" itemdamage="100" severlimbsprobability="0.5" penetration="0.5">
+        <Affliction identifier="burn" strength="110" />
+        <Affliction identifier="stun" strength="3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
