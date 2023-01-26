@@ -18,12 +18,12 @@
     <Sprite texture="%ModDir%/SG/DS.png" sourcerect="0,0,24,24" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="10">
+    <Projectile characterusable="false" hitscan="true" hitscancount="12" removeonhit="true" spread="10">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-      <Attack structuredamage="0.5" targetforce="3.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
+      <Attack structuredamage="0.5" targetforce="5.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
         <Affliction identifier="bleeding" strength="3" />
         <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="lacerations" strength="3" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
