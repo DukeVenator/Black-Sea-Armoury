@@ -546,7 +546,7 @@
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100" Condition="-100" />
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="1" />
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+      <StatusEffect type="OnImpact" target="This" disabledeltatime="true">
         <Explosion range="200.0" structuredamage="50" itemdamage="40" force="10.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255">
           <Affliction identifier="explosiondamage" strength="40" />
           <Affliction identifier="burn" strength="40" />
