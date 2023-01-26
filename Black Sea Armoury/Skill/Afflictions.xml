@@ -113,10 +113,9 @@
     </Effect>
     <Icon texture="%ModDir%/BA/ICON/X01.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
-<!-- Powered suit to disable the suit speed when you have no power-->
+<!-- Powered suit Moved this to place holder for recoil overhail-->
 <Affliction name="Powered Suit" identifier="PoweredSuit" description="The suit is fully powered" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
   <Effect minstrength="0" maxstrength="1" strengthchange="-5">
-    <StatValue stattype="SwimmingSpeed" value="0.8" />
   </Effect>
   <Icon texture="%ModDir%/BA/ICON/PR.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
 </Affliction>
