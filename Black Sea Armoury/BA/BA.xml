@@ -29,10 +29,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -42,10 +39,7 @@
       <sprite texture="%ModDir%/BA/PR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/PR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -59,21 +53,32 @@
       <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
+	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.9" />
         <StatValue stattype="SwimmingSpeed" value="4.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+	  </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Swift" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.2" setvalue="true">
-        <Conditional InWater="true" />
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
       </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.2" setvalue="true" comparison="And">
+        <Conditional InWater="true" />
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+	  <!-- Not sure if we want to keep the normal Oxygen Tanks so not gonna edit them for hull oxygen yet-->
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem identifier="oxygentank" type="Contained" />
@@ -98,15 +103,11 @@
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
-        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
-        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
-      </StatusEffect>
-      <Sonar range="2500.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+	  <!-- End of oxygen tank stuff -->
+      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -144,7 +145,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" />
+        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw">
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="chem,medical" />
@@ -182,10 +185,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -195,10 +195,7 @@
       <sprite texture="%ModDir%/BA/MA/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/MA/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -214,16 +211,21 @@
       <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="False">
         <StatValue stattype="FlowResistance" value="1.0" />
         <StatValue stattype="SwimmingSpeed" value="0.5" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Hammer" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.2" setvalue="true">
-        <Conditional InWater="true" />
+	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.175" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
       </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true" comparison="And">
+        <Conditional InWater="true" />
+        <Conditional Voltage="gt 0.5" />
+      </StatusEffect> 
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
@@ -231,9 +233,7 @@
       <StatusEffect type="OnContained" target="Contained,Character" Condition="1.0" comparison="Or" targetslot="0">
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true">
-        <Conditional InWater="true" />
-      </StatusEffect>
+	  <!-- Same stuff with Oxygen Tanks . . . -->
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem identifier="oxygentank" type="Contained" />
@@ -262,11 +262,15 @@
         <Conditional IsDead="false" />
         <RequiredItem items="fulguriumbatterycell" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.0" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
-      <Sonar range="2000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+	  <!-- End of Oxygen Tanks-->
+      <Sonar range="2000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+		  <RequiredItem items="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -304,7 +308,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw" />
+        <Containable items="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw">
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="toolbox_bw" />
@@ -379,10 +385,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -392,10 +395,7 @@
       <sprite texture="%ModDir%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -409,22 +409,24 @@
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
       <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
+		<Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+	  <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
       </StatusEffect>
@@ -432,11 +434,24 @@
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" excludebroken="false" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.18" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
         <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" />
       </StatusEffect>
-      <Sonar range="3000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.09" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="oxygen_cell_bw" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <Sonar range="3000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.09" disabledeltatime="true">
+		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -474,7 +489,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygen_cell_bw" />
+        <Containable items="oxygen_cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
@@ -582,10 +599,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD2.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -595,10 +609,7 @@
       <sprite texture="%ModDir%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -614,17 +625,19 @@
       <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
+		<Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -635,11 +648,24 @@
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" excludebroken="false" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.18" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
         <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" />
       </StatusEffect>
-      <Sonar range="6000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.09" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="oxygen_cell_bw" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <Sonar range="6000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.18" disabledeltatime="true">
+		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.3,0.3" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -678,7 +704,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygen_cell_bw" />
+        <Containable items="oxygen_cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
@@ -686,7 +714,7 @@
     </ItemContainer>
     <aitarget maxsightrange="1500" />
   </Item>
-<!-- X01 Battle Armor(Veteran)-->  
+  <!-- X01 Battle Armor(Veteran)-->  
   <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -711,10 +739,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -724,10 +749,7 @@
       <sprite texture="%ModDir%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -741,19 +763,21 @@
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
       <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="3.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
+        <Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -764,11 +788,24 @@
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" excludebroken="false" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.18" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
         <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" />
       </StatusEffect>
-      <Sonar range="3000.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.09" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.09" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="oxygen_cell_bw" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <Sonar range="3000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.09" disabledeltatime="true">
+		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -807,7 +844,9 @@
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygen_cell_bw" />
+        <Containable items="oxygen_cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
@@ -846,10 +885,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/ST/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.4">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -859,10 +895,7 @@
       <sprite texture="%ModDir%/BA/ST/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/ST/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -876,13 +909,21 @@
       <sprite texture="%ModDir%/BA/ST/LEGL.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.75" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/ST/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.25" sourcerect="0,0,220,140" />
       <sprite texture="%ModDir%/BA/ST/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.25" sourcerect="0,0,220,140" />
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="3.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Alienpw" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
+        <Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -893,15 +934,41 @@
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
         <RequiredItem items="alienpowercell,bwapc" type="Contained" excludebroken="false" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.2" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.1" comparison="And" targetslot="0">
         <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
         <RequiredItem items="alienpowercell" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.1" comparison="And" targetslot="0">
         <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="alienpowercell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.1" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="alienpowercell" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.05" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
         <RequiredItem items="bwapc" type="Contained" />
       </StatusEffect>
-      <Sonar range="4500.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.05" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="bwapc" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.05" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="bwapc" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <Sonar range="4500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.1" disabledeltatime="true">
+		  <RequiredItem items="alienpowercell" type="Contained" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+		  <RequiredItem items="bwapc" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -945,7 +1012,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="alienpowercell,bwapc" />
+        <Containable items="alienpowercell,bwapc" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
@@ -978,10 +1047,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PI/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -991,10 +1057,7 @@
       <sprite texture="%ModDir%/BA/PI/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/PI/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -1008,15 +1071,32 @@
       <sprite texture="%ModDir%/BA/PI/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PI/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/PI/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true">
+	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.8" />
-        <StatValue stattype="SwimmingSpeed" value="2.5" />
+        <StatValue stattype="SwimmingSpeed" value="2.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="architect" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
+		<Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+	  <!-- same as before gonna wait for if we keeping oxytanks as fuel or not-->
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem identifier="oxygentank" type="Contained" />
@@ -1041,15 +1121,11 @@
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
-        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
-        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
-      </StatusEffect>
-      <Sonar range="2500.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+	  <!-- End of Oxy Tanks -->
+      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -1088,7 +1164,9 @@
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" />
+        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
     </ItemContainer>
     <aitarget maxsightrange="2000" />
@@ -1121,10 +1199,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -1134,10 +1209,7 @@
       <sprite texture="%ModDir%/BA/PI2/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/PI2/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -1151,15 +1223,32 @@
       <sprite texture="%ModDir%/BA/PI2/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PI2/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/PI2/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true">
+	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.8" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="architect" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true" comparison="And">
+		<Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+      </StatusEffect>
+	  <!-- See previous remarks about Oxy tanks-->
       <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.1" comparison="Or" targetslot="0">
         <Conditional IsDead="false" />
         <RequiredItem identifier="oxygentank" type="Contained" />
@@ -1184,15 +1273,11 @@
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
-      </StatusEffect>
-      <StatusEffect type="OnContained" target="Contained" Condition="1.0" comparison="Or" targetslot="0">
-        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
-        <RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
-      </StatusEffect>
-      <Sonar range="2500.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+	  <!-- End of Oxy Tank stuff -->
+      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -1231,7 +1316,9 @@
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" />
+        <Containable items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource,cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
     </ItemContainer>
     <aitarget maxsightrange="2000" />
@@ -1364,10 +1451,7 @@
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/EL/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -1377,10 +1461,7 @@
       <sprite texture="%ModDir%/BA/EL/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
       <!--0.4576271,0.484375-->
       <sprite texture="%ModDir%/BA/EL/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
-        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
-          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-            <Conditional IsDead="false" />
-          </StatusEffect>
+        <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
       </sprite>
@@ -1394,21 +1475,22 @@
       <sprite texture="%ModDir%/BA/EL/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="True">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="4.0" />
         <StatValue stattype="WalkingSpeed" value="0" />
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Swift2" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.2" setvalue="true">
-        <Conditional InWater="true" />
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Conditional Voltage="lte 0.5" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="2000.0" Condition="-0.13" comparison="Or" targetslot="0">
-        <Conditional IsDead="false" />
-        <RequiredItem identifier="oxygen_cell_bw" type="Contained" />
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.2" setvalue="true" comparison="And">
+        <Conditional Voltage="gt 0.5" />
+        <Conditional InWater="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
@@ -1418,7 +1500,24 @@
         <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
         <RequiredItem items="oxygen_cell_bw" type="Contained" excludebroken="false" />
       </StatusEffect>
-      <Sonar range="3500.0" powerconsumption="0" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.065" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional HullOxygenPercentage="lt 50" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="2000.0" Condition="-0.065" comparison="And" targetslot="0">
+        <Conditional IsDead="false" />
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygen_cell_bw" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" Condition="-0.065" interval="1.0" disabledeltatime="true" targetslot="0">
+        <RequiredItem items="oxygen_cell_bw" targetslot="0" type="Contained" />
+      </StatusEffect>
+      <Sonar range="3500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.065" disabledeltatime="true">
+		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		</StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
@@ -1457,7 +1556,9 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygen_cell_bw" />
+        <Containable items="oxygen_cell_bw" >
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
