@@ -313,12 +313,12 @@
     <aitarget maxsightrange="4000" />
   </Item>
   <!-- Hammer Container -->
-  <Item name="" identifier="toolbox_bw" category="Equipment" tags="smallitem,mobilecontainer,tool" description="" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="toolbox_bw" category="Equipment" tags="mediumitem,mobilecontainer,tool" description="" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredSkill identifier="mechanical" level="40" />
       <Item identifier="steel" />
     </Fabricate>
     <Price baseprice="25">
@@ -332,10 +332,10 @@
     <Sprite texture="%ModDir%/BA/MA/MAB.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
     <Body width="90" height="60" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="50,-20" handle1="-15,33" handle2="-15,33" aimable="false" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.4" setvalue="true" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="false">
-      <Containable items="smallitem,mediumitem,railgunammo,pulselaserammo,depthchargeammo,coilgunammo,chaingunammo,crate,container" excludeditems="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw,toolbelt,toolbox,toolbox_bw" />
+      <Containable items="smallitem,ore" excludeditems="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw,toolbelt,toolbox,toolbox_bw" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
