@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Power combat system -->
   <Item name="" identifier="PFbw" category="Equipment" Tags="smallitem,weapon,gunsmith,meleeweapon,finalblow" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <Price baseprice="300">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -41,6 +42,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Heat Saber -->
   <Item name="" identifier="stunbatonbw" category="Equipment" Tags="smallitem,weapon,stunner,gunsmith,meleeweapon" description="" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.35" sold="false" />
@@ -118,6 +120,7 @@
       <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
     </Quality>
   </Item>
+  <!-- Hammer (The Hammer) -->
   <Item name="" identifier="hammer_bw" category="Equipment" Tags="smallitem,weapon,stunner,gunsmith,meleeweapon" Scale="0.4" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <Price baseprice="350" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.35" sold="false" />
@@ -170,6 +173,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
+  <!-- Hammer Detonator -->
   <Item name="" identifier="uex2" category="Equipment" Scale="0.5" description="" Tags="smallitem,explosive,gunsmith" maxstacksize="1" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.9.3.0" scale="0.5" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
@@ -210,6 +214,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
+  <!-- Power AXE -->
   <Item name="" identifier="bw_axe" aliases="axe" scale="0.5" category="Equipment" tags="smgammotype,smallitem,weapon,gunsmith,meleeweapon" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy">
     <Price baseprice="700">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -250,6 +255,7 @@
       <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
     </Quality>
   </Item>
+  <!-- Greatsword (Winter Star) -->
   <Item name="" identifier="bwgs" category="Equipment" Tags="mediumitem,weapon,gunsmith,meleeweapon,swordwarrior" Scale="0.2" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.35" sold="false" />
@@ -293,6 +299,7 @@
       <QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
     </Quality>
   </Item>
+  <!-- Katana (Conquest) -->
   <Item name="" identifier="tachi" category="Equipment" Tags="mediumitem,weapon,gunsmith,meleeweapon,swordwarrior" Scale="0.3" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True" hideinmenus="true">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.35" sold="false" />

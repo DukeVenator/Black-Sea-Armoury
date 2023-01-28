@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
-  <Affliction name="" identifier="architect" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="100">
+  <Affliction name="" identifier="architect" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-5">
       <LightComponent range="+100%" />
       <StatValue stattype="RepairSpeed" value="1" />
@@ -8,7 +8,7 @@
     </Effect>
     <Icon texture="%ModDir%/BA/ICON/PI.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
-  <Affliction name="" identifier="architect2" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="100">
+  <Affliction name="" identifier="architect2" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-5">
       <LightComponent range="+100%" />
       <StatValue stattype="RepairSpeed" value="1" />
@@ -113,10 +113,9 @@
     </Effect>
     <Icon texture="%ModDir%/BA/ICON/X01.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
-<!-- Powered suit to disable the suit speed when you have no power-->
+<!-- Powered suit Moved this to place holder for recoil overhail-->
 <Affliction name="Powered Suit" identifier="PoweredSuit" description="The suit is fully powered" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
-  <Effect minstrength="0" maxstrength="10" strengthchange="-5">
-    <StatValue stattype="SwimmingSpeed" value="0.8" />
+  <Effect minstrength="0" maxstrength="1" strengthchange="-5">
   </Effect>
   <Icon texture="%ModDir%/BA/ICON/PR.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
 </Affliction>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!-- Double Shotgunshell -->
   <Item name="" identifier="shotgunshellbw" category="Equipment" maxstacksize="20" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammobw,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="30" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -17,12 +18,12 @@
     <Sprite texture="%ModDir%/SG/DS.png" sourcerect="0,0,24,24" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="10">
+    <Projectile characterusable="false" hitscan="true" hitscancount="12" removeonhit="true" spread="10">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-      <Attack structuredamage="0.5" targetforce="3.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
+      <Attack structuredamage="0.5" targetforce="5.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
         <Affliction identifier="bleeding" strength="3" />
         <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="lacerations" strength="3" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -45,6 +46,7 @@
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- DOOM -->
   <Item name="" identifier="shotgununiquebw" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
     <Price baseprice="1431" soldeverywhere="false" canbespecial="false">
       <Price locationtype="outpost" sold="false" />
@@ -100,6 +102,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.25" />
     </Quality>
   </Item>
+  <!-- Drum Hybrid Barrel -->
   <Item name="" identifier="grenadelauncher_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <Price baseprice="1200" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -156,6 +159,7 @@
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Drum Shotgun Shell (Shotgun Magazine for Drum Hybrid Barrel) -->
   <Item name="" identifier="bw_shotgun_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -193,6 +197,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Drum 25mm Grenade (Grenade Launcher Magazine for Drum Hybrid Barrel) -->
   <Item name="" identifier="bw_grenade_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -216,7 +221,7 @@
       <RequiredItem identifier="plastic" mincondition="1" usecondition="true" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="bw_grenade" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="bw_grenade" />
@@ -230,6 +235,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <!-- Shotgun Shell ("Bullet" for Drum Shotgun Shell) -->
   <Item name="" identifier="bw_shotgun_shell" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Buck shot." tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="20" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="20" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -270,6 +276,7 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
   </Item>
+  <!-- 25mm Grenade ("Bullet" for Drum 25mm Grenade) -->
   <Item name="" identifier="bw_grenade" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Fire in the hole!!!" tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="8" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="50" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -278,7 +285,7 @@
       <Price locationtype="military" multiplier="0.9" sold="false" />
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
-    <InventoryIcon texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SG/SGGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/SG/SGGS.png" depth="0.56" sourcerect="0,0,24,10" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -290,22 +297,16 @@
       </Attack>
       <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
       <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
-      <StatusEffect type="OnImpact" disabledeltatime="true">
+      <StatusEffect type="OnImpact" target="This" condition="-100" disabledeltatime="true">
         <Explosion range="180.0" ballastfloradamage="50" structuredamage="50" levelwalldamage="50" itemdamage="50" force="3.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="bleeding" strength="20" />
           <Affliction identifier="explosiondamage" strength="40" />
           <Affliction identifier="stun" strength="4" />
         </Explosion>
         <sound file="Content/Items/Weapons/StunGrenade.ogg" />
-      </StatusEffect>
-      <!--Destroy this after exploding-->
-      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <Remove />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="2">
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnBroken">
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="10">
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20" Condition="-20" />
