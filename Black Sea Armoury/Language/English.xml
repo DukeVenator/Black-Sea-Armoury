@@ -68,7 +68,7 @@
   <entityname.armored_miningsuit_bw>Hammer Mining Armor</entityname.armored_miningsuit_bw>
   <entitydescription.armored_miningsuit_bw>Heavy mining armor suit design for high-pressure environment.Used power cycle design,work with batteries.Can install extra hammer container.</entitydescription.armored_miningsuit_bw>
   <entityname.toolbox_bw>Hammer Container</entityname.toolbox_bw>
-  <entitydescription.toolbox_bw>Thick container can transfer dangerous goods safety,even railgun shells.</entitydescription.toolbox_bw>
+  <entitydescription.toolbox_bw>Thick container can transfer dangerous small goods and ores safely.</entitydescription.toolbox_bw>
   <entityname.armored_hardsuit_bw>X01 Battle Armor</entityname.armored_hardsuit_bw>
   <entitydescription.armored_hardsuit_bw>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Can hold one weapon inside.</entitydescription.armored_hardsuit_bw>
   <entityname.oxygen_cell_bw>X01 Oxygen Cell</entityname.oxygen_cell_bw>
