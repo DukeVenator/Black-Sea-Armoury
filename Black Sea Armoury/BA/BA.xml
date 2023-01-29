@@ -155,7 +155,7 @@
     </ItemContainer>
     <aitarget maxsightrange="2000" />
   </Item>
-  <!-- Hammer Mining Armor-->
+  <!-- Mining Armor-->
   <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -341,7 +341,7 @@
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="false">
-      <Containable items="smallitem,ore" excludeditems="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw,toolbelt,toolbox,toolbox_bw" />
+      <Containable items="smallitem,ore,crate,container,mediumitem" excludeditems="%ModDir%/BAtterycell,fulguriumbatterycell,cell_bw,toolbelt,toolbox,toolbox_bw" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
