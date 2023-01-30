@@ -8,11 +8,11 @@
       <sprite texture="%ModDir%/Job/SR2.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
     </JobiconSmall>
     <Skills>
-      <Skill identifier="weapons" level="50,60" primary="true" />
-      <Skill identifier="medical" level="25,35" />
-      <Skill identifier="mechanical" level="20,30" />
-      <Skill identifier="electrical" level="20,30" />
-      <Skill identifier="helm" level="15,25" />
+      <Skill identifier="weapons" level="40,50" primary="true" />
+      <Skill identifier="medical" level="10,15" />
+      <Skill identifier="mechanical" level="15,25" />
+      <Skill identifier="electrical" level="15,25" />
+      <Skill identifier="helm" level="10,20" />
     </Skills>
     <ItemSet>
       <Item identifier="captainsuniformbw" equip="true" outfit="true" />
