@@ -49,7 +49,7 @@
   </Item>
   <!-- Override of handcannonrounds -->
   <Override>
-    <Item name="" identifier="handcannonround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolitem" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="handcannonround" category="Weapon" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" allowasextracargo="true" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem" impactsoundtag="impact_metal_light">
       <Price baseprice="115" soldeverywhere="false">
         <Price locationtype="outpost" sold="false" />
         <Price locationtype="city" sold="false" />
