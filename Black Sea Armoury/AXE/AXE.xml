@@ -69,7 +69,7 @@
         <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
         <Affliction identifier="blunttrauma" strength="5" />
       </Attack>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" penetration="0.3">
         <Affliction identifier="stun" strength="0.3" />
         <Affliction identifier="burn" strength="2" />
         <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
@@ -80,7 +80,7 @@
         <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
         <Conditional mass="lt 60" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" penetration="0.3">
         <Affliction identifier="stun" strength="0.3" />
         <Affliction identifier="burn" strength="3" />
         <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
@@ -91,7 +91,7 @@
         <Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="6.0" />
         <Conditional mass="lt 150" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" penetration="0.3">
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" penetration="0.3">
         <Affliction identifier="stun" strength="0.5" />
         <Affliction identifier="burn" strength="6" />
         <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
@@ -149,7 +149,7 @@
         <Affliction identifier="stun" strength="4" />
         <RequiredItem items="hammeruex" type="Contained" msg="ItemMsgHammerUexRequired" />
       </Attack>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
         <Affliction identifier="stun" strength="0.3" />
         <RequiredItem items="uex2" type="Contained" msg="ItemMsgBatteryCellRequired" />
         <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
