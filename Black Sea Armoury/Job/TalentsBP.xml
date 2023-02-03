@@ -27,18 +27,7 @@
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="UseTarget" spawnitemrandomly="true">
-              <SpawnItem identifiers="geneticmaterialcrawler_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialmudraptor_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialmoloch_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialmantis_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialthresher_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialhammerhead_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialhammerheadmatriarch_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialspineling_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialhusk_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialmollusc_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialskitter_unresearched" spawnposition="ThisInventory" />
-              <SpawnItem identifiers="geneticmaterialhunter_unresearched" spawnposition="ThisInventory" />
+              <SpawnItem identifiers="geneticmaterial_unresearched" spawnposition="ThisInventory" />
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
