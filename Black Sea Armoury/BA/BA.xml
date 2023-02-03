@@ -134,7 +134,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.35" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.6" damagesound="LimbArmor" />
@@ -297,7 +297,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.4" probabilitymultiplier="0.4" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.4" probabilitymultiplier="0.4" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.8" damagesound="LimbArmor" />
@@ -478,7 +478,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.25" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.25" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
@@ -535,7 +535,6 @@
         <SpawnItem identifiers="laser_bw" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Laser "Bullet" -->
@@ -692,7 +691,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.25" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.25" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.45" damagesound="LimbArmor" />
@@ -832,7 +831,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.15" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.15" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
@@ -999,8 +998,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="organdamage" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="radiationsickness" damagemultiplier="0" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0" probabilitymultiplier="0" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0" probabilitymultiplier="0" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0" damagesound="LimbArmor" />
@@ -1152,7 +1150,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.45" probabilitymultiplier="0.45" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.45" probabilitymultiplier="0.45" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.4" damagesound="LimbArmor" />
@@ -1304,7 +1302,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" damagesound="LimbArmor" />
@@ -1412,7 +1410,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.15" probabilitymultiplier="0.15" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.15" probabilitymultiplier="0.15" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.35" damagesound="LimbArmor" />
@@ -1544,7 +1542,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.35" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
@@ -1643,7 +1641,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.05" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="huskinfection" damagemultiplier="0.01" probabilitymultiplier="0.01" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.01" probabilitymultiplier="0.01" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.15" damagesound="LimbArmor" />
