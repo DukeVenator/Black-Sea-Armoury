@@ -104,6 +104,7 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of oxygen tank stuff -->
+      <!-- moving sonar to comments for now incase its needed again for modular system again
       <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
@@ -127,6 +128,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -696,7 +698,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.45" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.45" probabilitymultiplier="0.45" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -724,11 +725,15 @@
     </Price>
     <Deconstruct time="1">
       <Item identifier="armored_hardsuit_bw" />
+      <Item identifier="shellshield" />
+	  <Item identifier="mudraptorshell" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="armored_hardsuit_bw" />
+      <RequiredItem identifier="shellshield" />
+	  <RequiredItem identifier="mudraptorshell" />
       <RequiredItem identifier="crawlermask" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
@@ -836,6 +841,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.55" damagesound="LimbArmor" />
+      <StatusHUD drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -1120,7 +1126,8 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of Oxy Tanks -->
-      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <!-- moving sonar to comments for now incase its needed again for modular system again
+	  <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
 		</StatusEffect>
@@ -1143,6 +1150,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1272,6 +1280,7 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of Oxy Tank stuff -->
+      <!-- moving sonar to comments for now incase its needed again for modular system again
       <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
@@ -1295,6 +1304,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1547,7 +1557,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.75" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
+      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -1646,7 +1656,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.15" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="20" maxstacksize="1" keepopenwhenequipped="false" movableframe="true" containedstateindicatorstyle="ammo">
       <Containable items="railgunammo,coilgunammo,ammobox,chaingunammo,pulselaserammo,smallitem,mediumitem" />
