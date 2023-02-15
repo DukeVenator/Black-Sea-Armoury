@@ -97,6 +97,10 @@
     </Price>
     <Deconstruct time="20">
       <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="smg" />
       <Item identifier="smg" />
     </Deconstruct>
