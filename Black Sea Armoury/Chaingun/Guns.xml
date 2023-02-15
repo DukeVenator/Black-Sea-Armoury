@@ -13,7 +13,7 @@
       <Item identifier="HMG1_bw" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="80" requiresrecipe="true">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="relic_bw" />
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="HMG1_bw" />
