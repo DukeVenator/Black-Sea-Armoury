@@ -500,7 +500,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- Oxygen BW1 Cell (X01 Oxygen Cell)-->
-  <Item name="" identifier="oxygen_cell_bw" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="4">
+  <Item name="" identifier="oxygen_cell_bw" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,loadable,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="4">
     <Price baseprice="650" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
