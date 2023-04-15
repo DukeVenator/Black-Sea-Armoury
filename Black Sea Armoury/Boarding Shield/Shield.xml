@@ -132,7 +132,7 @@
     <Sprite texture="%ModDir%/Boarding Shield/hpbw.png" sourcerect="0,0,180,40" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="30" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.4" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.4" launchimpulse="20.0" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
