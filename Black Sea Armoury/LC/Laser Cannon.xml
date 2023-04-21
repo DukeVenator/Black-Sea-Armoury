@@ -46,6 +46,32 @@
       <StatusEffect type="OnUse">
         <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="gte 1" />
+        <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="blunttrauma" strength="1.5" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="2" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="2.2" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="4.5" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="4.5" LimbSpecific="true" probability="0.1"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Explosion range="180.0" force="8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="explosiondamage" strength="2.4"/>
+        <Affliction identifier="blunttrauma" strength="1.5" />
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <RequiredItems items="oxygen_cell_bw" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
