@@ -94,6 +94,7 @@
       <Item identifier="guardianhookcannon" slot="RightHand" />
       <Item identifier="aliencircuitry" />
       <Item identifier="alientrinket2" />
+    </inventory>
     <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="9">
       <Item identifier="guardianhookcannon" slot="RightHand" />
       <Item identifier="aliencircuitry" />
