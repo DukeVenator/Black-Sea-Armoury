@@ -13,7 +13,7 @@
       <Item identifier="HMG1_bw" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="80" requiresrecipe="true">
-      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredSkill identifier="weapons" level="85" />
       <RequiredItem identifier="relic_bw" />
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="HMG1_bw" />
@@ -35,6 +35,7 @@
       <StatusEffect type="OnUse">
         <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
+            <!-- Temporary fix for the recoil while we implement our new recoil -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 75" />
         <Conditional recoilstabilized="lte 0" />
@@ -96,6 +97,10 @@
     </Price>
     <Deconstruct time="20">
       <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="smg" />
       <Item identifier="smg" />
     </Deconstruct>
@@ -122,6 +127,22 @@
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
         <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <!-- Temporary fix for the recoil while we implement our new recoil -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 25" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.75" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" Condition="-300" />
       <StatusEffect type="Always" target="This" Condition="5">
@@ -171,7 +192,7 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="3" severlimbsprobability="0.35" itemdamage="10" targetforce="0.5" penetration="0.3">
+      <Attack structuredamage="3" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="lacerations" strength="20" />
         <Affliction identifier="stun" strength="0.1" />
