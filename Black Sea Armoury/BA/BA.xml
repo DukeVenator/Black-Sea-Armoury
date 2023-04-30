@@ -23,7 +23,7 @@
       <RequiredItem identifier="abyssdivingsuit" />
     </Fabricate>
     <InventoryIcon texture="SYS3.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="11,22,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
@@ -181,10 +181,10 @@
       <RequiredItem identifier="abyssdivingsuit" />
     </Fabricate>
     <InventoryIcon texture="SYS2.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body width="250" height="250" density="30" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -381,7 +381,7 @@
       <RequiredItem identifier="pio_bw" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
@@ -594,7 +594,7 @@
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA2.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA2.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01L.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
@@ -737,7 +737,7 @@
       <RequiredItem identifier="crawlermask" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA3.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA3.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01V.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
@@ -1357,10 +1357,10 @@
       <RequiredItem identifier="armored_miningsuit_bw" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body width="250" height="250" density="30" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
@@ -1453,7 +1453,7 @@
       <RequiredItem identifier="corsairar_bw" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/BA/EL/SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/EL/BA.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/EL/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/EL/X00.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/EL/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
@@ -1595,10 +1595,10 @@
       <RequiredItem identifier="armored_miningsuit_bw2" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,297,297" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body width="250" height="250" density="30" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">

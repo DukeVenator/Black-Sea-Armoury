@@ -2,7 +2,7 @@
 <infotexts language="Simplified Chinese" nowhitespace="false" translatedname="中文(简体)">
   <!--Job.xml-->
   <jobName.Pilot>铁骑兵</jobName.Pilot>
-  <jobdescription.Pilot>木卫二联盟中的精锐，擅长驾驶机甲执行各式特种突击任务。</jobdescription.Pilot>
+  <jobdescription.Pilot>铁骑兵，钢铁联盟的的精锐，是欧罗巴上人类的坚定的捍卫者。</jobdescription.Pilot>
   <talenttree.bwbr1>枪剑祷告</talenttree.bwbr1>
   <talenttree.bwbr2>钢铁崇拜</talenttree.bwbr2>
   <talenttree.bwbr3>科技蛮族</talenttree.bwbr3>
@@ -49,19 +49,19 @@
   <talentdescription.crafthighqualityhmgbw>你制造的机枪武器品质提升[qualitybonus]。</talentdescription.crafthighqualityhmgbw>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
-  <entitydescription.PFbw>在精密计算辅助下，即便巨岩也能轻松粉碎。</entitydescription.PFbw>
+  <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>
   <entityname.stunbatonbw>热能军刀(Heat Saber)</entityname.stunbatonbw>
   <entitydescription.stunbatonbw>强力晕眩武器，装上X01氧气电池后能造成额外热能伤害，但无法穿透重装甲。</entitydescription.stunbatonbw>
-  <entityname.hammer_bw>铁锤(The Hammer)</entityname.hammer_bw>
-  <entitydescription.hammer_bw>钢铁之锤，装入火药后能造成大范围爆炸。</entitydescription.hammer_bw>
+  <entityname.hammer_bw>雷霆之锤(Thunder Hammer)</entityname.hammer_bw>
+  <entitydescription.hammer_bw>一个重型破门锤，可以使用聚能装药以获得更强的穿透力。但在战斗中很难发挥作用。</entitydescription.hammer_bw>
   <entityname.uex2>铁锤引爆器(Hammer Detonator)</entityname.uex2>
-  <entitydescription.uex2>装入通用炸药的引爆器，能造成大范围爆炸。</entitydescription.uex2>
-  <entityname.bw_axe>动力斧(Power AXE)</entityname.bw_axe>
-  <entitydescription.bw_axe>一种老式武器，依然可以轻松切碎敌人。</entitydescription.bw_axe>
+  <entitydescription.uex2>与雷霆之锤配合使用的锥形聚能炸药。一不留神就会伤害到自己。</entitydescription.uex2>
+  <entityname.bw_axe>钢铁联盟登船斧(Iron League Boarding Axe)</entityname.bw_axe>
+  <entitydescription.bw_axe>作为雷霆之锤的替代品，这种笨重的斧头在破坏船壳的速度更慢，但更安全。此外它对装甲的效果非常可怕。</entitydescription.bw_axe>
   <entityname.bwgs>岁星(Winter Star)</entityname.bwgs>
-  <entitydescription.bwgs>仿佛自古代而来的长剑，冷酷且高傲。 </entitydescription.bwgs>
+  <entitydescription.bwgs>仿佛自古代而来的长剑，其厚重的剑身可以很好地对付盔甲。 </entitydescription.bwgs>
   <entityname.tachi>天征(Conquest)</entityname.tachi>
-  <entitydescription.tachi>仿佛自古代而来的太刀，锋锐且迅捷。 </entitydescription.tachi>
+  <entitydescription.tachi>仿佛自古代而来的太刀，它锋锐且迅捷的刀刃在对抗盔甲时很吃力，但在遇到肉体时却很出色。 </entitydescription.tachi>
   <!--BA.xml-->
   <entityname.corsairar_bw>劫盗式(Corsair)</entityname.corsairar_bw>
   <entitydescription.corsairar_bw>淘汰的军用装甲，大量流入黑市导致海盗猖獗。使用氧气瓶。</entitydescription.corsairar_bw>
