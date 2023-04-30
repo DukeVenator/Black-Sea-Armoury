@@ -186,7 +186,7 @@
     <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
+    <RangedWeapon barrelpos="160,22" spread="5" launchimpulse="50" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
       <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
@@ -244,7 +244,7 @@
     <Sprite texture="%ModDir%/BT/RG3.png" sourcerect="0,0,216,32" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" launchimpulse="80.0" maxtargetstohit="1">
+    <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="1" damagedoors="true">
       <Attack structuredamage="150" itemdamage="150" severlimbsprobability="1.5" penetration="0.6">
         <Affliction identifier="lacerations" strength="600" />
         <Affliction identifier="bleeding" strength="50" />
