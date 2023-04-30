@@ -283,26 +283,25 @@
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 75" />
         <Conditional recoilstabilized="gte 1" />
-        <Explosion range="10.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
-        <Affliction identifier="blunttrauma" strength="1" probability="0.2"/>
+        <Explosion range="10.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
         <Conditional skillrequirement="true" weapons="lt 75" />
         <Conditional recoilstabilized="gte 1" />
-        <Affliction identifier="blunttrauma" strength="1.8" probability="0.4"  LimbSpecific="true"/>
+        <Affliction identifier="blunttrauma" strength="0.15" probability="0.4"  LimbSpecific="true"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
         <Conditional recoilstabilized="lte 0" />
-        <Affliction identifier="blunttrauma" strength="4" LimbSpecific="true"/>
-        <Affliction identifier="blunttrauma" strength="4" LimbSpecific="true" probability="0.1"/>
+        <Affliction identifier="blunttrauma" strength="0.2" LimbSpecific="true"/>
+        <Affliction identifier="blunttrauma" strength="0.4" LimbSpecific="true" probability="0.1"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional recoilstabilized="lte 0" />
-        <Explosion range="180.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
-        <Affliction identifier="stun" strength="0.8" />
-        <Affliction identifier="blunttrauma" strength="3.5" />
+        <Explosion range="60.0" force="0.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="stun" strength="0.1" />
+        <Affliction identifier="blunttrauma" strength="0.15" probability="0.1"/>
       </StatusEffect>
-      <!-- End of Forbidden in mortal bodies -->
+
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>

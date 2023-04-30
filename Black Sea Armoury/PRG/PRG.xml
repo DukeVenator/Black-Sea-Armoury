@@ -174,6 +174,27 @@
       <StatusEffect type="OnUse">
         <Explosion range="100.0" force="6" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.4" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="1.6" LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="blunttrauma" strength="0.6" probability="0.2"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <RequiredItems identifier="prg_ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="40" />
     </RangedWeapon>
