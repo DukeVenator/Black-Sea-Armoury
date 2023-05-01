@@ -209,8 +209,8 @@
   <entityname.revolverammobw>14.5mm Round Clip</entityname.revolverammobw>
   <entityname.revolverammobw2>14.5mm Concussion Round Clip</entityname.revolverammobw2>
   <entityname.revolverammobw3>14.5mm Flare Round Clip</entityname.revolverammobw3>
-  <entityname.coilgunammo_bw>Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
-  <entityname.coilgunammo_bw2>Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunammo_bw>LEGACY Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>LEGACY Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
   <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
   <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
   <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>
