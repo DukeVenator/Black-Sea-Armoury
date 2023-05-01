@@ -185,7 +185,7 @@
   <entitydescription.smgmagazine_bw>Little friend.</entitydescription.smgmagazine_bw>
   <entityname.smg_bw>CQB SMG</entityname.smg_bw>
   <entitydescription.smg_bw>Fast auto-fire weapon,can be dual wielded.Use 7.62mm magazine.</entitydescription.smg_bw>
-  <entityname.smgmagazine_bw2>7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
+  <entityname.smgmagazine_bw2>(LEGACY WILL BE REMOVED)7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
   <entitydescription.>Living metal provide limitless rounds,but halfed the damage.</entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
   <!--tactical Scanner.xml-->
