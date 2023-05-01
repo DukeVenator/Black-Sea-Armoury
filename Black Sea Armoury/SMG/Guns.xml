@@ -47,7 +47,7 @@
       <Item identifier="plastic" />
       <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="5">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="steel" mincondition="0.25" usecondition="true" />
       <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
