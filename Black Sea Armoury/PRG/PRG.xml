@@ -176,12 +176,12 @@
       </StatusEffect>
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional skillrequirement="true" weapons="lt 40" />
         <Conditional recoilstabilized="gte 1" />
         <Affliction identifier="blunttrauma" strength="0.4" probability="0.2"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
-        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional skillrequirement="true" weapons="lt 40" />
         <Conditional recoilstabilized="gte 1" />
         <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
       </StatusEffect>

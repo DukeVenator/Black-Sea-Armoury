@@ -48,13 +48,13 @@
       </StatusEffect>
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional skillrequirement="true" weapons="lt 50" />
         <Conditional recoilstabilized="gte 1" />
         <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
         <Affliction identifier="blunttrauma" strength="0.2" probability="0.2"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
-        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional skillrequirement="true" weapons="lt 50" />
         <Conditional recoilstabilized="gte 1" />
         <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
       </StatusEffect>
