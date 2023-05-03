@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- Corsair -->
-  <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -14,7 +14,7 @@
       <Item identifier="fpgacircuit" />
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
@@ -158,7 +158,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Mining Armor-->
-  <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -349,7 +349,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- X01 Battle Armor-->
-  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -421,11 +421,11 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
-		<Conditional Voltage="gt 0.5" />
+		    <Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -573,7 +573,7 @@
     </Projectile>
   </Item>
   <!-- X01 Battle Armor(Leader) -->
-  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -634,7 +634,7 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
@@ -715,7 +715,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- X01 Battle Armor(Veteran)-->  
-  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -777,7 +777,7 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
@@ -863,7 +863,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- Silver Knight -->
-  <Item name="" identifier="knight_hardsuit_bw" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="knight_hardsuit_bw" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1027,7 +1027,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!--pio_bw Pioneer Custom -->
-  <Item name="" identifier="pio_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="pio_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1178,7 +1178,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Pioneer -->
-  <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1189,7 +1189,7 @@
     <Deconstruct time="30">
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="handheldsonar" />
@@ -1332,7 +1332,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Hercules  = Why the hell is this named mining suit 2????-->
-    <Item name="" identifier="armored_miningsuit_bw2" aliases="worker hardsuit" category="Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="armored_miningsuit_bw2" aliases="worker hardsuit" category="Diving,Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1432,7 +1432,7 @@
     <aitarget maxsightrange="4000" />
   </Item>
   <!-- X00 Prototype Armor why is it named corsair lol -->
-  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="2500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1575,7 +1575,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Hercules Mk.II(Hercules Mk.II) Why is this named a MINING SUIT!!!!!-->
-  <Item name="" identifier="armored_miningsuit_bw3" aliases="worker hardsuit" category="Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_miningsuit_bw3" aliases="worker hardsuit" category="Diving,Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />

@@ -40,6 +40,7 @@
   <talentdescription.stonewallbw>当你受到攻击后，[seconds]内你的物理伤害抗性提升[physicaldamagereduction]%，击晕抗性提升[stunresistance]%，近战伤害提升[amount]%。</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>权限许可</talentname.munitionsexpertisebw>
   <talentname.gunsmithbw>战争铁匠</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>所制造物品的质量提高[qualitybonus]。</talentdescription.gunsmithbw>
   <talentname.duelistbw>风暴之心</talentname.duelistbw>
   <talentdescription.chanceofextraweapondamagebw>使用近身战冲锋枪或动力斧攻击时，[probability]%机率造成双倍伤害与额外[amount]%穿甲力。</talentdescription.chanceofextraweapondamagebw>
   <talentname.optimizedpowerflowbw>改装电路</talentname.optimizedpowerflowbw>
@@ -183,7 +184,7 @@
   <entitydescription.smgmagazine_bw>''小''朋友。 </entitydescription.smgmagazine_bw>
   <entityname.smg_bw>近身战冲锋枪(CQB SMG)</entityname.smg_bw>
   <entitydescription.smg_bw>可以双持的快速火力。使用7.62mm弹匣。 </entitydescription.smg_bw>
-  <entityname.smgmagazine_bw2>7.62mm再生弹匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
+  <entityname.smgmagazine_bw2>[遗产即将移除]7.62mm再生弹匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
   <entitydescription.>活体金属能自动再生弹药，但威力减半。 </entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
   <!--tactical Scanner.xml-->
@@ -207,8 +208,8 @@
   <entityname.revolverammobw>14.5mm弹头弹夹(14.5mm Round Clip)</entityname.revolverammobw>
   <entityname.revolverammobw2>14.5mm震荡弹头弹夹(14.5mm Concussion Round Clip)</entityname.revolverammobw2>
   <entityname.revolverammobw3>14.5mm照明弹头弹夹(14.5mm Flare Round Clip)</entityname.revolverammobw3>
-  <entityname.coilgunammo_bw>再生金属电磁枪弹药箱(红) Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
-  <entityname.coilgunammo_bw2>再生金属电磁枪弹药箱(黄) Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunammo_bw>[遗产]再生金属电磁枪弹药箱(红) Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>[遗产]再生金属电磁枪弹药箱(黄) Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
   <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
   <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
   <entityname.bandolierbw>战术背带(Tactical Bandolier)</entityname.bandolierbw>

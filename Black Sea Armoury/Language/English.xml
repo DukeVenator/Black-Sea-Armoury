@@ -40,6 +40,7 @@
   <talentdescription.stonewallbw>When you are attacked,within [seconds] your physical damage resistance increases [physicaldamagereduction]%,stun resistance increases [stunresistance]%,and melee damage increases [amount]%.</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>High Permission</talentname.munitionsexpertisebw>
   <talentname.gunsmithbw>Artisan</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>Item you fabricate are of [qualitybonus] higher quality.</talentdescription.gunsmithbw>
   <talentname.duelistbw>Heart of the Storm</talentname.duelistbw>
   <talentdescription.chanceofextraweapondamagebw>When attacking with a CQB SMG or Power Axe,[probability]% probability will cause double damage and [amount]% more armor penetration.</talentdescription.chanceofextraweapondamagebw>
   <talentname.optimizedpowerflowbw>Modified circuit</talentname.optimizedpowerflowbw>
