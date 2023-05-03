@@ -521,7 +521,7 @@
     <InventoryIcon texture="%ModDir%/TS/Tatical.png" sourcerect="202,304,48,61" origin="0.45,0.5" />
     <Sprite texture="%ModDir%/TS/Tatical.png" sourcerect="216,210,78,95" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" height="30" density="40" />
-    <Wearable slots="Bag" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Security Vest" texture="%ModDir%/TS/Tatical.png" limb="Torso" hidelimb="false" sourcerect="215,209,79,97" inherittexturescale="true" origin="0.45,0.6" />
       <SkillModifier skillidentifier="weapons" skillvalue="15" />
       <SkillModifier skillidentifier="mechanical" skillvalue="10" />
