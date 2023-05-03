@@ -502,19 +502,23 @@
  <!-- Combat Mastery This talent needs SOME NERF -->
   <Talent identifier="olympianbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.corsairar_bw" color="gui.orange"/>
+    </Description>
     <Description tag="talentdescription.olympian">
       <Replace tag="[skillpercentage]" value="20" color="gui.green" />
     </Description>
     <Description tag="stattypenames.meleeattackmultiplier" />
     <Description tag="stattypenames.turretpowercostreduction" />
-    <Description tag="stattypenames.maximumhealthmultiplier" />
+    <Description tag="qualitystattypenames.rangedspreadreduction" />
     <AbilityGroupInterval interval="0.05">
       <Abilities>
-        <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.05" skillidentifier="all" />
         <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.05" skillidentifier="all" />
         <CharacterAbilityModifyStatToSkill stattype="TurretPowerCostReduction" maxvalue="0.05" skillidentifier="all" />
+        <CharacterAbilityModifyStatToSkill stattype="RangedSpreadReduction" maxvalue="0.05" skillidentifier="all" />
       </Abilities>
     </AbilityGroupInterval>
+    <AddedRecipe itemidentifier="corsairar_bw"/>
   </Talent>
   <!-- Ace  Edited stats-->
   <Talent identifier="warlordbw">
@@ -711,41 +715,18 @@
   <!-- Artisan -->
   <Talent identifier="gunsmithbw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128" />
-    <Description tag="talentdescription.crafthighqualityweapons">
+    <Description tag="talentdescription.gunsmithbw">
       <Replace tag="[qualitybonus]" value="1" color="gui.green" />
     </Description>
-    <Description tag="talentdescription.crafthighqualitybatteries">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.crafthighqualityfuelrods">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.crafthighqualityrepairtools">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.crafthighqualityexplosives">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.crafthighqualitytanks">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
-    </Description>
-    <Description tag="talentdescription.crafthighqualitytools">
-      <Replace tag="[qualitybonus]" value="1" color="gui.green" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.pio_bw2" color="gui.orange"/>
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGivePermanentStat statidentifier="gunsmith" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="simpletool" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="mobilebattery" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="reactorfuel" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="cuttingequipment" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="weldingequipment" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="demolitionsexpert" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="refillableoxygensource" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="weldingtoolfuel" stattype="IncreaseFabricationQuality" value="1" />
-        <CharacterAbilityGivePermanentStat statidentifier="simpletool" stattype="IncreaseFabricationQuality" value="1" />
+        <StatValue stattype="IncreaseFabricationQuality" value="1" />
       </Abilities>
     </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="pio_bw2"/>
   </Talent>
  <!-- Heart of storm Edited stats-->
   <Talent identifier="duelistbw">
