@@ -81,12 +81,47 @@
       <target tag="stronger" state="Attack" priority="100" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="700" sweepstrength="10" sweepspeed="0.5" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
       <target tag="weaker" state="Attack" priority="100" reactdistance="2000" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" attackpattern="Straight" sweepdistance="700" sweepstrength="10" sweepspeed="0.5" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
     </ai>
-    <inventory slots="RightHand, Any" accessiblewhenalive="True" commonness="1">
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="45">
       <Item identifier="guardiansteamcannon" slot="RightHand" />
+	  <Item identifier="aliencircuitry" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="9">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket1" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="9">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket2" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="9">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket3" />
+    </inventory>
+	<inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="5">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+	  <Item identifier="aliencircuitry" />
+	  <Item identifier="relic_bw" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket1" />
       <Item identifier="relic_bw" />
     </inventory>
-    <inventory slots="RightHand, Any" accessiblewhenalive="True" commonness="9">
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
       <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket2" />
+      <Item identifier="relic_bw" />
+    </inventory>
+    <inventory slots="RightHand, Any, Any, Any" accessiblewhenalive="False" accessiblebyowner="True" commonness="1">
+      <Item identifier="guardiansteamcannon" slot="RightHand" />
+      <Item identifier="aliencircuitry" />
+      <Item identifier="alientrinket3" />
+      <Item identifier="relic_bw" />
     </inventory>
     <StatusEffect type="OnActive">
       <Conditional HealthPercentage="lte 30" />

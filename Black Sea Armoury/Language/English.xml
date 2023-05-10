@@ -2,7 +2,7 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <!--Job.xml-->
   <jobName.Pilot>Iron Rider</jobName.Pilot>
-  <jobdescription.Pilot>Elite in the Europa League,good at driving mechas to perform various special assault missions.</jobdescription.Pilot>
+  <jobdescription.Pilot>Elite Soldiers of the Iron League, Iron Riders serve as stalwart defenders of humanity on Europa.</jobdescription.Pilot>
   <talenttree.bwbr1>Gun sword prayer</talenttree.bwbr1>
   <talenttree.bwbr2>Iron Cult</talenttree.bwbr2>
   <talenttree.bwbr3>Techno Barbarians</talenttree.bwbr3>
@@ -40,6 +40,7 @@
   <talentdescription.stonewallbw>When you are attacked,within [seconds] your physical damage resistance increases [physicaldamagereduction]%,stun resistance increases [stunresistance]%,and melee damage increases [amount]%.</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>High Permission</talentname.munitionsexpertisebw>
   <talentname.gunsmithbw>Artisan</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>Item you fabricate are of [qualitybonus] higher quality.</talentdescription.gunsmithbw>
   <talentname.duelistbw>Heart of the Storm</talentname.duelistbw>
   <talentdescription.chanceofextraweapondamagebw>When attacking with a CQB SMG or Power Axe,[probability]% probability will cause double damage and [amount]% more armor penetration.</talentdescription.chanceofextraweapondamagebw>
   <talentname.optimizedpowerflowbw>Modified circuit</talentname.optimizedpowerflowbw>
@@ -49,47 +50,47 @@
   <talentdescription.crafthighqualityhmgbw>The quality of the machine gun weapons you make is improved [qualitybonus].</talentdescription.crafthighqualityhmgbw>
   <!--AXE.xml-->
   <entityname.PFbw>Power Combat System</entityname.PFbw>
-  <entitydescription.PFbw>With powerful melee system support,even fist can break stone.</entitydescription.PFbw>
+  <entitydescription.PFbw>All Iron League recruits are trained in hand-to-hand combat.</entitydescription.PFbw>
   <entityname.stunbatonbw>Heat Saber</entityname.stunbatonbw>
-  <entitydescription.stunbatonbw>Powerful stun weapon,can load battry or X01 oxygen cell to cause additional heat damage,but can't penetrate heavy armor. However does nothing with no power source :) </entitydescription.stunbatonbw>
-  <entityname.hammer_bw>The Hammer</entityname.hammer_bw>
-  <entitydescription.hammer_bw>Steel hammer,can load hammer detonator to cause additional explosion.</entitydescription.hammer_bw>
+  <entitydescription.stunbatonbw>Heat Sabers are an effective stun weapon when charged with an X01 Oxygen Cell, but are notoriously ineffective against armor.</entitydescription.stunbatonbw>
+  <entityname.hammer_bw>Thunder Hammer</entityname.hammer_bw>
+  <entitydescription.hammer_bw>A dense boarding hammer. It can be loaded with a shaped charge for more penetration power. Largely ineffective in combat.</entitydescription.hammer_bw>
   <entityname.uex2>Hammer Detonator</entityname.uex2>
-  <entitydescription.uex2>Detonator with uex to cause additional hammer explosion.</entitydescription.uex2>
-  <entityname.bw_axe>Power AXE</entityname.bw_axe>
-  <entitydescription.bw_axe>An old fashion weapon,can easily tear your target apart.</entitydescription.bw_axe>
+  <entitydescription.uex2>A shaped charge for use with the Thunder Hammer. Great care must be taken to avoid injury.</entitydescription.uex2>
+  <entityname.bw_axe>Iron League Boarding Axe</entityname.bw_axe>
+  <entitydescription.bw_axe>A slower but safer alternative to the Thunder Hammer for breaching submarines, this cumbersome and unwieldy axe is frighteningly effective against armor.</entitydescription.bw_axe>
   <entityname.bwgs>Winter Star</entityname.bwgs>
-  <entitydescription.bwgs>Long sword from ancient memory.Cold and pround.</entitydescription.bwgs>
+  <entitydescription.bwgs>A longsword of ancient design. Its heavy blade serves exceptionally well against armor.</entitydescription.bwgs>
   <entityname.tachi>Conquest</entityname.tachi>
-  <entitydescription.tachi>Tachi from ancient memory.Sharp and swift.</entitydescription.tachi>
+  <entitydescription.tachi>A curved blade of exotic design. Its swift blade struggles against armor, but excels when meeting flesh.</entitydescription.tachi>
   <!--BA.xml-->
   <entityname.corsairar_bw>Corsair</entityname.corsairar_bw>
-  <entitydescription.corsairar_bw>Old type military armor,fast but low defense.Although retired from army,pirates still use it to robber merchant ships.Use normal oxygentank.</entitydescription.corsairar_bw>
+  <entitydescription.corsairar_bw>An old and outdate suit of military armor suit. It still sees limited service with novice Iron Riders and Iron Rebels, who use it to raid cargo ships. Made to run off of Oxygen Tanks albeit not very efficiently.</entitydescription.corsairar_bw>
   <entityname.armored_miningsuit_bw>Hammer Mining Armor</entityname.armored_miningsuit_bw>
-  <entitydescription.armored_miningsuit_bw>Heavy mining armor suit design for high-pressure environment.Used power cycle design,work with batteries.Can install extra hammer container.</entitydescription.armored_miningsuit_bw>
+  <entitydescription.armored_miningsuit_bw>Heavy mining armor suit design for high-pressure environment.Used power cycle design to work using fulgurium batteries.Can install extra hammer container.</entitydescription.armored_miningsuit_bw>
   <entityname.toolbox_bw>Hammer Container</entityname.toolbox_bw>
   <entitydescription.toolbox_bw>Thick container can transfer dangerous small goods and ores safely.</entitydescription.toolbox_bw>
   <entityname.armored_hardsuit_bw>X01 Battle Armor</entityname.armored_hardsuit_bw>
-  <entitydescription.armored_hardsuit_bw>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Can hold one weapon inside.</entitydescription.armored_hardsuit_bw>
-  <entityname.oxygen_cell_bw>X01 Oxygen Cell</entityname.oxygen_cell_bw>
-  <entitydescription.oxygen_cell_bw>Experimental oxygen cell, resistant to puncture and heat.</entitydescription.oxygen_cell_bw>
+  <entitydescription.armored_hardsuit_bw>A heavy suit of modern battle armor that offers great protection without hampering mobility. It has an attached universal holster to hold one weapon. It is the main issued suit to Iron Riders who don't need specialized protection. Requires an X01 Oxygen Cell for optimal performance.</entitydescription.armored_hardsuit_bw>
+  <entityname.oxygen_cell_bw>X01 Power Cell</entityname.oxygen_cell_bw>
+  <entitydescription.oxygen_cell_bw>The mainstay of Iron League technology is the X01 Oxygen Cell. It utilizes a mix of high-capacity fulgurium batteries with a cutting edge oxygen and pressure system using oxygenite forming a Powercell able power battle armor while also providing breathable air to the occupants. While they've been designed to be quite resistant to puncture and heat, they're certainly not invulnerable.</entitydescription.oxygen_cell_bw>
   <entityname.laser_bw>Laser</entityname.laser_bw>
-  <entityname.armored_hardsuit_bwl>X01 Battle Armor(Leader)</entityname.armored_hardsuit_bwl>
-  <entitydescription.armored_hardsuit_bwl>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Leader unit has more powerful sonar sysytem.</entitydescription.armored_hardsuit_bwl>
-  <entityname.armored_hardsuit_bw2>X01 Battle Armor(Veteran)</entityname.armored_hardsuit_bw2>
-  <entitydescription.armored_hardsuit_bw2>Heavy metal armor suit for used coalition military operations,can endure lots of damage.Veteran unit has more personalized decoration and additional slot for iron fist.</entitydescription.armored_hardsuit_bw2>
+  <entityname.armored_hardsuit_bwl>X01 Commander Armor</entityname.armored_hardsuit_bwl>
+  <entitydescription.armored_hardsuit_bwl>An adorned suit of armor for squad commanders and other veteran officers, the X01 Commander Armor is largely the same as the standard X01 Battle Armor, except that this suit possesses improved communication and sensor system to aid in squad navigation and target tracking. It also serves to serve as a subtle training method for newer Iron Riders, as losing contact with the squad commander usually leads to immediate disorientation.</entitydescription.armored_hardsuit_bwl>
+  <entityname.armored_hardsuit_bw2>X01 Veteran Armor</entityname.armored_hardsuit_bw2>
+  <entitydescription.armored_hardsuit_bw2>A highly adorned and venerated suit of Battle Armor. Each suit of veteran armor is personalized to the wearer through trinkets, engravings, and personal upgrades. It is slightly more robust than standard battle armor through small upgrades, though these small tweaks don't amount to much. The key difference that this suit possesses over others is its built thermal vision.</entitydescription.armored_hardsuit_bw2>
   <entityname.knight_hardsuit_bw>Silver Knight</entityname.knight_hardsuit_bw>
-  <entitydescription.knight_hardsuit_bw>Mysterious armor crafted with alien material,can endure lots of damage.Can hold one weapon inside.Use alien power cell.</entitydescription.knight_hardsuit_bw>
+  <entitydescription.knight_hardsuit_bw>A mysterious suit of poorly understood armor that was put together in secret by rogue Iron League scientists using poorly understood alien materials found within the alien ruins. It feels almost alive at first touch. Linking deeply to the wearers body while worn, the suit seems to allow for some light resistance to the various toxins and parasites found hidden in the deep of Europa's waters. It requies a rare power cell made from alien power cells and other exotic materials to run properly. Don't let the battery run dry...</entitydescription.knight_hardsuit_bw>
   <entityname.pio_bw>Pioneer Custom</entityname.pio_bw>
-  <entitydescription.pio_bw>Armor designed for large-scale projects,also good at maintain submarines.Use normal oxygentank.</entitydescription.pio_bw>
+  <entitydescription.pio_bw>While the Pioneer is an excellent suit of armor for those tasked jobs in dangerous regions of Europa and active combat zones the standart pioneer suit featured not enough armor. Due to frequent complaints and casualties among those the creation of the Pioneer Custom suit of armor was ordered which incorporates extra protection against the dangers of Combat but has become more bulky and less agile because of it. Made to run off of Oxygen Tanks albeit not very efficiently.</entitydescription.pio_bw>
   <entityname.pio_bw2>Pioneer</entityname.pio_bw2>
-  <entitydescription.pio_bw2>Armor designed for large-scale projects,also good at maintain submarines.Use normal oxygentank.</entitydescription.pio_bw2>
+  <entitydescription.pio_bw2>The Pioneer series of Armor suits was designed to help Iron League engineers with their various tasks on Europa. Unlike most Iron League suits, its systems help with more efficient repair, maintenance and construction of bases and submarines while also offering better protection from the dangers associated with those tasks than normal diving suits and even allows the use of the same Oxygen Tanks.</entitydescription.pio_bw2>
   <entityname.armored_miningsuit_bw2>Hercules</entityname.armored_miningsuit_bw2>
-  <entitydescription.armored_miningsuit_bw2>Heavy military mech,can carry a large amount of ammunition.Very awkward in the water,automatically charge when not activated.</entitydescription.armored_miningsuit_bw2>
+  <entitydescription.armored_miningsuit_bw2>The Hercules is designed to work as a heavy weapons platform. To this extent it is heavy, slow, and incredibly protective. However, the armor is incredibly clausterphobic and its poor mobility is hampered even further by water. However, it's bulk does serve to absorb the recoil of even the heaviest Iron League weapons. The Hercules comes with a small crane arm and a small amount of armored internal storage to assist with ammunition management. Requies an X01 Oxygen Cell for optimal performance.</entitydescription.armored_miningsuit_bw2>
   <entityname.corsairar_bp>X00 Prototype Armor</entityname.corsairar_bp>
   <entitydescription.corsairar_bp>Experimental prototype with extremely high attack performance.Use X01 oxygen cell.</entitydescription.corsairar_bp>
-  <entityname.armored_miningsuit_bw3>Hercules Mk.II(Hercules Mk.II)</entityname.armored_miningsuit_bw3>
-  <entitydescription.armored_miningsuit_bw3>Heavy military engineering armor modification,slightly improved speed and experimental energy circulation furnace.</entitydescription.armored_miningsuit_bw3>
+  <entityname.armored_miningsuit_bw3>Hercules Mk.II</entityname.armored_miningsuit_bw3>
+  <entitydescription.armored_miningsuit_bw3>The Hercules is an excellent weapon platform, but the sluggish nature of the armor meant that anyone who wielded it was often simply outmaneuvered by lighter forces. Thus a new iteration on the armor was developed, removing all of the intneral ammo storage and loading assistance in exchange for a more powerful movement system. It's still incredibly slow, but you will at least be able to reach the end of the hallway before the day is done. Requires an X01 Oxygen Cell for optimal performance.</entitydescription.armored_miningsuit_bw3>
   <!--Shield.xml-->
   <entityname.bwapc>Reverse Engineering Alien Power Cell</entityname.bwapc>
   <entitydescription.bwapc>A man-made alien power cell.</entitydescription.bwapc>
@@ -185,7 +186,7 @@
   <entitydescription.smgmagazine_bw>Little friend.</entitydescription.smgmagazine_bw>
   <entityname.smg_bw>CQB SMG</entityname.smg_bw>
   <entitydescription.smg_bw>Fast auto-fire weapon,can be dual wielded.Use 7.62mm magazine.</entitydescription.smg_bw>
-  <entityname.smgmagazine_bw2>7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
+  <entityname.smgmagazine_bw2>(LEGACY WILL BE REMOVED)7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
   <entitydescription.>Living metal provide limitless rounds,but halfed the damage.</entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
   <!--tactical Scanner.xml-->
@@ -209,8 +210,8 @@
   <entityname.revolverammobw>14.5mm Round Clip</entityname.revolverammobw>
   <entityname.revolverammobw2>14.5mm Concussion Round Clip</entityname.revolverammobw2>
   <entityname.revolverammobw3>14.5mm Flare Round Clip</entityname.revolverammobw3>
-  <entityname.coilgunammo_bw>Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
-  <entityname.coilgunammo_bw2>Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunammo_bw>LEGACY Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>LEGACY Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
   <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
   <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
   <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- Corsair -->
-  <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -14,7 +14,7 @@
       <Item identifier="fpgacircuit" />
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
@@ -23,10 +23,10 @@
       <RequiredItem identifier="abyssdivingsuit" />
     </Fabricate>
     <InventoryIcon texture="SYS3.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="11,22,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -104,6 +104,7 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of oxygen tank stuff -->
+      <!-- moving sonar to comments for now incase its needed again for modular system again
       <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
@@ -127,6 +128,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -156,7 +158,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Mining Armor-->
-  <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -179,10 +181,10 @@
       <RequiredItem identifier="abyssdivingsuit" />
     </Fabricate>
     <InventoryIcon texture="SYS2.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -347,7 +349,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- X01 Battle Armor-->
-  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -379,10 +381,10 @@
       <RequiredItem identifier="pio_bw" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -419,11 +421,11 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
-		<Conditional Voltage="gt 0.5" />
+		    <Conditional Voltage="gt 0.5" />
         <Conditional InWater="true" />
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -500,7 +502,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- Oxygen BW1 Cell (X01 Oxygen Cell)-->
-  <Item name="" identifier="oxygen_cell_bw" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="4">
+  <Item name="" identifier="oxygen_cell_bw" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,loadable,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" maxstacksize="4">
     <Price baseprice="650" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -571,7 +573,7 @@
     </Projectile>
   </Item>
   <!-- X01 Battle Armor(Leader) -->
-  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -592,10 +594,10 @@
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA2.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01L.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD2.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -632,7 +634,7 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
@@ -696,7 +698,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.45" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.45" probabilitymultiplier="0.45" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -714,7 +715,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- X01 Battle Armor(Veteran)-->  
-  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -724,18 +725,22 @@
     </Price>
     <Deconstruct time="1">
       <Item identifier="armored_hardsuit_bw" />
+      <Item identifier="shellshield" />
+	  <Item identifier="mudraptorshell" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="armored_hardsuit_bw" />
+      <RequiredItem identifier="shellshield" />
+	  <RequiredItem identifier="mudraptorshell" />
       <RequiredItem identifier="crawlermask" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA3.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01V.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -772,7 +777,7 @@
         <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.2" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.0" setvalue="true" comparison="And">
@@ -836,6 +841,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.55" damagesound="LimbArmor" />
+      <StatusHUD drawhudwhenequipped="true" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -857,7 +863,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- Silver Knight -->
-  <Item name="" identifier="knight_hardsuit_bw" aliases="military hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="knight_hardsuit_bw" aliases="military hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1021,7 +1027,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!--pio_bw Pioneer Custom -->
-  <Item name="" identifier="pio_bw" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="pio_bw" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1120,7 +1126,8 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of Oxy Tanks -->
-      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <!-- moving sonar to comments for now incase its needed again for modular system again
+	  <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
 		</StatusEffect>
@@ -1143,6 +1150,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1170,7 +1178,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Pioneer -->
-  <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1181,7 +1189,7 @@
     <Deconstruct time="30">
       <Item identifier="abyssdivingsuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="handheldsonar" />
@@ -1272,6 +1280,7 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of Oxy Tank stuff -->
+      <!-- moving sonar to comments for now incase its needed again for modular system again
       <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
 		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
 		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
@@ -1295,6 +1304,7 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
+	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1322,7 +1332,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Hercules  = Why the hell is this named mining suit 2????-->
-    <Item name="" identifier="armored_miningsuit_bw2" aliases="worker hardsuit" category="Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="armored_miningsuit_bw2" aliases="worker hardsuit" category="Diving,Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1347,10 +1357,10 @@
       <RequiredItem identifier="armored_miningsuit_bw" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
@@ -1422,7 +1432,7 @@
     <aitarget maxsightrange="4000" />
   </Item>
   <!-- X00 Prototype Armor why is it named corsair lol -->
-  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item name="" identifier="corsairar_bp" aliases="worker hardsuit" category="Diving,Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="2500" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1443,10 +1453,10 @@
       <RequiredItem identifier="corsairar_bw" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/BA/EL/SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/EL/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/EL/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/EL/X00.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/EL/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/EL/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
@@ -1547,7 +1557,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.75" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
+      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
@@ -1565,7 +1575,7 @@
     <aitarget maxsightrange="2000" />
   </Item>
   <!-- Hercules Mk.II(Hercules Mk.II) Why is this named a MINING SUIT!!!!!-->
-  <Item name="" identifier="armored_miningsuit_bw3" aliases="worker hardsuit" category="Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_miningsuit_bw3" aliases="worker hardsuit" category="Diving,Equipment" tags="railgunequipment,mech,diving,provocative,deepdiving,divingsuit,gunsmith" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -1585,10 +1595,10 @@
       <RequiredItem identifier="armored_miningsuit_bw2" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A02.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <Body radius="45" width="34" density="15" />
+    <Body width="300" height="300" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true">
@@ -1646,7 +1656,6 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.15" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
-      <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="20" maxstacksize="1" keepopenwhenequipped="false" movableframe="true" containedstateindicatorstyle="ammo">
       <Containable items="railgunammo,coilgunammo,ammobox,chaingunammo,pulselaserammo,smallitem,mediumitem" />

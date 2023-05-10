@@ -2,7 +2,7 @@
 <infotexts language="Simplified Chinese" nowhitespace="false" translatedname="中文(简体)">
   <!--Job.xml-->
   <jobName.Pilot>铁骑兵</jobName.Pilot>
-  <jobdescription.Pilot>木卫二联盟中的精锐，擅长驾驶机甲执行各式特种突击任务。</jobdescription.Pilot>
+  <jobdescription.Pilot>铁骑兵，钢铁联盟的的精锐，是欧罗巴上人类的坚定的捍卫者。</jobdescription.Pilot>
   <talenttree.bwbr1>枪剑祷告</talenttree.bwbr1>
   <talenttree.bwbr2>钢铁崇拜</talenttree.bwbr2>
   <talenttree.bwbr3>科技蛮族</talenttree.bwbr3>
@@ -40,6 +40,7 @@
   <talentdescription.stonewallbw>当你受到攻击后，[seconds]内你的物理伤害抗性提升[physicaldamagereduction]%，击晕抗性提升[stunresistance]%，近战伤害提升[amount]%。</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>权限许可</talentname.munitionsexpertisebw>
   <talentname.gunsmithbw>战争铁匠</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>所制造物品的质量提高[qualitybonus]。</talentdescription.gunsmithbw>
   <talentname.duelistbw>风暴之心</talentname.duelistbw>
   <talentdescription.chanceofextraweapondamagebw>使用近身战冲锋枪或动力斧攻击时，[probability]%机率造成双倍伤害与额外[amount]%穿甲力。</talentdescription.chanceofextraweapondamagebw>
   <talentname.optimizedpowerflowbw>改装电路</talentname.optimizedpowerflowbw>
@@ -49,19 +50,19 @@
   <talentdescription.crafthighqualityhmgbw>你制造的机枪武器品质提升[qualitybonus]。</talentdescription.crafthighqualityhmgbw>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
-  <entitydescription.PFbw>在精密计算辅助下，即便巨岩也能轻松粉碎。</entitydescription.PFbw>
+  <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>
   <entityname.stunbatonbw>热能军刀(Heat Saber)</entityname.stunbatonbw>
   <entitydescription.stunbatonbw>强力晕眩武器，装上X01氧气电池后能造成额外热能伤害，但无法穿透重装甲。</entitydescription.stunbatonbw>
-  <entityname.hammer_bw>铁锤(The Hammer)</entityname.hammer_bw>
-  <entitydescription.hammer_bw>钢铁之锤，装入火药后能造成大范围爆炸。</entitydescription.hammer_bw>
+  <entityname.hammer_bw>雷霆之锤(Thunder Hammer)</entityname.hammer_bw>
+  <entitydescription.hammer_bw>一个重型破门锤，可以使用聚能装药以获得更强的穿透力。但在战斗中很难发挥作用。</entitydescription.hammer_bw>
   <entityname.uex2>铁锤引爆器(Hammer Detonator)</entityname.uex2>
-  <entitydescription.uex2>装入通用炸药的引爆器，能造成大范围爆炸。</entitydescription.uex2>
-  <entityname.bw_axe>动力斧(Power AXE)</entityname.bw_axe>
-  <entitydescription.bw_axe>一种老式武器，依然可以轻松切碎敌人。</entitydescription.bw_axe>
+  <entitydescription.uex2>与雷霆之锤配合使用的锥形聚能炸药。一不留神就会伤害到自己。</entitydescription.uex2>
+  <entityname.bw_axe>钢铁联盟登船斧(Iron League Boarding Axe)</entityname.bw_axe>
+  <entitydescription.bw_axe>作为雷霆之锤的替代品，这种笨重的斧头在破坏船壳的速度更慢，但更安全。此外它对装甲的效果非常可怕。</entitydescription.bw_axe>
   <entityname.bwgs>岁星(Winter Star)</entityname.bwgs>
-  <entitydescription.bwgs>仿佛自古代而来的长剑，冷酷且高傲。 </entitydescription.bwgs>
+  <entitydescription.bwgs>仿佛自古代而来的长剑，其厚重的剑身可以很好地对付盔甲。 </entitydescription.bwgs>
   <entityname.tachi>天征(Conquest)</entityname.tachi>
-  <entitydescription.tachi>仿佛自古代而来的太刀，锋锐且迅捷。 </entitydescription.tachi>
+  <entitydescription.tachi>仿佛自古代而来的太刀，它锋锐且迅捷的刀刃在对抗盔甲时很吃力，但在遇到肉体时却很出色。 </entitydescription.tachi>
   <!--BA.xml-->
   <entityname.corsairar_bw>劫盗式(Corsair)</entityname.corsairar_bw>
   <entitydescription.corsairar_bw>淘汰的军用装甲，大量流入黑市导致海盗猖獗。使用氧气瓶。</entitydescription.corsairar_bw>
@@ -183,7 +184,7 @@
   <entitydescription.smgmagazine_bw>''小''朋友。 </entitydescription.smgmagazine_bw>
   <entityname.smg_bw>近身战冲锋枪(CQB SMG)</entityname.smg_bw>
   <entitydescription.smg_bw>可以双持的快速火力。使用7.62mm弹匣。 </entitydescription.smg_bw>
-  <entityname.smgmagazine_bw2>7.62mm再生弹匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
+  <entityname.smgmagazine_bw2>[遗产即将移除]7.62mm再生弹匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
   <entitydescription.>活体金属能自动再生弹药，但威力减半。 </entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
   <!--tactical Scanner.xml-->
@@ -207,8 +208,8 @@
   <entityname.revolverammobw>14.5mm弹头弹夹(14.5mm Round Clip)</entityname.revolverammobw>
   <entityname.revolverammobw2>14.5mm震荡弹头弹夹(14.5mm Concussion Round Clip)</entityname.revolverammobw2>
   <entityname.revolverammobw3>14.5mm照明弹头弹夹(14.5mm Flare Round Clip)</entityname.revolverammobw3>
-  <entityname.coilgunammo_bw>再生金属电磁枪弹药箱(红) Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
-  <entityname.coilgunammo_bw2>再生金属电磁枪弹药箱(黄) Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunammo_bw>[遗产]再生金属电磁枪弹药箱(红) Autofilled Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>[遗产]再生金属电磁枪弹药箱(黄) Autofilled Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
   <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
   <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
   <entityname.bandolierbw>战术背带(Tactical Bandolier)</entityname.bandolierbw>

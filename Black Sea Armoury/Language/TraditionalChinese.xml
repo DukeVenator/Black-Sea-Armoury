@@ -40,6 +40,7 @@
   <talentdescription.stonewallbw>當你受到攻擊後，[seconds]內你的物理傷害抗性提升[physicaldamagereduction]%，擊暈抗性提升[stunresistance]%，近戰傷害提升[amount]%。</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>權限許可</talentname.munitionsexpertisebw>
   <talentname.gunsmithbw>戰爭鐵匠</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>所制造物品的质量提高[qualitybonus]。</talentdescription.gunsmithbw>
   <talentname.duelistbw>風暴之心</talentname.duelistbw>
   <talentdescription.chanceofextraweapondamagebw>使用近身戰衝鋒槍或動力斧攻擊時，[probability]%機率造成雙倍傷害與額外[amount]%穿甲力。</talentdescription.chanceofextraweapondamagebw>
   <talentname.optimizedpowerflowbw>改裝電路</talentname.optimizedpowerflowbw>

@@ -45,12 +45,17 @@
     </Price>
     <Deconstruct time="1">
       <Item identifier="plastic" />
+      <Item identifier="plastic" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="5">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="steel" mincondition="0.25" usecondition="true" />
       <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
       <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="Magnesium" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="Magnesium" mincondition="0.25" usecondition="true" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
     <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
@@ -135,14 +140,6 @@
       <Item identifier="physicorium" />
       <Item identifier="incendium" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="fulgurium" />
-      <RequiredItem identifier="dementonite" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="incendium" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/SMG/smg mag2.png" sourcerect="0,0,36,44" />
     <Sprite texture="%ModDir%/SMG/smg mag2.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -154,7 +151,9 @@
       <StatusEffect type="Always" target="This" Condition="1">
         <Conditional condition="gt 0" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1.75" stackable="false" />
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
