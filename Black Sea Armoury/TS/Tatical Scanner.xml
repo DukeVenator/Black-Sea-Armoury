@@ -144,7 +144,7 @@
     <Body radius="40" height="60" density="40" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.6" />
-      <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -304,9 +304,9 @@
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.6" probabilitymultiplier="0.4" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.6" probabilitymultiplier="0.4" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="shellshield" texture="%ModDir%/TS/tatical.png" sourcerect="0,0,164,228" limb="Torso" depthlimb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.65,0.6">
@@ -495,7 +495,9 @@
       <sprite name="Battle Armor 3 Left Leg" texture="%ModDir%/TS/BC.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Left Shoe" texture="%ModDir%/TS/BC.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Right Shoe" texture="%ModDir%/TS/BC.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,organdamage,burn,bleeding,explosiondamage,radiation,exposure,glowing,huskinfection,stun,alieninfection,paralysis" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,organdamage,bleeding,explosiondamage,radiationsickness,paralysis" armorsector="0.0,360.0" damagemultiplier="0.6" />
+	  <damagemodifier afflictionidentifiers="huskinfection" armorsector="0.0,360.0" probabilitymultiplier="0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,stun" damagemultiplier="0.6" />
       <SkillModifier skillidentifier="medical" skillvalue="10" />
     </Wearable>
     <ItemContainer capacity="8">
