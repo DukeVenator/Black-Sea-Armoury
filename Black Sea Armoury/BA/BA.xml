@@ -541,8 +541,8 @@
   </Item>
   <!-- Laser "Bullet" -->
   <Item name="Laser" identifier="laser_bw" category="Misc" interactthroughwalls="true" tags="smallitem,round,energyammotype" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
