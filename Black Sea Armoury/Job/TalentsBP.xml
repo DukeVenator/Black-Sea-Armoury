@@ -393,7 +393,7 @@
         <AbilityConditionHasAffliction afflictionidentifier="steelruler" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyResistance resistanceid="damage" resistance="0.8" />
+        <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.8" />
       </Abilities>
     </AbilityGroupInterval>
     <AddedRecipe itemidentifier="corsairar_bp" />
@@ -721,11 +721,17 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.pio_bw2" color="gui.orange"/>
     </Description>
-    <AbilityGroupEffect abilityeffecttype="None">
+    <AbilityGroupInterval interval="0.9">
       <Abilities>
-        <StatValue stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+              <Affliction identifier="artisanbw" strength="1.0"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
       </Abilities>
-    </AbilityGroupEffect>
+    </AbilityGroupInterval>
     <AddedRecipe itemidentifier="pio_bw2"/>
   </Talent>
  <!-- Heart of storm Edited stats-->

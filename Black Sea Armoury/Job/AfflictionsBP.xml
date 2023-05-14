@@ -16,4 +16,20 @@
     <Effect minstrength="5.7" maxstrength="6" strengthchange="0" />
     <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="3,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+  
+  <Affliction
+    identifier="artisanbw"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    treatmentthreshold="1000"
+    hideiconafterdelay="true"
+    duration="1"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1">
+      <StatValue stattype="IncreaseFabricationQuality" value="1" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="0,3" sheetelementsize="128,128" />
+  </Affliction>
 </Afflictions>
