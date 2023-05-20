@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Piratedismantler" SpeciesTranslationOverride="" DisplayName="" Group="pirate" Humanoid="true" HasInfo="False" CanInteract="True" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="400" Visibility="400" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="200" DoesBleed="True" CrushDepth="20000" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.075" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False">
+    <Limb name="Head">
+      <VitalityMultiplier type="damage" multiplier="2.0" />
+    </Limb>
+    <Limb name="Torso">
+      <VitalityMultiplier type="bleeding" multiplier="1.0" />
+    </Limb>
+    <Limb name="LeftArm">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightArm">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+  </health>
+  <sound gender="None" File="Content/Characters/Human/male_damage1.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Human/male_damage2.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Human/male_damage3.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Human/male_damage4.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <ai CombatStrength="500" Sight="3" Hearing="3" AggressionHurt="150" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="True" CanOpenDoors="True" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="True" PatrolDry="True" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <target damagethreshold="0" Tag="decoy" State="Observe" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False"/>
+    <target damagethreshold="0" Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" />
+    <target damagethreshold="0" Tag="weapon" State="Attack" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True"  IgnoreIfNotInSameSub="True"/>
+    <target damagethreshold="0" Tag="human" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True"  IgnoreIfNotInSameSub="True"/>
+    <target damagethreshold="0" Tag="nasonov" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False"  />
+    <target damagethreshold="0" Tag="tool" state="Aggressive" priority="60" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreifnotinsamesub="True"/>
+    <target damagethreshold="0" Tag="sonar" State="Attack" Priority="50" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False"  />
+    <target damagethreshold="0" Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True"  />
+    <target damagethreshold="0" Tag="wall" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False"  />
+    <target damagethreshold="0" Tag="door" State="Aggressive" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" />
+    <target damagethreshold="0" Tag="room" State="Aggressive" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" />
+    <target damagethreshold="0" tag="engine" state="Avoid" priority="100" reactdistance="100" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="True" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
+    <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
+  </ai>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="uex2" />
+    <Item Identifier="fulguriumbatterycell" />
+    <Item Identifier="hyperzine" />
+    <Item Identifier="rum" />
+    <Item slot="RightHand+LeftHand" Identifier="hammer_bw_e" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="armored_miningsuit_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmetbw" />
+  </inventory>
+</Character>
