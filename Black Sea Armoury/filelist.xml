@@ -24,9 +24,9 @@
   <Item file="%ModDir%/Enemy/Over.xml" />
   <Character file="%ModDir%/Enemy/Fractalguardian/Fractalguardian.xml" />
   <Character file="%ModDir%/Enemy/Fractalguardian2/Fractalguardian2.xml" />
-  <Item file="%ModDir%/Enemy/Items/weapons.xml"/>
-  <Item file="%ModDir%/Enemy/Items/suits.xml"/>
-  <Item file="%ModDir%/Enemy/Items/mags.xml"/>
+  <Item file="%ModDir%/Items/Enemy/weapons.xml"/>
+  <Item file="%ModDir%/Items/Enemy/suits.xml"/>
+  <Item file="%ModDir%/Items/Enemy/mags.xml"/>
   <Character file="%ModDir%/Enemy/Pirate/Pirateforerunner/Pirateforerunner.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratedismantler/Piratedismantler.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateboarder/Pirateboarder.xml" />
@@ -56,7 +56,7 @@
   <Character file="%ModDir%/Enemy/Separatist/Separatistsharpshooter/Separatistsharpshooter.xml" />
   <NPCSets file="%ModDir%/Enemy/NPC/AbandonedOutpostNPC.xml" />
   <NPCSets file="%ModDir%/Enemy/NPC/MLCNPC.xml" />
-  <Missions file="%ModDir%/Enemy/Events/BAEMissions.xml" />
-  <RandomEvents file="%ModDir%/Enemy/Events/BAErandommissionevents.xml" />
-  <RandomEvents file="%ModDir%/Enemy/Events/BAErandomcampaignevents.xml" />
+  <Missions file="%ModDir%/Events/BAEMissions.xml" />
+  <RandomEvents file="%ModDir%/Events/BAErandommissionevents.xml" />
+  <RandomEvents file="%ModDir%/Events/BAErandomcampaignevents.xml" />
 </contentpackage>
