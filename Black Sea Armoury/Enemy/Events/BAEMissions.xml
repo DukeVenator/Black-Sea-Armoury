@@ -268,7 +268,7 @@
     <monster character="Coalitionantisub" min="1" max="1"/>
     <monster character="Coalitionrifleman" min="2" max="3"/>
     <monster character="Coalitionheavy" min="2" max="3"/>
-    <monster character="Coalitionharpshooter" min="1" max="1"/>
+    <monster character="Coalitionsharpshooter" min="1" max="1"/>
     <monster character="Coalitiongunner" min="1" max="1"/>
     <monster character="Coalitionveteran" min="1" max="1"/>
     <monster character="Coalitionannihilator" min="1" max="1"/>
