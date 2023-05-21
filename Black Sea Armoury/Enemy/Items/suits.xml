@@ -3,37 +3,37 @@
     <!--make it like a pucs so NPC will keep wearing and noninteractable by players -->
     <!-- Corsair enemy -->
     <Item name="" identifier="corsairar_bw_e" aliases="worker hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus ="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/SYS3.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir:Maddened Black Sea Armory%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:Maddened Black Sea Armory%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
-    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:Maddened Black Sea Armory%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <InventoryIcon texture="%ModDir%/BA/SYS3.png" sourcerect="0,0,256,256" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="false" pickkey="Select" allowusewhenworn="true">
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
+        <sprite texture="%ModDir%/BA/PR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/PR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
+        <sprite texture="%ModDir%/BA/PR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
     <!--0.4897959,0.6111111-->
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
+    <sprite texture="%ModDir%/BA/PR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
     <!--0.4576271,0.484375-->
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
+    <sprite texture="%ModDir%/BA/PR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-        <LightTexture texture="%ModDir:Maddened Black Sea Armory%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
+        <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
     </sprite>
-    <sprite name="UPARMR" texture="%ModDir:Maddened Black Sea Armory%/BA/PR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-    <sprite name="UPARML" texture="%ModDir:Maddened Black Sea Armory%/BA/PR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-    <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
+    <sprite name="UPARMR" texture="%ModDir%/BA/PR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+    <sprite name="UPARML" texture="%ModDir%/BA/PR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+    <sprite texture="%ModDir%/BA/PR/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+    <sprite texture="%ModDir%/BA/PR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+    <sprite texture="%ModDir%/BA/PR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
+    <sprite texture="%ModDir%/BA/PR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
+    <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
+    <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
+    <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+    <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
     <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.9" />
@@ -102,37 +102,37 @@
     </Item>
     <!-- Mining Armor increased resistance a little-->
     <Item name="" identifier="armored_miningsuit_bw_e" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,divinggear_wearableindoors,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/SYS2.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir:Maddened Black Sea Armory%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:Maddened Black Sea Armory%/BA/A01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
-    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:Maddened Black Sea Armory%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <InventoryIcon texture="%ModDir%/BA/SYS2.png" sourcerect="0,0,256,256" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/A01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body radius="45" width="34" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
+        <sprite texture="%ModDir%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/MA/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
+        <sprite texture="%ModDir%/BA/MA/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
         <!--0.4897959,0.6111111-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
+        <sprite texture="%ModDir%/BA/MA/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
         <!--0.4576271,0.484375-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
+        <sprite texture="%ModDir%/BA/MA/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite name="UPARMR" texture="%ModDir:Maddened Black Sea Armory%/BA/MA/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite name="UPARML" texture="%ModDir:Maddened Black Sea Armory%/BA/MA/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/MA/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+        <sprite name="UPARMR" texture="%ModDir%/BA/MA/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite name="UPARML" texture="%ModDir%/BA/MA/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite texture="%ModDir%/BA/MA/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/MA/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/MA/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
+        <sprite texture="%ModDir%/BA/MA/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
+        <sprite texture="%ModDir%/BA/MA/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/MA/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+        <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
         <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="1.0" />
@@ -200,37 +200,37 @@
     </Item>
     <!-- Pioneer -->
     <Item name="" identifier="pio_bw2_e" aliases="worker hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-        <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/SYSP.png" sourcerect="0,0,256,256" />
-        <Sprite name="Diving Suit Item" texture="%ModDir:Maddened Black Sea Armory%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
-        <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:Maddened Black Sea Armory%/BA/PIC2.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
-        <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:Maddened Black Sea Armory%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+        <InventoryIcon texture="%ModDir%/BA/SYSP.png" sourcerect="0,0,256,256" />
+        <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+        <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/PIC2.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
+        <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
         <Body radius="45" width="34" density="15" />
         <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
+        <sprite texture="%ModDir%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/PI2/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
+        <sprite texture="%ModDir%/BA/PI2/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
         <!--0.4897959,0.6111111-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
+        <sprite texture="%ModDir%/BA/PI2/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
         <!--0.4576271,0.484375-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
+        <sprite texture="%ModDir%/BA/PI2/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite name="UPARMR" texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite name="UPARML" texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.2868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,260,160" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4,0.5310345" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/PI2/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+        <sprite name="UPARMR" texture="%ModDir%/BA/PI2/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite name="UPARML" texture="%ModDir%/BA/PI2/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite texture="%ModDir%/BA/PI2/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/PI2/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.2868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/PI2/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
+        <sprite texture="%ModDir%/BA/PI2/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,260,160" />
+        <sprite texture="%ModDir%/BA/PI2/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/PI2/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4,0.5310345" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/PI2/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+        <sprite texture="%ModDir%/BA/PI2/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
         <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
             <Conditional Voltage="gt 0.5" />
             <StatValue stattype="FlowResistance" value="0.8" />
@@ -297,37 +297,37 @@
     </Item>
     <!-- X01 Battle Armor-->
     <Item name="" identifier="armored_hardsuit_bw_e" aliases="military hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir:Maddened Black Sea Armory%/BA/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
-    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:Maddened Black Sea Armory%/BA/X01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
-    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:Maddened Black Sea Armory%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <InventoryIcon texture="%ModDir%/BA/SYS.png" sourcerect="0,0,256,256" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
+    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
+        <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
+        <sprite texture="%ModDir%/BA/BR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
         <!--0.4897959,0.6111111-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
+        <sprite texture="%ModDir%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
         <!--0.4576271,0.484375-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
+        <sprite texture="%ModDir%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite name="UPARMR" texture="%ModDir:Maddened Black Sea Armory%/BA/BR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite name="UPARML" texture="%ModDir:Maddened Black Sea Armory%/BA/BR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.8,0.5310345" sourcerect="0,0,140,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
+        <sprite name="UPARMR" texture="%ModDir%/BA/BR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite name="UPARML" texture="%ModDir%/BA/BR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite texture="%ModDir%/BA/BR/SR.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/BR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.8,0.5310345" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
+        <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
         <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
             <Conditional Voltage="gt 0.5" />
             <StatValue stattype="FlowResistance" value="0.95" />
@@ -400,37 +400,37 @@
     </Item>
     <!-- X01 Battle Armor(Veteran) for enemy-->
     <Item name="" identifier="armored_hardsuit_bw2_e" aliases="military hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/SYS.png" sourcerect="0,0,256,256" />
-    <Sprite name="Diving Suit Item" texture="%ModDir:Maddened Black Sea Armory%/BA/BA3.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
-    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:Maddened Black Sea Armory%/BA/X01V.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
-    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:Maddened Black Sea Armory%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
+    <InventoryIcon texture="%ModDir%/BA/SYS.png" sourcerect="0,0,256,256" />
+    <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA3.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
+    <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/X01V.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
+    <ContainedSprite name="Diving Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/BA/BA3.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <Body width="250" height="250" density="30" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
+        <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/BODY2.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/BODY2.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
+        <sprite texture="%ModDir%/BA/BR/Waist.png" limb="Waist" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.7111111" sourcerect="0,0,140,140" />
         <!--0.4897959,0.6111111-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
+        <sprite texture="%ModDir%/BA/BR/HANDL.png" limb="LeftHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160" />
         <!--0.4576271,0.484375-->
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
+        <sprite texture="%ModDir%/BA/BR/HANDR.png" limb="RightHand" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.5576271,0.484375" sourcerect="0,0,160,160">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-            <LightTexture texture="%ModDir:Maddened Black Sea Armory%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
+            <LightTexture texture="%ModDir%/BA/handrlight.png" origin="0.5, 0.99" size="1.0,1.0" />
         </LightComponent>
         </sprite>
-        <sprite name="UPARMR" texture="%ModDir:Maddened Black Sea Armory%/BA/BR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite name="UPARML" texture="%ModDir:Maddened Black Sea Armory%/BA/BR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/SR2.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.8,0.5310345" sourcerect="0,0,140,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
-        <sprite texture="%ModDir:Maddened Black Sea Armory%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
+        <sprite name="UPARMR" texture="%ModDir%/BA/BR/UPARM.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite name="UPARML" texture="%ModDir%/BA/BR/UPARM.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" origin="0.4868421,0.3658537" sourcerect="0,0,152,300" />
+        <sprite texture="%ModDir%/BA/BR/SR2.png" limb="RightArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/BR/SL.png" limb="LeftArm" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.4868421,0.3658537" sourcerect="0,0,150,300" />
+        <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.8,0.5310345" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
+        <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
+        <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
         <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />

@@ -4,8 +4,8 @@
   <!-- Hammer Detonator -->
   <Item name="hammermag" identifier="uex2_e" category="Equipment" Scale="0.5" description="" Tags="smallitem,explosive,gunsmith" maxstacksize="1" cargocontaineridentifier="explosivecrate" hideinmenus="true" impactsoundtag="impact_soft">
     <Upgrade gameversion="0.9.3.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/AXE/hammeruex.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/AXE/hammeruex.png" depth="0.8" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/AXE/hammeruex.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/hammeruex.png" depth="0.8" sourcerect="0,0,64,64" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <StatusEffect type="OnUse" target="This" condition="-0" disabledeltatime="true"></StatusEffect>
@@ -20,8 +20,8 @@
   </Item>
   <!-- Drum 25mm Grenade (Grenade Launcher Magazine for Drum Hybrid Barrel) -->
   <Item name="grenademag" identifier="bw_grenade_drum_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="4">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGG.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="bw_grenade_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="bw_grenade_e" />
@@ -37,8 +37,8 @@
   </Item>
   <!-- 25mm Grenade ("Bullet" for Drum 25mm Grenade) increased launchimpulse for enemy-->
   <Item name="grenade" identifier="bw_grenade_e" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Fire in the hole!!!" tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="8" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SG/SGGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SG/SGGS.png" depth="0.56" sourcerect="0,0,24,10" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SG/SGGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGGS.png" depth="0.56" sourcerect="0,0,24,10" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="40.0" sticktocharacters="false" spread="8">
@@ -68,8 +68,8 @@
   </Item>
   <!-- Drum Shotgun Shell (Shotgun Magazine for Drum Hybrid Barrel) -->
   <Item name="sgmag" identifier="bw_shotgun_drum_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="4">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SG/SGS.png" sourcerect="0,0,36,64" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="bw_shotgun_shell" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="bw_shotgun_shell" />
@@ -85,8 +85,8 @@
   </Item>
   <!-- 7.62mm Magazine (Magazine for CQB SMG) -->
   <Item name="cqbmag" identifier="smgmagazine_bw_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,smgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="8">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SMG/smg mag.png" sourcerect="0,0,36,44" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
+    <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="smground_bw" />
@@ -102,8 +102,8 @@
   </Item>
   <!-- Linked 7.62mm magazine -->
   <Item name="lmgmag" identifier="lmgmagazine_bw_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,lmgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="4">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LMG/lmg mag.png" sourcerect="0,0,36,46" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LMG/lmg mag.png" depth="0.54" sourcerect="0,0,35,45" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/LMG/lmg mag.png" sourcerect="0,0,36,46" />
+    <Sprite texture="%ModDir%/LMG/lmg mag.png" depth="0.54" sourcerect="0,0,35,45" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="lmground_bw_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="lmground_bw_e" />
@@ -120,8 +120,8 @@
   </Item>
   <!-- LMG Bullet (Bullet for Linked 7.62mm magazine) for enemy -->
   <Item name="Lmg Rounde" identifier="lmground_bw_e" category="Misc" interactthroughwalls="true" tags="hmgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
@@ -211,8 +211,8 @@
   </Item>
     <!-- 14.5 Ammo Box -->
   <Item name="sicklemag" identifier="HMG1_mag_bw_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,smallitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="2">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="HMG1_ammo_bw_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="HMG1_ammo_bw_e" />
@@ -228,8 +228,8 @@
   </Item>
   <!-- HMG Bullet enemy increased structure damage-->
   <Item name="hmgbe" identifier="HMG1_ammo_bw_e" aliases="HMG Ammo Box" scale="0.5" tags="ammobox,smallitem,HMG1_ammo_bw,gunsmith,hmgammotype" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="30" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
@@ -259,8 +259,8 @@
   </Item>
   <!-- Rocket Shell (Axe Rocket Cannon Magazine) enemy -->
   <Item name="rocketmag" identifier="cannonshell_bw_e" aliases="Rocketbox" scale="0.5" tags="ammo,mediumitem,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" hideinmenus="true" maxstacksize="2">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cannonshell_bwr_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="cannonshell_bwr_e" />
@@ -276,8 +276,8 @@
   </Item>
   <!-- Rocket Shell "Bullet" (Axe Rocket Cannon "Bullet") incresed structure damage-->
   <Item name="rockete" identifier="cannonshell_bwr_e" aliases="Rocket" scale="0.5" tags="ammo,mediumitem,heavyammotype" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="1" hideinmenus="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0" hitscan="true">
@@ -311,8 +311,8 @@
   </Item>
   <!-- Precise Bullet Clip (Precise Gun Magazine) -->
   <Item name="pgmag" identifier="SG_ammo_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammo,smallitem,SG_ammo,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="4">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LC/sgun clip.png" sourcerect="0,0,36,48" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LC/sgun clip.png" sourcerect="0,0,36,48" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/LC/sgun clip.png" sourcerect="0,0,36,48" depth="0.55" />
+    <Sprite texture="%ModDir%/LC/sgun clip.png" sourcerect="0,0,36,48" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="SG_ammo_bw_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="SG_ammo_bw_e" />
@@ -328,8 +328,8 @@
   </Item>
   <!-- Precise Gun Bullet increased structure damage-->
   <Item name="SG" identifier="SG_ammo_bw_e" category="Equipment" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,SG_ammo_bw,gunsmith,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LC/sgun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LC/sgun round.png" sourcerect="0,0,36,8" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/LC/sgun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/LC/sgun round.png" sourcerect="0,0,36,8" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" spread="0" removeonhit="false" maxtargetstohit="3">
@@ -360,8 +360,8 @@
   </Item>
   <!-- Oxygen BW1 Cell (X01 Oxygen Cell) for enemy -->
   <Item name="x01oxy" identifier="oxygen_cell_bw_e" aliases="oxygen_cell_bw" category="Equipment,Misc" Tags="gunsmith,smallitem,oxygen_cell_bw,oxygensource,oxygentank,loadable,refillableoxygensource" cargocontaineridentifier="metalcrate" scale="0.3" description="" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="4">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BA/OC.png" sourcerect="0,0,48,112" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BA/OC.png" sourcerect="0,0,48,112" depth="0.55" origin="0.5,0.52" />
+    <InventoryIcon texture="%ModDir%/BA/OC.png" sourcerect="0,0,48,112" />
+    <Sprite texture="%ModDir%/BA/OC.png" sourcerect="0,0,48,112" depth="0.55" origin="0.5,0.52" />
     <Body width="42" height="108" density="8" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="laser_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -541,8 +541,8 @@
   </Item>  
   <!-- Experimental Chaingun Ammo Box -->
   <Item name="chaingunammo" identifier="chaingun_ammo_bw_e" aliases="Chaingun Ammo Box" scale="0.5" tags="ammobox,smallitem,mobilecontainer,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="True">
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
-    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
+    <Sprite texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
+    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
       <StatusEffect type="Always" target="This" targetitemcomponent="ContainedSprite" setvalue="true" sourcerect="0,0,95,70">
         <Conditional condition="eq 0" />
       </StatusEffect>
@@ -563,8 +563,8 @@
   </Item>
   <!-- Chaingun Bullet for enemy-->
   <Item name="Experimental Chaingun Round" identifier="chaingun_round_bw_e" category="Misc" interactthroughwalls="true" tags="smallitem,round,hmgammotype" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="6" maxtargetstohit="2" removeonhit="false">

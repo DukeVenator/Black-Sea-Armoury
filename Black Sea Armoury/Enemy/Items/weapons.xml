@@ -3,8 +3,8 @@
   <!--make it unlimited ammo for all weapons and remove when get killed-->
   <!-- Hammer (The Hammer) for enemy increased structure damage-->
   <Item name="hammer" identifier="hammer_bw_e" category="Equipment" Tags="smallitem,weapon,stunner,gunsmith,meleeweapon" Scale="0.4" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" depth="0.55" />
     <Body width="250" height="150" density="60" />
     <MeleeWeapon slots="RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-20" handle1="-30,-3" handle2="15,3" holdangle="45" reload="2" range="200" combatPriority="40" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
       <Attack targetimpulse="5" severlimbsprobability="0.5" structuredamage="100" itemdamage="0" penetration="0.2">
@@ -43,8 +43,8 @@
   </Item>
   <!-- Drum Hybrid Barrel grenade enemy-->
   <Item name="hybridg" identifier="grenadelauncher_bw_ge" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SG/SG.png" sourcerect="0,0,272,96" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
+    <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.5" barrelpos="95,13" spread="1" unskilledspread="16" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -84,8 +84,8 @@
   </Item>
     <!-- Drum Hybrid Barrel shotgun enemy-->
   <Item name="hybridsg" identifier="grenadelauncher_bw_sge" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SG/SG.png" sourcerect="0,0,272,96" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
+    <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.5" barrelpos="95,13" spread="1" unskilledspread="16" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -125,8 +125,8 @@
   </Item>
   <!-- CQB SMG enemy-->
   <Item name="cqbsmg" identifier="smg_bw_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="smgtype,smallitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.15" barrelpos="14,6" spread="8" unskilledspread="18" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -165,8 +165,8 @@
   </Item>
   <!-- Tactical LMG enemy-->
   <Item name="taclmg" identifier="lmg_bw_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,smallitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="45" density="50" />
     <Holdable slots="RightHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.1" barrelpos="85,13" spread="6" unskilledspread="24" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -326,10 +326,10 @@
     <!--adjust selfdamage and launchimpulse for enemy-->
   <Item name="thunder" identifier="rg_bw_n_e" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon launchimpulse="80" barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -377,10 +377,10 @@
     <!-- Thunder Cannon uex -->
   <Item name="thunderuex" identifier="rg_bw_n_uex" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon launchimpulse="80" barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -428,10 +428,10 @@
     <!-- Thunder Cannon emp -->
   <Item name="thunderemp" identifier="rg_bw_n_emp" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon launchimpulse="80" barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -479,10 +479,10 @@
   <!--dirtybomb-->
   <Item name="thunderdirty" identifier="rg_bw_n_dirty" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon launchimpulse="80" barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -530,10 +530,10 @@
   <!-- Thunder Cannon nuke -->
   <Item name="thundernuke" identifier="rg_bw_n_nuke" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/BT/RG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="40,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon launchimpulse="80" barrelpos="160,22" spread="5" unskilledspread="25" reload="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -580,10 +580,10 @@
   </Item>
     <!-- Sickle HMG enemy-->
   <Item name="sickle" identifier="HMG1_bw_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/chaingun/HMG1.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir:Maddened Black Sea Armory%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
+      <sprite name="CG Worn" texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -633,10 +633,10 @@
   </Item>
   <!-- Revolution (Sickle HMG upgrade) for enemy-->
   <Item name="revolution" identifier="HMG1_bp6_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/Chaingun/6G.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir:Maddened Black Sea Armory%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
+      <sprite name="CG Worn" texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -705,10 +705,10 @@
   </Item>
   <!-- Axe Rocket Cannon enemy -->
   <Item name="axerocket" identifier="battlecannon_bw_e" aliases="battlecannon" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/PRG/BC.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/PRG/BC.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/PRG/BC.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/PRG/BC.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir:Maddened Black Sea Armory%/PRG/BC.png" sourcerect="0,0,640,280" depth="0.55" origin="0.4,1.0" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.3" />
+      <sprite name="CG Worn" texture="%ModDir%/PRG/BC.png" sourcerect="0,0,640,280" depth="0.55" origin="0.4,1.0" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.3" />
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="140,-120" handle1="-60,-6" handle2="120,7" holdangle="0" msg="ItemMsgPickUpSelect" depth="1" />
@@ -742,17 +742,17 @@
       <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
         <Conditional IsDead="false" />
       </StatusEffect>
-      <LightTexture texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+      <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Experimental Chaingun for enemy -->
   <Item name="chaingun" identifier="minichaingun_bw_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.2" impactsoundtag="impact_metal_light">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir:Maddened Black Sea Armory%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
+      <sprite name="CG Worn" texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/chaingun/chaingun.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="250,13" spread="1" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.05">
@@ -817,8 +817,8 @@
   </Item>
   <!-- Experimental Precise Gun enemy-->
   <Item name="precise" identifier="esg_bw_e" aliases="sniper_gun" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="snipergun,smallitem,weapon,gun,gunsmith" Scale="0.7" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
     <Body width="300" height="124" density="40" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="4.5" barrelpos="220,13" spread="0" unskilledspread="8" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" >
@@ -851,17 +851,17 @@
       <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
         <Conditional IsDead="false" />
       </StatusEffect>
-      <LightTexture texture="%ModDir:Maddened Black Sea Armory%/LC/laser_light.png" origin="-0.002, 0.475" size="1.0,0.3" />
+      <LightTexture texture="%ModDir%/LC/laser_light.png" origin="-0.002, 0.475" size="1.0,0.3" />
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Experimental Laser Cannon -->
   <Item name="elaser" identifier="lasercannon_bw_e" aliases="laser cannon" category="Equipment,weapon" Tags="energytype,mediumitem,gunsmith,weapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LC/LC.png" sourcerect="0,0,352,144" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" />
+    <Sprite texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--<RangedWeapon holdtrigger="true" maxchargetime="1.0" barrelpos="165,22" spread="0" unskilledspread="17" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">-->
@@ -905,8 +905,8 @@
   </Item>
   <!-- Disaster (Upgraded Experimental Laser Cannon) -->
   <Item name="disaster" identifier="lasercannon_bp3_e" aliases="laser cannonboss" category="Equipment,weapon" Tags="energytype,mediumitem,gunsmith,weapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/LC/3GM.png" sourcerect="0,0,176,144" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/LC/3GM.png" sourcerect="0,0,176,144" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" />
+    <Sprite texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--<RangedWeapon barrelpos="90,22" spread="6" unskilledspread="16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">-->
@@ -956,8 +956,8 @@
   </Item>
   <!-- Peace Keeper -->
   <Item name="peace" identifier="handcannonbw_e" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,gunsmith,pistolitem" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/TS/PK.png" sourcerect="0,0,112,56" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/TS/PK.png" sourcerect="0,0,112,56" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/TS/PK.png" sourcerect="0,0,112,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/TS/PK.png" sourcerect="0,0,112,56" depth="0.55" origin="0.5,0.5" />
     <Body width="106" height="49" density="70" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-30,-4" handle2="-50,-15" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="1.45" barrelpos="20,6" spread="0" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -993,10 +993,10 @@
   <!-- Experimental Portable Railgun for enemy-->
   <Item name="Experimentalrailgun" identifier="prg_bw_e" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.65" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
     </Wearable>
-    <InventoryIcon texture="%ModDir:Maddened Black Sea Armory%/PRG/PRG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" />
     <Body width="254" height="96" density="40" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="160,22" spread="5" unskilledspread="25" reload="6" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
@@ -1059,9 +1059,9 @@
   <!-- Conqueror for enemy -->
   <Item name="conqueror" identifier="ancientweaponbw_e" category="Alien" Tags="energytype,alien,mediumitem,weapon,gunsmith" scale="0.7" impactsoundtag="impact_metal_light" hideinmenus="false">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/GUN.png" sourcerect="0,0,220,120" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.7" />
+      <sprite name="Autoshogun Worn" texture="%ModDir%/Boarding Shield/GUN.png" sourcerect="0,0,220,120" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.7" />
     </Wearable>
-    <Sprite texture="%ModDir:Maddened Black Sea Armory%/Boarding Shield/GUN.png" sourcerect="0,0,220,120" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Boarding Shield/GUN.png" sourcerect="0,0,220,120" depth="0.55" origin="0.5,0.5" />
     <Body width="238" height="63" density="70" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,4" handle1="-50,-10" handle2="10,-3" holdangle="-25" />
     <RangedWeapon reload="0.01" barrelpos="118,12" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
