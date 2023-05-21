@@ -125,8 +125,8 @@ MonsterEvent
     </EventSet>
     <!--beacon ambush-->
     <EventSet identifier="beacon" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
@@ -203,8 +203,8 @@ MonsterEvent
     </EventSet>
     <!--beacon ambush-->
     <EventSet identifier="beacon" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">

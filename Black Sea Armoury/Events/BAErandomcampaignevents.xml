@@ -57,7 +57,7 @@ MonsterEvent
     <Commonness commonness="3"/>
     <!--populate ruin-->
     <EventSet identifier="baeruins" chooserandom="false" allowatstart="true" perruin="true" triggereventcooldown="false">
-      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="ruin" />
+      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="ruin" spawnpointtag="husk"/>
     </EventSet>
     <!--populate wreck-->
     <EventSet identifier="baewrecks" chooserandom="false" perwreck="true" allowatstart="true" triggereventcooldown="false">
@@ -135,13 +135,13 @@ MonsterEvent
     </EventSet>
     <!--beacon ambush-->
     <EventSet identifier="beacon" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
     </EventSet>
     <!--populate ruin-->
     <EventSet identifier="baeruins" chooserandom="false" allowatstart="true" perruin="true" triggereventcooldown="false">
-      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="ruin" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="ruin" />
+      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="5" spawntype="ruin" spawnpointtag="husk"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="3" spawntype="ruin" spawnpointtag="husk"/>
     </EventSet>
     <!--populate wreck-->
     <EventSet identifier="baewrecks" chooserandom="false" perwreck="true" allowatstart="true" triggereventcooldown="false">
@@ -224,14 +224,14 @@ MonsterEvent
     </EventSet>
     <!--beacon ambush-->
     <EventSet identifier="beacon" chooserandom="true" triggereventcooldown="false" allowatstart="true">
-      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="BeaconStation" spawnpointtag="saferoom"/>
     </EventSet>
     <!--populate ruin-->
     <EventSet identifier="baeruins" chooserandom="false" allowatstart="true" perruin="true" triggereventcooldown="false">
-      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="ruin" />
-      <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="ruin" />
-      <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="1" spawntype="ruin" />
+      <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="5" spawntype="ruin" spawnpointtag="husk"/>
+      <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="3" spawntype="ruin" spawnpointtag="encounter_entrance1"/>
+      <MonsterEvent characterfile="Pirategunner" minamount="2" maxamount="3" spawntype="ruin" spawnpointtag="husk"/>
     </EventSet>
     <!--populate wreck-->
     <EventSet identifier="baewrecks" chooserandom="false" perwreck="true" allowatstart="true" triggereventcooldown="false">
