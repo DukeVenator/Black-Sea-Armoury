@@ -3,9 +3,8 @@
   <Character speciesname="Fractalguardian" humanoid="False" caninteract="True" blooddecal="blood" speciestranslationoverride="" displayname="" group="ancientalien" hasinfo="False" husk="False" usehuskappendage="False" needsair="False" needswater="False" canspeak="False" usebosshealthbar="False" noise="100" visibility="100" bleedparticleair="blooddrop" bleedparticlewater="waterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="True" sonardisruption="0" distantsonarrange="0" disabledistance="25000" soundinterval="10" caneat="False">
     <ragdolls folder="default" />
     <animations folder="default" />
-    <health vitality="600" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="100" burnreduction="1" constanthealthregeneration="2" healthregenerationwheneating="0" stunimmunity="true">
+    <health vitality="600" doesbleed="False" crushdepth="-Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="1" constanthealthregeneration="2" healthregenerationwheneating="0" stunimmunity="true" poisonimmunity="true" empvulnerability="1">
       <Limb name="Torso">
-        <VitalityMultiplier type="bleeding" multiplier="0" />
         <VitalityMultiplier type="burn" multiplier="0.60" />
         <VitalityMultiplier identifier="gunshotwound" multiplier="0.60" />
         <VitalityMultiplier identifier="lacerations" multiplier="0.60" />
@@ -13,15 +12,13 @@
         <VitalityMultiplier identifier="explosiondamage" multiplier="0.60" />
       </Limb>
       <Limb name="Head">
-        <VitalityMultiplier type="bleeding" multiplier="0" />
-        <VitalityMultiplier type="burn" multiplier="0.10" />
-        <VitalityMultiplier identifier="gunshotwound" multiplier="0.10" />
-        <VitalityMultiplier identifier="lacerations" multiplier="0.10" />
-        <VitalityMultiplier identifier="bitewounds" multiplier="0.10" />
-        <VitalityMultiplier identifier="explosiondamage" multiplier="0.10" />
+        <VitalityMultiplier type="burn" multiplier="0.20" />
+        <VitalityMultiplier identifier="gunshotwound" multiplier="0.20" />
+        <VitalityMultiplier identifier="lacerations" multiplier="0.20" />
+        <VitalityMultiplier identifier="bitewounds" multiplier="0.20" />
+        <VitalityMultiplier identifier="explosiondamage" multiplier="0.20" />
       </Limb>
       <Limb name="RightArm">
-        <VitalityMultiplier type="bleeding" multiplier="0" />
         <VitalityMultiplier type="burn" multiplier="0.55" />
         <VitalityMultiplier identifier="gunshotwound" multiplier="0.55" />
         <VitalityMultiplier identifier="lacerations" multiplier="0.55" />
@@ -29,7 +26,6 @@
         <VitalityMultiplier identifier="explosiondamage" multiplier="0.55" />
       </Limb>
       <Limb name="LeftArm">
-        <VitalityMultiplier type="bleeding" multiplier="0" />
         <VitalityMultiplier type="burn" multiplier="0.55" />
         <VitalityMultiplier identifier="gunshotwound" multiplier="0.55" />
         <VitalityMultiplier identifier="lacerations" multiplier="0.55" />
@@ -38,7 +34,6 @@
       </Limb>
       <Limb>
         <!-- Tail -->
-        <VitalityMultiplier type="bleeding" multiplier="0" />
         <VitalityMultiplier type="burn" multiplier="0.40" />
         <VitalityMultiplier identifier="gunshotwound" multiplier="0.40" />
         <VitalityMultiplier identifier="lacerations" multiplier="0.40" />
