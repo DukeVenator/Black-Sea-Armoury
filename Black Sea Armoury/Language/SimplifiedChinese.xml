@@ -255,4 +255,159 @@
   <Afflictionname.sup3>突击支援系统</Afflictionname.sup3>
   <Afflictiondescription.sup3>攻击速度提高20%，生命值提高25%，物理伤害减免15%。</Afflictiondescription.sup3>
   <entityname.railgunshellbw2>空包弹(Empty Shell)</entityname.railgunshellbw2>
+  <!--Enemy Characters equipments-->
+  <entityname.corsairar_bw_e>Pirate Corsair</entityname.corsairar_bw_e>
+  <entityname.armored_miningsuit_bw_e>Reinforced Mining Armor</entityname.armored_miningsuit_bw_e>
+  <entityname.pio_bw2_e>Pirate Pioneer</entityname.pio_bw2_e>
+  <entityname.armored_hardsuit_bw_e>X01</entityname.armored_hardsuit_bw_e>
+  <entityname.armored_hardsuit_bw2_e>X01 Veteran</entityname.armored_hardsuit_bw2_e>
+  <entitydescription.corsairar_bw_e>This suit is locked by biometric authentication.</entitydescription.corsairar_bw_e>
+  <entitydescription.armored_miningsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_miningsuit_bw_e>
+  <entitydescription.pio_bw2_e>This suit is locked by biometric authentication.</entitydescription.pio_bw2_e>
+  <entitydescription.armored_hardsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw_e>
+  <entitydescription.armored_hardsuit_bw2_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw2_e>
+  <!--Enemy Characters-->
+  <character.Pirateantisub>Pirate AntiSub</character.Pirateantisub>
+  <character.Pirateboarder>Pirate Boarder</character.Pirateboarder>
+  <character.Piratebombard>Pirate Bombard</character.Piratebombard>
+  <character.Piratedismantler>Pirate Dismantler</character.Piratedismantler>
+  <character.Pirateforerunner>Pirate Forerunner</character.Pirateforerunner>
+  <character.Pirategunner>海盗炮手</character.Pirategunner>
+  <character.Piratemarksman>海盗射手</character.Piratemarksman>
+  <character.Pirategrenadier>海盗掷弹手</character.Pirategrenadier>
+  <character.Piratenuker>Pirate AntiSub</character.Piratenuker>
+  <character.Piraterifleman>海盗步枪手</character.Piraterifleman>
+  <character.Piratesharpshooter>海盗神枪手</character.Piratesharpshooter>
+  <character.Pirateveteran>海盗老手</character.Pirateveteran>
+  <character.Piratedesolator>Pirate AntiSub</character.Piratedesolator>
+  <character.Piratescavenger>海盗清道夫</character.Piratescavenger>
+  <character.Coalitionantisub>Coalition AntiSub</character.Coalitionantisub>
+  <character.Coalitionheavy>联盟重装兵</character.Coalitionheavy>
+  <character.Coalitiongunner>联盟炮兵</character.Coalitiongunner>
+  <character.Coalitionsharpshooter>联军精准射手</character.Coalitionsharpshooter>
+  <character.Coalitionannihilator>联盟歼灭者</character.Coalitionannihilator>
+  <character.Coalitionveteran>联盟官员</character.Coalitionveteran>
+  <character.Coalitionrifleman>联盟步枪兵</character.Coalitionrifleman>
+  <character.Separatistrifleman>分离主义步枪手</character.Separatistrifleman>
+  <character.Separatistantisub>Separatist AntiSub</character.Separatistantisub>
+  <character.Separatistveteran>分离主义老兵</character.Separatistveteran>。
+  <character.Separatistgunner>分离主义炮手</character.Separatistgunner>。
+  <character.Separatistsharpshooter>分离主义神枪手</character.Separatistsharpshooter>
+  <character.Separatistbombard>Separatist Bombard</character.Separatistbombard>
+  <!--Mission text-->
+  <missionname.killnuker1>核能危机</missionname.killnuker1>
+  <missiondescription.killnuker1>一群精英分裂主义分子带着核弹投奔了海盗。虽然目前还没有人员伤亡的报告，但迫切需要消除这一威胁。他们的机甲服可以抵御大部分潜艇的武器装备，所以强烈建议使用手持武器来对付他们。</missiondescription.killnuker1>
+  <missionsonarlabel.killnuker1>海盗小队</missionsonarlabel.killnuker1>
+  <missionheader.killnuker1>目标被消灭</missionheader.killnuker1>
+  <missionmessage.killnuker1>被盗的核武器已被妥善处理。驾驶潜水艇离开洞穴来领取奖励。</missionmessage.killnuker1>
+  <missionsuccess.killnuker1>你已经报告被盗的核武器已被妥善处理。</missionsuccess.killnuker1>
+  <missionname.killnuker2>核能危机</missionname.killnuker2>
+  <missiondescription.killnuker2>一群精英分裂主义分子带着核弹投奔了海盗。虽然目前还没有人员伤亡的报告，但迫切需要消除这一威胁。他们的机甲服可以抵御大部分潜艇的武器装备，所以强烈建议使用手持武器来对付他们。</missiondescription.killnuker2>
+  <missionsonarlabel.killnuker2>中型海盗队</missionsonarlabel.killnuker2>
+  <missionheader.killnuker2>目标被消灭</missionheader.killnuker2>
+  <missionmessage.killnuker2>被盗的核武器已被妥善处理。驾驶潜水艇离开洞穴来领取奖励。</missionmessage.killnuker2>
+  <missionsuccess.killnuker2>你已经报告被盗的核武器已被妥善处理。</missionsuccess.killnuker2>
+  <missionname.pirategang1>机械化海盗团伙</missionname.pirategang1>
+  <missiondescription.pirategang1>根据我们的消息，有一群海盗机甲部队封锁了从[location1]到[location2]的通道. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.pirategang1>
+  <missionsonarlabel.pirategang1>海盗突击队</missionsonarlabel.pirategang1>
+  <missionheader.pirategang1>目标被消灭</missionheader.pirategang1>
+  <missionmessage.pirategang1>海盗们已经被肃清了。驾驶潜水艇离开洞穴，领取奖励。</missionmessage.pirategang1>
+  <missionsuccess.pirategang1>海盗们已经被消灭了。这条路线应该又是安全的。</missionsuccess.pirategang1>
+  <missionname.pirategang2>机械化海盗团伙</missionname.pirategang2>
+  <missiondescription.pirategang2>根据我们的消息，有一群海盗机甲部队封锁了从[location1]到[location2]的通道. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.pirategang2>
+  <missionsonarlabel.pirategang2>海盗突击队</missionsonarlabel.pirategang2>
+  <missionheader.pirategang2>目标被消灭</missionheader.pirategang2>
+  <missionmessage.pirategang2>海盗们已经被肃清了。驾驶潜水艇离开洞穴，领取奖励。</missionmessage.pirategang2>
+  <missionsuccess.pirategang2>海盗们已经被消灭了。这条路线应该又是安全的。</missionsuccess.pirategang2>
+  <missionname.separatistex1>分离主义巡逻队</missionname.separatistex1>
+  <missiondescription.separatistex1>根据我们的消息，有一群分离主义机甲部队在[location1]到[location2]的通道上游荡. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.separatistex1>
+  <missionsonarlabel.separatistex1>分离主义巡逻队</missionsonarlabel.separatistex1>
+  <missionheader.separatistex1>目标被消灭</missionheader.separatistex1>
+  <missionmessage.separatistex1>海盗们已经被肃清了。驾驶潜水艇离开洞穴，领取奖励。</missionmessage.separatistex1>
+  <missionsuccess.separatistex1>海盗们已经被消灭了。这条路线应该又是安全的。</missionsuccess.separatistex1>
+  <missionname.separatistex2>分离主义军事演习</missionname.separatistex2>
+  <missiondescription.separatistex2>根据我们的消息，有一群分离主义机械化部队在[location1]到[location2]的通道上进行军事演习. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.separatistex2>
+  <missionsonarlabel.separatistex2>分离主义部队</missionsonarlabel.separatistex2>
+  <missionheader.separatistex2>目标被消灭</missionheader.separatistex2>
+  <missionmessage.separatistex2>The Separatists have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.separatistex2>
+  <missionsuccess.separatistex2>The Separatists have been neutralized. The route should be safe again.</missionsuccess.separatistex2>
+  <missionname.separatistex3>大型分离主义军事演习</missionname.separatistex3>
+  <missiondescription.separatistex3>根据我们的消息，有一群分离主义的机械化部队在[location1]到[location2]的通道上进行军事演习. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.separatistex3>
+  <missionsonarlabel.separatistex3>分离主义部队</missionsonarlabel.separatistex3>
+  <missionheader.separatistex3>Targets terminated</missionheader.separatistex3>
+  <missionmessage.separatistex3>The Separatists have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.separatistex3>
+  <missionsuccess.separatistex3>The Separatists have been neutralized. The route should be safe again.</missionsuccess.separatistex3>
+  <missionname.coalitionex1>联盟巡逻队</missionname.coalitionex1>
+  <missiondescription.coalitionex1>According to our sources, there is a group of Coalition Mechs roaming the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.coalitionex1>
+  <missionsonarlabel.coalitionex1>联盟巡逻队</missionsonarlabel.coalitionex1>
+  <missionheader.coalitionex1>Targets terminated</missionheader.coalitionex1>
+  <missionmessage.coalitionex1>The Coalition Patrol have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.coalitionex1>
+  <missionsuccess.coalitionex1>The Coalition Patrol have been neutralized. The route should be safe again.</missionsuccess.coalitionex1>
+  <missionname.coalitionex2>Coalition Military Excercise</missionname.coalitionex2>
+  <missiondescription.coalitionex2>According to our sources, Coalition Mechanized troops conduct Military Excercise the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.coalitionex2>
+  <missionsonarlabel.coalitionex2>Coalition Troops</missionsonarlabel.coalitionex2>
+  <missionheader.coalitionex2>Targets terminated</missionheader.coalitionex2>
+  <missionmessage.coalitionex2>The Coalition troops have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.coalitionex2>
+  <missionsuccess.coalitionex2>The Coalition troops have been neutralized. The route should be safe again.</missionsuccess.coalitionex2>
+  <missionname.coalitionex3>Large Coalition Military Excercise</missionname.coalitionex3>
+  <missiondescription.coalitionex3>According to our sources, Coalition Mechanized troops conduct Military Excercise the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.coalitionex3>
+  <missionsonarlabel.coalitionex3>Coalition Troops</missionsonarlabel.coalitionex3>
+  <missionheader.coalitionex3>Targets terminated</missionheader.coalitionex3>
+  <missionmessage.coalitionex3>The Coalition Troops have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.coalitionex3>
+  <missionsuccess.coalitionex3>The Coalition Troops have been neutralized. The route should be safe again.</missionsuccess.coalitionex3>
+  <missionname.separatistattackbae>Separatist Ambush</missionname.separatistattackbae>
+  <missionheader.separatistattackbae>Incoming transmission</missionheader.separatistattackbae>
+  <missionmessage.separatistattackbae>“This passageway has been reclaimed by the Jovian Separatists. Set your course back immediately or we'll make sure none of you fascists make it out of here alive.”</missionmessage.separatistattackbae>
+  <missionname.coalitionattackbae>Coalition Ambush</missionname.coalitionattackbae>
+  <missionheader.coalitionattackbae>Incoming transmission</missionheader.coalitionattackbae>
+  <missionmessage.coalitionattackbae>“End of the road, traitors! The price for treason against the Coalition is death!”</missionmessage.coalitionattackbae>
+  <missionname.pirateblockade1>Medium Mechanized Pirates Raiders</missionname.pirateblockade1>
+  <missiondescription.pirateblockade1>According to our sources, there is a group of Pirates Mechs blocking the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.pirateblockade1>
+  <missionsonarlabel.pirateblockade1>Pirates Raiders</missionsonarlabel.pirateblockade1>
+  <missionheader.pirateblockade1>Targets terminated</missionheader.pirateblockade1>
+  <missionmessage.pirateblockade1>The Pirates have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.pirateblockade1>
+  <missionsuccess.pirateblockade1>The Pirates have been neutralized. The route should be safe again.</missionsuccess.pirateblockade1>
+  <missionname.pirateblockade2>Large Mechanized Pirates Team</missionname.pirateblockade2>
+  <missiondescription.pirateblockade2>According to our sources, there is a group of Pirates Mechs blocking the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.pirateblockade2>
+  <missionsonarlabel.pirateblockade2>Pirates Platoon</missionsonarlabel.pirateblockade2>
+  <missionheader.pirateblockade2>Targets terminated</missionheader.pirateblockade2>
+  <missionmessage.pirateblockade2>The Pirates have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.pirateblockade2>
+  <missionsuccess.pirateblockade2>The Pirates have been neutralized. The route should be safe again.</missionsuccess.pirateblockade2>
+  <missionname.pirateblockade3>Large Mechanized Pirates Team</missionname.pirateblockade3>
+  <missiondescription.pirateblockade3>According to our sources, there is a group of Pirates Mechs blocking the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.pirateblockade3>
+  <missionsonarlabel.pirateblockade3>Pirates Platoon</missionsonarlabel.pirateblockade3>
+  <missionheader.pirateblockade3>Targets terminated</missionheader.pirateblockade3>
+  <missionmessage.pirateblockade3>The Pirates have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.pirateblockade3>
+  <missionsuccess.pirateblockade3>The Pirates have been neutralized. The route should be safe again.</missionsuccess.pirateblockade3>
+  <missionname.mechanizedofficer1>Mechanized Traitors</missionname.mechanizedofficer1>
+  <missiondescription.mechanizedofficer1>Our mechanized unit's officer has defected to the pirates with most advanced arsenal. We request that eliminate him before the situation deteriorates any further. Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.mechanizedofficer1>
+  <missionsonarlabel.mechanizedofficer1>Traitors</missionsonarlabel.mechanizedofficer1>
+  <missionheader.mechanizedofficer1>Targets terminated</missionheader.mechanizedofficer1>
+  <missionmessage.mechanizedofficer1>The Officer and his team have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.mechanizedofficer1>
+  <missionsuccess.mechanizedofficer1>The Officer and his team have been neutralized. </missionsuccess.mechanizedofficer1>
+  <missionname.mechanizedofficer2>Mechanized Traitors</missionname.mechanizedofficer2>
+  <missiondescription.mechanizedofficer2>Our mechanized unit's officer has defected to the pirates with most advanced arsenal. We request that eliminate him before the situation deteriorates any further. Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.mechanizedofficer2>
+  <missionsonarlabel.mechanizedofficer2>Traitors</missionsonarlabel.mechanizedofficer2>
+  <missionheader.mechanizedofficer2>Targets terminated</missionheader.mechanizedofficer2>
+  <missionmessage.mechanizedofficer2>The Officer and his team have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.mechanizedofficer2>
+  <missionsuccess.mechanizedofficer2>The Officer and his team have been neutralized. </missionsuccess.mechanizedofficer2>
+  <missionname.abandonedoutposthumansbae>Outpost recovery</missionname.abandonedoutposthumansbae>
+  <missiondescription.abandonedoutposthumansbae>Contact with [location1] was recently lost, and it's suspected to have been taken over by someone. Destroy the outpost's reactor to drive away any squatters and ensure they don't return.</missiondescription.abandonedoutposthumansbae>
+  <missionsuccess.abandonedoutposthumansbae>The squatters were driven away from the outpost successfully.</missionsuccess.abandonedoutposthumansbae>
+  <missionfailure.abandonedoutposthumansbae>Destroying the outpost's reactor failed.</missionfailure.abandonedoutposthumansbae>
+  <missionheader0.abandonedoutposthumansbae>Reactor destroyed</missionheader0.abandonedoutposthumansbae>
+  <missionmessage0.abandonedoutposthumansbae>The reactor has been destroyed. This should make sure squatters won't try to take over the outpost again. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutposthumansbae>
+  <missionname.abandonedoutpostrescuebae>Outpost rescue</missionname.abandonedoutpostrescuebae>
+  <missiondescription.abandonedoutpostrescuebae>A Heavily armed bandit group that has claimed the abandoned [location1] recently sent out a message in which they demand a ransom for releasing a group of civilians they're holding hostage. The Coalition doesn't negotiate with terrorists, but has promised a considerable reward to anyone who manages to rescue the hostages.</missiondescription.abandonedoutpostrescuebae>
+  <missionsuccess.abandonedoutpostrescuebae>The hostages were rescued successfully.</missionsuccess.abandonedoutpostrescuebae>
+  <missionfailure.abandonedoutpostrescuebae>Rescuing the hostages failed.</missionfailure.abandonedoutpostrescuebae>
+  <missionheader0.abandonedoutpostrescuebae>Hostages rescued</missionheader0.abandonedoutpostrescuebae>
+  <missionmessage0.abandonedoutpostrescuebae>The hostages are now all safely on board the sub. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostrescuebae>
+  <hostageskilled>The mission has failed; one of the hostages has died.</hostageskilled>
+  <missionname.abandonedoutpostassassinatebae>Outpost assassination</missionname.abandonedoutpostassassinatebae>
+  <missiondescription.abandonedoutpostassassinatebae>Contact with [location1] was recently lost, and there have been reports about a notorious group of heavily armed outlaws having claimed it as their base. There's a bounty on the head of the group's leader's – eliminate the leader to claim the reward.</missiondescription.abandonedoutpostassassinatebae>
+  <missionsuccess.abandonedoutpostassassinatebae>The leader of the bandit group has been successfully eliminated.</missionsuccess.abandonedoutpostassassinatebae>
+  <missionfailure.abandonedoutpostassassinatebae>Eliminating the leader of the bandit group failed.</missionfailure.abandonedoutpostassassinatebae>
+  <missionheader0.abandonedoutpostassassinatebae>Bandit leader killed</missionheader0.abandonedoutpostassassinatebae>
+  <missionmessage0.abandonedoutpostassassinatebae>The leader of the bandit group has been successfully eliminated. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostassassinatebae>
 </infotexts>
