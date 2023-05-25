@@ -2,6 +2,7 @@
 <Missions>
   <MonsterMission
     identifier="killnuker1"
+    textidentifier="killnuker"
     tags="killmonster,killmonster_set2"
     type="Monster"
     difficulty="3"
@@ -15,11 +16,12 @@
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
-    <message header="missionheader.killnuker1" text="missionmessage.killnuker1"/>
+    <message header="missionheader.killtarget" text="missionmessage.killnuker"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="killnuker2"
+    textidentifier="killnuker"
     tags="killmonster,killswarm,killswarm_set4"
     type="Monster"
     difficulty="4"
@@ -35,11 +37,12 @@
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
-    <message header="missionheader.killnuker2" text="missionmessage.killnuker2"/>
+    <message header="missionheader.killtarget" text="missionmessage.killnuker"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="pirategang1"
+    textidentifier="killpirates"
     tags="killmonster,killmonster_set1"
     type="Monster"
     difficulty="2"
@@ -50,11 +53,12 @@
     <monster character="Pirateboarder" min="2" max="3"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.pirategang1" text="missionmessage.pirategang1"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
   
   <MonsterMission
     identifier="pirategang2"
+    textidentifier="killpirates"
     tags="killmonster,killmonster_set2"
     type="Monster"
     difficulty="3"
@@ -66,11 +70,12 @@
     <monster character="Pirateboarder" min="2" max="3"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.pirategang1" text="missionmessage.pirategang1"/>
+    <message header="missionheader.killtaget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="pirateblockade1"
+    textidentifier="killpirates"
     tags="killmonster,killswarm,killswarm_set2"
     type="Monster"
     difficulty="3"
@@ -83,11 +88,12 @@
     <monster character="Piratemarksman" min="1" max="1"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.pirateblockade1" text="missionmessage.pirateblockade1"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="pirateblockade2"
+    textidentifier="killpirates"
     tags="killmonster,killswarm,killswarm_set3"
     type="Monster"
     difficulty="3"
@@ -102,11 +108,12 @@
     <monster character="Piratebombard" min="1" max="1"/>
     <Reputation identifier="location" amount="4" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.pirateblockade2" text="missionmessage.pirateblockade2"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="pirateblockade3"
+    textidentifier="killpirates"
     tags="killmonster,killswarm,killswarm_set4"
     type="Monster"
     difficulty="4"
@@ -122,11 +129,12 @@
     <monster character="Piratesharpshooter" min="1" max="1"/>
     <Reputation identifier="location" amount="4" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.pirateblockade3" text="missionmessage.pirateblockade3"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="mechanizedofficer1"
+    textidentifier="killtraitors"
     tags="killmonster,killmonster_set3"
     type="Monster"
     difficulty="4"
@@ -140,11 +148,12 @@
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
-    <message header="missionheader.mechanizedofficer1" text="missionmessage.mechanizedofficer1"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     identifier="mechanizedofficer2"
+    textidentifier="killtraitors"
     tags="killmonster,killswarm,killswarm_set4"
     type="Monster"
     difficulty="4"
@@ -162,7 +171,7 @@
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
-    <message header="missionheader.mechanizedofficer2" text="missionmessage.mechanizedofficer2"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
@@ -178,13 +187,14 @@
     <monster character="Separatistveteran" min="1" max="1"/>
     <Reputation identifier="coalition" amount="4" />
     <Reputation identifier="separatists" amount="-4" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.separatistex1" text="missionmessage.separatistex1"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     type="Monster"
     identifier="separatistex2"
+    textidentifier="killseparatist"
     tags="combatcoalitionvsseparatists"
     difficulty="3"
     commonness="50"
@@ -197,13 +207,14 @@
     <monster character="Separatistbombard" min="1" max="1"/>
     <Reputation identifier="coalition" amount="8" />
     <Reputation identifier="separatists" amount="-8" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.separatistex2" text="missionmessage.separatistex2"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     type="Monster"
     identifier="separatistex3"
+    textidentifier="killseparatist"
     tags="combatcoalitionvsseparatists"
     difficulty="4"
     commonness="50"
@@ -217,8 +228,8 @@
     <monster character="Separatistbombard" min="1" max="1"/>
     <Reputation identifier="coalition" amount="10" />
     <Reputation identifier="separatists" amount="-10" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.separatistex3" text="missionmessage.separatistex3"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
@@ -234,13 +245,14 @@
     <monster character="Coalitionveteran" min="1" max="1"/>
     <Reputation identifier="coalition" amount="-4" />
     <Reputation identifier="separatists" amount="4" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.coalitionex1" text="missionmessage.coalitionex1"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
   
   <MonsterMission
     type="Monster"
     identifier="coalitionex2"
+    textidentifier="killcoalition"
     tags="combatseparatistsvscoalition"
     difficulty="3"
     commonness="50"
@@ -253,13 +265,14 @@
     <monster character="Coalitionveteran" min="1" max="1"/>
     <Reputation identifier="coalition" amount="-8" />
     <Reputation identifier="separatists" amount="8" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.coalitionex2" text="missionmessage.coalitionex2"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
     type="Monster"
     identifier="coalitionex3"
+    textidentifier="killcoalition"
     tags="combatseparatistsvscoalition"
     difficulty="4"
     commonness="50"
@@ -274,8 +287,8 @@
     <monster character="Coalitionannihilator" min="1" max="1"/>
     <Reputation identifier="coalition" amount="-10" />
     <Reputation identifier="separatists" amount="10" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
-    <message header="missionheader.coalitionex3" text="missionmessage.coalitionex3"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
@@ -297,7 +310,7 @@
     <monster character="Separatistbombard" min="1" max="1"/>
     <Reputation identifier="coalition" amount="10" />
     <Reputation identifier="separatists" amount="-10" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.separatistattackbae" text="missionmessage.separatistattackbae"/>
   </MonsterMission>
 
@@ -321,7 +334,7 @@
     <monster character="Coalitionannihilator" min="1" max="1"/>
     <Reputation identifier="coalition" amount="-10" />
     <Reputation identifier="separatists" amount="10" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="243,146,55"/>
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.coalitionattackbae" text="missionmessage.coalitionattackbae"/>
   </MonsterMission>
 
@@ -360,36 +373,6 @@
   </AbandonedOutpostMission>
 
   <AbandonedOutpostMission
-    identifier="abandonedoutpostrescuebae"
-    tags="abandonedoutpost"
-    type="AbandonedOutpost"
-    achievementidentifier="abandonedoutpostrescue"
-    reward="5000"
-    difficulty="4"
-    commonness="10"
-    allowretry="true"
-    hostageskilledmessage="hostageskilled"
-    unhideentitysubcategories="abandonedhuman">
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
-    <LocationType identifier="Abandoned" />
-    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
-    <Characters>
-      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule"/>
-      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule"/>
-      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule"/>
-      <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule"/>
-      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
-      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="seccrewmodule"/>
-      <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" multiplayeronly="true"/>
-      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" spawnpointtags="banditleader" />
-      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
-      <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
-    </Characters>
-    <message header="missionheader0.abandonedoutpostrescuebae" text="missionmessage0.abandonedoutpostrescuebae"/>
-  </AbandonedOutpostMission>
-
-    <AbandonedOutpostMission
     identifier="abandonedoutpostassassinatebae"
     tags="abandonedoutpost"
     achievementidentifier="abandonedoutpostassassinate"
