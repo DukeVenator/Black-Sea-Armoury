@@ -214,12 +214,6 @@
   <entityname.coilgunammo_bw2>LEGACY Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
   <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
   <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
-  <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>
-  <entitydescription.bandolierbw2>Symbol of courage,increase melee attack speed.Cannot be disassembled.</entitydescription.bandolierbw2>
-  <entityname.bandolierbw3>Shield Support System</entityname.bandolierbw3>
-  <entitydescription.bandolierbw3>Symbol of courage,increase defense power.Cannot be disassembled. </entitydescription.bandolierbw3>
-  <entityname.bandolierbw4>Assault Support System</entityname.bandolierbw4>
-  <entitydescription.bandolierbw4>Symbol of courage,increase melee attack speed and defense power.Cannot be disassembled.</entitydescription.bandolierbw4>
   <entityname.bandolierbw>Tactical Bandolier</entityname.bandolierbw>
   <entitydescription.bandolierbw>A symbol of courage,increase range weapons attack speed.Cannot be disassembled.</entitydescription.bandolierbw>
   <entityname.bandolierbw2>Tactical Support System</entityname.bandolierbw2>
