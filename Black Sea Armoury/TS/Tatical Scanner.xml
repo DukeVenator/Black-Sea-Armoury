@@ -501,7 +501,7 @@
       <SkillModifier skillidentifier="medical" skillvalue="10" />
     </Wearable>
     <ItemContainer capacity="8">
-      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter" />
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,captainsuniformbw" />
     </ItemContainer>
   </Item>
   <!-- Tactical Bandolier -->
