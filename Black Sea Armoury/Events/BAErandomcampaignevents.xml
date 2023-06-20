@@ -62,6 +62,9 @@ MonsterEvent
     <!--populate wreck-->
     <EventSet identifier="baewrecks" chooserandom="false" perwreck="true" allowatstart="true" triggereventcooldown="false">
       <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="wreck" />
+      <MonsterEvent characterfile="Pirateforerunner" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="1" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
@@ -147,6 +150,8 @@ MonsterEvent
     <EventSet identifier="baewrecks" chooserandom="false" perwreck="true" allowatstart="true" triggereventcooldown="false">
       <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="wreck" />
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="wreck" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="4" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
@@ -238,6 +243,9 @@ MonsterEvent
       <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="wreck" />
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="wreck" />
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="wreck" />
+      <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="4" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Piratedismantler" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
