@@ -50,7 +50,7 @@
       <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
       <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
       <StatusEffect type="OnImpact" target="This" condition="-100" disabledeltatime="true">
-        <Explosion range="180.0" ballastfloradamage="50" structuredamage="50" levelwalldamage="50" itemdamage="50" force="3.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+        <Explosion range="180.0" ballastfloradamage="50" structuredamage="60" levelwalldamage="60" itemdamage="50" force="3.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="bleeding" strength="20" />
           <Affliction identifier="explosiondamage" strength="40" />
           <Affliction identifier="stun" strength="4" />
@@ -126,7 +126,7 @@
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="9" severlimbsprobability="0.35" itemdamage="2" targetforce="2" penetration="0.05">
+      <Attack structuredamage="18" severlimbsprobability="0.35" itemdamage="2" targetforce="2" penetration="0.05">
         <Affliction identifier="gunshotwound" strength="18" />
         <Affliction identifier="bleeding" strength="2" />
         <Affliction identifier="stun" strength="0.04" />
@@ -169,7 +169,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="10" targetforce="7.5" itemdamage="6" severlimbsprobability="0.2" penetration="0.2">
+      <Attack structuredamage="20" targetforce="7.5" itemdamage="6" severlimbsprobability="0.2" penetration="0.2">
         <Affliction identifier="gunshotwound" strength="30" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="stun" strength="0.25" />
@@ -193,7 +193,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="50" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
+      <Attack structuredamage="60" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
         <Affliction identifier="gunshotwound" strength="55" />
         <Affliction identifier="bleeding" strength="33" />
         <Affliction identifier="stun" strength="0.6" />
@@ -234,7 +234,7 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="30" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
+      <Attack structuredamage="50" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="lacerations" strength="20" />
         <Affliction identifier="stun" strength="0.1" />
@@ -282,7 +282,7 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0" hitscan="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2" />
-      <Attack structuredamage="60" itemdamage="20" severlimbsprobability="0.5" penetration="0.3">
+      <Attack structuredamage="90" itemdamage="20" severlimbsprobability="0.5" penetration="0.3">
         <Affliction identifier="lacerations" strength="80" />
         <Affliction identifier="bleeding" strength="5.0" />
       </Attack>
@@ -297,7 +297,7 @@
       <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-10.0" Condition="-10.0" />
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="17" />
       <StatusEffect type="OnImpact" target="This">
-        <Explosion range="150.0" structuredamage="30" force="4.0" itemdamage="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+        <Explosion range="150.0" structuredamage="50" force="4.0" itemdamage="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="burn" strength="40" />
         </Explosion>
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
@@ -334,7 +334,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" spread="0" removeonhit="false" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2.5" />
-      <Attack structuredamage="40" severlimbsprobability="0.35" itemdamage="30" targetforce="6" penetration="0.5">
+      <Attack structuredamage="90" severlimbsprobability="0.35" itemdamage="30" targetforce="6" penetration="0.5">
         <Affliction identifier="gunshotwound" strength="100" />
         <Affliction identifier="lacerations" strength="100" />
         <Affliction identifier="stun" strength="3" />
@@ -569,7 +569,7 @@
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="6" maxtargetstohit="2" removeonhit="false">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="3" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.1" penetration="0.35">
+      <Attack structuredamage="30" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.1" penetration="0.35">
         <Affliction identifier="gunshotwound" strength="6" />
         <Affliction identifier="lacerations" strength="6" />
         <Affliction identifier="stun" strength="0.01" />
@@ -603,10 +603,31 @@
       </StatusEffect>-->
     </Holdable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="alienprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="battery">
-      <Containable items="alienprojectile" />
+      <Containable items="alienprojectile_e" />
       <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true">
-        <SpawnItem identifiers="alienprojectile" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="alienprojectile_e" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
+  </Item>
+  <Item name="alienenemy" identifier="alienprojectile_e" nameidentifier="alienturretammo" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,energyammotype" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5" nonplayerteaminteractable="True">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+      <Body width="40" height="14" density="40" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="2">
+        <ParticleEmitter particle="tracernucleargun" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,1" colormultiplier="255,200,200,200" />
+        <Attack structuredamage="10" targetforce="0.1" itemdamage="10" severlimbsprobability="0.05" penetration="0.1">
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="stun" strength="0.1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="muzzleflashnucleargun" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemultiplier="0.65,0.65" colormultiplier="255,200,200,200" scalemin="0.0" scalemax="0.7" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-3.5" Condition="-3.5" />
+        <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.5">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
   </Item>
 </Items>
