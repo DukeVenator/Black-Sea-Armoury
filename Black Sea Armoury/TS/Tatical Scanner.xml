@@ -575,6 +575,8 @@
     </WifiComponent>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="batterycell" containedstateindicatorslot="0" autoinject="true">
       <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="batterycell,fulguriumbatterycell" />
       </SubContainer>
