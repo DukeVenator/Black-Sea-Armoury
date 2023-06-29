@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- Double Shotgunshell -->
-  <Item name="" identifier="shotgunshellbw" category="Equipment" maxstacksize="20" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammobw,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="shotgunshellbw" category="Weapon" subcategory="Black Sea Armoury" maxstacksize="20" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammobw,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="30" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -47,7 +47,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- DOOM -->
-  <Item name="" identifier="shotgununiquebw" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
+  <Item name="" identifier="shotgununiquebw" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun,mountableweapon" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
     <Price baseprice="1431" soldeverywhere="false" canbespecial="false">
       <Price locationtype="outpost" sold="false" />
       <Price locationtype="city" sold="false" />
@@ -103,7 +103,7 @@
     </Quality>
   </Item>
   <!-- Drum Hybrid Barrel -->
-  <Item name="" identifier="grenadelauncher_bw" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="grenadelauncher_bw" category="Weapon" subcategory="Black Sea Armoury" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
     <Price baseprice="1200" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -160,7 +160,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Drum Shotgun Shell (Shotgun Magazine for Drum Hybrid Barrel) -->
-  <Item name="" identifier="bw_shotgun_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
+  <Item name="" identifier="bw_shotgun_drum" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -198,7 +198,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Drum 25mm Grenade (Grenade Launcher Magazine for Drum Hybrid Barrel) -->
-  <Item name="" identifier="bw_grenade_drum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
+  <Item name="" identifier="bw_grenade_drum" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -236,7 +236,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Shotgun Shell ("Bullet" for Drum Shotgun Shell) -->
-  <Item name="" identifier="bw_shotgun_shell" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Buck shot." tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="20" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="" identifier="bw_shotgun_shell" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="Buck shot." tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="20" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="20" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -277,7 +277,7 @@
     </Projectile>
   </Item>
   <!-- 25mm Grenade ("Bullet" for Drum 25mm Grenade) -->
-  <Item name="" identifier="bw_grenade" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="Fire in the hole!!!" tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="8" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="" identifier="bw_grenade" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="Fire in the hole!!!" tags="smallitem,ammo,gunsmith,shotgunammobw" impactsoundtag="impact_metal_light" maxstacksize="8" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="50" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- Thunder Cannon Support Device  -->
-  <Item name="" identifier="rgcbw" aliases="experimentalscooterbw" category="Equipment" Tags="Equipment,mediumitem,mobilecontainer,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="rgcbw" aliases="experimentalscooterbw" category="Weapon" subcategory="Black Sea Armoury" Tags="Equipment,mediumitem,mobilecontainer,gunsmith" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.1" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -112,7 +112,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Rapid Harpoongun -->
-  <Item name="" identifier="harpoongunbw" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="harpoongunbw" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="200" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -161,7 +161,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Tattered Spear (Harpoongun Ammo) -->
-  <Item name="" identifier="spearbw" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="spearbw" category="Weapon" subcategory="Black Sea Armoury" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
     <Price baseprice="50" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -316,7 +316,7 @@
     </Item>
   </Override>
   <!-- Conqueror -->
-  <Item name="" identifier="ancientweaponbw" category="Alien" Tags="energytype,alien,mediumitem,weapon,gunsmith" scale="0.7" impactsoundtag="impact_metal_light" hideinmenus="false">
+  <Item name="" identifier="ancientweaponbw" category="Alien,Weapon" subcategory="Black Sea Armoury" Tags="energytype,alien,mediumitem,weapon,gunsmith" scale="0.7" impactsoundtag="impact_metal_light" hideinmenus="false">
     <Price baseprice="2500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -416,7 +416,7 @@
     </ItemContainer>
   </Item>
   <!-- Conqueror Bullet / "Bullet" in Reverse Engineered Alien Power Cell -->
-  <Item name="apbolt" identifier="bwap" category="Misc" scale="0.5" tags="smallitem,energyammotype" sonarsize="2" hideinmenus="true">
+  <Item name="apbolt" identifier="bwap" category="Alien,Weapon" subcategory="Black Sea Armoury" scale="0.5" tags="smallitem,energyammotype" sonarsize="2" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
     <Body width="170" height="10" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />

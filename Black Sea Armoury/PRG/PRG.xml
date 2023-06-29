@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- Axe Rocket Cannon -->
-  <Item name="" identifier="battlecannon_bw" aliases="battlecannon" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="battlecannon_bw" aliases="battlecannon" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -62,7 +62,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Rocket Shell (Axe Rocket Cannon Magazine) -->
-  <Item name="" identifier="cannonshell_bw" aliases="Rocketbox" scale="0.5" tags="ammo,mediumitem,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="2">
+  <Item name="" identifier="cannonshell_bw" aliases="Rocketbox" scale="0.5" tags="ammo,mediumitem,gunsmith" description="" category="Weapon" subcategory="Black Sea Armoury" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="2">
     <Price baseprice="500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -99,7 +99,7 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <!-- Rocket Shell "Bullet" (Axe Rocket Cannon "Bullet") -->
-  <Item name="rocket" identifier="cannonshell_bwr" aliases="Rocket" scale="0.5" tags="ammo,mediumitem,heavyammotype" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="1" hideinmenus="true">
+  <Item name="rocket" identifier="cannonshell_bwr" aliases="Rocket" scale="0.5" tags="ammo,mediumitem,heavyammotype" description="" category="Weapon" subcategory="Black Sea Armoury" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="1" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
@@ -134,7 +134,7 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <!-- Experimental Portable Railgun -->
-  <Item name="" identifier="prg_bw" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.65" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="prg_bw" aliases="portable_rail_gun,prg" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.65" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -215,7 +215,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Experimental PRG Storm Shell (Portable Railgun Ammo / Bullet) -->
-  <Item name="" identifier="prg_ammo" aliases="ap rocket,rocket ap,ap_rocket" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,mobilecontainer,gunsmith,heavyammotype" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="8">
+  <Item name="" identifier="prg_ammo" aliases="ap rocket,rocket ap,ap_rocket" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,mobilecontainer,gunsmith,heavyammotype" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="8">
     <PreferredContainer primary="metalcrate" />
     <Price baseprice="400" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />

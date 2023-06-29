@@ -107,7 +107,7 @@
     <AiTarget soundrange="2000" />
   </Item>
   <!-- Armor Breaker -->
-  <Item name="" identifier="divingknifebw" category="Equipment" Tags="meleeweapon,smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.8" impactsoundtag="impact_metal_light" RequireAimToUse="True" spritecolor="90,100,90">
+  <Item name="" identifier="divingknifebw" category="Weapon" subcategory="Black Sea Armoury" Tags="meleeweapon,smallitem,weapon,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.8" impactsoundtag="impact_metal_light" RequireAimToUse="True" spritecolor="90,100,90">
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.05" />
@@ -152,7 +152,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Thunder Cannon -->
-  <Item name="" identifier="rg_bw" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="rg_bw" aliases="portable_rail_gun,prg" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy">
     <Price baseprice="4000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -223,7 +223,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Titanium Railgun Shell fixed but just a slightly stronger Railgun shell -->
-  <Item name="" identifier="railbw" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Misc" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="railbw" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" subcategory="Black Sea Armoury" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="railgunammocontainer" minamount="3" maxamount="6" />
     <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="3" spawnprobability="0.33" />
     <Price baseprice="160">
