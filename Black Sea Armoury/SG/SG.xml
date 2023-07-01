@@ -20,9 +20,9 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="12" removeonhit="true" spread="10">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-      <Attack structuredamage="0.5" targetforce="5.0" itemdamage="15" severlimbsprobability="0.2" penetration="0.15">
+      <Attack structuredamage="0.5" targetforce="5.0" itemdamage="0.6" severlimbsprobability="0.2" penetration="0.15">
         <Affliction identifier="bleeding" strength="3" />
-        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="gunshotwound" strength="6" />
         <Affliction identifier="lacerations" strength="3" />
         <Affliction identifier="stun" strength="0.2" />
       </Attack>
@@ -47,7 +47,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- DOOM -->
-  <Item name="" identifier="shotgununiquebw" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun,mountableweapon" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
+   <Item name="" identifier="shotgununiquebw" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun,mountableweapon" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="false" allowasextracargo="true">
     <Price baseprice="1431" soldeverywhere="false" canbespecial="false">
       <Price locationtype="outpost" sold="false" />
       <Price locationtype="city" sold="false" />
@@ -69,7 +69,7 @@
     <Sprite texture="%ModDir%/SG/SG2.png" sourcerect="0,0,184,52" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="45" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="90,13" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon barrelpos="90,13" spread="4" unskilledspread="16" combatPriority="80" reload="1.8" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -127,7 +127,7 @@
     <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
     <Body width="272" height="64" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.5" barrelpos="95,13" spread="1" unskilledspread="16" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.8" barrelpos="95,13" spread="6" unskilledspread="16" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -136,7 +136,7 @@
       <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
-        <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+        <Explosion range="140.0" force="0.8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
@@ -155,7 +155,7 @@
       <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
     </LightComponent>
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -250,9 +250,9 @@
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="-90" aimable="false" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="14" removeonhit="true" spread="20">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-      <Attack structuredamage="0.4" itemdamage="10" stun="0.1" targetforce="2.0" severlimbsprobability="0.25" penetration="0.1">
+      <Attack structuredamage="0.4" itemdamage="0.5" stun="0.1" targetforce="2.0" severlimbsprobability="0.25" penetration="0.1">
         <Affliction identifier="bleeding" strength="1" />
-        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="5.5" />
         <Affliction identifier="stun" strength="0.02" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">

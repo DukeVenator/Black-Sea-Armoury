@@ -81,8 +81,7 @@
       <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
     </LightComponent>
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -144,7 +143,7 @@
         <Conditional recoilstabilized="lte 0" />
         <Affliction identifier="stun" strength="0.75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-300" />
+      <StatusEffect type="OnUse" target="This" Condition="-11" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -172,7 +171,6 @@
     </LightComponent>
     <Quality>
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -192,9 +190,13 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="3" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
+      <Attack structuredamage="3" severlimbsprobability="0.15" itemdamage="10" targetforce="0.5" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="20" />
-        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="gunshotwound" strength="8" probability="0.4" />
+        <Affliction identifier="lacerations" strength="15"/>
+        <Affliction identifier="lacerations" strength="4.5" probability="0.2" />
+        <Affliction identifier="bleeding" strength="10"/>
+        <Affliction identifier="bleeding" strength="10" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -286,7 +288,7 @@
     <Sprite texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="250,13" spread="1" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.05">
+    <RangedWeapon barrelpos="250,13" spread="6.5" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.05">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -297,9 +299,19 @@
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse">
-        <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="5.0" />
+        <Explosion range="25.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
       </StatusEffect>
       <StatusEffect type="Always" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-14" />
+      <StatusEffect type="Always" target="This" Condition="10">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1" stackable="false" />
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 50" />
@@ -322,7 +334,6 @@
         <Affliction identifier="stun" strength="0.1" />
         <Affliction identifier="blunttrauma" strength="0.15" probability="0.1"/>
       </StatusEffect>
-
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -397,7 +408,9 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="0.5" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.1" penetration="0.35">
         <Affliction identifier="gunshotwound" strength="6" />
+        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="lacerations" strength="6" />
+        <Affliction identifier="bleeding" strength="2" probability="0.15" />
         <Affliction identifier="stun" strength="0.01" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">

@@ -23,7 +23,7 @@
     <Sprite texture="%ModDir%/TS/PK.png" sourcerect="0,0,112,56" depth="0.55" origin="0.5,0.5" />
     <Body width="106" height="49" density="70" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-30,-4" handle2="-50,-15" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="1.45" barrelpos="20,6" spread="0" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="1.45" reloadnoskill="2.5" barrelpos="20,6" spread="2" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/JobGear/Captain/WEAPONS_handCannon.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -44,7 +44,7 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.3" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
   </Item>
   <!-- Override of handcannonrounds -->
@@ -69,11 +69,12 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,115,200" scalemultiplier="1,1" />
-        <Attack structuredamage="10" targetforce="5" itemdamage="40" severlimbsprobability="1.0" penetration="0.6">
+        <Attack structuredamage="10" targetforce="20" itemdamage="8" severlimbsprobability="0.4" penetration="0.35">
           <Affliction identifier="bleeding" strength="50" />
           <Affliction identifier="gunshotwound" strength="55" />
-          <Affliction identifier="lacerations" strength="55" />
-          <Affliction identifier="stun" strength="1.5" />
+          <Affliction identifier="lacerations" strength="25" />
+          <Affliction identifier="lacerations" strength="15" probability="0.5" />
+          <Affliction identifier="stun" strength="0.8" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
           <Explosion range="150.0" structuredamage="100" force="4.0" itemdamage="100" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
@@ -600,7 +601,7 @@
     <Sprite texture="Revolerbw.png" sourcerect="0,0,80,48" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" description="Old-fashioned weapon,can be dual wielded.Use 14.5mm round." />
-    <RangedWeapon reload="0.85" barrelpos="14,6" spread="0" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="1.8" reloadnoskill="5.5" barrelpos="14,6" spread="3" unskilledspread="15" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/Weapons/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -613,15 +614,41 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Affliction identifier="stun" strength="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 55"/>
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.3" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 55" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.35" probability="0.4"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 55"/>
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="0.5"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Conditional skillrequirement="true" weapons="lt 55"/>
+        <Affliction identifier="stun" strength="0.45" />
+        <Affliction identifier="blunttrauma" strength="0.5" probability="0.2"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <RequiredItems items="revolverammobw,revolverammobw2,revolverammobw3" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="55" />
-    </RangedWeapon>
+    </RangedWeapon> 
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable items="revolverammobw,revolverammobw2,revolverammobw3" />
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.3" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -657,7 +684,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="3" targetforce="10" itemdamage="10" severlimbsprobability="0.5" penetration="0.3">
+      <Attack structuredamage="5" targetforce="10" itemdamage="3" severlimbsprobability="0.5" penetration="0.3">
         <Affliction identifier="bleeding" strength="20" />
         <Affliction identifier="gunshotwound" strength="55" />
         <Affliction identifier="stun" strength="0.5" />
@@ -710,7 +737,7 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="10" targetforce="10" itemdamage="10" severlimbsprobability="0.5" penetration="0.4">
         <Affliction identifier="bleeding" strength="20" />
-        <Affliction identifier="gunshotwound" strength="60" />
+        <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="stun" strength="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -724,6 +751,7 @@
       <StatusEffect type="OnImpact" target="This">
         <Explosion range="80.0" structuredamage="10" force="10.0" itemdamage="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="explosiondamage" strength="30" />
         </Explosion>
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
         <Remove />
