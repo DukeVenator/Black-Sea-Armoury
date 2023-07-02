@@ -66,7 +66,7 @@
         <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
         <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1" stackable="false" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1.4" stackable="false" />
       <RequiredItems items="HMG1_mag_bw" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -143,7 +143,7 @@
         <Conditional recoilstabilized="lte 0" />
         <Affliction identifier="stun" strength="0.75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-11" />
+      <StatusEffect type="OnUse" target="This" Condition="-400" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -155,7 +155,7 @@
         <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
         <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1" stackable="false" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.2" stackable="false" />
       <RequiredItems items="HMG1_mag_bw" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -302,8 +302,8 @@
         <Explosion range="25.0" force="1.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
       </StatusEffect>
       <StatusEffect type="Always" target="Character" SpeedMultiplier="0.7" setvalue="true" />
-      <StatusEffect type="OnUse" target="This" Condition="-14" />
-      <StatusEffect type="Always" target="This" Condition="10">
+      <StatusEffect type="OnUse" target="This" Condition="-120" />
+      <StatusEffect type="Always" target="This" Condition="20">
         <Conditional condition="gt 0" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -311,7 +311,7 @@
         <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
         <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1" stackable="false" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.6" stackable="false" />
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 50" />
