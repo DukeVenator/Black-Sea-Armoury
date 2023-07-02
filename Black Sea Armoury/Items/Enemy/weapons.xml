@@ -7,7 +7,7 @@
     <Sprite texture="%ModDir%/AXE/Hammer.png" sourcerect="0,0,420,200" origin="0.5,0.5" depth="0.55" />
     <Body width="250" height="150" density="60" />
     <MeleeWeapon slots="RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-20" handle1="-30,-3" handle2="15,3" holdangle="45" reload="2" range="200" combatPriority="40" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
-      <Attack targetimpulse="5" severlimbsprobability="0.5" structuredamage="100" itemdamage="0" penetration="0.2">
+      <Attack targetimpulse="5" severlimbsprobability="0.5" structuredamage="150" itemdamage="0" penetration="0.2">
         <Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
         <Affliction identifier="blunttrauma" strength="40" />
         <Affliction identifier="stun" strength="4" />
@@ -355,7 +355,7 @@
         <SpawnItem identifier="railgunshell_uex" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="railgunshell" spawnposition="ThisInventory" />
+        <SpawnItem identifier="railgunshell_uex" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
@@ -374,7 +374,7 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-    <!-- Thunder Cannon uex -->
+    <!-- Thunder Cannon c4 -->
   <Item name="thunderuex" identifier="rg_bw_n_uex" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
@@ -403,10 +403,10 @@
       <RequiredItems identifier="railgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="60" />
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="railgunshell_uex" spawnposition="ThisInventory" />
+        <SpawnItem identifier="railgunshell_c4" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="railgunshell_uex" spawnposition="ThisInventory" />
+        <SpawnItem identifier="railgunshell_c4" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />

@@ -54,7 +54,7 @@ MonsterEvent
   <!--                               Set 1                                       -->
   <!--                               up to 8                                     -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Eventset identifier="BAECampaignOne" minleveldifficulty="25" maxleveldifficulty="40" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
+  <Eventset identifier="BAECampaignOne" minleveldifficulty="20" maxleveldifficulty="35" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
     <Commonness commonness="3"/>
     <!--populate ruin-->
     <EventSet identifier="baeruins" chooserandom="false" allowatstart="true" perruin="true" triggereventcooldown="false">
@@ -134,7 +134,7 @@ MonsterEvent
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Set 2(up to 10)                                       -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Eventset identifier="BAECampaignTwo" minleveldifficulty="41" maxleveldifficulty="70" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
+  <Eventset identifier="BAECampaignTwo" minleveldifficulty="36" maxleveldifficulty="65" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
     <Commonness commonness="3"/>
     <!--cave ambush-->
     <EventSet identifier="caves" chooserandom="true" percave="true" triggereventcooldown="false" allowatstart="true">
@@ -232,7 +232,7 @@ MonsterEvent
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Set 3(up to 12)                                       -->
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Eventset identifier="BAECampaignThree" minleveldifficulty="71" maxleveldifficulty="100" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
+  <Eventset identifier="BAECampaignThree" minleveldifficulty="66" maxleveldifficulty="100" chooserandom="true" allowatstart="false" additive="true" campaign ="true">
     <Commonness commonness="3"/>
     <!--cave ambush-->
     <EventSet identifier="caves" chooserandom="false" percave="true" triggereventcooldown="false" allowatstart="true">
