@@ -23,7 +23,7 @@
     <Sprite texture="%ModDir%/TS/PK.png" sourcerect="0,0,112,56" depth="0.55" origin="0.5,0.5" />
     <Body width="106" height="49" density="70" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-30,-4" handle2="-50,-15" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="1.45" reloadnoskill="2.5" barrelpos="20,6" spread="2" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="1.85" reloadnoskill="4.5" barrelpos="20,6" spread="2.5" unskilledspread="8" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/JobGear/Captain/WEAPONS_handCannon.ogg" type="OnUse" range="3000" selectionmode="Random" />

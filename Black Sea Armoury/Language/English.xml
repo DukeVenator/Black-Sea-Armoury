@@ -125,7 +125,7 @@
   <entityname.HMG1_bp6>Revolution</entityname.HMG1_bp6>
   <entitydescription.HMG1_bp6>Military reformation improve barrage performance.</entitydescription.HMG1_bp6>
   <entityname.HMG1_bw>Sickle HMG</entityname.HMG1_bw>
-  <entitydescription.HMG1_bw>Heavy rapid-fire weapon,but need cooldown after barrage.Fire 14.5mm rounds.</entitydescription.HMG1_bw>
+  <entitydescription.HMG1_bw>Heavy rapid-fire weapon,but need cooldown after barrage fire 14.5mm rounds and cooldown slow without forced cooling.</entitydescription.HMG1_bw>
   <entityname.HMG1_mag_bw>14.5 Ammo Box</entityname.HMG1_mag_bw>
   <entitydescription.HMG1_mag_bw>Old-fashioned high penetration rounds.</entitydescription.HMG1_mag_bw>
   <entityname.HMG1_ammo_bw>14.5 Ammo Box</entityname.HMG1_ammo_bw>

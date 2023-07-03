@@ -124,7 +124,7 @@
   <entityname.HMG1_bp6>革命(Revolution)</entityname.HMG1_bp6>
   <entitydescription.HMG1_bp6>軍事化再改造提升連射性能。</entitydescription.HMG1_bp6>
   <entityname.HMG1_bw>鐮刀重機槍(Sickle HMG)</entityname.HMG1_bw>
-  <entitydescription.HMG1_bw>重型自動火力，但容易過熱。使用14.5mm機槍彈藥。</entitydescription.HMG1_bw>
+  <entitydescription.HMG1_bw>重型自動火力，但容易過熱，需要依靠強製散熱。使用14.5mm機槍彈藥。</entitydescription.HMG1_bw>
   <entityname.HMG1_mag_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_mag_bw>
   <entitydescription.HMG1_mag_bw>老舊，但致命。</entitydescription.HMG1_mag_bw>
   <entityname.HMG1_ammo_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_ammo_bw>
