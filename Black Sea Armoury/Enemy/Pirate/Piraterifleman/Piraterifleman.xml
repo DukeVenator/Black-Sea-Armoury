@@ -51,7 +51,7 @@
     <target damagethreshold="0" tag="Piratenuker" state="Protect" priority="90" ignoreinside="true"/>
     <target damagethreshold="0" tag="Piratedesolator" state="Protect" priority="90" ignoreinside="true"/>
     <target damagethreshold="0" tag="leucocyte" state="PassiveAggressive" priority="80" reactdistance="1500" attackdistance="2000" />
-    <SwarmBehavior mindistfromclosest="800" maxdistfromcenter="2000" cohesion="0.5" />
+    <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1000" cohesion="0.5" />
   </ai>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="lmgmagazine_bw" />

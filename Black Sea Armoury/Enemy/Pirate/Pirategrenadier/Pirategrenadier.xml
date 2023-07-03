@@ -45,7 +45,7 @@
     <target damagethreshold="0" Tag="stronger" State="PassiveAggressive" Priority="30" ReactDistance="0" AttackDistance="1000" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Sweep" PrioritizeSubCenter="False" SweepDistance="3500" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target damagethreshold="0" tag="engine" state="Avoid" priority="100" reactdistance="800" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="True" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
     <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
-    <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.5" />
+    <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1000" cohesion="0.5" />
   </ai>
 <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="bw_grenade_drum" />

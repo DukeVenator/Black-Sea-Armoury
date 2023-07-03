@@ -44,7 +44,7 @@
     <target damagethreshold="0" Tag="room" State="Attack" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" />
     <target damagethreshold="0" tag="engine" state="Avoid" priority="100" reactdistance="100" attackdistance="0" timer="0" ignorecontained="False" />
     <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
-    <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.5" />
+    <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1500" cohesion="0.5" />
   </ai>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="uex2" />
