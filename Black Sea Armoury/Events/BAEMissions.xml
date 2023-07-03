@@ -9,8 +9,9 @@
     commonness="50"
     reward="4000"
     maxsonarmarkerdistance="10000">
-    <monster character="Piratenuker" min="1" max="1"/>
+    <monster character="Piratenuker" min="1" max="2"/>
     <monster character="Piraterifleman" min="2" max="4"/>
+    <monster character="Piratedesolator" min="1" max="1"/>
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
@@ -22,15 +23,15 @@
   <MonsterMission
     identifier="killnuker2"
     textidentifier="killnuker"
-    tags="killmonster,killswarm,killswarm_set4"
+    tags="killmonster,killswarm,killswarm_set3"
     type="Monster"
     difficulty="4"
     commonness="60"
     reward="6000"
     maxsonarmarkerdistance="20000">
-    <monster character="Piratenuker" min="1" max="1"/>
+    <monster character="Piratenuker" min="1" max="2"/>
     <monster character="Piraterifleman" min="2" max="4"/>
-    <monster character="Piratedesolator" min="1" max="1"/>
+    <monster character="Piratedesolator" min="1" max="2"/>
     <monster character="Piratemarksman" min="1" max="1"/>
     <Reputation identifier="separatists" amount="5" />
     <Reputation identifier="coalition" amount="5" />
@@ -86,6 +87,8 @@
     <monster character="Pirateboarder" min="3" max="4"/>
     <monster character="Piratedismantler" min="1" max="1"/>
     <monster character="Piratemarksman" min="1" max="1"/>
+    <monster character="Piraterifleman" min="2" max="2"/>
+    <monster character="Pirategunner" min="1" max="1"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
@@ -101,6 +104,7 @@
     reward="5000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="1" max="1"/>
+    <monster character="Pirateboarder" min="2" max="3"/>
     <monster character="Pirategrenadier" min="1" max="2"/>
     <monster character="Piraterifleman" min="2" max="2"/>
     <monster character="Pirategunner" min="1" max="1"/>
@@ -121,13 +125,15 @@
     reward="7000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
+    <monster character="Pirateboarder" min="2" max="2"/>
     <monster character="Pirategrenadier" min="1" max="1"/>
-    <monster character="Piraterifleman" min="1" max="1"/>
-    <monster character="Pirategunner" min="1" max="1"/>
-    <monster character="Piratemarksman" min="1" max="1"/>
+    <monster character="Piraterifleman" min="2" max="3"/>
+    <monster character="Pirategunner" min="1" max="2"/>
+    <monster character="Piratemarksman" min="1" max="2"/>
     <monster character="Piratebombard" min="1" max="1"/>
     <monster character="Piratesharpshooter" min="1" max="1"/>
-    <Reputation identifier="location" amount="4" />
+    <monster character="Piratedesolator" min="1" max="1"/>
+    <Reputation identifier="location" amount="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
@@ -162,11 +168,12 @@
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
     <monster character="Pirategrenadier" min="1" max="1"/>
-    <monster character="Piraterifleman" min="1" max="1"/>
-    <monster character="Pirategunner" min="1" max="1"/>
+    <monster character="Piraterifleman" min="2" max="3"/>
+    <monster character="Pirategunner" min="1" max="2"/>
     <monster character="Pirateveteran" min="1" max="1"/>
-    <monster character="Piratebombard" min="1" max="1"/>
-    <monster character="Piratesharpshooter" min="1" max="1"/>
+    <monster character="Piratebombard" min="1" max="2"/>
+    <monster character="Piratemarksman" min="1" max="3"/>
+    <monster character="Piratesharpshooter" min="1" max="2"/>
     <Reputation identifier="location" amount="10" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
@@ -361,11 +368,11 @@
       <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" spawnpointtags="banditleader" />
       <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" />
       <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule" />
-      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
-      <Character identifier="bandit" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+      <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
       <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" />
       <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
-      <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+      <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" moduleflags="crewmodule" />
       <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true"/>
@@ -391,10 +398,14 @@
       <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule"/>
       <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule"/>
       <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule"/>
-      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
-      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="seccrewmodule"/>
-      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="seccrewmodule" multiplayeronly="true"/>
+      <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule"/>
+      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" multiplayeronly="true"/>
       <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" asfaraspossible="true" requirekill="true"/>
+      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="researchmodule" />
+      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true"/>
     <message header="missionheader0.abandonedoutpostassassinatebae" text="missionmessage0.abandonedoutpostassassinatebae"/>
