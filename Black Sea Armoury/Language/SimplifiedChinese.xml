@@ -328,12 +328,10 @@
   <missiondescription.killcoalition>根据我们的消息，联盟的机械化部队在[地点1]到[地点2]的路线上进行军事演习。 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.killcoalition>
   <missionsonarlabel.killcoalition>联盟部队</missionsonarlabel.killcoalition>
   <missionsuccess.killcoalition>联盟部队已被消灭。这条路线应该又是安全的。</missionsuccess.killcoalition>
-  <missionname.separatistattackbae>分离主义分子伏击</missionname.separatistattackbae>
-  <missionheader.separatistattackbae>消息接入中</missionheader.separatistattackbae>
-  <missionmessage.separatistattackbae>“这条通道已经被Jovian Separatists夺回。立即掉头，否则我们将确保你们这些法西斯分子没有一个能活着离开这里。”</missionmessage.separatistattackbae>
-  <missionname.coalitionattackbae>联盟伏击</missionname.coalitionattackbae>
-  <missionheader.coalitionattackbae>消息接入中</missionheader.coalitionattackbae>
-  <missionmessage.coalitionattackbae>“叛徒！你已经走到头了！叛变联盟的代价只有死亡！”</missionmessage.coalitionattackbae>
+  <missionname.separatistattackbae>消息接入中</missionname.separatistattackbae>
+  <missiondescription.separatistattackbae>“这条通道已经被Jovian Separatists夺回。立即掉头，否则我们将确保你们这些法西斯分子没有一个能活着离开这里。”</missiondescription.separatistattackbae>
+  <missionname.coalitionattackbae>消息接入中</missionname.coalitionattackbae>
+  <missiondescription.coalitionattackbae>“叛徒！你已经走到头了！叛变联盟的代价只有死亡！”</missiondescription.coalitionattackbae>
   <missionname.abandonedoutposthumansbae>恢复前哨站</missionname.abandonedoutposthumansbae>
   <missiondescription.abandonedoutposthumansbae>Contact with [location1] was recently lost, and it's suspected to have been taken over by someone. Destroy the outpost's reactor to drive away any squatters and ensure they don't return.</missiondescription.abandonedoutposthumansbae>
   <missionsuccess.abandonedoutposthumansbae>The squatters were driven away from the outpost successfully.</missionsuccess.abandonedoutposthumansbae>
