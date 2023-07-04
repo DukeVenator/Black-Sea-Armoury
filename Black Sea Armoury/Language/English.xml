@@ -327,12 +327,10 @@
   <missiondescription.killcoalition>According to our sources, Coalition Mechanized troops conduct Military Excercise the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.killcoalition>
   <missionsonarlabel.killcoalition>Coalition Troops</missionsonarlabel.killcoalition>
   <missionsuccess.killcoalition>The Coalition troops have been neutralized. The route should be safe again.</missionsuccess.killcoalition>
-  <missionname.separatistattackbae>Separatist Ambush</missionname.separatistattackbae>
-  <missionheader.separatistattackbae>Incoming transmission</missionheader.separatistattackbae>
-  <missionmessage.separatistattackbae>“This passageway has been reclaimed by the Jovian Separatists. Set your course back immediately or we'll make sure none of you fascists make it out of here alive.”</missionmessage.separatistattackbae>
-  <missionname.coalitionattackbae>Coalition Ambush</missionname.coalitionattackbae>
-  <missionheader.coalitionattackbae>Incoming transmission</missionheader.coalitionattackbae>
-  <missionmessage.coalitionattackbae>“End of the road, traitors! The price for treason against the Coalition is death!”</missionmessage.coalitionattackbae>
+  <missionname.separatistattackbae>Incoming transmission</missionname.separatistattackbae>
+  <missiondescription.separatistattackbae>“This passageway has been reclaimed by the Jovian Separatists. Set your course back immediately or we'll make sure none of you fascists make it out of here alive.”</missiondescription.separatistattackbae>
+  <missionname.coalitionattackbae>Incoming transmission</missionname.coalitionattackbae>
+  <missiondescription.coalitionattackbae>“End of the road, traitors! The price for treason against the Coalition is death!”</missiondescription.coalitionattackbae>
   <missionname.abandonedoutposthumansbae>Outpost recovery</missionname.abandonedoutposthumansbae>
   <missiondescription.abandonedoutposthumansbae>Contact with [location1] was recently lost, and it's suspected to have been taken over by someone. Destroy the outpost's reactor to drive away any squatters and ensure they don't return.</missiondescription.abandonedoutposthumansbae>
   <missionsuccess.abandonedoutposthumansbae>The squatters were driven away from the outpost successfully.</missionsuccess.abandonedoutposthumansbae>

@@ -26,7 +26,7 @@
     tags="killmonster,killswarm,killswarm_set3"
     type="Monster"
     difficulty="4"
-    commonness="60"
+    commonness="50"
     reward="6000"
     maxsonarmarkerdistance="20000">
     <monster character="Piratenuker" min="1" max="2"/>
@@ -47,7 +47,7 @@
     tags="killmonster,killmonster_set1"
     type="Monster"
     difficulty="2"
-    commonness="80"
+    commonness="100"
     reward="2000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateforerunner" min="1" max="2"/>
@@ -63,7 +63,7 @@
     tags="killmonster,killmonster_set2"
     type="Monster"
     difficulty="3"
-    commonness="80"
+    commonness="100"
     reward="3000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateforerunner" min="1" max="2"/>
@@ -80,7 +80,7 @@
     tags="killmonster,killswarm,killswarm_set2"
     type="Monster"
     difficulty="3"
-    commonness="80"
+    commonness="100"
     reward="4000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateforerunner" min="2" max="3"/>
@@ -100,7 +100,7 @@
     tags="killmonster,killswarm,killswarm_set3"
     type="Monster"
     difficulty="3"
-    commonness="80"
+    commonness="100"
     reward="5000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="1" max="1"/>
@@ -121,7 +121,7 @@
     tags="killmonster,killswarm,killswarm_set4"
     type="Monster"
     difficulty="4"
-    commonness="80"
+    commonness="100"
     reward="7000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
@@ -144,7 +144,7 @@
     tags="killmonster,killmonster_set3"
     type="Monster"
     difficulty="4"
-    commonness="70"
+    commonness="100"
     reward="6000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateveteran" min="1" max="1"/>
@@ -163,7 +163,7 @@
     tags="killmonster,killswarm,killswarm_set4"
     type="Monster"
     difficulty="4"
-    commonness="70"
+    commonness="100"
     reward="9000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
@@ -303,7 +303,7 @@
     identifier="separatistattackbae"
     tags="separatistattack"
     showinmenus="false"
-    showstartmessage="false"
+    showstartmessage="true"
     issideobjective="true"
     difficulty="4"
     commonness="50"
@@ -311,14 +311,13 @@
     maxsonarmarkerdistance="20000">
     <monster character="Separatistantisub" min="2" max="3"/>
     <monster character="Separatistrifleman" min="2" max="3"/>
-    <monster character="Separatistsharpshooter" min="1" max="1"/>
-    <monster character="Separatistgunner" min="1" max="1"/>
+    <monster character="Separatistsharpshooter" min="1" max="2"/>
+    <monster character="Separatistgunner" min="1" max="2"/>
     <monster character="Separatistveteran" min="1" max="1"/>
     <monster character="Separatistbombard" min="1" max="1"/>
     <Reputation identifier="coalition" amount="10" />
     <Reputation identifier="separatists" amount="-10" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.separatistattackbae" text="missionmessage.separatistattackbae"/>
   </MonsterMission>
 
   <MonsterMission
@@ -326,14 +325,14 @@
     identifier="coalitionattackbae"
     tags="coalitiontattack"
     showinmenus="false"
-    showstartmessage="false"
+    showstartmessage="true"
     issideobjective="true"
     difficulty="4"
     commonness="50"
     reward="10000"
     maxsonarmarkerdistance="20000">
-    <monster character="Coalitionantisub" min="1" max="1"/>
-    <monster character="Coalitionrifleman" min="2" max="3"/>
+    <monster character="Coalitionantisub" min="1" max="2"/>
+    <monster character="Coalitionrifleman" min="2" max="4"/>
     <monster character="Coalitionheavy" min="1" max="2"/>
     <monster character="Coalitionsharpshooter" min="1" max="1"/>
     <monster character="Coalitiongunner" min="1" max="1"/>
@@ -342,7 +341,6 @@
     <Reputation identifier="coalition" amount="-10" />
     <Reputation identifier="separatists" amount="10" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.coalitionattackbae" text="missionmessage.coalitionattackbae"/>
   </MonsterMission>
 
   <AbandonedOutpostMission
