@@ -10,7 +10,9 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="1" severlimbsprobability="0.35" itemdamage="2" targetforce="2" penetration="0.05">
         <Affliction identifier="gunshotwound" strength="18" />
-        <Affliction identifier="bleeding" strength="2" />
+        <Affliction identifier="gunshotwound" strength="8.5" probability="0.15"/>
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="bleeding" strength="4"  probability="0.3"/>
         <Affliction identifier="stun" strength="0.04" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -227,7 +229,6 @@
       <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
     </LightComponent>
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
