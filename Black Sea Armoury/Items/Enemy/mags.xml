@@ -423,8 +423,8 @@
       <Containable items="smallitem" />
     </ItemContainer>
   </Item>
-  <!-- railgun c4-->
-    <Item name="railc4" identifier="railgunshell_c4" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
+  <!-- railgun frag-->
+    <Item name="railfrag" identifier="railgunshell_frag" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -436,7 +436,7 @@
         <Affliction identifier="stun" strength="15" />
       </Attack>
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="c4block" spawnposition="ThisInventory" />
+        <SpawnItem identifier="fraggrenade" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
