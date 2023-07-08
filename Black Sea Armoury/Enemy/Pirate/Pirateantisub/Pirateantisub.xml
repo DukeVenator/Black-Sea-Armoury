@@ -60,9 +60,9 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="fulguriumbatterycell" />
-    <Item Identifier="uex" />
+    <Item Identifier="fraggrenade" />
     <Item Identifier="rum" amount="2"/>
-    <Item slot="RightHand" Identifier="rg_bw_n_uex" />
+    <Item slot="RightHand" Identifier="rg_bw_n_frag" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
