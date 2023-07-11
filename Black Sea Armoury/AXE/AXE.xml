@@ -23,8 +23,8 @@
     <Body width="200" height="150" density="50" />
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-10,0" holdangle="30" reload="1.5" range="120" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="2" severlimbsprobability="0.5" itemdamage="20" structuredamage="20" structuresoundtype="StructureSlash" penetration="0.5">
-        <Affliction identifier="lacerations" strength="30" />
-        <Affliction identifier="blunttrauma" strength="50" />
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="blunttrauma" strength="30" />
         <Affliction identifier="stun" strength="5" />
         <StatusEffect type="OnUse" target="Character">
           <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <bw_footstep_heavy file="%ModDir%/Sounds/bw_footstep_heavy.ogg" range="800" />
+</sounds>

@@ -29,8 +29,8 @@
     <InventoryIcon texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" />
     <Sprite texture="%ModDir%/LC/LC.png" sourcerect="0,0,352,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
-    <Holdable slots="RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon holdtrigger="true" maxchargetime="1.0" barrelpos="165,22" spread="1" unskilledspread="17" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon holdtrigger="true" maxchargetime="1.0" barrelpos="165,22" spread="1" unskilledspread="17" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="1.5">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="360" />
@@ -48,13 +48,13 @@
       </StatusEffect>
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional skillrequirement="true" weapons="lt 80" />
         <Conditional recoilstabilized="gte 1" />
         <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
         <Affliction identifier="blunttrauma" strength="0.2" probability="0.2"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
-        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional skillrequirement="true" weapons="lt 80" />
         <Conditional recoilstabilized="gte 1" />
         <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
       </StatusEffect>
@@ -72,7 +72,7 @@
       </StatusEffect>
       <!-- End of Forbidden in mortal bodies -->
       <RequiredItems items="oxygen_cell_bw" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="80" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable items="oxygen_cell_bw" />
@@ -86,7 +86,6 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
@@ -180,7 +179,7 @@
     </Projectile>
   </Item>
   <!-- Experimental Precise Gun -->
-  <Item name="" identifier="esg_bw" aliases="sniper_gun" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="snipergun,smallitem,weapon,gun,gunsmith" Scale="0.7" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="esg_bw" aliases="sniper_gun" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="snipergun,mediumitem,weapon,gun,gunsmith" Scale="0.7" impactsoundtag="impact_metal_heavy">
     <Price baseprice="2000" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -198,10 +197,13 @@
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="smgunique" />
     </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
+    </Wearable>
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
     <Body width="300" height="124" density="40" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="4.0" barrelpos="220,13" spread="0" unskilledspread="8" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.5">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -215,8 +217,33 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 80" />
+        <Conditional recoilstabilized="gte 1" />
+        <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="blunttrauma" strength="0.2" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 80" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="0.8" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1.5" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1" LimbSpecific="true" probability="0.1"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Explosion range="180.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="explosiondamage" strength="0.4"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <RequiredItems identifier="SG_ammo" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="80" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable items="SG_ammo" />
@@ -229,7 +256,7 @@
       <LightTexture texture="%ModDir%/LC/laser_light.png" origin="-0.002, 0.475" size="1.0,0.3" />
     </LightComponent>
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.15" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -265,9 +292,12 @@
     <Projectile characterusable="false" hitscan="true" spread="0" removeonhit="false" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2.5" />
       <Attack structuredamage="30" severlimbsprobability="0.35" itemdamage="30" targetforce="6" penetration="0.5">
-        <Affliction identifier="gunshotwound" strength="100" />
-        <Affliction identifier="lacerations" strength="100" />
+        <Affliction identifier="gunshotwound" strength="60" />
+        <Affliction identifier="gunshotwound" strength="25" probability="0.35" />
+        <Affliction identifier="lacerations" strength="45" />
         <Affliction identifier="stun" strength="3" />
+        <Affliction identifier="bleeding" strength="65" />
+        <Affliction identifier="bleeding" strength="45" probability="0.4" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -306,10 +336,13 @@
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="esg_bw" />
     </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/ESG2.png" sourcerect="0,0,280,124" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
+    </Wearable>
     <InventoryIcon texture="%ModDir%/LC/ESG2.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG2.png" sourcerect="0,0,300,124" depth="0.55" />
     <Body width="300" height="124" density="40" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="4.0" barrelpos="220,13" spread="0" unskilledspread="8" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -323,8 +356,33 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 80" />
+        <Conditional recoilstabilized="gte 1" />
+        <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="blunttrauma" strength="0.2" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 80" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="0.8" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1.5" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1" LimbSpecific="true" probability="0.1"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Explosion range="180.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="explosiondamage" strength="0.4"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <RequiredItems identifier="SG_ammo" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="80" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable items="SG_ammo" />
@@ -337,12 +395,12 @@
       <LightTexture texture="%ModDir%/LC/laser_light.png" origin="-0.002, 0.475" size="1.0,0.3" />
     </LightComponent>
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.25" />
     </Quality>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Disaster (Upgraded Experimental Laser Cannon) -->
-  <Item name="" identifier="lasercannon_bp3" aliases="laser cannonboss" category="Weapon" subcategory="Black Sea Armoury" Tags="energytype,mediumitem,gunsmith,weapon,mountableweapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <Item name="" identifier="lasercannon_bp3" aliases="laser cannonboss" category="Weapon" subcategory="Black Sea Armoury" Tags="energytype,mediumitem,gunsmith,weapon,mountableweapon" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <Price baseprice="3500" soldeverywhere="false" minleveldifficulty="33">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
@@ -359,10 +417,13 @@
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="lasercannon_bw" />
     </Fabricate>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
+    </Wearable>
     <InventoryIcon texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" />
     <Sprite texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
-    <Holdable slots="Any,RightHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-24" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="90,22" spread="6" unskilledspread="16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -381,14 +442,39 @@
       <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 100" />
+        <Conditional recoilstabilized="gte 1" />
+        <Explosion range="10.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="blunttrauma" strength="0.2" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 100" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="0.8" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1.5" LimbSpecific="true"/>
+        <Affliction identifier="explosiondamage" strength="1" LimbSpecific="true" probability="0.1"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Explosion range="180.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="explosiondamage" strength="0.4"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
       <StatusEffect type="OnBroken" target="This">
         <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
         <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
         <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.5" stackable="false" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="5.5" stackable="false" />
       <RequiredItems items="oxygen_cell_bw" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredSkill identifier="weapons" level="100" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable items="oxygen_cell_bw" />
@@ -402,7 +488,6 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>

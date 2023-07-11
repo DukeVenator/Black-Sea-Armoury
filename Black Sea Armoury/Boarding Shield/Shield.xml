@@ -222,7 +222,7 @@
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-25.0" Condition="-25.0" />
       <StatusEffect type="OnUse" targettype="UseTarget" Condition="-25.0" />
       <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.5">
-        <Affliction identifier="burn" strength="100" />
+        <Affliction identifier="burn" strength="60" />
       </StatusEffect>
       <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
       <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
@@ -233,11 +233,11 @@
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <Fixable identifier="structure" />
       <RequiredSkill identifier="weapon" level="30" />
-      <StatusEffect type="OnUse" target="This" condition="-0.95" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" condition="-0.65" disabledeltatime="true" />
       <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="1.75" stackable="false" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="4" stackable="false" />
       <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>

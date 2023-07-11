@@ -107,7 +107,7 @@
     <Projectile characterusable="false" launchimpulse="80.0" hitscan="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2" />
       <Attack structuredamage="20" itemdamage="20" severlimbsprobability="0.5" penetration="0.3">
-        <Affliction identifier="lacerations" strength="80" />
+        <Affliction identifier="lacerations" strength="60" />
         <Affliction identifier="bleeding" strength="5.0" />
       </Attack>
       <StatusEffect type="OnActive" target="This" lifetime="2">
