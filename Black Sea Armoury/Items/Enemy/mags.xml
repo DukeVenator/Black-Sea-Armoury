@@ -383,7 +383,9 @@
   </Item>
   <!-- railgun uex-->
     <Item name="railuex" identifier="railgunshell_uex" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+      <PreferredContainer primary="railgunammocontainer" minamount="0" maxamount="0" spawnprobability="0.00"/>
+      <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="0" spawnprobability="0.00" />
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -425,6 +427,8 @@
   </Item>
   <!-- railgun frag-->
     <Item name="railfrag" identifier="railgunshell_frag" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="railgunammocontainer" minamount="0" maxamount="0" spawnprobability="0.00"/>
+      <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="0" spawnprobability="0.00" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -467,6 +471,8 @@
   </Item>
   <!-- railgun dirtybomb -->
     <Item name="raildirty" identifier="railgunshell_dirty" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="railgunammocontainer" minamount="0" maxamount="0" spawnprobability="0.00"/>
+      <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="0" spawnprobability="0.00" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -508,6 +514,8 @@
     </ItemContainer>
   </Item>
     <Item name="railemp" identifier="railgunshell_emp" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="railgunammocontainer" minamount="0" maxamount="0" spawnprobability="0.00"/>
+      <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="0" spawnprobability="0.00" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -550,7 +558,9 @@
   </Item>
   <!--mini nuke,normal nuke was overkill-->  
   <Item name="railnuke" identifier="railgunshell_mini" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+    <PreferredContainer primary="railgunammocontainer" minamount="0" maxamount="0" spawnprobability="0.00"/>
+    <PreferredContainer primary="wreckrailgun" minamount="0" maxamount="0" spawnprobability="0.00" />
+  <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="2,91,215,33" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />

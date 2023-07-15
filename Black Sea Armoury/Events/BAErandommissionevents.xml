@@ -94,7 +94,7 @@ MonsterEvent
     </Eventset>
     <Eventset identifier="antisub" chooserandom ="false" minmissiontime="300" minintensity="0.2" maxintensity="1.0" scatter="1000">
       <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="mainpath,sidepath" />
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
     </Eventset>
     <!--10-->
     <Eventset identifier="third" chooserandom ="false" minmissiontime="600" minintensity="0.0" maxintensity="1.0">
@@ -117,7 +117,7 @@ MonsterEvent
     <Eventset identifier="antisub" chooserandom ="false" minmissiontime="600" minintensity="0.2" maxintensity="1.0" scatter="2000">
       <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="4" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Pirategrenadier" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
     </Eventset>
     <Eventset identifier="abyssparty" chooserandom ="false" disableinhuntinggrounds="true" minintensity="0.0" maxintensity="0.5" scatter="2000">
@@ -154,7 +154,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piratescavenger" minamount="2" maxamount="4" spawntype="wreck" />
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="wreck" />
       <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="4" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
     </EventSet>
     <!--3min-->
     <Eventset identifier="first" chooserandom ="false" minmissiontime="180" minintensity="0.0" maxintensity="1.0">
@@ -189,7 +189,7 @@ MonsterEvent
     <Eventset identifier="antisub" chooserandom ="false" minmissiontime="300" minintensity="0.2" maxintensity="1.0" scatter="1000">
       <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
     </Eventset>
     <!--10-->
@@ -214,7 +214,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="4" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
     </Eventset>
     <!--abyss-->
@@ -223,7 +223,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="2" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratemarksman" minamount="1" maxamount="1" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="Abyss" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="3" maxamount="3" spawntype="Abyss" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="1" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="1" spawntype="Abyss" />      
     </Eventset>
   </Eventset>
@@ -255,7 +255,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="wreck" />
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="wreck" />
       <MonsterEvent characterfile="Pirateboarder" minamount="2" maxamount="4" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
       <MonsterEvent characterfile="Piratedismantler" minamount="2" maxamount="3" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="1" spawntype="wreck" spawnprobability="0.5" spawnpointtag="encounter" />
     </EventSet>
@@ -288,7 +288,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piraterifleman" minamount="2" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="3" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
     </Eventset>
     <!--5min-->
@@ -319,7 +319,7 @@ MonsterEvent
     <Eventset identifier="antisub" chooserandom ="false" minmissiontime="300" minintensity="0.0" maxintensity="1.0" scatter="1000">
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="3" maxamount="4" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
@@ -347,7 +347,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piraterifleman" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
       <MonsterEvent characterfile="Pirategunner" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="4" spawntype="mainpath,sidepath" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />      
     </Eventset>
@@ -357,7 +357,7 @@ MonsterEvent
       <MonsterEvent characterfile="Piratedesolator" minamount="1" maxamount="2" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="2" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratebombard" minamount="1" maxamount="1" spawntype="Abyss" />      
-      <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="4" spawntype="Abyss" />      
+      <MonsterEvent characterfile="Pirateantisub" minamount="1" maxamount="2" spawntype="Abyss" />      
       <MonsterEvent characterfile="Pirateveteran" minamount="1" maxamount="1" spawntype="Abyss" />      
     </Eventset>
   </Eventset>
