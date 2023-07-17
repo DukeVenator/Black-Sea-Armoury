@@ -193,9 +193,9 @@
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="233,163,23,9" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="9" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="10">
+    <Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="5">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="60" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
+      <Attack structuredamage="20" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
         <Affliction identifier="gunshotwound" strength="55" />
         <Affliction identifier="bleeding" strength="33" />
         <Affliction identifier="stun" strength="0.6" />
@@ -237,9 +237,9 @@
     <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-    <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="5">
+    <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="60" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
+      <Attack structuredamage="40" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="gunshotwound" strength="8" probability="0.4" />
         <Affliction identifier="lacerations" strength="15"/>
@@ -291,7 +291,7 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" launchimpulse="80.0" hitscan="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2" />
-      <Attack structuredamage="100" itemdamage="20" severlimbsprobability="0.5" penetration="0.3">
+      <Attack structuredamage="90" itemdamage="20" severlimbsprobability="0.5" penetration="0.3">
         <Affliction identifier="lacerations" strength="80" />
         <Affliction identifier="bleeding" strength="5.0" />
       </Attack>
@@ -306,7 +306,7 @@
       <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-10.0" Condition="-10.0" />
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="17" />
       <StatusEffect type="OnImpact" target="This">
-        <Explosion range="150.0" structuredamage="80" force="4.0" itemdamage="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
+        <Explosion range="150.0" structuredamage="30" force="4.0" itemdamage="10" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="burn" strength="40" />
         </Explosion>
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
@@ -341,9 +341,9 @@
     <Sprite texture="%ModDir%/LC/sgun round.png" sourcerect="0,0,36,8" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" spread="0" removeonhit="false" maxtargetstohit="10">
+    <Projectile characterusable="false" hitscan="true" spread="0" removeonhit="false" maxtargetstohit="4">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,2.5" />
-      <Attack structuredamage="90" severlimbsprobability="0.35" itemdamage="30" targetforce="6" penetration="0.5">
+      <Attack structuredamage="40" severlimbsprobability="0.35" itemdamage="30" targetforce="6" penetration="0.5">
         <Affliction identifier="gunshotwound" strength="100" />
         <Affliction identifier="lacerations" strength="100" />
         <Affliction identifier="stun" strength="3" />
