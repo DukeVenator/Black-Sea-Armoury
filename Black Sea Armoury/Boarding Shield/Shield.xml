@@ -68,7 +68,7 @@
     <AiTarget soundrange="2000" />
   </Item>
   <!-- Boarding Shield -->
-  <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith,mediumitem" description="" tags="weapon,smallitem,clothing" impactsoundtag="impact_metal_light">
+  <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith,mediumitem" description="" tags="weapon,smallitem,clothing" impactsoundtag="impact_metal_light" health="2000" damagedbyprojectiles="true">
     <Price baseprice="300" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.5" minavailable="1" />
@@ -92,14 +92,24 @@
     <Sprite texture="%ModDir%/Boarding Shield/shield.png" sourcerect="0,0,100,450" origin="0.5,0.5" depth="0.55" />
     <Body width="64" height="376" density="30" />
     <Holdable canBeCombined="true" slots="LeftHand" aimpos="110,-40" holdpos="105,-30" handle1="-7,22" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true">
+        <Conditional recoilstabilized="gte 1" />
         <Affliction identifier="DEFbw" amount="10.0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0" setvalue="true">
+        <Conditional recoilstabilized="eq 0" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
         <particleemitter particle="shrapnel" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="2" highqualitycollisiondetection="False" />
         <sound file="Content/Items/Door/DoorBreak1.ogg" selectionmode="Random" range="3000" />
         <sound file="Content/Items/Door/DoorBreak2.ogg" range="3000" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <particleemitter particle="weldspark" drawontop="true" particleamount="5" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.1" scalemax="0.35" />
+        <Sound file="Content/Sounds/Damage/HitArmor1.ogg" range="800" />
+        <!-- an invisible explosion to make the user "flinch" -->
+        <Explosion range="100.0" force="1" showeffects="false" camerashake="1.0" />
       </StatusEffect>
     </Holdable>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />

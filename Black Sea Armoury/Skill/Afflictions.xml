@@ -45,14 +45,14 @@
   <Affliction name="" identifier="X01" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-5">
       <StatValue stattype="AttackMultiplier" value="0.1" />
-      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
     </Effect>
     <Icon texture="%ModDir%/BA/ICON/X01.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
   <Affliction name="" identifier="X01D" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-5">
       <StatValue stattype="AttackMultiplier" value="0.1" />
-      <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.2" />
       <StatusEffect target="Character">
         <ReduceAffliction type="damage" amount="0.1" />
         <ReduceAffliction type="burn" amount="0.1" />

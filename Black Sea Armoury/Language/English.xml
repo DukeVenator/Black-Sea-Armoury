@@ -234,9 +234,9 @@
   <Afflictionname.Alienpw>Toughness</Afflictionname.Alienpw>
   <Afflictiondescription.Alienpw>Health increased 50%,very slowly repairs itself.</Afflictiondescription.Alienpw>
   <Afflictionname.X01>Advanced Armor</Afflictionname.X01>
-  <Afflictiondescription.X01>Damage increased by 10%,health increased by 25%.</Afflictiondescription.X01>
+  <Afflictiondescription.X01>Damage increased by 10%,health increased by 10%.</Afflictiondescription.X01>
   <Afflictionname.X01>Living Armor</Afflictionname.X01>
-  <Afflictiondescription.X01>Damage increased by 10%,health increased by 25%,very slowly repairs itself.</Afflictiondescription.X01>
+  <Afflictiondescription.X01>Damage increased by 10%,health increased by 20%,very slowly repairs itself.</Afflictiondescription.X01>
   <Afflictionname.Hammer>Self repair</Afflictionname.Hammer>
   <Afflictiondescription.Hammer>Health increased 25%,very slowly repairs itself.</Afflictiondescription.Hammer>
   <Afflictionname.PCIA>Biological health care system</Afflictionname.PCIA>

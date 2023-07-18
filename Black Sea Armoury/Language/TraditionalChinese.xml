@@ -232,9 +232,9 @@
   <Afflictionname.Alienpw>堅韌</Afflictionname.Alienpw>
   <Afflictiondescription.Alienpw>生命值提高50%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.Alienpw>
   <Afflictionname.X01>先進裝甲</Afflictionname.X01>
-  <Afflictiondescription.X01>傷害提高10%，生命值提高25%。</Afflictiondescription.X01>
+  <Afflictiondescription.X01>傷害提高10%，生命值提高10%。</Afflictiondescription.X01>
   <Afflictionname.X01D>活性裝甲</Afflictionname.X01D>
-  <Afflictiondescription.X01D>傷害提高10%，生命值提高25%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.X01D>
+  <Afflictiondescription.X01D>傷害提高10%，生命值提高20%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.X01D>
   <Afflictionname.Hammer>修復</Afflictionname.Hammer>
   <Afflictiondescription.Hammer>生命值提高25%，受到傷害後非常緩慢地自我修復。</Afflictiondescription.Hammer>
   <Afflictionname.PCIA>生物保健系統</Afflictionname.PCIA>

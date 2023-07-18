@@ -60,4 +60,9 @@
   <RandomEvents file="%ModDir%/Events/BAErandommissionevents.xml" />
   <RandomEvents file="%ModDir%/Events/BAErandomcampaignevents.xml" />
   <Sounds file="%ModDir%/Sounds/sounds.xml" />
+  <item file="%ModDir%/Dropod/Droppod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirategunnerpod/Pirategunnerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Piratedismantlerpod/Piratedismantlerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateveteranpod/Pirateveteranpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Piratesharpshooterpod/Piratesharpshooterpod.xml" />
 </contentpackage>

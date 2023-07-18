@@ -127,6 +127,11 @@ MonsterEvent
       <MonsterEvent characterfile="Piratemarksman" minamount="1" maxamount="1" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="1" spawntype="Abyss" />      
     </Eventset>
+    <!--75% or 12 min-->
+    <EventSet chooserandom="true" mindistancetraveled="0.75" minmissiontime="720" ignorecooldown="true"  minintensity="0.0" maxintensity="0.5" scatter="2000">
+      <MonsterEvent characterfile="Pirategunnerpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+      <MonsterEvent characterfile="Piratedismantlerpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+    </EventSet>
   </Eventset>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Set 2(up to 8)                                       -->
@@ -225,6 +230,11 @@ MonsterEvent
       <MonsterEvent characterfile="Pirateantisub" minamount="3" maxamount="3" spawntype="Abyss" />      
       <MonsterEvent characterfile="Piratesharpshooter" minamount="1" maxamount="1" spawntype="Abyss" />      
     </Eventset>
+    <!--75% or 12 min-->
+    <EventSet chooserandom="true" mindistancetraveled="0.75" minmissiontime="720" ignorecooldown="true"  minintensity="0.0" maxintensity="0.5" scatter="2000">
+      <MonsterEvent characterfile="Pirategunnerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+      <MonsterEvent characterfile="Piratedismantlerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+    </EventSet>
   </Eventset>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <!--                               Set 3(up to 10)                                       -->
@@ -356,6 +366,13 @@ MonsterEvent
       <MonsterEvent characterfile="Pirateantisub" minamount="2" maxamount="4" spawntype="Abyss" />      
       <MonsterEvent characterfile="Pirateveteran" minamount="1" maxamount="1" spawntype="Abyss" />      
     </Eventset>
+    <!--75% or 12 min-->
+    <EventSet chooserandom="true" mindistancetraveled="0.75" minmissiontime="720" ignorecooldown="true"  minintensity="0.0" maxintensity="0.5" scatter="2000">
+      <MonsterEvent characterfile="Pirategunnerpod" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
+      <MonsterEvent characterfile="Piratedismantlerpod" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
+      <MonsterEvent characterfile="Pirateveteranpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+      <MonsterEvent characterfile="Piratesharpshooterpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+    </EventSet>
   </Eventset>
 
 </Randomevents>

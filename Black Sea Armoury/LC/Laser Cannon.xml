@@ -488,8 +488,8 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-      <QualityStat stattype="ExplosionDamage" value="0.1" />
+      <QualityStat stattype="FirepowerMultiplier" value="0.2" />
+      <QualityStat stattype="ExplosionDamage" value="0.2" />
     </Quality>
   </Item>
 </Items>
