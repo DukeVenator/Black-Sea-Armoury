@@ -12,6 +12,7 @@
     <monster character="Piratenuker" min="1" max="2"/>
     <monster character="Piraterifleman" min="2" max="4"/>
     <monster character="Piratedesolator" min="1" max="1"/>
+    <monster characterfile="Pirategunnerpod" min="0" max="1"/>
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
@@ -33,6 +34,7 @@
     <monster character="Piraterifleman" min="2" max="4"/>
     <monster character="Piratedesolator" min="1" max="2"/>
     <monster character="Piratemarksman" min="1" max="1"/>
+    <monster characterfile="Pirategunnerpod" min="0" max="1"/>
     <Reputation identifier="separatists" amount="5" />
     <Reputation identifier="coalition" amount="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
@@ -52,6 +54,7 @@
     maxsonarmarkerdistance="20000">
     <monster character="Pirateforerunner" min="1" max="2"/>
     <monster character="Pirateboarder" min="2" max="3"/>
+    <monster characterfile="Pirategunnerpod" min="0" max="1"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
@@ -69,6 +72,7 @@
     <monster character="Pirateforerunner" min="1" max="2"/>
     <monster character="Piratedismantler" min="1" max="1"/>
     <monster character="Pirateboarder" min="2" max="3"/>
+    <monster characterfile="Pirategunnerpod" min="0" max="1"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtaget" text="missionmessage.killmessage"/>
@@ -89,6 +93,7 @@
     <monster character="Piratemarksman" min="1" max="1"/>
     <monster character="Piraterifleman" min="2" max="2"/>
     <monster character="Pirategunner" min="1" max="1"/>
+    <monster characterfile="Pirategunnerpod" min="1" max="2"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
@@ -110,6 +115,7 @@
     <monster character="Pirategunner" min="1" max="1"/>
     <monster character="Piratemarksman" min="1" max="1"/>
     <monster character="Piratebombard" min="1" max="1"/>
+    <monster characterfile="Pirategunnerpod" min="1" max="2"/>
     <Reputation identifier="location" amount="4" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
@@ -133,6 +139,7 @@
     <monster character="Piratebombard" min="1" max="1"/>
     <monster character="Piratesharpshooter" min="1" max="1"/>
     <monster character="Piratedesolator" min="1" max="1"/>
+    <monster characterfile="Pirategunnerpod" min="1" max="2"/>
     <Reputation identifier="location" amount="5" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <message header="missionheader.killtarget" text="missionmessage.killmessage"/>

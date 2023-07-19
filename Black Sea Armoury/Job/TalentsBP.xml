@@ -488,11 +488,6 @@
       </Abilities>
     </AbilityGroupInterval>
     <AddedRecipe itemidentifier="esg_bw2" />
-    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
-      <Abilities>
-        <CharacterAbilityPutItem itemidentifier="SG_ammo" amount="1"/>
-      </Abilities>
-    </AbilityGroupEffect>
   </Talent>
   <!-- Shield barrier may have broken the identifier tag line 660 Also need adjustment  -->
   <Talent identifier="stonewallbw">
