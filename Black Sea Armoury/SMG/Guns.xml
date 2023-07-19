@@ -46,18 +46,15 @@
       <Price locationtype="mine" multiplier="1.25" minavailable="3" />
     </Price>
     <Deconstruct time="1">
-      <Item identifier="plastic" />
+      <Item identifier="steel" />
       <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="5">
       <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="steel" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="lead" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="plastic" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="Magnesium" mincondition="0.25" usecondition="true" />
-      <RequiredItem identifier="Magnesium" mincondition="0.25" usecondition="true" />
+      <RequiredItem identifier="steel"/>
+      <RequiredItem identifier="lead"/>
+      <RequiredItem identifier="plastic"/>
+      <RequiredItem identifier="Magnesium"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
     <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />

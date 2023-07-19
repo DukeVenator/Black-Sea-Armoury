@@ -264,9 +264,9 @@
   <Item name="" identifier="SG_ammo" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammo,smallitem,SG_ammo,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="4">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="physicorium" mincondition="1" usecondition="true" />
       <RequiredItem identifier="lead" mincondition="1" usecondition="true" />
-      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="c4block" mincondition="1" usecondition="true" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/LC/sgun clip.png" sourcerect="0,0,36,48" depth="0.55" />
     <Sprite texture="%ModDir%/LC/sgun clip.png" sourcerect="0,0,36,48" origin="0.5,0.5" />

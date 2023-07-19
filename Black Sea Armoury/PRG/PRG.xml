@@ -72,15 +72,15 @@
     </Price>
     <Deconstruct time="1">
       <Item identifier="steel" mincondition="0.1" copycondition="true" />
-      <Item identifier="uex" mincondition="0.1" copycondition="true" />
-      <Item identifier="uex" mincondition="0.1" copycondition="true" />
+      <Item identifier="c4block" mincondition="0.1" copycondition="true" />
+      <Item identifier="c4block" mincondition="0.1" copycondition="true" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="steel" />
-      <RequiredItem identifier="uex" />
-      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="c4block" />
+      <RequiredItem identifier="c4block" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />

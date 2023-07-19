@@ -709,8 +709,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="steel" mincondition="1" usecondition="true" />
-      <RequiredItem identifier="uex" mincondition="1" usecondition="true" />
-      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="c4block" mincondition="1" usecondition="true" />
+      <RequiredItem identifier="magnesium" amount="2"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/LC/gun clip2.png" sourcerect="0,0,36,48" depth="0.55" />
     <Sprite texture="%ModDir%/LC/gun clip2.png" sourcerect="0,0,36,48" origin="0.5,0.5" />

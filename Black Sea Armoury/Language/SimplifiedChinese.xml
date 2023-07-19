@@ -48,6 +48,25 @@
   <talentdescription.crafthighqualitylaserbw>你制造的能量武器品质提升[qualitybonus]。</talentdescription.crafthighqualitylaserbw>
   <talentname.custommachinebw>改装机械</talentname.custommachinebw>
   <talentdescription.crafthighqualityhmgbw>你制造的机枪武器品质提升[qualitybonus]。</talentdescription.crafthighqualityhmgbw>
+  <!--New Job.xml-->
+  <stattypenames.rangedspreadreduction>散布减少</stattypenames.rangedspreadreduction>
+  <stattypenames.MedicalItemEffectivenessMultiplier>医疗物资效果提高</stattypenames.MedicalItemEffectivenessMultiplier>
+  <talentdescription.olympian_bw>以下属性可获得等同于你最低技能等级的属性加成</talentdescription.olympian_bw>
+  <talentdescription.steelruler_offense>驾驶机甲时，武器攻击力提升[value]%</talentdescription.steelruler_offense>
+  <talentdescription.steelruler_deffense>驾驶机甲时，受到伤害减少[value]%</talentdescription.steelruler_deffense>
+  <talentdescription.steelruler_logist>驾驶机甲时，移动速度提升[value]%。</talentdescription.steelruler_logist>
+  <talentdescription.miracleworker_bw>驾驶机甲时，给自身和友军提供[value]%增强。</talentdescription.miracleworker_bw>
+  <talentdescription.revengesquad_offense>友军濒死时，你获得[amount]%的‖color:gui.orange‖伤害加成‖end‖，该友军死亡或者恢复后持续[duration]秒，效果随时间减少。</talentdescription.revengesquad_offense>
+  <talentdescription.revengesquad_deffense>友军濒死时，你获得[amount]%的‖color:gui.orange‖物理伤害抗性‖end‖，该友军死亡或者恢复后持续持续[duration]秒，效果随时间减少。</talentdescription.revengesquad_deffense>
+  <talentdescription.warlordbw_offense>每当你完成一项任务，你增加[smallgain]%最大伤害。若所有船员都幸存，则再增加[largegain]%的最大伤害，上限为[maxgain]%。</talentdescription.warlordbw_offense>
+  <talentdescription.warlordbw_deffense>每当你完成一项任务，你增加[smallgain]%最大生命。若所有船员都幸存，则再增加[largegain]%的最大生命，上限为[maxgain]%。</talentdescription.warlordbw_deffense>
+  <Afflictionname.commnetbw>指挥网络</Afflictionname.commnetbw>
+  <stattypenames.penetration>穿甲</stattypenames.penetration>
+  <stattypenames.flowresistance>水流抗性</stattypenames.flowresistance>
+  <Afflictionname.revengesquad_offense>复仇之愿</Afflictionname.revengesquad_offense>
+  <Afflictionname.revengesquad_deffense>守护之愿</Afflictionname.revengesquad_deffense>
+  <Afflictiondescription.revengesquad_offense>拯救一个生命的唯一途径就是夺取另一个生命</Afflictiondescription.revengesquad_offense>
+  <Afflictiondescription.revengesquad_deffense>拯救一个生命的唯一途径就是承受一切痛苦</Afflictiondescription.revengesquad_deffense>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
   <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>

@@ -1,58 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TalentTrees>
   <TalentTree jobidentifier="Pilot">
-    <SubTree identifier="bwbr1">
-      <TalentOptions>
-        <TalentOption identifier="firstaidtrainingbw" />
+    <SubTree identifier="bwpl_primary" nameidentifier="talenttree.primary" type="primary">
+      <TalentOptions requiredtalents="1" maxchosentalents="3">
+        <TalentOption identifier="firstaidtraining" />
+        <TalentOption identifier="sailorwithnonamebw" />
         <TalentOption identifier="physicalconditioningbw" />
       </TalentOptions>
+      <TalentOptions requiredtalents="1" maxchosentalents="4">
+        <TalentOption identifier="bootcamp" />
+        <TalentOption identifier="bythebook" />
+        <TalentOption identifier="warstories"/>
+        <TalentOption identifier="munitionsexpertise" />
+      </TalentOptions>
+    </SubTree>
+    <!-- 专精天赋树 -->
+    <SubTree identifier="bwpl_offense" type="specialization" requires="bwpl_primary">
       <TalentOptions>
-        <TalentOption identifier="optimizedpowerflowbw" />
-        <TalentOption identifier="custommachinebw" />
+        <TalentOption identifier="olympian_offense" />
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="swordwarriorbw" />
         <TalentOption identifier="deadeyebw" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="trustbuildingbw" />
-        <TalentOption identifier="collegeathleticsbw" />
+        <TalentOption identifier="offense_system" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="revengesquad_offense" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warlordbw_offense" />
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="bwbr2">
+    <SubTree identifier="bwpl_defense" type="specialization" requires="bwpl_primary">
       <TalentOptions>
-        <TalentOption identifier="sailorwithnonamebw" />
+        <TalentOption identifier="olympian_defense" />
+      </TalentOptions>
+      <TalentOptions>
         <TalentOption identifier="enforcerbw" />
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="bythebookbw" />
-        <TalentOption identifier="munitionsexpertisebw" />
-      </TalentOptions>
-      <TalentOptions>
-        <TalentOption identifier="stonewallbw" />
-        <TalentOption identifier="steelruler" />
-      </TalentOptions>
-      <TalentOptions>
         <TalentOption identifier="implacablebw" />
-        <TalentOption identifier="bountyhunterbw" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="defense_system" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="revengesquad_deffense" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warlordbw_deffense" />
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="bwbr3">
+    <SubTree identifier="bwpl_logistic" type="specialization" requires="bwpl_primary">
       <TalentOptions>
-        <TalentOption identifier="tumblebw" />
-        <TalentOption identifier="justascratchbw" />
+        <TalentOption identifier="olympian_logistic" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="olympianbw" />
-        <TalentOption identifier="gunsmithbw" />
+        <TalentOption identifier="optimizedpowerflowbw" />
+        <TalentOption identifier="custommachinebw" />
+        <TalentOption identifier="drsubmarinebw" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="duelistbw" />
-        <TalentOption identifier="laststand" />
+        <TalentOption identifier="logistic_system" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="warlordbw" />
-        <TalentOption identifier="advancedsplicingbw" />
+        <TalentOption identifier="gunsmithbw"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="miracleworker_bw" />
       </TalentOptions>
     </SubTree>
   </TalentTree>

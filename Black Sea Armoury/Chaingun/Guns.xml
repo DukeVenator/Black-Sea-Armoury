@@ -230,17 +230,14 @@
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="1">
-      <Item identifier="steel" />]
+      <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="lead" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+      <RequiredItem identifier="uex" amount="2"/>
+      <RequiredItem identifier="lead" amount="2"/>
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
@@ -365,16 +362,15 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="physicorium" mincondition="0.1" copycondition="true" />
-      <Item identifier="physicorium" mincondition="0.1" copycondition="true" />
+      <Item identifier="physicorium" mincondition="0.1" copycondition="true"/>
+      <Item identifier="titaniumaluminiumalloy" amount="2" mincondition="0.1" copycondition="true"/>
       <Item identifier="lead" mincondition="0.1" copycondition="true" />
       <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="titanium" />
+      <RequiredItem identifier="physicorium" amount="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
       <RequiredItem identifier="lead" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
