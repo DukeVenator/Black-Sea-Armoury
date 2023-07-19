@@ -79,7 +79,7 @@
     <Deconstruct time="10">
       <Item identifier="steel" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="50">
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="True">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="steel" />

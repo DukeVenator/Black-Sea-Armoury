@@ -95,20 +95,15 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="smg" />
-      <Item identifier="smg" />
+      <Item identifier="titaniumaluminiumalloy" amount="2"/>
+      <Item identifier="steel" amount="2"/>
+      <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="80">
       <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="smg" />
-      <RequiredItem identifier="smg" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
+      <RequiredItem identifier="steel" amount="4"/>
+      <RequiredItem identifier="plastic" amount="2"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
@@ -284,7 +279,7 @@
     <InventoryIcon texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
-    <Holdable slots="RightHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="250,13" spread="6.5" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.05">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />

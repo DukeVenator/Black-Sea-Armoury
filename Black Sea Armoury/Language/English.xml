@@ -48,6 +48,15 @@
   <talentdescription.crafthighqualitylaserbw>The quality of the energy weapons you make is improved [qualitybonus].</talentdescription.crafthighqualitylaserbw>
   <talentname.custommachinebw>Modified machinery</talentname.custommachinebw>
   <talentdescription.crafthighqualityhmgbw>The quality of the machine gun weapons you make is improved [qualitybonus].</talentdescription.crafthighqualityhmgbw>
+  <!--New Job.xml-->
+  <stattypenames.rangedspreadreduction>Reduction to spread</stattypenames.rangedspreadreduction>
+  <stattypenames.MedicalItemEffectivenessMultiplier>More potent medical items</stattypenames.MedicalItemEffectivenessMultiplier>
+  <talentdescription.olympian_bw>You gain an additional percentage to the following attributes equal to the lowest of all your skills:</talentdescription.olympian_bw>
+  <talentdescription.steelruler_offense>When driving a mech,attack power increased [value]%.</talentdescription.steelruler_offense>
+  <talentdescription.steelruler_deffense>When driving a mech,damage taken reduced [value]%</talentdescription.steelruler_deffense>
+  <talentdescription.steelruler_logist>When driving a mech,speed increased [value]%</talentdescription.steelruler_logist>
+  <talentdescription.miracleworker_bw>Gives [value]% enhancement to self and friendlies when piloting a mech.</talentdescription.miracleworker_bw>
+  <Afflictionname.commnetbw>Command network</Afflictionname.commnetbw>
   <!--AXE.xml-->
   <entityname.PFbw>Power Combat System</entityname.PFbw>
   <entitydescription.PFbw>All Iron League recruits are trained in hand-to-hand combat.</entitydescription.PFbw>
