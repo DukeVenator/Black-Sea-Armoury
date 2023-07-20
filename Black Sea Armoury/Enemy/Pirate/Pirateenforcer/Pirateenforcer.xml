@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Character SpeciesName="Pirateboarder" SpeciesTranslationOverride="" DisplayName="" Group="pirate" Humanoid="true" HasInfo="False" CanInteract="True" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="400" Visibility="400" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1">
+<Character SpeciesName="Pirateenforcer" SpeciesTranslationOverride="" DisplayName="" Group="pirate" Humanoid="true" HasInfo="False" CanInteract="True" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="400" Visibility="400" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1">
   <ragdolls folder="default" />
   <animations folder="default" />
   <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
@@ -51,15 +51,7 @@
     <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1000" cohesion="0.5" />
   </ai>
-  <!--<inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
-    <Item Identifier="bw_grenade_drum" />
-    <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_ge" />
-    <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
-    <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="piratecaptainhat" />
-  </inventory>-->
-  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
     <Item Identifier="bw_shotgun_drum" />
     <Item Identifier="mudraptorshell" />
     <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
@@ -69,32 +61,22 @@
     <Item slot="Head" Identifier="ballistichelmet1" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item Identifier="bw_shotgun_drum" />
+    <Item Identifier="shotgunshellbw" amount="10"/>
     <Item Identifier="rum" />
-    <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
-    <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
-    <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
-  </inventory>
-  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="6">
-    <Item Identifier="smgmagazine_bw" />
-    <Item Identifier="rum" />
-    <Item slot="RightHand" Identifier="smg_bw_e" />
-    <Item slot="LeftHand" Identifier="smg_bw_e" />
+    <Item slot="RightHand+LeftHand" Identifier="shotgununiquebw_e" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmetbw" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
-    <Item Identifier="smgmagazine_bw" />
-    <Item Identifier="mudraptorshell" />
-    <Item slot="RightHand" Identifier="smg_bw_e" />
-    <Item slot="LeftHand" Identifier="shield_bw" />
+    <Item Identifier="shotgunshellbw" amount="10"/>
+    <Item Identifier="rum" />
+    <Item slot="RightHand+LeftHand" Identifier="shotgununiquebw_e" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmetbw" />
   </inventory>
+
 </Character>
