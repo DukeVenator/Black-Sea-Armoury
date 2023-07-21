@@ -41,6 +41,8 @@
   <Character file="%ModDir%/Enemy/Pirate/Pirateveteran/Pirateveteran.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratedesolator/Piratedesolator.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratescavenger/Piratescavenger.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateenforcer/Pirateenforcer.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateheavy/Pirateheavy.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionheavy/Coalitionheavy.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionveteran/Coalitionveteran.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionannihilator/Coalitionannihilator.xml" />
@@ -65,4 +67,7 @@
   <Character file="%ModDir%/Enemy/Pirate/Piratedismantlerpod/Piratedismantlerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateveteranpod/Pirateveteranpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratesharpshooterpod/Piratesharpshooterpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Piratescavengerpod/Piratescavengerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateenforcerpod/Pirateenforcerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateheavypod/Pirateheavypod.xml" />
 </contentpackage>
