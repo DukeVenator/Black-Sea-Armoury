@@ -68,4 +68,6 @@
   <Character file="%ModDir%/Enemy/Pirate/Pirateveteranpod/Pirateveteranpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratesharpshooterpod/Piratesharpshooterpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratescavengerpod/Piratescavengerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateenforcerpod/Pirateenforcerpod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateheavypod/Pirateheavypod.xml" />
 </contentpackage>
