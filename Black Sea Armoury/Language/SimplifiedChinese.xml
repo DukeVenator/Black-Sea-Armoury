@@ -129,8 +129,6 @@
   <entitydescription.HMG1_bw>重型自动火力，但容易过热，需要依靠强制散热。使用14.5mm机枪弹药。 </entitydescription.HMG1_bw>
   <entityname.HMG1_mag_bw>14.5mm机枪弹药(14.5 Ammo Box)</entityname.HMG1_mag_bw>
   <entitydescription.HMG1_mag_bw>老旧，但致命。 </entitydescription.HMG1_mag_bw>
-  <entityname.HMG1_ammo_bw>14.5mm机枪弹药(14.5 Ammo Box)</entityname.HMG1_ammo_bw>
-  <entitydescription.HMG1_ammo_bw>老旧，但致命。 </entitydescription.HMG1_ammo_bw>
   <entityname.minichaingun_bw>试验链炮(Experimental Chaingun)</entityname.minichaingun_bw>
   <entitydescription.minichaingun_bw>昂贵的重型武器。使用链炮弹药。 </entitydescription.minichaingun_bw>
   <entityname.chaingun_ammo_bw>链炮弹药(Experimental Chaingun Ammo Box)</entityname.chaingun_ammo_bw>
