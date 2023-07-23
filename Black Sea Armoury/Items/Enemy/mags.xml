@@ -193,7 +193,7 @@
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="233,163,23,9" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="9" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="5">
+    <Projectile characterusable="false" hitscan="true" removeonhit="false" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="20" targetforce="12" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
         <Affliction identifier="gunshotwound" strength="55" />
