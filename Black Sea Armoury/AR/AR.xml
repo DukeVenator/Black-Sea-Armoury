@@ -84,7 +84,7 @@
         <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
         <Price storeidentifier="merchantmine" multiplier="1.25" />
       </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <Fabricate suitablefabricators="fabricator" requiredtime="35">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="uex" />
         <RequiredItem identifier="lead" />
@@ -118,7 +118,7 @@
         <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
         <Price storeidentifier="merchantmine" multiplier="1.25" />
       </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <Fabricate suitablefabricators="fabricator" requiredtime="35">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="uex" amount="2.5"/>
         <RequiredItem identifier="lead" amount="2.5"/>
@@ -237,7 +237,7 @@
         <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
         <Price storeidentifier="merchantmine" multiplier="1.25" />
       </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <Fabricate suitablefabricators="fabricator" requiredtime="35">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="uex" />
         <RequiredItem identifier="lead" />
@@ -353,7 +353,7 @@
         <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
         <Price storeidentifier="merchantmine" multiplier="1.25" />
       </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <Fabricate suitablefabricators="fabricator" requiredtime="35">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="magnesium" />
         <RequiredItem identifier="lead" />
@@ -387,7 +387,7 @@
         <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
         <Price storeidentifier="merchantmine" multiplier="1.25" />
       </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+      <Fabricate suitablefabricators="fabricator" requiredtime="35">
         <RequiredSkill identifier="weapons" level="40" />
         <RequiredItem identifier="magnesium" amount="5"/>
         <RequiredItem identifier="lead" amount="5"/>
