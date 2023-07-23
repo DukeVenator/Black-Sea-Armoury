@@ -16,6 +16,7 @@
   <Item file="%ModDir%/AXE/AXE.xml" />
   <Item file="%ModDir%/TS/Tatical Scanner.xml" />
   <Item file="%ModDir%/Boarding Shield/Shield.xml" />
+  <Item file="%ModDir%/AR/AR.xml" />
   <Afflictions file="%ModDir%/Skill/Afflictions.xml" />
   <Text file="%ModDir%/Language/English.xml" />
   <Text file="%ModDir%/Language/TraditionalChinese.xml" />

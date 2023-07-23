@@ -213,7 +213,7 @@
     </Projectile>
   </Item>
   <!-- 14.5 Ammo Box -->
-  <Item name="" identifier="HMG1_mag_bw" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,smallitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="2">
+  <Item name="" identifier="HMG1_mag_bw" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,mediumitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="1">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
@@ -225,12 +225,12 @@
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="1">
-      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" amount="2"/>
       <Item identifier="lead" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="1">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
       <RequiredItem identifier="uex" amount="2"/>
       <RequiredItem identifier="lead" amount="2"/>
       <RequiredItem identifier="plastic" />
