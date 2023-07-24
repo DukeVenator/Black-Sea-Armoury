@@ -51,32 +51,6 @@
     <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1000" cohesion="0.5" />
   </ai>
-  <!--<inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
-    <Item Identifier="bw_grenade_drum" />
-    <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_ge" />
-    <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
-    <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="piratecaptainhat" />
-  </inventory>-->
-  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
-    <Item Identifier="bw_shotgun_drum" />
-    <Item Identifier="mudraptorshell" />
-    <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
-    <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
-    <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmet1" />
-  </inventory>
-  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
-    <Item Identifier="bw_shotgun_drum" />
-    <Item Identifier="rum" />
-    <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
-    <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
-    <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
-  </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="6">
     <Item Identifier="smgmagazine_bw" />
     <Item Identifier="rum" />
@@ -89,11 +63,21 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="smgmagazine_bw" />
-    <Item Identifier="mudraptorshell" />
-    <Item slot="RightHand" Identifier="smg_bw_e" />
-    <Item slot="LeftHand" Identifier="shield_bw" />
+    <Item Identifier="lmgmagazine_bw_e" />
+    <Item slot="RightHand" Identifier="lmg_bw_e" />
+    <Item slot="LeftHand" Identifier="smg_bw_e" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmetbw" />
+  </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="lmgmagazine_bw_e" />
+    <Item Identifier="mudraptorshell" />
+    <Item slot="RightHand" Identifier="lmg_bw_e" />
+    <Item slot="LeftHand" Identifier="smg_bw_e" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmetbw" />
   </inventory>
