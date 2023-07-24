@@ -63,12 +63,12 @@
     <Item slot="Head" Identifier="ballistichelmet1" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
-    <Item Identifier="lmgmagazine_bw" />
-    <Item Identifier="assaultriflemagazine" amount="2"/>
     <Item slot="RightHand+LeftHand" Identifier="assaultrifle_bae" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmet1" />
+    <Item Identifier="smgunique" />
+    <Item Identifier="assaultriflemagazine" amount="2"/>
   </inventory>
 </Character>
