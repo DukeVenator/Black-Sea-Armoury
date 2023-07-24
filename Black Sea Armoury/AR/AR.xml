@@ -112,6 +112,41 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
+  <Item name=".408 FMJ 7 Rnd Mag" identifier="spar_7magazine_fmj" maxstacksize="2" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,408ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <Price baseprice="800" sold="true" minleveldifficulty="65" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="uex" amount="2"/>
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="physicorium" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="physicorium" mincondition="0.95" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
+    <Body width="29" height="37" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="408fmj_round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="408fmj_round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-14.3" disabledeltatime="true">
+        <SpawnItem identifiers="408fmj_round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
   <Item name=".408" identifier="408round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -119,9 +154,9 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="99" >
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="55" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.8">
+      <Attack structuredamage="55" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.85">
         <Affliction identifier="lacerations" strength="15" />
-        <Affliction identifier="gunshotwound" strength="12" />
+        <Affliction identifier="gunshotwound" strength="14" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
         <Affliction identifier="bleeding" strength="10"/>
         <Affliction identifier="bleeding" strength="8" probability="0.3" />
@@ -144,18 +179,22 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name=".408FML" identifier="408fml_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".408FMJ" identifier="408fmj_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="17" height="6" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="20" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.2">
-        <Affliction identifier="gunshotwound" strength="26" />
-        <Affliction identifier="gunshotwound" strength="12" probability="0.5" />
-        <Affliction identifier="bleeding" strength="22"/>
-        <Affliction identifier="bleeding" strength="40" probability="0.3" />
+      <Attack structuredamage="20" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.25">
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="gunshotwound" strength="8" probability="0.8" />
+        <Affliction identifier="lacerations" strength="32" />
+        <Affliction identifier="lacerations" strength="26" probability="0.6" />
+        <Affliction identifier="internaldamage" strength="42" />
+        <Affliction identifier="internaldamage" strength="26" probability="0.5" />
+        <Affliction identifier="bleeding" strength="32"/>
+        <Affliction identifier="bleeding" strength="40" probability="0.8" />
         <Affliction identifier="stun" strength="0.3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -320,10 +359,11 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
         <Attack structuredamage="1" targetforce="0.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.25">
-          <Affliction identifier="gunshotwound" strength="15" />
-          <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
-          <Affliction identifier="bleeding" strength="8"/>
-          <Affliction identifier="bleeding" strength="4" probability="0.3" />
+          <Affliction identifier="gunshotwound" strength="20" />
+          <Affliction identifier="gunshotwound" strength="8" probability="0.5" />
+          <Affliction identifier="lacerations" strength="12" probability="0.6" />
+          <Affliction identifier="bleeding" strength="10"/>
+          <Affliction identifier="bleeding" strength="10" probability="0.3" />
           <Affliction identifier="stun" strength="0.1" />
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
@@ -464,11 +504,11 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
         <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
-          <Affliction identifier="gunshotwound" strength="13" />
-          <Affliction identifier="gunshotwound" strength="6" probability="0.6" />
-          <Affliction identifier="bleeding" strength="6" />
+          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="gunshotwound" strength="8" probability="0.6" />
+          <Affliction identifier="bleeding" strength="13" />
           <Affliction identifier="bleeding" strength="4" probability="0.3" />
-          <Affliction identifier="stun" strength="0.1" probability="0.5"/>
+          <Affliction identifier="stun" strength="0.2" probability="0.5"/>
         </Attack>
         <StatusEffect type="OnImpact" target="UseTarget">
           <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />

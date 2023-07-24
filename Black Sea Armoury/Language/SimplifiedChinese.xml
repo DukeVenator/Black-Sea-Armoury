@@ -68,18 +68,24 @@
   <Afflictiondescription.revengesquad_offense>拯救一个生命的唯一途径就是夺取另一个生命</Afflictiondescription.revengesquad_offense>
   <Afflictiondescription.revengesquad_deffense>拯救一个生命的唯一途径就是承受一切痛苦</Afflictiondescription.revengesquad_deffense>
   <!--AR.xml-->
+  <entityname.spar-408>SPAR-408 特种精确射手步枪</entityname.spar-408>
+  <entitydescription.spar-408>钢铁联盟设计的一款精确射手步枪，用歼灭高威胁目标。</entitydescription.spar-408>
+  <entityname.spar_7magazine>SPAR-408 克拉肯穿甲弹匣(7)</entityname.spar_7magazine>
+  <entitydescription.spar_7magazine>7发 .408 步枪弹匣，所使用穿甲弹，足以击穿绝大部分生物的装甲。</entitydescription.spar_7magazine>
+  <entityname.spar_7magazine_fmj>SPAR-408 斯库拉全金属被甲弹匣(7)</entityname.spar_7magazine_fmj>
+  <entitydescription.spar_7magazine>7发 .408 步枪弹匣，所使用全金属被甲弹，能够在目标体内造成巨额伤害。</entitydescription.spar_7magazine>
   <entityname.spar-338>SPAR-338 特种机枪</entityname.spar-338>
   <entitydescription.spar-338>钢铁联盟设计的一款精确而致命的机枪，用于抵御怪物日益增加的危险。</entitydescription.spar-338>
   <entityname.spar_24magazine>SPAR-338弹匣(24)</entityname.spar_24magazine>
   <entitydescription.spar_24magazine>24发钛合金 .338 拉普麦格农机枪弹匣。</entitydescription.spar_24magazine>
   <entityname.spar_60magazine>SPAR-338弹匣(60)</entityname.spar_60magazine>
   <entitydescription.spar_60magazine>60发钛合金 .338 拉普麦格农加长型机枪弹匣，用于提供火力压制。</entitydescription.spar_60magazine>
-  <entityname.spar-762>SPAR-762 特种精确射手步枪</entityname.spar-762>
-  <entityname.spar_20magazine>SPAR-762弹匣(20)</entityname.spar_20magazine>
-  <entitydescription.spar_20magazine>20发钛合金 7.62×51mm NATO 步枪弹匣，所使用狙击穿甲弹。</entitydescription.spar_20magazine>
-  <entitydescription.spar-762>钢铁联盟设计的一款全自动精确射手步枪，深受精锐部队的喜爱。</entitydescription.spar-762>
+  <entityname.spar-8>SPAR-8 特种精确射手步枪</entityname.spar-8>
+  <entitydescription.spar-8>钢铁联盟设计的一款全自动精确射手步枪，深受精锐部队的喜爱。</entitydescription.spar-8>
+  <entityname.spar_20magazine>SPAR-8弹匣(20)</entityname.spar_20magazine>
+  <entitydescription.spar_20magazine>20发钛合金 8×75mm 步枪弹匣，所使用狙击穿甲弹。</entitydescription.spar_20magazine>
   <entityname.spar-556>SPAR-556 特种突击步枪</entityname.spar-556>
-  <entitydescription.spar-556>钢铁联盟设计的一款突击步枪，因缺乏足够的停止作用而深受诟病。</entitydescription.spar-556>
+  <entitydescription.spar-556>钢铁联盟联立初期所设计的一款突击步枪，由于缺乏经验，因此参照了目前联盟内主流突击步枪所研发的枪械，但因缺乏足够的停止作用而深受诟病。</entitydescription.spar-556>
   <entityname.spar_30magazine>SPAR-556弹匣(30)</entityname.spar_30magazine>
   <entitydescription.spar_30magazine>30发 5.56×45mm 步枪弹匣，所使用钢芯弹。</entitydescription.spar_30magazine>
   <entityname.spar_150magazine>SPAR-556弹匣(150)</entityname.spar_150magazine>
