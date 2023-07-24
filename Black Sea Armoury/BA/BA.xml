@@ -142,7 +142,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.6" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.6" probabilitymultiplier="0.75" damagesound="LimbArmor" />
     </Wearable>
-    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" autoinject="true">
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
@@ -151,7 +151,7 @@
           <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
         </Containable>
       </SubContainer>
-      <SubContainer capacity="1" maxstacksize="1">
+      <SubContainer capacity="1" maxstacksize="1" autoinject="true">
         <Containable items="chem,medical" />
       </SubContainer>
     </ItemContainer>
@@ -703,10 +703,14 @@
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="oxygen_cell_bw" >
           <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
         </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="weapon" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
@@ -1563,10 +1567,14 @@
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="0,96,120,24" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="oxygen_cell_bw" >
           <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
         </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="weapon" />
       </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="weapon" />
