@@ -484,7 +484,7 @@
         <Affliction identifier="stun" strength="15" />
       </Attack>
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="dirtybomb" spawnposition="ThisInventory" />
+        <SpawnItem identifier="nerfeddirtybomb" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
@@ -726,5 +726,53 @@
       <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.95" />
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--nerfed dirtybomb-->
+  <Item name="nerfeddirty" identifier="nerfeddirtybomb" category="Weapon" Tags="smallitem,explosive,separatists" allowasextracargo="true" maxstacksize="8" Scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,640,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" depth="0.8" sourcerect="202,1,47,32" origin="0.5,0.5" />
+    <Body width="45" height="30" density="20" />
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" />
+        <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" />
+        <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" />
+        <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" colormultiplier="50,150,50" />
+        <Explosion range="250.0" ballastfloradamage="50" structuredamage="90" itemdamage="250" force="5" severlimbsprobability="0.25" decal="explosion" decalsize="0.25">
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="burn" strength="5" probability="0.2" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="20" probability="0.05" dividebylimbcount="false"/>
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+        <Explosion range="1500" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+          <Affliction identifier="emp" strength="25" multiplybymaxvitality="true" />
+        </Explosion>
+        <SpawnItem identifier="nerfeddirtybombafteremitter" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="3500" />
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  <Item name="dirtybombafteremitternerf" identifier="nerfeddirtybombafteremitter" Scale="0.5" tags="" sonarsize="20" hideinmenus="true">
+    <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="This" condition="-25" />
+      <StatusEffect type="Always" target="NearbyCharacters" range="1600" interval="1" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="3" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="1200" interval="1" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="8" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="800" interval="1" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="12" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
   </Item>
 </Items>
