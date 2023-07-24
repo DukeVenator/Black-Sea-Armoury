@@ -13,12 +13,12 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
       <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="pta_bw"/>
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
       <RequiredItem identifier="rubber" amount="2"/>
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="physicorium" amount="1" />
+      <Item identifier="pta_bw"/>
       <Item identifier="titaniumaluminiumalloy" amount="2" />
       <Item identifier="rubber" />
     </Deconstruct>
@@ -29,8 +29,8 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Autoshogun Worn" texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
     </Wearable>
-    <!--20 rounds per minute-->
-    <RangedWeapon reload="3"  reloadnoskill="10" reloadskillrequirement="75" holdtrigger="true" barrelpos="220,13" spread="1.5" unskilledspread="15" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
+    <!--75 rounds per minute-->
+    <RangedWeapon reload="0.8"  reloadnoskill="10" reloadskillrequirement="75" holdtrigger="true" barrelpos="220,13" spread="1.5" unskilledspread="15" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -92,8 +92,7 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="uex" amount="2"/>
       <RequiredItem identifier="lead" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="pta_bw" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="physicorium" mincondition="0.95" />
@@ -127,8 +126,7 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="uex" amount="2"/>
       <RequiredItem identifier="lead" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="pta_bw" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="physicorium" mincondition="0.95" />
@@ -154,9 +152,9 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="99" >
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="55" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.85">
+      <Attack structuredamage="22" targetforce="10" itemdamage="40" severlimbsprobability="0.5" penetration="0.85">
         <Affliction identifier="lacerations" strength="15" />
-        <Affliction identifier="gunshotwound" strength="14" />
+        <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
         <Affliction identifier="bleeding" strength="10"/>
         <Affliction identifier="bleeding" strength="8" probability="0.3" />
@@ -186,15 +184,16 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="20" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.25">
-        <Affliction identifier="gunshotwound" strength="15" />
-        <Affliction identifier="gunshotwound" strength="8" probability="0.8" />
-        <Affliction identifier="lacerations" strength="32" />
-        <Affliction identifier="lacerations" strength="26" probability="0.6" />
-        <Affliction identifier="internaldamage" strength="42" />
+      <Attack structuredamage="34" targetforce="15" itemdamage="40" severlimbsprobability="0.8" penetration="0.3">
+        <Affliction identifier="gunshotwound" strength="40" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.8" />
+        <Affliction identifier="lacerations" strength="42" />
+        <Affliction identifier="lacerations" strength="32" probability="0.6" />
+        <Affliction identifier="internaldamage" strength="39" />
         <Affliction identifier="internaldamage" strength="26" probability="0.5" />
-        <Affliction identifier="bleeding" strength="32"/>
-        <Affliction identifier="bleeding" strength="40" probability="0.8" />
+        <Affliction identifier="blunttrauma" strength="16" />
+        <Affliction identifier="bleeding" strength="80"/>
+        <Affliction identifier="bleeding" strength="64" probability="0.8" />
         <Affliction identifier="stun" strength="0.3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -223,12 +222,12 @@
       </Price>
       <Fabricate suitablefabricators="fabricator" requiredtime="75">
         <RequiredSkill identifier="weapons" level="80" />
-        <RequiredItem identifier="physicorium" amount="2" />
+        <RequiredItem identifier="pta_bw"/>
         <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
         <RequiredItem identifier="rubber" amount="2"/>
       </Fabricate>
       <Deconstruct time="35">
-        <Item identifier="physicorium" amount="1" />
+        <Item identifier="pta_bw"/>
         <Item identifier="titaniumaluminiumalloy" amount="2" />
         <Item identifier="rubber" />
       </Deconstruct>
@@ -391,13 +390,13 @@
       </Price>
       <Fabricate suitablefabricators="fabricator" requiredtime="75">
         <RequiredSkill identifier="weapons" level="65" />
-        <RequiredItem identifier="physicorium" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+        <RequiredItem identifier="pta_bw"/>
         <RequiredItem identifier="rubber" />
       </Fabricate>
       <Deconstruct time="35">
-        <Item identifier="physicorium" amount="1" />
-        <Item identifier="titaniumaluminiumalloy" amount="1" />
+        <Item identifier="pta_bw" amount="1" />
+        <Item identifier="titaniumaluminiumalloy" amount="2" />
         <Item identifier="rubber" />
       </Deconstruct>
       <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
@@ -503,7 +502,7 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-        <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
+        <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.6">
           <Affliction identifier="gunshotwound" strength="16" />
           <Affliction identifier="gunshotwound" strength="8" probability="0.6" />
           <Affliction identifier="bleeding" strength="13" />

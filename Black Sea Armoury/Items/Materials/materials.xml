@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="压缩毛巾" identifier="pta_bw" category="Material,Alien" Tags="smallitem" maxstacksize="8" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="500" sold="false" minleveldifficulty="35">
+      <Price storeidentifier="merchantoutpost" multiplier="1.25" />
+      <Price storeidentifier="merchantcity" multiplier="1.15" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.1"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="1.2" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="physicorium" mincondition="0.2" usecondition="true"/>
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy"  amount="4" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="4,7,57,32" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="4,7,57,32" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="25" density="30" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>  
+</Items>

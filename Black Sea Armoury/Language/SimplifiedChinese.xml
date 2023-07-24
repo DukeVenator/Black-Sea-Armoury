@@ -73,7 +73,7 @@
   <entityname.spar_7magazine>SPAR-408 克拉肯穿甲弹匣(7)</entityname.spar_7magazine>
   <entitydescription.spar_7magazine>7发 .408 步枪弹匣，所使用穿甲弹，足以击穿绝大部分生物的装甲。</entitydescription.spar_7magazine>
   <entityname.spar_7magazine_fmj>SPAR-408 斯库拉全金属被甲弹匣(7)</entityname.spar_7magazine_fmj>
-  <entitydescription.spar_7magazine>7发 .408 步枪弹匣，所使用全金属被甲弹，能够在目标体内造成巨额伤害。</entitydescription.spar_7magazine>
+  <entitydescription.spar_7magazine_fmj>7发 .408 步枪弹匣，所使用全金属被甲弹，能够在目标体内造成巨额伤害。</entitydescription.spar_7magazine_fmj>
   <entityname.spar-338>SPAR-338 特种机枪</entityname.spar-338>
   <entitydescription.spar-338>钢铁联盟设计的一款精确而致命的机枪，用于抵御怪物日益增加的危险。</entitydescription.spar-338>
   <entityname.spar_24magazine>SPAR-338弹匣(24)</entityname.spar_24magazine>
