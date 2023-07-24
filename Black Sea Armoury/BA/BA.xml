@@ -51,8 +51,8 @@
       <sprite texture="%ModDir%/BA/PR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
       <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
 	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.9" />
@@ -209,8 +209,8 @@
       <sprite texture="%ModDir%/BA/MA/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5" sourcerect="0,0,260,160" />
       <sprite texture="%ModDir%/BA/MA/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/MA/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="1.0" />
@@ -409,8 +409,8 @@
       <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
@@ -622,8 +622,8 @@
       <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
@@ -765,8 +765,8 @@
       <sprite texture="%ModDir%/BA/BR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5310345" sourcerect="0,0,140,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="RightLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.65,0.5" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/BR/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.45,0.5" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
-      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.58,0.4" sourcerect="0,0,220,140" />
+      <sprite texture="%ModDir%/BA/BR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,220,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
@@ -1391,8 +1391,8 @@
       <sprite texture="%ModDir%/BA/MA2/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
       <sprite texture="%ModDir%/BA/MA2/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/MA2/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.65" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
       </StatusEffect>
@@ -1481,8 +1481,8 @@
       <sprite texture="%ModDir%/BA/EL/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
       <sprite texture="%ModDir%/BA/EL/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/EL/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
@@ -1629,8 +1629,8 @@
       <sprite texture="%ModDir%/BA/MA2/LEG.png" limb="LeftLeg" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5" sourcerect="0,0,260,160" />
       <sprite texture="%ModDir%/BA/MA2/LEG2.png" limb="RightThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.55,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/MA2/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
-      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="RightFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
-      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="LeftFoot" sound="bw_footstep_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
+      <sprite texture="%ModDir%/BA/MA2/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.6" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
       </StatusEffect>
