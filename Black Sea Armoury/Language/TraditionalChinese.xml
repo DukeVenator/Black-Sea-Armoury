@@ -126,8 +126,6 @@
   <entityname.HMG1_bw>鐮刀重機槍(Sickle HMG)</entityname.HMG1_bw>
   <entitydescription.HMG1_bw>重型自動火力，但容易過熱，需要依靠強製散熱。使用14.5mm機槍彈藥。</entitydescription.HMG1_bw>
   <entityname.HMG1_mag_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_mag_bw>
-  <entitydescription.HMG1_mag_bw>老舊，但致命。</entitydescription.HMG1_mag_bw>
-  <entityname.HMG1_ammo_bw>14.5mm機槍彈藥(14.5 Ammo Box)</entityname.HMG1_ammo_bw>
   <entitydescription.HMG1_ammo_bw>老舊，但致命。</entitydescription.HMG1_ammo_bw>
   <entityname.minichaingun_bw>試驗鏈砲(Experimental Chaingun)</entityname.minichaingun_bw>
   <entitydescription.minichaingun_bw>昂貴的重型武器。使用鏈砲彈藥。</entitydescription.minichaingun_bw>

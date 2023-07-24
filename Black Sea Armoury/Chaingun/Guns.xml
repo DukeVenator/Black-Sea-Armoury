@@ -170,7 +170,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- HMG Bullet -->
-  <Item name="" identifier="HMG1_ammo_bw" aliases="HMG Ammo Box" scale="0.5" tags="ammobox,smallitem,HMG1_ammo_bw,gunsmith,hmgammotype" description="" category="Weapon" subcategory="Black Sea Armoury" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="30" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="14.5mm HMG round" identifier="HMG1_ammo_bw" aliases="HMG Ammo Box" scale="0.5" tags="ammobox,smallitem,HMG1_ammo_bw,gunsmith,hmgammotype" description="" category="Weapon" subcategory="Black Sea Armoury" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="30" hideinmenus="true" nonplayerteaminteractable="True">
     <Price baseprice="3" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
