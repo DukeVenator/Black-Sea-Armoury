@@ -144,6 +144,33 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <Item name=".408FML" identifier="408fml_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="17" height="6" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="20" targetforce="10" itemdamage="40" severlimbsprobability="0.7" penetration="0.2">
+        <Affliction identifier="gunshotwound" strength="26" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.5" />
+        <Affliction identifier="bleeding" strength="22"/>
+        <Affliction identifier="bleeding" strength="40" probability="0.3" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
     <!--.338 MG-->
     <Item name="SPAR-338 MG" identifier="spar-338" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
       <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -476,12 +503,12 @@
         <Item identifier="titaniumaluminiumalloy" amount="1" />
         <Item identifier="steel" amount="1" />
       </Deconstruct>
-      <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,320,64,64" origin="0.5,0.5" />
-      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="263,135,145,56" depth="0.55" origin="0.5,0.5" />
-      <Body width="140" height="60" density="25" />
-      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-15" aimpos="45,-10" handle1="-30,-8" handle2="18,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
+      <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+      <Body width="180" height="45" density="50" />
+      <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
       <!--857 rounds per minute-->
-      <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="58,19" spread="8.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="8.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
