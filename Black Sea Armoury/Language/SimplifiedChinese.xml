@@ -88,6 +88,8 @@
   <entitydescription.spar_45magazine>45发钛合金 8×75mm 步枪弹匣，所使用狙击穿甲弹，仅适合标准型号。</entitydescription.spar_45magazine>
   <entityname.spar_20magazine>SPAR-8弹匣(20)</entityname.spar_20magazine>
   <entitydescription.spar_20magazine>20发钛合金 8×75mm 步枪弹匣，所使用狙击穿甲弹。</entitydescription.spar_20magazine>
+  <entityname.spar-556a>SPAR-556A 特种突击步枪</entityname.spar-556a>
+  <entitydescription.spar-556a>钢铁联盟联立初期所设计的一款突击步枪，为使用延长枪管的改进型。</entitydescription.spar-556a>
   <entityname.spar-556>SPAR-556 特种突击步枪</entityname.spar-556>
   <entitydescription.spar-556>钢铁联盟联立初期所设计的一款突击步枪，由于缺乏经验，因此参照了目前联盟内主流突击步枪所研发的枪械，但因缺乏足够的停止作用而深受诟病。</entitydescription.spar-556>
   <entityname.spar_30magazine>SPAR-556弹匣(30)</entityname.spar_30magazine>
