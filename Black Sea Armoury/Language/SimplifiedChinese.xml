@@ -80,8 +80,12 @@
   <entitydescription.spar_24magazine>24发钛合金 .338 拉普麦格农机枪弹匣。</entitydescription.spar_24magazine>
   <entityname.spar_60magazine>SPAR-338弹匣(60)</entityname.spar_60magazine>
   <entitydescription.spar_60magazine>60发钛合金 .338 拉普麦格农加长型机枪弹匣，用于提供火力压制。</entitydescription.spar_60magazine>
+  <entityname.spar-8s>SPAR-8S 特种精确射手步枪</entityname.spar-8s>
+  <entitydescription.spar-8s>钢铁联盟设计的一款全自动小队精确射手步枪，延长了枪管并使用改进型制退器显著的提高了精度和穿甲能力。</entitydescription.spar-8s>
   <entityname.spar-8>SPAR-8 特种精确射手步枪</entityname.spar-8>
   <entitydescription.spar-8>钢铁联盟设计的一款全自动精确射手步枪，深受精锐部队的喜爱。</entitydescription.spar-8>
+  <entityname.spar_45magazine>SPAR-8弹匣(45)</entityname.spar_45magazine>
+  <entitydescription.spar_45magazine>45发钛合金 8×75mm 步枪弹匣，所使用狙击穿甲弹，仅适合标准型号。</entitydescription.spar_45magazine>
   <entityname.spar_20magazine>SPAR-8弹匣(20)</entityname.spar_20magazine>
   <entitydescription.spar_20magazine>20发钛合金 8×75mm 步枪弹匣，所使用狙击穿甲弹。</entitydescription.spar_20magazine>
   <entityname.spar-556>SPAR-556 特种突击步枪</entityname.spar-556>
