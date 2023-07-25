@@ -1549,16 +1549,16 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.35" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.35" probabilitymultiplier="0.35" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" probabilitymultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.3" probabilitymultiplier="0.25" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.75" damagesound="LimbArmor" />
       <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
