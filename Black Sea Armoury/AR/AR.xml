@@ -90,13 +90,13 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="c4block" amount="1"/>
-      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="camp7_bw" amount="1"/>
+      <RequiredItem identifier="steel" />
       <RequiredItem identifier="pta_bw" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="pta_bw" mincondition="0.95" />
-      <Item identifier="lead" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
     <Body width="29" height="37" density="25" />
@@ -124,13 +124,13 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="c4block" amount="1"/>
-      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="camp7_bw" amount="1"/>
+      <RequiredItem identifier="steel" />
       <RequiredItem identifier="pta_bw" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="pta_bw" mincondition="0.95" />
-      <Item identifier="lead" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
     <Body width="29" height="37" density="25" />
@@ -295,12 +295,12 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="uex" />
-      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="camp6_bw" />
+      <RequiredItem identifier="steel" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
       <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
@@ -329,12 +329,12 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="uex" amount="2.5"/>
-      <RequiredItem identifier="lead" amount="2.5"/>
+      <RequiredItem identifier="camp6_bw" amount="2.5"/>
+      <RequiredItem identifier="steel" amount="2.5"/>
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2.5"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
       <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
@@ -584,14 +584,14 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="uex" />
-      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="camp6_bw" />
+      <RequiredItem identifier="steel" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="steel" mincondition="0.95"/>
+      <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
@@ -619,13 +619,13 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="uex" amount ="2"/>
-      <RequiredItem identifier="lead" amount ="2"/>
+      <RequiredItem identifier="camp6_bw" amount ="2"/>
+      <RequiredItem identifier="steel" amount ="2"/>
       <RequiredItem identifier="titaniumaluminiumalloy" amount ="2"/>
       <RequiredItem identifier="plastic" amount ="2"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" amount ="2" mincondition="0.95"/>
+      <Item identifier="steel" amount ="2" mincondition="0.95"/>
       <Item identifier="titaniumaluminiumalloy" amount ="2" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
@@ -718,7 +718,7 @@
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="556ammo" itempos="4,-12" />
+      <Containable items="spar_30magazine,spar_150magazine" itempos="4,-12" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">

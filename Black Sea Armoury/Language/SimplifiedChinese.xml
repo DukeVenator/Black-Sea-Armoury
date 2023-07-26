@@ -236,6 +236,15 @@
   <entityname.smgmagazine_bw2>[遗产即将移除]7.62mm再生弹匣(7.62mm Autofilled Magzine)</entityname.smgmagazine_bw2>
   <entitydescription.>活体金属能自动再生弹药，但威力减半。 </entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
+  <!--Materials-->
+  <entityname.pta_bw>压缩钛合金</entityname.pta_bw>
+  <entitydescription.pta_bw>钢铁联盟研发的最新合金，有种无与伦比的材料性能。但代价是高昂的造价，因此仅仅被钢铁联盟用于制造高端武器，用于对抗日益增长的威胁。 </entitydescription.pta_bw>
+  <entityname.camp6_bw>六号化合物</entityname.camp6_bw>
+  <entitydescription.camp6_bw>钢铁联盟研发的一种军用烈性火药，可用于合成军用烈性炸药，在同等质量下远超木卫二已知的火药性能。据说研发者是一名前线活跃的军医，其座右铭是“火药也是药”。 </entitydescription.camp6_bw>
+  <entityname.camp7_bw>七号化合物</entityname.camp7_bw>
+  <entitydescription.camp7_bw>钢铁联盟研发的一种军用烈性火药，在六号化合物的配方上加入了当地特产，可用于合成军用烈性炸药。据说研发者是一名前线活跃的军医，其座右铭是“火药也是药”。 </entitydescription.camp7_bw>
+  <entityname.c6_bw>C6炸药</entityname.c6_bw>
+  <entitydescription.c6_bw>钢铁联盟研发的一种军用烈性炸药。 </entitydescription.c6_bw>
   <!--tactical Scanner.xml-->
   <entityname.divingsuitlockerbw>机坪(Apron)</entityname.divingsuitlockerbw>
   <entityname.shellbagbw>无畏辅助系统(Dreadnought Support System)</entityname.shellbagbw>
