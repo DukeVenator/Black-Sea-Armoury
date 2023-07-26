@@ -53,16 +53,13 @@
       <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
-	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
-        <Conditional Voltage="gt 0.5" />
-        <StatValue stattype="FlowResistance" value="0.9" />
-        <StatValue stattype="SwimmingSpeed" value="4.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-	  </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-        <Affliction identifier="Swift" strength="10" />
-      </StatusEffect>
+	    <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+          <Conditional Voltage="gt 0.5" />
+          <StatValue stattype="FlowResistance" value="0.9" />
+          <StatValue stattype="SwimmingSpeed" value="4.0" />
+          <Affliction identifier="Swift" strength="10" />
+          <Affliction identifier="recoilstabilized" amount="1" />
+	    </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
@@ -215,11 +212,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="1.0" />
         <StatValue stattype="SwimmingSpeed" value="0.5" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Hammer" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.175" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -349,7 +343,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- X01 Battle Armor-->
-  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech,x01suit" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -415,11 +409,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -573,7 +564,7 @@
     </Projectile>
   </Item>
   <!-- X01 Battle Armor(Leader) -->
-  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bwl" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech,x01suit" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -628,11 +619,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -719,7 +707,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <!-- X01 Battle Armor(Veteran)-->  
-  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+  <Item name="" identifier="armored_hardsuit_bw2" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech,x01suit" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
@@ -775,11 +763,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="3.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="X01" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -922,11 +907,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="3.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="Alienpw" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -1083,11 +1065,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.8" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="architect" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -1237,11 +1216,8 @@
         <Conditional Voltage="gt 0.5" />
         <StatValue stattype="FlowResistance" value="0.8" />
         <StatValue stattype="SwimmingSpeed" value="2.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
         <Affliction identifier="architect" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -1400,14 +1376,12 @@
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.65" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" Condition="-1.32" comparison="Or" OxygenAvailable="2000.0" UseHullOxygen="true">
-        <StatValue stattype="FlowResistance" value="1.0" />
-        <Affliction identifier="architect2" strength="10" />
+      <StatusEffect type="OnWearing" target="This,Character" Condition="-1.32" comparison="AND" OxygenAvailable="2000.0" UseHullOxygen="true">
         <Conditional IsDead="false" />
-        <Conditional Voltage="gt 0.01" />
+        <Conditional Voltage="gt 0.5" />
+        <StatValue stattype="FlowResistance" value="1.0" />
+        <Affliction identifier="Hercules" strength="10" />
+        <Affliction identifier="recoilstabilized" amount="1" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="1.2">
         <Conditional condition="gt 0" />
@@ -1450,11 +1424,12 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="relic_bw" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="corsairar_bw" />
+      <RequiredItem tag="x01suit" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/BA/EL/SYS.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/EL/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
@@ -1487,15 +1462,13 @@
       <sprite texture="%ModDir%/BA/EL/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/EL/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" comparison="AND" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
+        <Conditional IsDead="false" />
         <StatValue stattype="FlowResistance" value="0.95" />
         <StatValue stattype="SwimmingSpeed" value="4.0" />
-        <StatValue stattype="WalkingSpeed" value="0" />
-      </StatusEffect>
-	  <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
         <Affliction identifier="recoilstabilized" amount="1" />
-        <Affliction identifier="Swift2" strength="10" />
+        <Affliction identifier="X00" strength="10" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
@@ -1549,18 +1522,18 @@
         <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
         <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
       </Sonar>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.3" probabilitymultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.3" probabilitymultiplier="0.25" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.55" probabilitymultiplier="0.75" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.1" probabilitymultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.25" probabilitymultiplier="0.25" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.45" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.45" probabilitymultiplier="0.45" damagesound="LimbArmor" />
       <StatusHUD drawhudwhenequipped="true" overlaycolor="0,255,255,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Wearable>
     <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
@@ -1642,14 +1615,12 @@
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.6" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="gt 0.5" />
       </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
-        <Affliction identifier="recoilstabilized" amount="1" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" Condition="-0.0" comparison="Or" OxygenAvailable="2000.0" UseHullOxygen="true">
-        <StatValue stattype="FlowResistance" value="1.0" />
-        <Affliction identifier="architect2" strength="10" />
+      <StatusEffect type="OnWearing" target="This,Character" Condition="-0.0" comparison="AND" OxygenAvailable="2000.0" UseHullOxygen="true">
+        <Conditional Voltage="gt 0.5" />
         <Conditional IsDead="false" />
-        <Conditional Voltage="gt 0.01" />
+        <StatValue stattype="FlowResistance" value="1.0" />
+        <Affliction identifier="recoilstabilized" amount="1" />
+        <Affliction identifier="Hercules2" strength="10" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="20000.0" setvalue="true" disabledeltatime="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
