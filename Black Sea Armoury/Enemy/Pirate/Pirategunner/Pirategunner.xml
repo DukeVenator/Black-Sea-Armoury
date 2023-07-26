@@ -58,4 +58,34 @@
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmet1" />
   </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="spar_60magazine" />
+    <Item Identifier="scrap" />
+    <Item Identifier="fulguriumbatterycell" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-338-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmet1" />
+  </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="spar_20magazine" />
+    <Item Identifier="scrap" />
+    <Item Identifier="fulguriumbatterycell" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-8s-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmet1" />
+  </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="spar_20magazine" />
+    <Item Identifier="scrap" />
+    <Item Identifier="fulguriumbatterycell" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-8-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmet1" />
+  </inventory>
 </Character>

@@ -71,6 +71,22 @@
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmetbw" />
   </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
+    <Item Identifier="spar_150magazine" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-556a-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmetbw" />
+  </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
+    <Item Identifier="spar_150magazine" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-556-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="pio_bw2_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmetbw" />
+  </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="lmgmagazine_bw_e" />
     <Item Identifier="mudraptorshell" />
