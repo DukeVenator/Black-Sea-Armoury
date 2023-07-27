@@ -7,7 +7,7 @@
     <Body width="300" height="124" density="40" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--60 rounds per minute-->
-    <RangedWeapon reload="1" holdtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
+    <RangedWeapon reload="2" holdtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -40,7 +40,7 @@
     <Body width="300" height="124" density="40" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--60 rounds per minute-->
-    <RangedWeapon reload="1"  oldtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
+    <RangedWeapon reload="2"  oldtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -281,6 +281,9 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="408ammo"/>
       <RequiredSkill identifier="weapons" level="75" />
     </RangedWeapon>
@@ -371,7 +374,7 @@
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="17" height="6" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="99" >
+    <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3" >
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="22" targetforce="10" itemdamage="40" severlimbsprobability="0.5" penetration="0.85">
         <Affliction identifier="lacerations" strength="15" />
@@ -388,10 +391,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" condition="-30"/>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
         <Remove />
@@ -486,6 +485,9 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="338ammo"/>
       <RequiredSkill identifier="weapons" level="75" />
     </RangedWeapon>
@@ -537,7 +539,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name=".338 60Rnd Mag" identifier="spar_60magazine" maxstacksize="4" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="mediumitem,338ammo" impactsoundtag="impact_metal_light">
+  <Item name=".338 60Rnd Mag" identifier="spar_60magazine" maxstacksize="4" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,338ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <Price baseprice="350" sold="true" minleveldifficulty="65" displaynonempty="true">
@@ -621,10 +623,7 @@
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
     <Body width="300" height="124" density="40" />
-    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
-    </Wearable>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.2" reloadnoskill="0.55" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="3.5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -663,6 +662,9 @@
         <SpawnItem identifiers="8sround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-2.22" disabledeltatime="true" />
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <RequiredItems items="spar_20magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -734,10 +736,7 @@
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
     <Body width="300" height="124" density="40" />
-    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Autoshogun Worn" texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.5" />
-    </Wearable>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="5" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -774,6 +773,9 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
       </StatusEffect>
       <RequiredItems items="8ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
@@ -890,6 +892,142 @@
         </StatusEffect>
       </Projectile>
     </Item>
+  <!--Prototype-->
+  <Item name="一式原型步枪" identifier="par001" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
+    <Price baseprice="100" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="75">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="titaniumaluminiumalloy"/>
+      <RequiredItem identifier="spar-556"/>
+    </Fabricate>
+    <Deconstruct time="35">
+      <Item identifier="titaniumaluminiumalloy"/>
+      <Item identifier="spar-556"/>
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="180" height="45" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <!--120 rounds per minute-->
+    <RangedWeapon reload="0.5" reloadnoskill="1.2" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="10" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
+      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional recoilstabilized="lte 1" />
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.1" />
+        <Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 25" />
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <RequiredItems items="par001ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="par001ammo" itempos="4,-12" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item name="一式原型步枪 20Rnd Mag" identifier="par001_20magazine" maxstacksize="8" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,par001ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="par001" minamount="1" maxamount="1" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" secondary="secarmcab"/>
+    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="steel"/>
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
+    <Body width="28" height="40" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="par001round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="par001round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-5.0" disabledeltatime="true">
+        <SpawnItem identifiers="par001round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name="一式原型步枪子弹" identifier="par001round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.2">
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleeding" strength="7.5" probability="0.5" />
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="11" probability="0.3" />
+        <Affliction identifier="stun" strength="0.12" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
   <!--5.56×45 AR A-->
   <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
@@ -934,6 +1072,9 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-0.67" disabledeltatime="true">
         <RequiredItem identifier="spar_150magazine" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
       </StatusEffect>
       <RequiredItems items="556ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
@@ -1022,6 +1163,9 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <RequiredItems items="556ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -1074,7 +1218,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="5.56 mm 150Rnd Mag" identifier="spar_150magazine" maxstacksize="2" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="mediumitem,556ammo" impactsoundtag="impact_metal_light">
+  <Item name="5.56 mm 150Rnd Mag" identifier="spar_150magazine" maxstacksize="2" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,556ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-556" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>

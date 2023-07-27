@@ -70,6 +70,9 @@
         <Affliction identifier="stun" strength="0.8" />
         <Affliction identifier="explosiondamage" strength="0.4"/>
       </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <!-- End of Forbidden in mortal bodies -->
       <RequiredItems items="oxygen_cell_bw" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="80" />
@@ -216,6 +219,9 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
       </StatusEffect>
       <!-- Forbidden in mortal bodies -->
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
@@ -380,6 +386,9 @@
         <Affliction identifier="stun" strength="0.8" />
         <Affliction identifier="explosiondamage" strength="0.4"/>
       </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
       <!-- End of Forbidden in mortal bodies -->
       <RequiredItems identifier="SG_ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="80" />
@@ -424,7 +433,7 @@
     <Sprite texture="%ModDir%/LC/3GM.png" sourcerect="0,0,176,144" depth="0.55" />
     <Body width="320" height="80" density="30" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-24" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="90,22" spread="6" unskilledspread="16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.01">
+    <RangedWeapon barrelpos="90,22" spread="6" unskilledspread="16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2" reload="2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -438,7 +447,6 @@
       <StatusEffect type="OnUse">
         <Explosion range="10.0" force="3" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-4000" />
       <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
