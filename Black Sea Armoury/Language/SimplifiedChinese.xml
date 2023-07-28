@@ -307,6 +307,8 @@
   <Afflictiondescription.DEFbw>生命值提高50%，物理伤害减免30%。</Afflictiondescription.DEFbw>
   <Afflictionname.DEFbw2>附加装甲</Afflictionname.DEFbw2>
   <Afflictiondescription.DEFbw2>生命值提高25%，物理伤害减免15%。</Afflictiondescription.DEFbw2>
+  <Afflictionname.DEFbw3>额外装甲</Afflictionname.DEFbw3>
+  <Afflictiondescription.DEFbw3>生命值提高50%，物理伤害减免30%，攻击速度提高20%。</Afflictiondescription.DEFbw3>
   <Afflictionname.Swift2>突击装甲</Afflictionname.Swift2>
   <Afflictiondescription.Swift2>伤害提高10%，攻击速度提高20%，生命值提升25%。</Afflictiondescription.Swift2>
   <Afflictionname.steelruler>钢铁统驭</Afflictionname.steelruler>
@@ -318,6 +320,8 @@
   <Afflictiondescription.sup2>攻击速度提高20%。</Afflictiondescription.sup2>
   <Afflictionname.sup3>突击支援系统</Afflictionname.sup3>
   <Afflictiondescription.sup3>攻击速度提高20%，生命值提高25%，物理伤害减免15%。</Afflictiondescription.sup3>
+  <Afflictionname.sup4>武库支援系统</Afflictionname.sup4>
+  <Afflictiondescription.sup4>攻击速度提高20%，生命值提高25%，物理伤害减免20%。</Afflictiondescription.sup4>
   <entityname.railgunshellbw2>空包弹(Empty Shell)</entityname.railgunshellbw2>
   <!--Enemy Characters equipments-->
   <entityname.corsairar_bw_e>Pirate Corsair</entityname.corsairar_bw_e>

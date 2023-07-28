@@ -751,6 +751,9 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.shield_bw" color="gui.orange" />
     </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.arsenal_bw" color="gui.orange" />
+    </Description>
     <Description tag="talentdescription.extrastunonenemies">
       <Replace tag="[amount]" value="10" color="gui.green"/>
     </Description>
@@ -768,6 +771,7 @@
       <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9" />
     </Abilities>
     <AddedRecipe itemidentifier="shield_bw" />
+    <AddedRecipe itemidentifier="arsenal_bw" />
   </Talent>
   <Talent identifier="implacablebw">
     <Description tag="talentdescription.unlockrecipe">
