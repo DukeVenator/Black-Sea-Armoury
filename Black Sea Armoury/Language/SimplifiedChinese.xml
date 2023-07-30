@@ -67,13 +67,17 @@
   <Afflictionname.revengesquad_deffense>守护之愿</Afflictionname.revengesquad_deffense>
   <Afflictiondescription.revengesquad_offense>拯救一个生命的唯一途径就是夺取另一个生命</Afflictiondescription.revengesquad_offense>
   <Afflictiondescription.revengesquad_deffense>拯救一个生命的唯一途径就是承受一切痛苦</Afflictiondescription.revengesquad_deffense>
+  <talentname.apolloassistsystem_bw>阿波罗辅助系统</talentname.apolloassistsystem_bw>
+  <talentdescription.apolloassistsystem_bw>驾驶阿波罗时，造成额外100%化学烧伤，并且治疗伤员后，使得伤员60秒内获得阿波罗纳米机器人的辅助。</talentdescription.apolloassistsystem_bw>
   <!--AR.xml-->
   <entityname.spar-408>SPAR-408 特种精确射手步枪</entityname.spar-408>
   <entitydescription.spar-408>钢铁联盟设计的一款精确射手步枪，用歼灭高威胁目标。</entitydescription.spar-408>
   <entityname.spar_7magazine>SPAR-408 克拉肯穿甲弹匣(7)</entityname.spar_7magazine>
   <entitydescription.spar_7magazine>7发 .408 步枪弹匣，所使用穿甲弹，足以击穿绝大部分生物的装甲。</entitydescription.spar_7magazine>
-  <entityname.spar_7magazine_fmj>SPAR-408 斯库拉全金属被甲弹匣(7)</entityname.spar_7magazine_fmj>
-  <entitydescription.spar_7magazine_fmj>7发 .408 步枪弹匣，所使用全金属被甲弹，能够在目标体内造成巨额伤害。</entitydescription.spar_7magazine_fmj>
+  <entityname.spar_7magazine_fmj>SPAR-408 鲲全金属被甲弹匣(7)</entityname.spar_7magazine_fmj>
+  <entitydescription.spar_7magazine_fmj>7发 .408 步枪弹匣，所使用全金属被甲弹，能够在目标体内造成大量伤害。</entitydescription.spar_7magazine_fmj>
+  <entityname.spar_7magazine_jhp>SPAR-408 斯库拉全金属被甲空心弹弹匣(7)</entityname.spar_7magazine_jhp>
+  <entitydescription.spar_7magazine_jhp>7发 .408 步枪弹匣，所使用全金属被甲空心弹，能够在目标体内造成巨额伤害和巨大的停止作用。</entitydescription.spar_7magazine_jhp>
   <entityname.spar-338>SPAR-338 特种机枪</entityname.spar-338>
   <entitydescription.spar-338>钢铁联盟设计的一款精确而致命的机枪，用于抵御怪物日益增加的危险。</entitydescription.spar-338>
   <entityname.spar_24magazine>SPAR-338弹匣(24)</entityname.spar_24magazine>
@@ -139,6 +143,8 @@
   <entitydescription.corsairar_bp>实验性原型机，具有极高的攻击性能。使用X01氧气电池。</entitydescription.corsairar_bp>
   <entityname.armored_miningsuit_bw3>大力神 Mk.II(Hercules Mk.II)</entityname.armored_miningsuit_bw3>
   <entitydescription.armored_miningsuit_bw3>重型军用工程机甲改装，稍微改善速度与试验型能量循环炉。</entitydescription.armored_miningsuit_bw3>
+  <entityname.apollo_bw>阿波罗(Apollo)</entityname.apollo_bw>
+  <entitydescription.apollo_bw>轻型战地医师机甲，可以携带大量医疗物资，在战场中快速移动，并且对药物和研究提供巨量加成。</entitydescription.apollo_bw>
   <!--Shield.xml-->
   <entityname.bwapc>逆向工程外星电池(Reverse Engineering Alien Power Cell)</entityname.bwapc>
   <entitydescription.bwapc>人工增强的外星电池。 </entitydescription.bwapc>
@@ -239,6 +245,10 @@
   <!--Materials-->
   <entityname.pta_bw>压缩钛合金</entityname.pta_bw>
   <entitydescription.pta_bw>钢铁联盟研发的最新合金，有种无与伦比的材料性能。但代价是高昂的造价，因此仅仅被钢铁联盟用于制造高端武器，用于对抗日益增长的威胁。 </entitydescription.pta_bw>
+  <entityname.amu_bw>硬化铝合金</entityname.amu_bw>
+  <entitydescription.amu_bw>钢铁联盟研发的合金，具有良好的散热性能，媲美钢的硬度以及极轻的重量，常被用于制作枪支外壳。 </entitydescription.amu_bw>
+  <entityname.sst_bw>硬化钢</entityname.sst_bw>
+  <entitydescription.sst_bw>钢铁联盟研发的合金，有着惊人的硬度和耐用性，常被用于制作枪管。 </entitydescription.sst_bw>
   <entityname.camp6_bw>六号化合物</entityname.camp6_bw>
   <entitydescription.camp6_bw>钢铁联盟研发的一种军用烈性火药，可用于合成军用烈性炸药，在同等质量下远超木卫二已知的火药性能。据说研发者是一名前线活跃的军医，其座右铭是“火药也是药”。 </entitydescription.camp6_bw>
   <entityname.camp7_bw>七号化合物</entityname.camp7_bw>
@@ -322,6 +332,12 @@
   <Afflictiondescription.sup3>攻击速度提高20%，生命值提高25%，物理伤害减免15%。</Afflictiondescription.sup3>
   <Afflictionname.sup4>武库支援系统</Afflictionname.sup4>
   <Afflictiondescription.sup4>攻击速度提高20%，生命值提高25%，物理伤害减免20%。</Afflictiondescription.sup4>
+  <Afflictionname.sup4>武库支援系统</Afflictionname.sup4>
+  <Afflictiondescription.sup4>攻击速度提高20%，生命值提高25%，物理伤害减免20%。</Afflictiondescription.sup4>
+  <Afflictionname.Apollo_sys>战地医师系统</Afflictionname.Apollo_sys>
+  <Afflictiondescription.Apollo_sys>生命值提高10%，毒药效果增加100%，基因合并时无污染风险。</Afflictiondescription.Apollo_sys>
+  <Afflictionname.bedsidemanner_bw>阿波罗支援系统</Afflictionname.bedsidemanner_bw>
+  <Afflictiondescription.bedsidemanner_bw>移动速度提高10%，物理伤害减免10%，生效期间不会因伤痛而死亡。</Afflictiondescription.bedsidemanner_bw>
   <entityname.railgunshellbw2>空包弹(Empty Shell)</entityname.railgunshellbw2>
   <!--Enemy Characters equipments-->
   <entityname.corsairar_bw_e>Pirate Corsair</entityname.corsairar_bw_e>
@@ -406,4 +422,5 @@
   <missionname.abandonedoutpostassassinatebae>前哨站刺杀行动</missionname.abandonedoutpostassassinatebae>
   <missiondescription.abandonedoutpostassassinatebae>Contact with [location1] was recently lost, and there have been reports about a notorious group of heavily armed outlaws having claimed it as their base. There's a bounty on the head of the group's leader's – eliminate the leader to claim the reward.</missiondescription.abandonedoutpostassassinatebae>
   <missionsuccess.abandonedoutpostassassinatebae>强盗团伙的首领已被成功消灭</missionsuccess.abandonedoutpostassassinatebae>
+
 </infotexts>

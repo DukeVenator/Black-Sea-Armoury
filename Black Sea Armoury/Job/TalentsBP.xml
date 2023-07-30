@@ -1066,4 +1066,30 @@
       </Abilities>
     </AbilityGroupInterval>
   </Talent>
+  <Talent identifier="apolloassistsystem_bw">
+    <Description tag="talentdescription.apolloassistsystem_bw"/>
+    <Icon texture="%ModDir:NT Surgery Plus%/Images/MainAtlas.png" sheetindex="6,0" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+      <Abilities>
+        <CharacterAbilityPutItem itemidentifier="geneticmaterial_unresearched" amount="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+      <Conditions>
+        <AbilityConditionHasItem tags="apolloassistsystem" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAffliction afflictionidentifiers="acidburn" addedmultiplier="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnApplyTreatment">
+      <Conditions>
+        <AbilityConditionCharacter targettype="Ally" />
+        <AbilityConditionHasItem tags="apolloassistsystem" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityGiveAffliction affliction="bedsidemanner_bw" strength="600" setvalue="true" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
 </Talents>

@@ -56,7 +56,35 @@
   <talentdescription.steelruler_deffense>When driving a mech,damage taken reduced [value]%</talentdescription.steelruler_deffense>
   <talentdescription.steelruler_logist>When driving a mech,speed increased [value]%</talentdescription.steelruler_logist>
   <talentdescription.miracleworker_bw>Gives [value]% enhancement to self and friendlies when piloting a mech.</talentdescription.miracleworker_bw>
+  <talentdescription.revengesquad_offense> When a alloy is dying, you get [amount]% ‖color:gui.orange‖ damage bonus ‖end‖, effect lasts for [duration] seconds after the ally dies or recovers, and the effect decreases over time. </talentdescription.revengesquad_offense>
+  <talentdescription.revengesquad_deffense> When a alloy is dying, you get [amount]% of ‖color:gui.orange‖Physical Damage Resistance‖end‖, effect lasts for [duration] seconds after the ally dies or recovers, and the effect decreases over time. </talentdescription.revengesquad_deffense>
+  <talentdescription.warlordbw_offense>Every time you complete a task, you increase [smallgain]% of your your maximum damage. If all crew members survive, increase the maximum life of  [largegain]%, up to [maxgain]%. </talentdescription.warlordbw_offense>
+  <talentdescription.warlordbw_deffense>Every time you complete a task, you increase [smallgain]% of your your maximum life.  If all crew members survive, increase the maximum life of  [largegain]%, up to [maxgain]%. </talentdescription.warlordbw_deffense>
   <Afflictionname.commnetbw>Command network</Afflictionname.commnetbw>
+  <stattypenames.penetration>Armor Penetration</stattypenames.penetration>
+  <stattypenames.flowresistance>Flow Resistance</stattypenames.flowresistance>
+  <Afflictionname.revengesquad_offense>Wish for Vengeance</Afflictionname.revengesquad_offense>
+  <Afflictionname.revengesquad_deffense>Wish for Guardian</Afflictionname.revengesquad_deffense>
+  <Afflictiondescription.revengesquad_offense>The only way to save a life is to take another life</Afflictiondescription.revengesquad_offense>
+  <Afflictiondescription.revengesquad_deffense>The only way to save a life is to suffer all the pain</Afflictiondescription.revengesquad_deffense>
+  <talentname.apolloassistsystem_bw>Apollo Assistance System</talentname.apolloassistsystem_bw>
+  <talentdescription.apolloassistsystem_bw> When driving Apollo, inflict additional 100% chemical burns, and after healing the wounded, the wounded will be assisted by Apollo nanobots within 60 seconds. </talentdescription.apolloassistsystem_bw>
+  <!--AR.xml-->
+  <entitydescription.spar-408>A precision marksman rifle designed by the Iron Alliance to annihilate high-threat targets. </entitydescription.spar-408>
+  <entitydescription.spar_7magazine>7 rounds of .408 rifle magazines, the armor-piercing rounds used are enough to penetrate the armor of most creatures. </entitydescription.spar_7magazine>
+  <entitydescription.spar_7magazine_fmj>7 rounds .408 rifle magazine, using full metal jacket bullets capable of inflicting a lot of damage inside the target. </entitydescription.spar_7magazine_fmj>
+  <entitydescription.spar_7magazine_jhp>7 rounds of .408 rifle magazines, using full metal jacketed hollow point bullets, capable of inflicting massive damage and massive stopping power inside the target. </entitydescription.spar_7magazine_jhp>
+  <entitydescription.spar-338>A precise and deadly machine gun designed by the League of Steel to defend against the ever-increasing danger of monsters. </entitydescription.spar-338>
+  <entitydescription.spar_24magazine>24 rounds titanium .338 Lapua Magnum magazine. </entitydescription.spar_24magazine>
+  <entitydescription.spar_60magazine>60 rounds titanium .338 Lapua Magnum Extended machine gun magazine for suppressing fire. </entitydescription.spar_60magazine>
+  <entitydescription.spar-8s>A fully automatic squad precision marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration. </entitydescription.spar-8s>
+  <entitydescription.spar-8>A fully automatic precision marksman rifle designed by the Iron Alliance, favored by elite troops. </entitydescription.spar-8>
+  <entitydescription.spar_45magazine>45 rounds of titanium alloy 8×75mm rifle magazine, the sniper armor-piercing bullets used are only suitable for standard models. </entitydescription.spar_45magazine>
+  <entitydescription.spar_20magazine>20 rounds of titanium alloy 8×75mm rifle magazine, used for sniper armor-piercing bullets. </entitydescription.spar_20magazine>
+  <entitydescription.spar-556a> An assault rifle designed in the early days of the Alliance of Iron and Steel. It is an improved version with an extended barrel. </entitydescription.spar-556a>
+  <entitydescription.spar-556> An assault rifle designed in the early days of the Iron Alliance. Due to lack of experience, it refers to the firearms developed by the current mainstream assault rifles in the alliance. However, it has been criticized for lacking sufficient stopping power. </entitydescription.spar-556>
+  <entitydescription.spar_30magazine>30 rounds of 5.56×45mm rifle magazine, using steel core bullets. </entitydescription.spar_30magazine>
+  <entitydescription.spar_150magazine>150 rounds of 5.56×45mm rifle magazines, which can be used as fire suppression in tactical teams. </entitydescription.spar_150magazine>
   <!--AXE.xml-->
   <entityname.PFbw>Power Combat System</entityname.PFbw>
   <entitydescription.PFbw>All Iron League recruits are trained in hand-to-hand combat.</entitydescription.PFbw>
@@ -100,6 +128,8 @@
   <entitydescription.corsairar_bp>Experimental prototype with extremely high attack performance.Use X01 oxygen cell.</entitydescription.corsairar_bp>
   <entityname.armored_miningsuit_bw3>Hercules Mk.II</entityname.armored_miningsuit_bw3>
   <entitydescription.armored_miningsuit_bw3>The Hercules is an excellent weapon platform, but the sluggish nature of the armor meant that anyone who wielded it was often simply outmaneuvered by lighter forces. Thus a new iteration on the armor was developed, removing all of the intneral ammo storage and loading assistance in exchange for a more powerful movement system. It's still incredibly slow, but you will at least be able to reach the end of the hallway before the day is done. Requires an X01 Oxygen Cell for optimal performance.</entitydescription.armored_miningsuit_bw3>
+  <entityname.apollo_bw>Apollo</entityname.apollo_bw>
+  <entitydescription.apollo_bw>A light field medic mech, which can carry a large amount of medical supplies, move quickly in the battlefield, and provide a huge bonus to medicine and research. </entitydescription.apollo_bw>
   <!--Shield.xml-->
   <entityname.bwapc>Reverse Engineering Alien Power Cell</entityname.bwapc>
   <entitydescription.bwapc>A man-made alien power cell.</entitydescription.bwapc>
@@ -196,6 +226,19 @@
   <entityname.smgmagazine_bw2>(LEGACY WILL BE REMOVED)7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
   <entitydescription.>Living metal provide limitless rounds,but halfed the damage.</entitydescription.>
   <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
+  <!--Materials-->
+  <entityname.pta_bw>Compressed Titanium</entityname.pta_bw>
+  <entitydescription.pta_bw>The newest alloy developed by the Iron Alliance, has a material property that is unparalleled. But the cost is high, so it is only used by the Iron Federation to create high-end weapons to counter the growing threat. </entitydescription.pta_bw>
+  <entityname.amu_bw>hardened aluminum alloy</entityname.amu_bw>
+  <entitydescription.amu_bw>The alloy developed by the Iron and Steel Alliance has good heat dissipation performance, comparable to steel hardness and extremely light weight, and is often used to make gun casings. </entitydescription.amu_bw>
+  <entityname.sst_bw>Hardened Steel</entityname.sst_bw>
+  <entitydescription.sst_bw>The alloy developed by the Iron Alliance has amazing hardness and durability, and is often used to make gun barrels. </entitydescription.sst_bw>
+  <entityname.camp6_bw>Compound Six</entityname.camp6_bw>
+  <entitydescription.camp6_bw>A military high explosive developed by the Iron Alliance, which can be used to synthesize military high explosives, far exceeds the performance of known gunpowder on Europa at the same mass. It is said that the developer is a military doctor who is active on the front line, and his motto is "Gunpowder is also medicine". </entitydescription.camp6_bw>
+  <entityname.camp7_bw>Compound No. 7</entityname.camp7_bw>
+  <entitydescription.camp7_bw>A military high explosive developed by the Iron Alliance, adding local specialties to the formula of Compound No. 6, which can be used to synthesize military high explosives. It is said that the developer is a military doctor who is active on the front line, and his motto is "Gunpowder is also medicine". </entitydescription.camp7_bw>
+  <entityname.c6_bw>C6 Explosives</entityname.c6_bw>
+  <entitydescription.c6_bw>A military high explosive developed by the Iron Federation. </entitydescription.c6_bw>
   <!--tactical Scanner.xml-->
   <entityname.divingsuitlockerbw>Apron</entityname.divingsuitlockerbw>
   <entityname.shellbagbw>Dreadnought Support System</entityname.shellbagbw>
@@ -263,6 +306,12 @@
   <Afflictiondescription.sup2>Attack speed increased 20%.</Afflictiondescription.sup2>
   <Afflictionname.sup3>Assault Support System</Afflictionname.sup3>
   <Afflictiondescription.sup3>Attack speed increased 20%,health increased 25%,physical damage resistance increased 15%.</Afflictiondescription.sup3>
+  <Afflictionname.sup4>Arsenal Support System</Afflictionname.sup4>
+  <Afflictiondescription.sup4> Attack speed increased by 20%, HP increased by 25%, and physical damage reduced by 20%. </Afflictiondescription.sup4>
+  <Afflictionname.Apollo_sys>Battle Physician System</Afflictionname.Apollo_sys>
+  <Afflictiondescription.Apollo_sys> Increases health by 10%, poison effects by 100%, and no risk of contamination when genetically merged. </Afflictiondescription.Apollo_sys>
+  <Afflictionname.bedsidemanner_bw>Apollo Support System</Afflictionname.bedsidemanner_bw>
+  <Afflictiondescription.bedsidemanner_bw> Increases movement speed by 10%, reduces physical damage by 10%, and will not die due to pain while in effect. </Afflictiondescription.bedsidemanner_bw>
   <entityname.railgunshellbw2>Empty Shell</entityname.railgunshellbw2>
   <!--Enemy Characters equipments-->
   <entityname.corsairar_bw_e>Pirate Corsair</entityname.corsairar_bw_e>

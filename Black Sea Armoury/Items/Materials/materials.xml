@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!--
+  pta_bw:800
+  amu_bw:160
+  sst_bw:140
+  camp6_bw:285
+  camp7_bw:545
+  -->
   <Item name="Compressed titanium alloy" identifier="pta_bw" category="Material,Alien" Tags="smallitem" maxstacksize="8" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
     <PreferredContainer primary="storagecab" />
-    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.02" />
-    <Price baseprice="500" sold="false" minleveldifficulty="35">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="800" sold="false" minleveldifficulty="35">
       <Price storeidentifier="merchantoutpost" multiplier="1.25" />
-      <Price storeidentifier="merchantcity" multiplier="1.15" />
-      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.1"/>
-      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
-      <Price storeidentifier="merchantmine" sold="true" multiplier="1.2" />
+      <Price storeidentifier="merchantcity" multiplier="1.3" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="1" maxavailable="4"/>
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.2" minavailable="2" maxavailable="6"/>
+      <Price storeidentifier="merchantmine" sold="true" multiplier="1.1" minavailable="1" maxavailable="4"/>
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="mechanical" level="50" />
@@ -30,20 +37,82 @@
     </Holdable>
     <AiTarget sightrange="1000" static="true" />
   </Item>
+  <Item name="Hardened Aluminum Alloy" identifier="amu_bw" category="Material" Tags="smallitem" maxstacksize="8" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <Price baseprice="160" sold="false" minleveldifficulty="0">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.1"/>
+      <Price storeidentifier="merchantmilitary"  sold="true" multiplier="1.2" minavailable="4" maxavailable="12"/>
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.9" minavailable="4" maxavailable="12"/>
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="aluminium" amount="2"/>
+      <RequiredItem identifier="magnesium"/>
+      <RequiredItem identifier="copper"/>
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="aluminium"  copycondition="true" />
+      <Item identifier="magnesium"  copycondition="true" />
+      <Item identifier="copper"  copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="63,7,52,25" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="63,7,52,25" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="25" density="30" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <Item name="Hardened Steel Alloy" identifier="sst_bw" category="Material" Tags="smallitem" maxstacksize="8" scale="0.5" cargocontaineridentifier="metalcrate" canbepicked="true">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <Price baseprice="140" sold="false" minleveldifficulty="0">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.1"/>
+      <Price storeidentifier="merchantmilitary"  sold="true" multiplier="1.2" minavailable="4" maxavailable="6"/>
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.9" minavailable="2" maxavailable="8"/>
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="silicon"/>
+      <RequiredItem identifier="titanium" mincondition="0.2" usecondition="true"/>
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel"  amount="2" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="122,7,52,25" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Materials/CraftingElements1.png" sourcerect="122,7,52,25" depth="0.55" origin="0.5,0.5" />
+    <Body width="50" height="25" density="30" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" attachable="true" reattachable="false">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
   <Item name="Compound 6" identifier="camp6_bw" category="Material" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="8" scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="4" spawnprobability="0.5" notcampaign="true"/>
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="2" spawnprobability="0.05"/>
     <PreferredContainer secondary="armcab"/>
-    <Price baseprice="140" sold="false" minleveldifficulty="35">
+    <Price baseprice="285" sold="false" minleveldifficulty="15">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
-      <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="6" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="7" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="1.25"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25"/>
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" maxavailable="8"/>
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="70" />
-      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="mechanical" level="60" />
       <RequiredItem identifier="potassium" />
       <RequiredItem identifier="magnesium"/>
       <RequiredItem identifier="aluminium"/>
@@ -83,16 +152,16 @@
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.1" notcampaign="true"/>
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.05"/>
     <PreferredContainer secondary="armcab"/>
-    <Price baseprice="200" sold="false" minleveldifficulty="55">
+    <Price baseprice="545" sold="false" minleveldifficulty="35">
       <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
-      <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="6" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="7" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="1.25"/>
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.1"/>
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4"/>
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="70" />
-      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="mechanical" level="60" />
       <RequiredItem identifier="potassium"/>
       <RequiredItem identifier="magnesium"/>
       <RequiredItem identifier="aluminium"/>

@@ -67,7 +67,7 @@
     </LightComponent>
     <AiTarget soundrange="2000" />
   </Item>
-  <!-- Black Sea Arsenal -->
+  <!-- Black Sea Arsenal -->  
   <Item name="黑海武库" identifier="arsenal_bw" aliases="shield, boarding shiled, backpack" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem,toolbelt" waterproof="true" impactsoundtag="impact_metal_heavy" health="2500" damagedbyprojectiles="true">
     <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="True">
       <RequiredSkill identifier="weapons" level="100" />
@@ -299,8 +299,9 @@
       <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="2000" selectionmode="Random" />
       <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="2000" />
       <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="2000" />
-      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-25.0" Condition="-25.0" />
-      <StatusEffect type="OnUse" targettype="UseTarget" Condition="-25.0" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-25.0" Condition="-25.0" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="ore" Condition="-30.0" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-15.0" />
       <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.5">
         <Affliction identifier="burn" strength="60" />
       </StatusEffect>
@@ -313,7 +314,7 @@
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <Fixable identifier="structure" />
       <RequiredSkill identifier="weapon" level="30" />
-      <StatusEffect type="OnUse" target="This" condition="-0.65" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" condition="-0.55" disabledeltatime="true" />
       <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>

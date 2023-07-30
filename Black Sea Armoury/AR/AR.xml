@@ -122,6 +122,9 @@
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="8sround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_20magazine">
       <Containable items="spar_20magazine" />
@@ -151,6 +154,9 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="8round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_20magazine">
@@ -182,6 +188,9 @@
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="556around_bw" spawnposition="ThisInventory" />
       </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_150magazine">
       <Containable items="spar_150magazine" />
@@ -212,6 +221,9 @@
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="556round_bw" spawnposition="ThisInventory" />
       </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_150magazine">
       <Containable items="spar_150magazine" />
@@ -224,23 +236,26 @@
   <!--.408 Kraken Pentrator Rounds  DMR -->
   <Item name="SPAR-408 DMR" identifier="spar-408" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="1500" sold="true" minleveldifficulty="65">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
+    <Price baseprice="5000" sold="false" minleveldifficulty="40">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" maxavailable="1"/>
+      <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" maxavailable="1"/>
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="75">
+    <Fabricate suitablefabricators="fabricator" requiredtime="100">
       <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="pta_bw"/>
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-      <RequiredItem identifier="rubber" amount="2"/>
+      <RequiredItem identifier="sst_bw" amount="2" />
+      <RequiredItem identifier="amu_bw" amount="4" />
+      <RequiredItem identifier="pta_bw" amount="4"/>
+      <RequiredItem identifier="rubber" amount="2"/>/>
     </Fabricate>
-    <Deconstruct time="35">
-      <Item identifier="pta_bw"/>
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
+    <Deconstruct time="60">
+      <Item identifier="pta_bw" amount="2"/>
+      <Item identifier="amu_bw" amount="2" />
+      <Item identifier="sst_bw" />
       <Item identifier="rubber" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
@@ -304,22 +319,25 @@
   <Item name=".408 7 Rnd Mag" identifier="spar_7magazine" maxstacksize="2" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,408ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
-    <Price baseprice="800" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
+    <Price baseprice="2800" sold="false" minleveldifficulty="40" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="2" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="camp7_bw" amount="1"/>
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="pta_bw" />
+      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="pta_bw" amount="2"/>
+      <RequiredItem identifier="amu_bw" />
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="pta_bw" mincondition="0.95" />
+      <Item identifier="pta_bw" amount="2" mincondition="0.95" />
+      <Item identifier="amu_bw" mincondition="0.95" />
       <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
@@ -338,7 +356,8 @@
   <Item name=".408 FMJ 7 Rnd Mag" identifier="spar_7magazine_fmj" maxstacksize="2" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,408ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
-    <Price baseprice="800" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
+    <Price baseprice="2200" sold="false" minleveldifficulty="40" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -347,13 +366,17 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="camp7_bw" amount="1"/>
-      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="sst_bw" amount="2"/>
       <RequiredItem identifier="pta_bw" />
+      <RequiredItem identifier="amu_bw" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="pta_bw" mincondition="0.95" />
+      <Item identifier="sst_bw" mincondition="0.95"/>
+      <Item identifier="amu_bw" mincondition="0.95" />
       <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
@@ -369,6 +392,43 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
+  <Item name=".408 JHP 7 Rnd Mag" identifier="spar_7magazine_jhp" maxstacksize="2" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,408ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
+    <PreferredContainer primary="armcab" secondary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.015" minleveldifficulty="40" />
+    <Price baseprice="1000" sold="false" minleveldifficulty="40" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="camp7_bw" amount="1"/>
+      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="lead" amount="4"/>
+      <RequiredItem identifier="amu_bw" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="amu_bw" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95"/>
+      <Item identifier="lead" amount="2" mincondition="0.95"/>
+    </Deconstruct>
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
+    <Body width="29" height="37" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="408jhp_round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="408jhp_round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-14.3" disabledeltatime="true">
+        <SpawnItem identifiers="408jhp_round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
   <Item name=".408" identifier="408round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -376,9 +436,9 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="3" >
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="22" targetforce="10" itemdamage="40" severlimbsprobability="0.5" penetration="0.85">
+      <Attack structuredamage="22" targetforce="10" itemdamage="40" severlimbsprobability="0.5" penetration="0.9">
         <Affliction identifier="lacerations" strength="15" />
-        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="25" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
         <Affliction identifier="bleeding" strength="10"/>
         <Affliction identifier="bleeding" strength="8" probability="0.3" />
@@ -404,16 +464,16 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="34" targetforce="15" itemdamage="40" severlimbsprobability="0.8" penetration="0.3">
-        <Affliction identifier="gunshotwound" strength="40" />
+      <Attack structuredamage="34" targetforce="15" itemdamage="40" severlimbsprobability="0.8" penetration="0.5">
+        <Affliction identifier="gunshotwound" strength="36" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.8" />
-        <Affliction identifier="lacerations" strength="42" />
+        <Affliction identifier="lacerations" strength="40" />
         <Affliction identifier="lacerations" strength="32" probability="0.6" />
-        <Affliction identifier="internaldamage" strength="39" />
-        <Affliction identifier="internaldamage" strength="26" probability="0.5" />
+        <Affliction identifier="internaldamage" strength="25" />
+        <Affliction identifier="internaldamage" strength="14" probability="0.5" />
         <Affliction identifier="blunttrauma" strength="16" />
-        <Affliction identifier="bleeding" strength="80"/>
-        <Affliction identifier="bleeding" strength="64" probability="0.8" />
+        <Affliction identifier="bleeding" strength="50"/>
+        <Affliction identifier="bleeding" strength="42" probability="0.8" />
         <Affliction identifier="stun" strength="0.3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -429,10 +489,40 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <Item name=".408JHP" identifier="408jhp_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+      <Body width="17" height="6" density="30" />
+      <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+      <Projectile characterusable="false" hitscan="true" removeonhit="true">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+        <Attack structuredamage="34" targetforce="30" itemdamage="40" severlimbsprobability="1" penetration="0.1">
+          <Affliction identifier="gunshotwound" strength="55" />
+          <Affliction identifier="lacerations" strength="60" />
+          <Affliction identifier="internaldamage" strength="80" />
+          <Affliction identifier="blunttrauma" strength="26" />
+          <Affliction identifier="bleeding" strength="150"/>
+          <Affliction identifier="bleeding" strength="70" probability="0.9" />
+          <Affliction identifier="stun" strength="1" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+          <Remove />
+        </StatusEffect>
+      </Projectile>
+  </Item>
   <!--.338 MG-->
   <Item name="SPAR-338 MG" identifier="spar-338" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Price baseprice="1500" sold="true" minleveldifficulty="65">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="35" />
+    <Price baseprice="3400" sold="true" minleveldifficulty="35">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -440,15 +530,17 @@
       <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="75">
+    <Fabricate suitablefabricators="fabricator" requiredtime="90">
       <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="pta_bw"/>
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-      <RequiredItem identifier="rubber" amount="2"/>
+      <RequiredItem identifier="sst_bw" amount="4" />
+      <RequiredItem identifier="amu_bw" amount="4" />
+      <RequiredItem identifier="pta_bw" amount="2"/>
+      <RequiredItem identifier="rubber" amount="2"/>/>
     </Fabricate>
-    <Deconstruct time="35">
-      <Item identifier="pta_bw"/>
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
+    <Deconstruct time="45">
+      <Item identifier="pta_bw" amount="2"/>
+      <Item identifier="sst_bw" amount="2" />
+      <Item identifier="amu_bw" amount="2" />
       <Item identifier="rubber" />
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,436,230,72" depth="0.55" origin="0.5,0.5" />
@@ -508,7 +600,8 @@
   <Item name=".338 24Rnd Mag" identifier="spar_24magazine" maxstacksize="8" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,338ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
-    <Price baseprice="350" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" minleveldifficulty="35" />
+    <Price baseprice="740" sold="true" minleveldifficulty="35" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -520,10 +613,12 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" />
       <RequiredItem identifier="steel" />
+      <RequiredItem identifier="amu_bw" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="steel" mincondition="0.95" />
+      <Item identifier="amu_bw" mincondition="0.95" />
       <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
@@ -542,7 +637,8 @@
   <Item name=".338 60Rnd Mag" identifier="spar_60magazine" maxstacksize="4" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,338ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
-    <Price baseprice="350" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.015" minleveldifficulty="35" />
+    <Price baseprice="1850" sold="true" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -554,11 +650,13 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" amount="2.5"/>
       <RequiredItem identifier="steel" amount="2.5"/>
+      <RequiredItem identifier="amu_bw" amount="2.5"/>
       <RequiredItem identifier="titaniumaluminiumalloy" amount="2.5"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="steel" mincondition="0.95" />
-      <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95" amount="2"/>
+      <Item identifier="amu_bw" mincondition="0.95" amount="2"/>
+      <Item identifier="titaniumaluminiumalloy" mincondition="0.95" amount="2"/>
     </Deconstruct>
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="208,88,29,37" depth="0.55" origin="0.5,0.5" />
     <Body width="29" height="37" density="25" />
@@ -604,21 +702,24 @@
   <!--8×74  SDMR-->
   <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="100" sold="false">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
+    <Price baseprice="2700" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" minavailable="0" maxavailable="1"/>
+      <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" minavailable="1" maxavailable="2"/>
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="spar-8"/>
-      <RequiredItem identifier="pta_bw"/>
+      <RequiredItem identifier="amu_bw"/>
+      <RequiredItem identifier="pta_bw" mincondition="0.2" usecondition="true"/>
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="pta_bw" amount="2" />
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="amu_bw"/>
+      <Item identifier="spar-8"/>
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
@@ -715,23 +816,26 @@
   <!--8×74  DMR-->
   <Item name="SPAR-8 DMR" identifier="spar-8" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="100" sold="false">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
+    <Price baseprice="2000" sold="false" minleveldifficulty="20">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" minavailable="1" maxavailable="3"/>
+      <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" minavailable="2" maxavailable="4"/>
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
       <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="sst_bw" amount="4" />
+      <RequiredItem identifier="amu_bw" amount="2" />
       <RequiredItem identifier="pta_bw"/>
       <RequiredItem identifier="rubber" />
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="pta_bw" amount="1" />
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
-      <Item identifier="rubber" />
+      <Item identifier="pta_bw"/>
+      <Item identifier="sst_bw" amount="2" />
+      <Item identifier="amu_bw" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
     <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
@@ -798,7 +902,8 @@
     <PreferredContainer primary="spar-8" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-8s" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
-    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="4" spawnprobability="0.02" minleveldifficulty="25" />
+    <Price baseprice="550" sold="false" minleveldifficulty="60" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -809,12 +914,12 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" />
       <RequiredItem identifier="steel" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="sst_bw" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="steel" mincondition="0.95"/>
-      <Item identifier="titaniumaluminiumalloy" mincondition="0.95"/>
+      <Item identifier="sst_bw" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
@@ -833,7 +938,8 @@
   <Item name="8 mm 45Rnd Mag" identifier="spar_45magazine" maxstacksize="4" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,8ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-8" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
-    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" minleveldifficulty="25" />
+    <Price baseprice="1100" sold="false" minleveldifficulty="60" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -844,12 +950,12 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" amount ="2"/>
       <RequiredItem identifier="steel" amount ="2"/>
-      <RequiredItem identifier="titaniumaluminiumalloy" amount ="2"/>
+      <RequiredItem identifier="sst_bw" amount ="2"/>
       <RequiredItem identifier="plastic" amount ="2"/>
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="steel" amount ="2" mincondition="0.95"/>
-      <Item identifier="titaniumaluminiumalloy" amount ="2" mincondition="0.95"/>
+      <Item identifier="sst_bw" amount ="2" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
@@ -895,7 +1001,7 @@
   <!--Prototype-->
   <Item name="一式原型步枪" identifier="par001" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="100" sold="false">
+    <Price baseprice="1200" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -904,11 +1010,11 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
       <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="titaniumaluminiumalloy"/>
-      <RequiredItem identifier="spar-556"/>
+      <RequiredItem identifier="sst_bw" amount="1" />
+      <RequiredItem identifier="amu_bw" amount="1" />
+      <RequiredItem tag="spar_556"/>
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy"/>
       <Item identifier="spar-556"/>
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
@@ -927,11 +1033,6 @@
       <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 50" />
-        <Conditional recoilstabilized="lte 1" />
-        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 50" />
@@ -979,13 +1080,13 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="steel"/>
+      <RequiredItem identifier="magnesium" amount="2"/>
+      <RequiredItem identifier="lead" amount="2"/>
+      <RequiredItem identifier="steel" amount="2"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="steel" />
+      <Item identifier="lead" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
@@ -1011,7 +1112,7 @@
       <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.2">
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="bleeding" strength="7.5" probability="0.5" />
-        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="25" />
         <Affliction identifier="gunshotwound" strength="11" probability="0.3" />
         <Affliction identifier="stun" strength="0.12" />
       </Attack>
@@ -1029,22 +1130,22 @@
     </Projectile>
   </Item>
   <!--5.56×45 AR A-->
-  <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="100" sold="false">
+  <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.2" secondary="armcab,weaponholder"/>
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="900" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9"  minavailable="1" maxavailable="2"/>
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="titaniumaluminiumalloy"/>
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="sst_bw"/>
       <RequiredItem identifier="spar-556"/>
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy"/>
       <Item identifier="spar-556"/>
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
@@ -1124,24 +1225,25 @@
     </Projectile>
   </Item>
   <!--5.56×45 AR C-->
-  <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="100" sold="false">
+  <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5" secondary="armcab,weaponholder"/>
+    <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.06" />
+    <Price baseprice="730" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" minavailable="1" maxavailable="4"/>
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="steel" amount="2" />
+      <RequiredSkill identifier="weapons" level="55" />
+      <RequiredItem identifier="sst_bw" amount="2" />
+      <RequiredItem identifier="amu_bw" amount="2" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy" amount="1" />
-      <Item identifier="steel" amount="1" />
+      <Item identifier="sst_bw" amount="1" />
+      <Item identifier="amu_bw" amount="1" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
@@ -1187,11 +1289,12 @@
     <PreferredContainer primary="spar-556" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
-    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="8" spawnprobability="0.02" />
+    <Price baseprice="350" sold="false" minleveldifficulty="0" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" maxavailable="16" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
@@ -1201,8 +1304,8 @@
       <RequiredItem identifier="steel"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="steel" />
+      <Item identifier="lead" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
@@ -1222,11 +1325,12 @@
     <PreferredContainer primary="spar-556" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
-    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="1750" sold="false" minleveldifficulty="0" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" maxavailable="4" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
@@ -1238,7 +1342,7 @@
     </Fabricate>
     <Deconstruct time="15">
       <Item identifier="lead" mincondition="0.95" amount="2"/>
-      <Item identifier="steel" amount="2"/>
+      <Item identifier="steel" mincondition="0.95" amount="2"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,21,44" origin="0.5,0.5" />
