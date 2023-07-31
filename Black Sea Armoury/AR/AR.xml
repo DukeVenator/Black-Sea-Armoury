@@ -67,6 +67,39 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
+  <Item name="SPAR-408 DMR" identifier="spar-408jhp-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
+    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
+    <Body width="300" height="124" density="40" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <!--60 rounds per minute-->
+    <RangedWeapon reload="2"  oldtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
+      <StatusEffect type="OnUse" forceplaysounds="true">
+        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
+        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse">
+        <Explosion range="100.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="408jhp_round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" spawnwithid="spar_7magazine_jhp">
+      <Containable items="408ammo" />
+    </ItemContainer>
+    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="408jhp_round_bw">
+      <Containable items="408jhp_round_bw" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+  </Item>
   <Item name="SPAR-338 MG" identifier="spar-338-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,436,230,72" depth="0.55" origin="0.5,0.5" />
     <Body width="220" height="60" density="30" />

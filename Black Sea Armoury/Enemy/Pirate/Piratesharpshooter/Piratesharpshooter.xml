@@ -47,7 +47,7 @@
     <target damagethreshold="0" tag="leucocyte" state="Avoid" priority="80" reactdistance="1500" attackdistance="0" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="1500" cohesion="0.5" />
   </ai>
-  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="rum" />
     <Item Identifier="SG_ammo" />
     <Item Identifier="alientrinket1" amount="2"/>
@@ -69,9 +69,19 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="rum" />
-    <Item Identifier="spar_7fmj_magazine" />
+    <Item Identifier="spar_7magazine_fmj" />
     <Item Identifier="alientrinket1" amount="2"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-408fmj-hide"/>
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmetbw" />
+  </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="rum" />
+    <Item Identifier="spar_7magazine_jhp" />
+    <Item Identifier="alientrinket1" amount="2"/>
+    <Item slot="RightHand+LeftHand" Identifier="spar-408jhp-hide"/>
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
