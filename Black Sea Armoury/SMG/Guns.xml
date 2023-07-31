@@ -38,24 +38,23 @@
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.2" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.25" />
-    <Price baseprice="100" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="3" />
-      <Price locationtype="city" multiplier="1.25" minavailable="3" />
-      <Price locationtype="research" multiplier="1.25" minavailable="3" />
-      <Price locationtype="military" multiplier="0.9" minavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" minavailable="3" />
+    <Price baseprice="110" sold="false" minleveldifficulty="0" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" maxavailable="16" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Deconstruct time="1">
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="5">
-      <RequiredSkill identifier="weapons" level="30" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="lead" />
       <RequiredItem identifier="steel"/>
-      <RequiredItem identifier="lead"/>
-      <RequiredItem identifier="plastic"/>
-      <RequiredItem identifier="Magnesium"/>
     </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="lead" mincondition="0.95"/>
+      <Item identifier="steel" mincondition="0.95"/>
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
     <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -73,21 +72,23 @@
   </Item>
   <!-- CQB SMG -->
   <Item name="" identifier="smg_bw" category="Weapon" subcategory="Black Sea Armoury" description="" cargocontaineridentifier="metalcrate" tags="smgtype,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <Price baseprice="500" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="0.9" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    <Price baseprice="530" sold="false" minleveldifficulty="0">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" minavailable="1" maxavailable="4"/>
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Deconstruct time="10">
-      <Item identifier="smg" />
-    </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="smg" />
+      <RequiredItem identifier="sst_bw"/>
+      <RequiredItem identifier="amu_bw" amount="2" />
+      <RequiredItem identifier="rubber" />
     </Fabricate>
+    <Deconstruct time="30">
+      <Item identifier="sst_bw"/>
+      <Item identifier="amu_bw"/>
+    </Deconstruct>
     <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />

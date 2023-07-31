@@ -2,25 +2,26 @@
 <Items>
   <!-- Corsair -->
   <Item name="" identifier="corsairar_bw" aliases="worker hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="1500" minleveldifficulty="25">
+    <Price baseprice="1900" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
       <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="true" minavailable="0" maxavailable="1"/>
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="30">
-      <Item identifier="handheldsonar" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="abyssdivingsuit" />
+      <Item identifier="titaniumaluminiumalloy" amount ="2"/>
+      <Item identifier="sst_bw" amount ="2"/>
+      <Item identifier="amu_bw" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="handheldsonar" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount ="4"/>
+      <RequiredItem identifier="sst_bw" amount ="4"/>
+      <RequiredItem identifier="amu_bw" amount ="2"/>
       <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="abyssdivingsuit" />
+      <RequiredItem identifier="rubber" />
     </Fabricate>
     <InventoryIcon texture="SYS3.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="11,22,297,297" depth="0.55" origin="0.5,0.52" />
@@ -100,32 +101,6 @@
         <Conditional IsDead="false" />
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
-	  <!-- End of oxygen tank stuff -->
-      <!-- moving sonar to comments for now incase its needed again for modular system again
-      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
-		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
-		  <RequiredItem items="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" type="Contained" />
-		</StatusEffect>
-        <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
-        <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
-        <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
-        <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
-        <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
-        <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
-        <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
-        <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
-        <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
-        <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
-        <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
-        <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5" />
-        <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5" />
-        <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5" />
-        <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5" />
-        <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5" />
-        <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
-        <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
-      </Sonar>
-	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -156,26 +131,25 @@
   </Item>
   <!-- Mining Armor-->
   <Item name="" identifier="armored_miningsuit_bw" aliases="worker hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="1500" minleveldifficulty="25">
+    <Price baseprice="2200" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
       <Price locationtype="research" multiplier="1.25" sold="false" />
       <Price locationtype="military" multiplier="1" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" minavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="1" maxavailable="2"/>
     </Price>
     <Deconstruct time="30">
-      <Item identifier="handheldsonar" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="abyssdivingsuit" />
+      <Item identifier="titaniumaluminiumalloy" amount ="2"/>
+      <Item identifier="sst_bw" amount ="4"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount ="4"/>
+      <RequiredItem identifier="sst_bw" amount ="8"/>
       <RequiredItem identifier="handheldsonar" />
       <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="abyssdivingsuit" />
+      <RequiredItem identifier="rubber" />
     </Fabricate>
     <InventoryIcon texture="SYS2.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/MA.png" sourcerect="0,0,320,320" depth="0.55" origin="0.5,0.52" />
@@ -1162,24 +1136,28 @@
   </Item>
   <!-- Pioneer -->
   <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="1000" minleveldifficulty="25">
+    <Price baseprice="2100" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="0" maxavailable="1"/>
       <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1" sold="true" minavailable="0" maxavailable="1"/>
+      <Price locationtype="mine" multiplier="1.25" sold="true" minavailable="0" maxavailable="1"/>
     </Price>
     <Deconstruct time="30">
-      <Item identifier="abyssdivingsuit" />
+      <Item identifier="titaniumaluminiumalloy" amount ="2"/>
+      <Item identifier="sst_bw"/>
+      <Item identifier="amu_bw" amount ="2"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="handheldsonar" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount ="4"/>
+      <RequiredItem identifier="sst_bw" amount ="2"/>
+      <RequiredItem identifier="amu_bw" amount ="4"/>
       <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="abyssdivingsuit" />
+      <RequiredItem identifier="rubber" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -1260,31 +1238,6 @@
         <RequiredItem items="cell_bw" type="Contained" />
       </StatusEffect>
 	  <!-- End of Oxy Tank stuff -->
-      <!-- moving sonar to comments for now incase its needed again for modular system again
-      <Sonar range="2500.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
-		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
-		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
-		</StatusEffect>
-        <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
-        <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
-        <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
-        <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
-        <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
-        <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
-        <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
-        <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
-        <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
-        <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
-        <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
-        <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5" />
-        <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5" />
-        <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5" />
-        <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5" />
-        <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5" />
-        <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5" />
-        <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5" />
-      </Sonar>
-	  -->
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />

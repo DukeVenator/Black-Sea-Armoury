@@ -237,7 +237,7 @@
   <Item name="SPAR-408 DMR" identifier="spar-408" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
-    <Price baseprice="5000" sold="false" minleveldifficulty="40">
+    <Price baseprice="5500" sold="false" minleveldifficulty="40">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -357,7 +357,7 @@
     <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
-    <Price baseprice="2200" sold="false" minleveldifficulty="40" displaynonempty="true">
+    <Price baseprice="2000" sold="false" minleveldifficulty="40" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -396,7 +396,7 @@
     <PreferredContainer primary="spar-408" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.015" minleveldifficulty="40" />
-    <Price baseprice="1000" sold="false" minleveldifficulty="40" displaynonempty="true">
+    <Price baseprice="710" sold="false" minleveldifficulty="40" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -601,7 +601,7 @@
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" minleveldifficulty="35" />
-    <Price baseprice="740" sold="true" minleveldifficulty="35" displaynonempty="true">
+    <Price baseprice="640" sold="true" minleveldifficulty="35" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -638,7 +638,7 @@
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.015" minleveldifficulty="35" />
-    <Price baseprice="1850" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <Price baseprice="1600" sold="true" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -703,7 +703,7 @@
   <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
-    <Price baseprice="2700" sold="false">
+    <Price baseprice="3200" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -715,7 +715,7 @@
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="spar-8"/>
       <RequiredItem identifier="amu_bw"/>
-      <RequiredItem identifier="pta_bw" mincondition="0.2" usecondition="true"/>
+      <RequiredItem identifier="pta_bw" mincondition="0.5" usecondition="true"/>
     </Fabricate>
     <Deconstruct time="35">
       <Item identifier="amu_bw"/>
@@ -817,7 +817,7 @@
   <Item name="SPAR-8 DMR" identifier="spar-8" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
-    <Price baseprice="2000" sold="false" minleveldifficulty="20">
+    <Price baseprice="1900" sold="false" minleveldifficulty="20">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -903,7 +903,7 @@
     <PreferredContainer primary="spar-8s" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="4" spawnprobability="0.02" minleveldifficulty="25" />
-    <Price baseprice="550" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <Price baseprice="420" sold="false" minleveldifficulty="60" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -939,7 +939,7 @@
     <PreferredContainer primary="spar-8" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" minleveldifficulty="25" />
-    <Price baseprice="1100" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <Price baseprice="840" sold="false" minleveldifficulty="60" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1001,7 +1001,7 @@
   <!--Prototype-->
   <Item name="一式原型步枪" identifier="par001" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
-    <Price baseprice="1200" sold="false">
+    <Price baseprice="1100" sold="false">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1071,7 +1071,7 @@
   <Item name="一式原型步枪 20Rnd Mag" identifier="par001_20magazine" maxstacksize="8" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,par001ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="par001" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
-    <Price baseprice="350" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <Price baseprice="220" sold="false" minleveldifficulty="60" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1133,7 +1133,7 @@
   <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.2" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <Price baseprice="900" sold="false" minleveldifficulty="0">
+    <Price baseprice="880" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1228,7 +1228,7 @@
   <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.06" />
-    <Price baseprice="730" sold="false" minleveldifficulty="0">
+    <Price baseprice="640" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1290,7 +1290,7 @@
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="8" spawnprobability="0.02" />
-    <Price baseprice="350" sold="false" minleveldifficulty="0" displaynonempty="true">
+    <Price baseprice="110" sold="false" minleveldifficulty="0" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1326,7 +1326,7 @@
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" />
-    <Price baseprice="1750" sold="false" minleveldifficulty="0" displaynonempty="true">
+    <Price baseprice="650" sold="false" minleveldifficulty="0" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
