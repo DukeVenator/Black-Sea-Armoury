@@ -89,7 +89,7 @@
   <Item name="" identifier="HMG1_bw" category="Weapon" subcategory="Black Sea Armoury" description="" cargocontaineridentifier="metalcrate" tags="mgtype,mediumitem,weapon,gun,gunsmith" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="35" />
-    <Price baseprice="6800" sold="false" minleveldifficulty="40">
+    <Price baseprice="5200" sold="false" minleveldifficulty="40">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -98,15 +98,15 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="40">
-      <Item identifier="sst_bw" amount="2"/>
+      <Item identifier="sst_bw" amount="4"/>
       <Item identifier="amu_bw" amount="4"/>
       <Item identifier="pta_bw" amount="2"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="120">
       <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="sst_bw" amount="4" />
-      <RequiredItem identifier="amu_bw" amount="8" />
-      <RequiredItem identifier="pta_bw" amount="4"/>
+      <RequiredItem identifier="sst_bw" amount="8" />
+      <RequiredItem identifier="amu_bw" amount="6" />
+      <RequiredItem identifier="pta_bw" mincondition="2.5" usecondition="true"/>
       <RequiredItem identifier="plastic" amount="2"/>
       <RequiredItem identifier="rubber" amount="2"/>/>
     </Fabricate>
@@ -221,7 +221,7 @@
   <Item name="" identifier="HMG1_mag_bw" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,mediumitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="1">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" minleveldifficulty="35" />
-    <Price baseprice="6000" sold="false" minleveldifficulty="40" displaynonempty="true">
+    <Price baseprice="4000" sold="false" minleveldifficulty="40" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -230,15 +230,16 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" amount="2"/>
-      <Item identifier="lead" />
+      <Item identifier="sst_bw" amount="4"/>
+      <Item identifier="amu_bw" amount="2"/>
+      <Item identifier="pta_bw" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="camp6_bw" amount="4"/>
-      <RequiredItem identifier="pta_bw" amount="2"/>
+      <RequiredItem identifier="pta_bw" amount="1"/>
       <RequiredItem identifier="sst_bw" amount="8"/>
-      <RequiredItem identifier="amu_bw" amount="8"/>
+      <RequiredItem identifier="amu_bw" amount="4"/>
       <RequiredItem identifier="steel" amount="2"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
@@ -273,11 +274,16 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="80">
       <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="pta_bw" />
+      <RequiredItem identifier="physicorium" amount="2"/>
       <RequiredItem identifier="incendium" />
       <RequiredItem identifier="flamerunique" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="80">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="pta_bw" />
+      <RequiredItem identifier="physicorium" amount="2"/>
+      <RequiredItem identifier="thermalartifact" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="CG Worn" texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
@@ -355,7 +361,7 @@
   </Item>
   <!-- Experimental Chaingun Ammo Box -->
   <Item name="" identifier="chaingun_ammo_bw" aliases="Chaingun Ammo Box" scale="0.5" tags="ammobox,smallitem,mobilecontainer,gunsmith" description="" category="Weapon" subcategory="Black Sea Armoury" linkable="false" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="800" soldeverywhere="false">
+    <Price baseprice="3500" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
       <Price locationtype="research" multiplier="1" sold="false" />
@@ -363,17 +369,18 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="physicorium" mincondition="0.1" copycondition="true"/>
-      <Item identifier="titaniumaluminiumalloy" amount="2" mincondition="0.1" copycondition="true"/>
-      <Item identifier="lead" mincondition="0.1" copycondition="true" />
+      <RequiredItem identifier="physicorium" amount="2" mincondition="0.1" copycondition="true"/>
+      <RequiredItem identifier="sst_bw" amount="6" mincondition="0.1" copycondition="true"/>
+      <RequiredItem identifier="amu_bw" amount="2" mincondition="0.1" copycondition="true"/>
       <Item identifier="plastic" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="physicorium" amount="2"/>
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="camp6_bw" amount="4"/>
+      <RequiredItem identifier="sst_bw" amount="8"/>
+      <RequiredItem identifier="amu_bw" amount="4"/>
+      <RequiredItem identifier="plastic" amount="2"/>
     </Fabricate>
     <Sprite texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
     <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
@@ -404,7 +411,7 @@
     <Projectile characterusable="false" hitscan="true" spread="6" maxtargetstohit="2" removeonhit="false">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="0.5" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.1" penetration="0.35">
-        <Affliction identifier="gunshotwound" strength="6" />
+        <Affliction identifier="gunshotwound" strength="8" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="lacerations" strength="6" />
         <Affliction identifier="bleeding" strength="2" probability="0.15" />

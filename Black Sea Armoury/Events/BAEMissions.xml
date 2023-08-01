@@ -415,4 +415,41 @@
     <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true"/>
     <message header="missionheader0.abandonedoutpostassassinatebae" text="missionmessage0.abandonedoutpostassassinatebae"/>
   </AbandonedOutpostMission>
+
+  <OutpostDestroyMission
+    identifier="assaultonmechlabs"
+    tags="abandonedoutpost"
+    achievementidentifier="abandonedoutpostassassinate"
+    type="OutpostDestroy"
+    reward="22000"
+    difficulty="5"
+    commonness="30"
+    allowretry="true"
+    sonarlabel="target"
+    unhideentitysubcategories="abandonedoutpostassassinate">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-30" />
+    <Reputation identifier="coalition" amount="-30" />
+    <Characters>
+      <Character identifier="elmechlab_heavy" from="assaultonmechlabs" moduleflags="researchmodule"/>
+      <Character identifier="elmechlab_security" from="assaultonmechlabs" moduleflags="researchmodule"/>
+      <Character identifier="elmechlab_security" from="assaultonmechlabs" moduleflags="securitymodule"/>
+      <Character identifier="elmechlab_security" from="assaultonmechlabs" moduleflags="researchmodule"/>
+      <Character identifier="elmechlab_overwatch" from="assaultonmechlabs" moduleflags="researchmodule"/>
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="crewmodule"/>
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" asfaraspossible="true"/>
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="researchmodule"/>
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="securitymodule" />
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="engineeringmodule" />
+      <Character identifier="elmechlab_officer" from="assaultonmechlabs" requirekill="true" asfaraspossible="true"/>
+      <Character identifier="elmechlab_medical" from="assaultonmechlabs" requirekill="true" moduleflags="researchmodule" />
+      <Character identifier="elmechlab_officer" from="assaultonmechlabs" requirekill="true" moduleflags="researchmodule" multiplayeronly="true"/>
+      <Character identifier="elmechlab_heavy" from="assaultonmechlabs" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="elmechlab_overwatch" from="assaultonmechlabs" requirekill="true" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="engineeringmodule" multiplayeronly="true"/>
+    </Characters>
+    <message header="missionheader0.assaultonmechlabs" text="missionmessage0.assaultonmechlabs"/>
+  </OutpostDestroyMission>
 </Missions>

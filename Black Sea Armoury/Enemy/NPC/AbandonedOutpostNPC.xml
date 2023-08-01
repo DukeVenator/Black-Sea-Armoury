@@ -129,4 +129,285 @@
       </ItemSet>
     </npc>
   </npcset>
+  <!--Assault on Mech Labs by Parthenope-->
+  <npcset identifier="assaultonmechlabs">
+    <npc identifier="elmechlab_heavy" commonness="0" moduleflags="researchmodule" job="Pilot" behavior="Passive" healthmultiplier="1.5" healthmultiplierinmultiplayer="2" aimspeed="1.5" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="hammer_bw" equip="false">
+          <Item identifier="uex2" />
+        </Item>
+        <Item identifier="wrench" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw3" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_miningsuit_bw3_e" equip="true" />
+        <Item identifier="lmgmagazine_bw" amount="8" />
+        <Item identifier="lmgmagazine_bw" amount="8" />
+        <Item identifier="shield_bw" equip="true" />
+        <Item identifier="lmg_bw">
+          <Item identifier="lmgmagazine_bw" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="elmechlab_security" commonness="0" moduleflags="securitymodule,researchmodule" job="Pilot" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.8" aimspeed="1.5" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="HMG1_bp6">
+          <Item identifier="HMG1_mag_bw" />
+        </Item>
+        <Item identifier="HMG1_mag_bw" />
+        <Item identifier="HMG1_mag_bw" />
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="wrench" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="cigar" />
+        <Item identifier="spar_60magazine" amount="4" />
+        <Item identifier="spar_60magazine" amount="4" />
+        <Item identifier="spar-338" >
+          <Item identifier="spar_60magazine" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="hammer_bw" equip="false">
+          <Item identifier="uex2" />
+        </Item>
+        <Item identifier="wrench" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw3" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_miningsuit_bw3_e" equip="true" />
+        <Item identifier="lmgmagazine_bw" amount="8" />
+        <Item identifier="lmgmagazine_bw" amount="8" />
+        <Item identifier="shield_bw" equip="true" />
+        <Item identifier="lmg_bw">
+          <Item identifier="lmgmagazine_bw" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="elmechlab_overwatch" commonness="0" moduleflags="engineeringmodule,researchmodule" job="Pilot" behavior="Passive" healthmultiplier="1" healthmultiplierinmultiplayer="1.5" aimspeed="1" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="spar-408">
+          <Item identifier="spar_7magazine"/>
+        </Item>
+        <Item identifier="spar_7magazine" amount="2"/>
+        <Item identifier="spar_7magazine" amount="2"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="spar-408">
+          <Item identifier="spar_7magazine_fmj"/>
+        </Item>
+        <Item identifier="spar_7magazine_fmj" amount="2"/>
+        <Item identifier="spar_7magazine_fmj" amount="2"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="spar-408">
+          <Item identifier="spar_7magazine_jhp"/>
+        </Item>
+        <Item identifier="spar_7magazine_jhp" amount="2"/>
+        <Item identifier="spar_7magazine_jhp" amount="2"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="wrench" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="SG_ammo" amount="4" />
+        <Item identifier="esg_bw" >
+          <Item identifier="SG_ammo" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="elmechlab_patrol" commonness="0" moduleflags="crewmodule,engineeringmodule,researchmodule" job="Pilot" behavior="Patrol" healthmultiplier="1" healthmultiplierinmultiplayer="1.5" aimspeed="1" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="spar-8">
+          <Item identifier="spar_45magazine"/>
+        </Item>
+        <Item identifier="spar_45magazine" amount="4"/>
+        <Item identifier="spar_45magazine" amount="4"/>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="spar-556">
+          <Item identifier="spar_150magazine" />
+        </Item>
+        <Item identifier="spar_150magazine" amount="2"/>
+        <Item identifier="spar_150magazine" amount="2"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="grenadelauncher_bw">
+          <Item identifier="bw_shotgun_drum" />
+        </Item>
+        <Item identifier="bw_shotgun_drum" mount="4"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="wrench" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="bw_grenade_drum" amount="4" />
+        <Item identifier="grenadelauncher_bw" >
+          <Item identifier="bw_grenade_drum" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="PFbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw2" equip="true" />
+        <Item slot="OuterClothes" identifier="armored_hardsuit_bw_e" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="rum" />
+        <Item identifier="HMG1_bw">
+          <Item identifier="HMG1_mag_bw" />
+        </Item>
+        <Item identifier="HMG1_mag_bw" />
+        <Item identifier="HMG1_mag_bw" />
+      </ItemSet>
+    </npc>
+    <npc identifier="elmechlab_officer" commonness="0" moduleflags="researchmodule" job="Pilot" behavior="Passive" healthmultiplier="1.4" healthmultiplierinmultiplayer="2" aimspeed="2.4" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="explosivespearbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw4" equip="true" />
+        <Item slot="OuterClothes" identifier="corsairar_bp" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="oxygen_cell_bw" amount="2" />
+        <Item identifier="lasercannon_bp3">
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="explosivespearbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw4" equip="true" />
+        <Item slot="OuterClothes" identifier="corsairar_bp" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="chaingun_ammo_bw"/>
+        <Item identifier="chaingun_ammo_bw"/>
+        <Item identifier="chaingun_ammo_bw"/>
+        <Item identifier="minichaingun_bw"/>
+      </ItemSet>
+      <ItemSet commonness="2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="explosivespearbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw4" equip="true" />
+        <Item slot="OuterClothes" identifier="corsairar_bp" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="bwapc" amount="2" />
+        <Item identifier="ancientweaponbw">
+          <Item identifier="bwapc" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="elmechlab_medical" commonness="0" moduleflags="researchmodule" job="Pilot" behavior="Passive" healthmultiplier="1.4" healthmultiplierinmultiplayer="2" aimspeed="2.4" aimaccuracy="0.8" reportrange="3000">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="bw_axe" equip="false" />
+        <Item identifier="explosivespearbw" equip="false" />
+        <Item identifier="ballistichelmetbw" equip="true" />
+        <Item identifier="captainsuniformbw" equip="true" />
+        <Item identifier="bandolierbw4" equip="true" />
+        <Item slot="OuterClothes" identifier="apollo_bw" equip="true" >
+          <Item identifier="oxygen_cell_bw" />
+        </Item>
+        <Item identifier="SG_ammo" amount="4" />
+        <Item identifier="esg_bw2">
+          <Item identifier="SG_ammo" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
 </npcsets>
