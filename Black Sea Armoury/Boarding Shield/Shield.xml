@@ -139,7 +139,7 @@
   </Item>
   <!-- Boarding Shield -->
   <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem" impactsoundtag="impact_metal_light" health="2000" damagedbyprojectiles="true">
-    <Price baseprice="5100" soldeverywhere="false" minleveldifficulty="35">
+    <Price baseprice="1700" soldeverywhere="false" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.5" minavailable="1" />
       <Price locationtype="research" multiplier="1.5" sold="false" />
@@ -152,8 +152,8 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="True">
       <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="pta_bw" amount ="2"/>
-      <RequiredItem identifier="sst_bw" amount ="2"/>
+      <RequiredItem identifier="pta_bw" amount ="1"/>
+      <RequiredItem identifier="sst_bw" amount ="4"/>
       <RequiredItem identifier="amu_bw" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="1">

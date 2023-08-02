@@ -266,6 +266,182 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
+  <!--4inch Multi-purpose howitzer "Stink"-->
+  <Item name="" identifier="mph_bw" aliases="portable_rail_gun,prg" description="" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.65" impactsoundtag="impact_metal_heavy">
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+    </Wearable>
+    <InventoryIcon texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <Body width="254" height="96" density="40" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="160,22" spread="5" unskilledspread="25" reload="5" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1" maxchargetime="2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <sound file="Content/Items/Weapons/Railgun1.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun2.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun3.ogg" range="6000" type="OnUse" />
+      <ChargeSound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="100.0" force="6" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+      </StatusEffect>
+      <!-- Forbidden in mortal bodies -->
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 40" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.4" probability="0.2"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="RightHand">
+        <Conditional skillrequirement="true" weapons="lt 40" />
+        <Conditional recoilstabilized="gte 1" />
+        <Affliction identifier="blunttrauma" strength="0.8" probability="0.4"  LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" targetlimbs="RightHand">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="blunttrauma" strength="1.6" LimbSpecific="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional recoilstabilized="lte 0" />
+        <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="blunttrauma" strength="0.6" probability="0.2"/>
+      </StatusEffect>
+      <!-- End of Forbidden in mortal bodies -->
+      <RequiredItems identifier="mph_ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="40" />
+    </RangedWeapon>
+    <ItemContainer autofill="False" capacity="1" maxstacksize="1" canbeselected="false" hideitems="true">
+      <Containable identifiers="mph_ammo" />
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="" identifier="mph_ammo_cyanide" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
+    <PreferredContainer primary="metalcrate" />
+    <InventoryIcon texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,64,16" />
+    <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,65,16" depth="0.55" />
+    <Body width="160" height="32" density="12" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="85.0" severlimbsprobability="1">
+      <Attack structuredamage="400" itemdamage="400" severlimbsprobability="1.0" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="10" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-20">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="550.0" structuredamage="20" itemdamage="10" force="20.0" severlimbsprobability="1.5">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="cyanidepoisoning" strength="80" />
+          <Affliction identifier="durationincrease" strength="150" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="5" velocitymin="-10" velocitymax="-300" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="4" velocitymin="10" velocitymax="400" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="50" velocitymax="900" scalemin="1" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="false" anglemin="0" anglemax="360" particleamount="5" velocitymin="50" velocitymax="400" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100.0" Condition="-100.0" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="100" />
+    </Projectile>
+  </Item>
+  <Item name="" identifier="mph_ammo_stun" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
+    <PreferredContainer primary="metalcrate" />
+    <InventoryIcon texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,64,16" />
+    <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,65,16" depth="0.55" />
+    <Body width="160" height="32" density="12" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="85.0" severlimbsprobability="1">
+      <Attack structuredamage="400" itemdamage="400" severlimbsprobability="1.0" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="10" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-20">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="550.0" structuredamage="20" itemdamage="10" force="20.0" severlimbsprobability="1.5">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="stun" strength="60" />
+          <Affliction identifier="progressivestun" strength="50" />
+          <Affliction identifier="paralysis" strength="60" />
+          <Affliction identifier="durationincrease" strength="150" />
+          <Affliction identifier="incrementalstun" strength="250" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="5" velocitymin="-10" velocitymax="-300" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="4" velocitymin="10" velocitymax="400" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="50" velocitymax="900" scalemin="1" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="false" anglemin="0" anglemax="360" particleamount="5" velocitymin="50" velocitymax="400" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100.0" Condition="-100.0" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="100" />
+    </Projectile>
+  </Item>
+  <Item name="" identifier="mph_ammo_radiation" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
+    <PreferredContainer primary="metalcrate" />
+    <InventoryIcon texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,64,16" />
+    <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,65,16" depth="0.55" />
+    <Body width="160" height="32" density="12" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="85.0" severlimbsprobability="1">
+      <Attack structuredamage="400" itemdamage="400" severlimbsprobability="1.0" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="20" />
+        <Affliction identifier="stun" strength="10" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-20">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="550.0" structuredamage="20" itemdamage="10" force="20.0" severlimbsprobability="1.5">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="stun" strength="60" />
+          <Affliction identifier="radiationsickness" strength="80" />
+          <Affliction identifier="durationincrease" strength="150" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="5" velocitymin="-10" velocitymax="-300" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="4" velocitymin="10" velocitymax="400" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="50" velocitymax="900" scalemin="1" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="false" anglemin="0" anglemax="360" particleamount="5" velocitymin="50" velocitymax="400" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100.0" Condition="-100.0" />
+      <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="100" />
+    </Projectile>
+  </Item>
   <!--.408 Kraken Pentrator Rounds  DMR -->
   <Item name="SPAR-408 DMR" identifier="spar-408" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -670,7 +846,7 @@
     <PreferredContainer primary="spar-338" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.015" minleveldifficulty="35" />
-    <Price baseprice="1600" sold="true" minleveldifficulty="65" displaynonempty="true">
+    <Price baseprice="1600" sold="true" minleveldifficulty="35" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -935,11 +1111,11 @@
     <PreferredContainer primary="spar-8s" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="4" spawnprobability="0.02" minleveldifficulty="25" />
-    <Price baseprice="420" sold="false" minleveldifficulty="60" displaynonempty="true">
+    <Price baseprice="420" sold="false" minleveldifficulty="20" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="8" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="35">
@@ -975,10 +1151,10 @@
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmilitary" sold="false" multiplier="0.9" minavailable="0" maxavailable="4" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="True">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" amount ="2"/>
       <RequiredItem identifier="steel" amount ="2"/>
@@ -1010,10 +1186,10 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-        <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.6">
+        <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
           <Affliction identifier="gunshotwound" strength="16" />
           <Affliction identifier="gunshotwound" strength="8" probability="0.6" />
-          <Affliction identifier="bleeding" strength="13" />
+          <Affliction identifier="bleeding" strength="8" />
           <Affliction identifier="bleeding" strength="4" probability="0.3" />
           <Affliction identifier="stun" strength="0.2" probability="0.6"/>
         </Attack>

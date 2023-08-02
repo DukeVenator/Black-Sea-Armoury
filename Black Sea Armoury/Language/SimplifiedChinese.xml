@@ -353,43 +353,43 @@
   <!--Enemy Characters-->
   <!--Pirate-->
   <character.Pirateantisub>Pirate AntiSub</character.Pirateantisub><!--轨道炮高爆/破片/EMP-->
-  <character.Pirateboarder>Pirate Boarder</character.Pirateboarder><!--CQB/LMG/556-->
-  <character.Piratebombard>Pirate Bombard</character.Piratebombard><!--伐木炮-->
-  <character.Piratedesolator>Pirate AntiSub</character.Piratedesolator><!--轨道炮脏弹-->
-  <character.Piratedismantler>Pirate Dismantler</character.Piratedismantler><!--大锤-->
-  <character.Piratedismantlerpod>Pirate Dismantler Pod</character.Piratedismantlerpod><!--大锤+小锤跳帮-->
-  <character.Pirateenforcer>Pirate Enforcer</character.Pirateenforcer><!--Doom喷/弹鼓喷-->
-  <character.Pirateenforcerpod>Pirate Enforcer Pod</character.Pirateenforcerpod><!--单人跳帮-->
-  <character.Pirateforerunner>Pirate Forerunner</character.Pirateforerunner><!--小锤-->
-  <character.Pirategrenadier>海盗掷弹手</character.Pirategrenadier><!--弹鼓榴弹-->
-  <character.Pirategunner>海盗炮手</character.Pirategunner><!--镰刀/-338/-8/-8s-->
-  <character.Pirategunnerpod>海盗炮手 Pod</character.Pirategunnerpod><!--Pirategunner+Piratescavenger-->
+  <character.Pirateboarder>风暴</character.Pirateboarder><!--CQB/LMG/556-->
+  <character.Piratebombard>屠夫</character.Piratebombard><!--伐木炮-->
+  <character.Piratedesolator>Piratedesolator</character.Piratedesolator><!--轨道炮脏弹-->
+  <character.Piratedismantler>碾灭者</character.Piratedismantler><!--大锤-->
+  <character.Piratedismantlerpod>粉碎小组跳帮舱</character.Piratedismantlerpod><!--大锤+小锤跳帮-->
+  <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--Doom喷/弹鼓喷-->
+  <character.Pirateenforcerpod>强袭跳帮舱</character.Pirateenforcerpod><!--单人跳帮-->
+  <character.Pirateforerunner>粉碎者</character.Pirateforerunner><!--小锤-->
+  <character.Pirategrenadier>雷暴</character.Pirategrenadier><!--弹鼓榴弹-->
+  <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s-->
+  <character.Pirategunnerpod>突袭小组跳帮舱</character.Pirategunnerpod><!--Pirategunner+Piratescavenger-->
   <character.Pirateheavy>Pirate Heavy</character.Pirateheavy><!--盾+手炮/LMG-->
   <character.Pirateheavypod>Pirate Heavy Pod</character.Pirateheavypod><!--单人跳帮-->
-  <character.Piratemarksman>海盗射手</character.Piratemarksman><!--步枪-->
-  <character.Piratenuker>Pirate AntiSub</character.Piratenuker><!--小核弹-->
-  <character.Piraterifleman>海盗步枪手</character.Piraterifleman><!--突击步枪-->
+  <character.Piratemarksman>Pirate Marksman</character.Piratemarksman><!--步枪-->
+  <character.Piratenuker>熔毁</character.Piratenuker><!--小核弹-->
+  <character.Piraterifleman>征讨者</character.Piraterifleman><!--突击步枪-->
   <character.Piratescavenger>海盗清道夫</character.Piratescavenger><!--榴弹发射器/LMG+奇奇怪怪的近战武器-->
   <character.Piratescavengerpod>Pirate Scavenger Pod</character.Piratescavengerpod><!--单人跳帮-->
-  <character.Piratesharpshooter>海盗神枪手</character.Piratesharpshooter><!--精确步枪/408不同弹种随机-->
-  <character.Piratesharpshooter>海盗神枪手 Pod</character.Piratesharpshooter><!--Piratesharpshooter+Piraterifleman-->
-  <character.Pirateveteran>海盗老手</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮-->
-  <character.Pirateveteran>海盗老手 Pod</character.Pirateveteran><!--Pirateveteran+Pirateforerunner-->
+  <character.Piratesharpshooter>收割者</character.Piratesharpshooter><!--精确步枪/408不同弹种随机-->
+  <character.Piratesharpshooter>猎杀小组跳帮舱</character.Piratesharpshooter><!--Piratesharpshooter+Piraterifleman-->
+  <character.Pirateveteran>Pirateveteran</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮-->
+  <character.Pirateveteran>Pirateveteran Pod</character.Pirateveteran><!--Pirateveteran+Pirateforerunner-->
   <!--Coalition-->
-  <character.Coalitionantisub>Coalition AntiSub</character.Coalitionantisub><!--双持轨道炮-->
-  <character.Coalitionheavy>联盟重装兵</character.Coalitionheavy><!--盾+手炮/链炮-->
-  <character.Coalitiongunner>联盟炮兵</character.Coalitiongunner><!--镰刀T2-->
-  <character.Coalitionsharpshooter>联军精准射手</character.Coalitionsharpshooter><!--精确步枪-->
-  <character.Coalitionannihilator>联盟歼灭者</character.Coalitionannihilator><!--双持激光炮-->
-  <character.Coalitionveteran>联盟官员</character.Coalitionveteran><!--双持激光炮T2-->
-  <character.Coalitionrifleman>联盟步枪兵</character.Coalitionrifleman><!--Conqueror-->
+  <character.Coalitionantisub>标枪分队轰击者</character.Coalitionantisub><!--双持轨道炮-->
+  <character.Coalitionheavy>标枪分队救赎者</character.Coalitionheavy><!--盾+手炮/链炮-->
+  <character.Coalitiongunner>标枪分队仲裁者</character.Coalitiongunner><!--镰刀T2-->
+  <character.Coalitionsharpshooter>标枪分队根除者</character.Coalitionsharpshooter><!--精确步枪-->
+  <character.Coalitionannihilator>标枪分队歼灭者</character.Coalitionannihilator><!--双持激光炮-->
+  <character.Coalitionveteran>标枪分队毁灭者</character.Coalitionveteran><!--双持激光炮T2-->
+  <character.Coalitionrifleman>标枪分队先驱者</character.Coalitionrifleman><!--Conqueror-->
   <!--Separatist-->
-  <character.Separatistrifleman>分离主义步枪手</character.Separatistrifleman><!--突击步枪-->
-  <character.Separatistantisub>Separatist AntiSub</character.Separatistantisub><!--轨道炮脏弹-->
-  <character.Separatistveteran>分离主义老兵</character.Separatistveteran><!--双持轨道炮-->
-  <character.Separatistgunner>分离主义炮手</character.Separatistgunner><!--镰刀T2-->
-  <character.Separatistsharpshooter>分离主义神枪手</character.Separatistsharpshooter><!--精确步枪-->
-  <character.Separatistbombard>Separatist Bombard</character.Separatistbombard><!--伐木炮-->
+  <character.Separatistrifleman>塞壬小队序曲</character.Separatistrifleman><!--突击步枪-->
+  <character.Separatistantisub>塞壬小队小夜曲</character.Separatistantisub><!--轨道炮脏弹-->
+  <character.Separatistveteran>塞壬小队交响曲</character.Separatistveteran><!--双持轨道炮-->
+  <character.Separatistgunner>塞壬小队协奏曲</character.Separatistgunner><!--镰刀T2-->
+  <character.Separatistsharpshooter>塞壬小队奏鸣曲</character.Separatistsharpshooter><!--精确步枪-->
+  <character.Separatistbombard>塞壬小队进行曲</character.Separatistbombard><!--伐木炮-->
   <!--Mission text-->
   <missionheader.killtarget>目标被消灭</missionheader.killtarget>
   <missionmessage.killmessage>目标被消灭已经被肃清了。驾驶潜水艇离开洞穴以领取奖励。</missionmessage.killmessage>
@@ -436,8 +436,8 @@
   <missionsuccess.abandonedoutpostassassinatebae>强盗团伙的首领已被成功消灭</missionsuccess.abandonedoutpostassassinatebae>
   <missionname.assaultonmechlabs>突袭黑海机甲实验室</missionname.assaultonmechlabs>
   <missiondescription.assaultonmechlabs>XOF传讯：摧毁位于[location1]黑海机甲实验室, 不要让我失望。任务细节：大量精锐黑海机甲守卫以及少量试验型机甲，安保力量配备了重装守卫和精确射手，请谨慎安排突袭计划，不留活口，并且摧毁该站点。</missiondescription.assaultonmechlabs>
-  <missionheader0.abandonedoutposthumansbae>黑海机甲实验室已被摧毁</missionheader0.abandonedoutposthumansbae>
-  <missionmessage0.abandonedoutposthumansbae>黑海机甲实验室已被摧毁，XOF对你很满意，现在赶在精锐部队抵达前撤离，不要留下任何痕迹。</missionmessage0.abandonedoutposthumansbae>
-  <missionsuccess.abandonedoutposthumansbae>突袭成功</missionsuccess.abandonedoutposthumansbae>
-  <missionfailure.abandonedoutposthumansbae>突袭失败</missionfailure.abandonedoutposthumansbae>
+  <missionheader0.assaultonmechlabs>黑海机甲实验室已被摧毁</missionheader0.assaultonmechlabs>
+  <missionmessage0.assaultonmechlabs>黑海机甲实验室已被摧毁，XOF对你很满意，现在赶在精锐部队抵达前撤离，不要留下任何痕迹。</missionmessage0.assaultonmechlabs>
+  <missionsuccess.assaultonmechlabs>突袭成功</missionsuccess.assaultonmechlabs>
+  <missionfailure.assaultonmechlabs>突袭失败</missionfailure.assaultonmechlabs>
 </infotexts>

@@ -423,7 +423,7 @@
     type="OutpostDestroy"
     reward="22000"
     difficulty="5"
-    commonness="30"
+    commonness="3000"
     allowretry="true"
     sonarlabel="target"
     unhideentitysubcategories="abandonedoutpostassassinate">
