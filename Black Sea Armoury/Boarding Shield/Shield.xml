@@ -125,7 +125,6 @@
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0" setvalue="true">
         <Conditional recoilstabilized="eq 0" />
-        <Dropitem />
       </StatusEffect>
     </Wearable>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
@@ -184,6 +183,15 @@
         <Explosion range="100.0" force="1" showeffects="false" camerashake="1.0" />
       </StatusEffect>
     </Holdable>
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Worn" texture="%ModDir%/Boarding Shield/shield.png" sourcerect="0,0,100,450" depth="0.55" origin="1.5,0.6" canbehiddenbyotherwearables="false" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.35" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
+        <Conditional recoilstabilized="gte 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0" setvalue="true">
+        <Conditional recoilstabilized="eq 0" />
+      </StatusEffect>
+    </Wearable>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
     <LightComponent range="250.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
       <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">

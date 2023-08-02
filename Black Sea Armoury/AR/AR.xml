@@ -785,9 +785,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-105" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="4.3" stackable="false" />
       <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="338ammo"/>
       <RequiredSkill identifier="weapons" level="75" />
     </RangedWeapon>
@@ -971,9 +978,16 @@
         <SpawnItem identifiers="8sround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-2.22" disabledeltatime="true" />
-      <StatusEffect type="Always" target="This" Condition="5">
+      <StatusEffect type="OnUse" target="This" Condition="-150" />
+      <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.6" stackable="false" />
       <RequiredItems items="spar_20magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -1086,9 +1100,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" Condition="5">
+      <StatusEffect type="OnUse" target="This" Condition="-140" />
+      <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="2.3" stackable="false" />
       <RequiredItems items="8ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -1256,9 +1277,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.3" stackable="false" />
       <RequiredItems items="par001ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -1382,9 +1410,16 @@
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-0.67" disabledeltatime="true">
         <RequiredItem identifier="spar_150magazine" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" Condition="5">
+      <StatusEffect type="OnUse" target="This" Condition="-115" />
+      <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.3" stackable="false" />
       <RequiredItems items="556ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -1473,9 +1508,16 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" Condition="5">
+      <StatusEffect type="OnUse" target="This" Condition="-105" />
+      <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="2.5" stackable="false" />
       <RequiredItems items="556ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>

@@ -440,4 +440,12 @@
   <missionmessage0.assaultonmechlabs>黑海机甲实验室已被摧毁，XOF对你很满意，现在赶在精锐部队抵达前撤离，不要留下任何痕迹。</missionmessage0.assaultonmechlabs>
   <missionsuccess.assaultonmechlabs>突袭成功</missionsuccess.assaultonmechlabs>
   <missionfailure.assaultonmechlabs>突袭失败</missionfailure.assaultonmechlabs>
+  <missionname.assaultoncoalitionstation>突袭联盟秘密站点</missionname.assaultoncoalitionstation>
+  <missiondescription.assaultoncoalitionstation>摧毁位于[location1]站点，该站点配备了联盟尖盾小队，但不排除获得标枪小队的支援。</missiondescription.assaultoncoalitionstation>
+  <missionheader0.assaultoncoalitionstation>联盟秘密站点已被摧毁</missionheader0.assaultoncoalitionstation>
+  <missionmessage0.assaultoncoalitionstation>联盟秘密站点已被摧毁，据可靠消息，附近的标枪小队正前往支援。</missionmessage0.assaultoncoalitionstation>
+  <missionname.assaultonseparatismstation>突袭分离主义站点</missionname.assaultonseparatismstation>
+  <missiondescription.assaultonseparatismstation>摧毁位于[location1]站点，该站点为塞壬小队的补给站，摧毁它以切断分离主义的补给线。</missiondescription.assaultonseparatismstation>
+  <missionheader0.assaultonseparatismstation>分离主义站点已被摧毁</missionheader0.assaultonseparatismstation>
+  <missionmessage0.assaultonseparatismstation>补给线已经被切断。</missionmessage0.assaultonseparatismstation>
 </infotexts>

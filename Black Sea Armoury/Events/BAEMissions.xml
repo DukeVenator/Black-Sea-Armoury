@@ -423,7 +423,7 @@
     type="OutpostDestroy"
     reward="22000"
     difficulty="5"
-    commonness="3000"
+    commonness="30"
     allowretry="true"
     sonarlabel="target"
     unhideentitysubcategories="abandonedoutpostassassinate">
@@ -451,5 +451,83 @@
       <Character identifier="elmechlab_patrol" from="assaultonmechlabs" moduleflags="engineeringmodule" multiplayeronly="true"/>
     </Characters>
     <message header="missionheader0.assaultonmechlabs" text="missionmessage0.assaultonmechlabs"/>
+  </OutpostDestroyMission>
+
+  <OutpostDestroyMission
+    identifier="assaultoncoalitionstation"
+    tags="abandonedoutpost"
+    achievementidentifier="abandonedoutpostassassinate"
+    type="OutpostDestroy"
+    reward="14000"
+    difficulty="4"
+    commonness="30"
+    allowretry="true"
+    sonarlabel="target"
+    unhideentitysubcategories="abandonedoutpostassassinate">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="20" />
+    <Reputation identifier="coalition" amount="-40" />
+    <Characters>
+      <Character identifier="coalition_heavy" from="assaultoncoalitionstation" moduleflags="researchmodule"/>
+      <Character identifier="coalition_heavy" from="assaultoncoalitionstation" moduleflags="securitymodule"/>
+      <Character identifier="coalition_heavy" from="assaultoncoalitionstation" moduleflags="crewmodule"/>
+      <Character identifier="coalition_security" from="assaultoncoalitionstation" moduleflags="researchmodule"/>
+      <Character identifier="coalition_security" from="assaultoncoalitionstation" moduleflags="securitymodule"/>
+      <Character identifier="coalition_security" from="assaultoncoalitionstation" moduleflags="researchmodule"/>
+      <Character identifier="coalition_overwatch" from="assaultoncoalitionstation" moduleflags="researchmodule"/>
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" moduleflags="crewmodule"/>
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" asfaraspossible="true"/>
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" moduleflags="researchmodule"/>
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" moduleflags="securitymodule" />
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" moduleflags="engineeringmodule" />
+      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
+      <Character identifier="coalition_officer" from="assaultoncoalitionstation" requirekill="true" asfaraspossible="true"/>
+      <Character identifier="coalition_officer" from="assaultoncoalitionstation" requirekill="true" moduleflags="researchmodule" multiplayeronly="true"/>
+      <Character identifier="coalition_heavy" from="assaultoncoalitionstation" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="coalition_overwatch" from="assaultoncoalitionstation" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="coalition_patrol" from="assaultoncoalitionstation" moduleflags="engineeringmodule" multiplayeronly="true"/>
+    </Characters>
+    <message header="missionheader0.assaultoncoalitionstation" text="missionmessage0.assaultoncoalitionstation"/>
+  </OutpostDestroyMission>
+
+  <OutpostDestroyMission
+    identifier="assaultonseparatismstation"
+    tags="abandonedoutpost"
+    achievementidentifier="abandonedoutpostassassinate"
+    type="OutpostDestroy"
+    reward="8000"
+    difficulty="3"
+    commonness="30"
+    allowretry="true"
+    sonarlabel="target"
+    unhideentitysubcategories="abandonedoutpostassassinate">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-30" />
+    <Reputation identifier="coalition" amount="20" />
+    <Characters>
+      <Character identifier="separatism_security" from="assaultonseparatismstation" moduleflags="researchmodule"/>
+      <Character identifier="separatism_security" from="assaultonseparatismstation" moduleflags="securitymodule"/>
+      <Character identifier="separatism_security" from="assaultonseparatismstation" moduleflags="researchmodule"/>
+      <Character identifier="separatism_overwatch" from="assaultonseparatismstation" moduleflags="securitymodule"/>
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="crewmodule"/>
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" asfaraspossible="true"/>
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="securitymodule"/>
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="securitymodule" />
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="engineeringmodule" />
+      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
+      <Character identifier="separatism_officer" from="assaultonseparatismstation" requirekill="true" asfaraspossible="true"/>
+      <Character identifier="separatism_officer" from="assaultonseparatismstation" requirekill="true" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="separatism_heavy" from="assaultonseparatismstation" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="engineeringmodule" multiplayeronly="true"/>
+    </Characters>
+    <message header="missionheader0.assaultonseparatismstation" text="missionmessage0.assaultonseparatismstation"/>
   </OutpostDestroyMission>
 </Missions>
