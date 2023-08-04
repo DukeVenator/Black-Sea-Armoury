@@ -1050,7 +1050,7 @@
     <Description tag="talentdescription.miracleworker_bw">
       <Replace tag="[value]" value="5" color="gui.green" />
     </Description>
-    <Icon texture="%ModDir:NT Surgery Plus%/Images/MainAtlas.png" sheetindex="6,0" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,2" sheetelementsize="128,128"/>
     <AbilityGroupInterval interval="0.9">
       <Conditions>
         <AbilityConditionHasItem tags="mech" />
@@ -1068,7 +1068,7 @@
   </Talent>
   <Talent identifier="apolloassistsystem_bw">
     <Description tag="talentdescription.apolloassistsystem_bw"/>
-    <Icon texture="%ModDir:NT Surgery Plus%/Images/MainAtlas.png" sheetindex="6,0" sheetelementsize="128,128" />
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,2" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
       <Abilities>
         <CharacterAbilityPutItem itemidentifier="geneticmaterial_unresearched" amount="1" />

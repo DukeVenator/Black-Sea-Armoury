@@ -423,7 +423,7 @@
     type="OutpostDestroy"
     reward="22000"
     difficulty="5"
-    commonness="30"
+    commonness="25"
     allowretry="true"
     sonarlabel="target"
     unhideentitysubcategories="abandonedoutpostassassinate">
@@ -529,5 +529,38 @@
       <Character identifier="separatism_patrol" from="assaultonseparatismstation" moduleflags="engineeringmodule" multiplayeronly="true"/>
     </Characters>
     <message header="missionheader0.assaultonseparatismstation" text="missionmessage0.assaultonseparatismstation"/>
+  </OutpostDestroyMission>
+
+  <OutpostDestroyMission
+    identifier="assaultonstation"
+    tags="abandonedoutpost"
+    achievementidentifier="abandonedoutpostassassinate"
+    type="OutpostDestroy"
+    reward="5000"
+    difficulty="3"
+    commonness="30"
+    allowretry="true"
+    sonarlabel="target"
+    unhideentitysubcategories="abandonedhuman">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,512,256,256" color="214,50,48"/>
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-15" />
+    <Reputation identifier="coalition" amount="10" />
+    <Characters>
+      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="researchmodule"/>
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule"/>
+      <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule"/>
+      <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" multiplayeronly="true"/>
+      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" asfaraspossible="true" requirekill="true"/>
+      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="researchmodule" />
+      <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
+      <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+    </Characters>
+    <message header="missionheader0.assaultonstation" text="missionmessage0.assaultonstation"/>
   </OutpostDestroyMission>
 </Missions>

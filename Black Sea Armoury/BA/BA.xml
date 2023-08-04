@@ -416,9 +416,9 @@
         <RequiredItem items="oxygen_cell_bw" targetslot="0" type="Contained" />
       </StatusEffect>
       <Sonar range="3000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
-		<StatusEffect type="OnUse" targettype="Contained" Condition="-0.09" disabledeltatime="true">
-		  <RequiredItem items="oxygen_cell_bw" type="Contained" />
-		</StatusEffect>
+		  <StatusEffect type="OnUse" targettype="Contained" Condition="-0.09" disabledeltatime="true">
+		    <RequiredItem items="oxygen_cell_bw" type="Contained" />
+		  </StatusEffect>
         <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" />
         <GuiFrame relativesize="0.25,0.25" anchor="CenterLeft" relativeoffset="0.006,-0.01" />
         <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />

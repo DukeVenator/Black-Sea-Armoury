@@ -9,10 +9,8 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="1" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.3" penetration="0.05">
-        <Affliction identifier="gunshotwound" strength="12.5" />
-        <Affliction identifier="gunshotwound" strength="5.5" probability="0.15"/>
-        <Affliction identifier="bleeding" strength="6.5" />
-        <Affliction identifier="bleeding" strength="3.5"  probability="0.3"/>
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="bleeding" strength="2" />
         <Affliction identifier="stun" strength="0.05" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -93,7 +91,7 @@
     <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.15" barrelpos="14,6" spread="10" unskilledspread="18" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.15" barrelpos="14,6" spread="12.5" unskilledspread="18" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />

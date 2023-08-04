@@ -760,9 +760,9 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <StatusEffect type="OnUse" forceplaysounds="true">
-        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
+        <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" volume="1.5" selectionmode="Random"/>
+        <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+        <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
       </StatusEffect>
       <StatusEffect type="OnUse">
         <Explosion range="180.0" force="3.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="5.0" />
@@ -785,7 +785,7 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-105" />
+      <StatusEffect type="OnUse" target="This" Condition="-140" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -941,15 +941,16 @@
     <Body width="300" height="124" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
-    <RangedWeapon reload="0.2" reloadnoskill="0.55" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="3.5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" reloadnoskill="0.55" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="5.8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog2.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -978,7 +979,7 @@
         <SpawnItem identifiers="8sround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-2.22" disabledeltatime="true" />
-      <StatusEffect type="OnUse" target="This" Condition="-150" />
+      <StatusEffect type="OnUse" target="This" Condition="-260" />
       <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -1016,7 +1017,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.7">
-        <Affliction identifier="gunshotwound" strength="26" />
+        <Affliction identifier="gunshotwound" strength="23" />
         <Affliction identifier="gunshotwound" strength="8" probability="0.6" />
         <Affliction identifier="bleeding" strength="16" />
         <Affliction identifier="bleeding" strength="4" probability="0.3" />
@@ -1064,15 +1065,16 @@
     <Body width="300" height="124" density="40" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
-    <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="5" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="220,13" spread="7" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog2.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -1100,7 +1102,7 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-140" />
+      <StatusEffect type="OnUse" target="This" Condition="-210" />
       <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -1208,7 +1210,7 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
         <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
-          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="gunshotwound" strength="14" />
           <Affliction identifier="gunshotwound" strength="8" probability="0.6" />
           <Affliction identifier="bleeding" strength="8" />
           <Affliction identifier="bleeding" strength="4" probability="0.3" />
@@ -1389,15 +1391,16 @@
     <Body width="180" height="45" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
-    <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="6" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog2.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -1410,14 +1413,14 @@
       <StatusEffect type="OnUse" target="Contained" targetslot="0" Condition="-0.67" disabledeltatime="true">
         <RequiredItem identifier="spar_150magazine" type="Contained" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-115" />
+      <StatusEffect type="OnUse" target="This" Condition="-300" />
       <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.3" stackable="false" />
       <RequiredItems items="556ammo" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -1448,11 +1451,10 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.12">
-        <Affliction identifier="gunshotwound" strength="14" />
+        <Affliction identifier="gunshotwound" strength="13" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.2" />
-        <Affliction identifier="bleeding" strength="7" />
-        <Affliction identifier="bleeding" strength="4" probability="0.2" />
-        <Affliction identifier="stun" strength="0.05" probability="0.8"/>
+        <Affliction identifier="bleeding" strength="4" />
+        <Affliction identifier="stun" strength="0.05" probability="0.5"/>
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
@@ -1493,22 +1495,23 @@
     <Body width="180" height="45" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--857 rounds per minute-->
-    <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="8.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="10.5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog2.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5" selectionmode="Random"/>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog2.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-105" />
+      <StatusEffect type="OnUse" target="This" Condition="-250" />
       <StatusEffect type="Always" target="This" Condition="10">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -1615,12 +1618,11 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.1">
-        <Affliction identifier="gunshotwound" strength="11.5" />
-        <Affliction identifier="gunshotwound" strength="6" probability="0.2" />
-        <Affliction identifier="bleeding" strength="6" />
-        <Affliction identifier="bleeding" strength="4" probability="0.2" />
-        <Affliction identifier="stun" strength="0.05" probability="0.5"/>
+      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.05">
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.2" />
+        <Affliction identifier="bleeding" strength="4" />
+        <Affliction identifier="stun" strength="0.05" probability="0.1"/>
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />

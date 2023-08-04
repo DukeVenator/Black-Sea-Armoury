@@ -495,13 +495,13 @@
       <sprite name="Battle Armor 3 Left Leg" texture="%ModDir%/TS/BC.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Left Shoe" texture="%ModDir%/TS/BC.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Right Shoe" texture="%ModDir%/TS/BC.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,organdamage,bleeding,explosiondamage,radiationsickness,paralysis" damagemultiplier="0.6" />
-	  <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.6" probabilitymultiplier="0.6" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,stun" damagemultiplier="0.6" />
-      <SkillModifier skillidentifier="medical" skillvalue="10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,bleeding" damagemultiplier="0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,bleeding" damagemultiplier="0.8" />
+	    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.6" probabilitymultiplier="0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" />
     </Wearable>
-    <ItemContainer capacity="8">
-      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,captainsuniformbw" />
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,captainsuniformbw,bandolier,tacsupbag,weapon" />
     </ItemContainer>
   </Item>
   <!-- Tactical Bandolier -->
@@ -540,7 +540,7 @@
   <!-- Tactical Scanner -->
   <Item name="" identifier="tatical_scanner" scale="0.5" category="Equipment" tags="smallitem,gunsmith" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <Price baseprice="400" soldeverywhere="false">
+    <Price baseprice="800" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false" />
       <Price locationtype="city" multiplier="1.2" sold="false" />
       <Price locationtype="research" multiplier="1" minavailable="2" />
@@ -550,6 +550,7 @@
     <Deconstruct time="20">
       <Item identifier="healthscanner" />
       <Item identifier="physicorium" />
+      <Item identifier="fulgurium" />
       <Item identifier="headset" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
@@ -558,6 +559,7 @@
       <RequiredItem identifier="titaniumaluminiumalloy" />
       <RequiredItem identifier="healthscanner" />
       <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="fulgurium" />
       <RequiredItem identifier="headset" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/TS/tatical ScannerAtlas.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
@@ -570,16 +572,10 @@
       <SkillModifier skillidentifier="electrical" skillvalue="10" />
     </Wearable>
     <StatusHUD drawhudwhenequipped="true" />
-    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
-      <RequiredItems items="mobilebattery" type="Contained" />
-    </WifiComponent>
-    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="batterycell" containedstateindicatorslot="0" autoinject="true">
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0"/>
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" autoinject="true">
       <Containable items="none" />
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="batterycell,fulguriumbatterycell" />
-      </SubContainer>
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="chem,medical" />
       </SubContainer>

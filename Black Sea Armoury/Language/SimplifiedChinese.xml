@@ -352,10 +352,10 @@
   <entitydescription.armored_hardsuit_bw2_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw2_e>
   <!--Enemy Characters-->
   <!--Pirate-->
-  <character.Pirateantisub>Pirate AntiSub</character.Pirateantisub><!--轨道炮高爆/破片/EMP-->
+  <character.Pirateantisub>雷霆</character.Pirateantisub><!--轨道炮高爆/破片/EMP-->
   <character.Pirateboarder>风暴</character.Pirateboarder><!--CQB/LMG/556-->
   <character.Piratebombard>屠夫</character.Piratebombard><!--伐木炮-->
-  <character.Piratedesolator>Piratedesolator</character.Piratedesolator><!--轨道炮脏弹-->
+  <character.Piratedesolator>污钢</character.Piratedesolator><!--轨道炮脏弹-->
   <character.Piratedismantler>碾灭者</character.Piratedismantler><!--大锤-->
   <character.Piratedismantlerpod>粉碎小组跳帮舱</character.Piratedismantlerpod><!--大锤+小锤跳帮-->
   <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--Doom喷/弹鼓喷-->
@@ -364,17 +364,17 @@
   <character.Pirategrenadier>雷暴</character.Pirategrenadier><!--弹鼓榴弹-->
   <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s-->
   <character.Pirategunnerpod>突袭小组跳帮舱</character.Pirategunnerpod><!--Pirategunner+Piratescavenger-->
-  <character.Pirateheavy>Pirate Heavy</character.Pirateheavy><!--盾+手炮/LMG-->
-  <character.Pirateheavypod>Pirate Heavy Pod</character.Pirateheavypod><!--单人跳帮-->
-  <character.Piratemarksman>Pirate Marksman</character.Piratemarksman><!--步枪-->
+  <character.Pirateheavy>钢炉</character.Pirateheavy><!--盾+手炮/LMG-->
+  <character.Pirateheavypod>液压机小组跳帮舱</character.Pirateheavypod><!--单人跳帮-->
+  <character.Piratemarksman>告密者</character.Piratemarksman><!--步枪-->
   <character.Piratenuker>熔毁</character.Piratenuker><!--小核弹-->
   <character.Piraterifleman>征讨者</character.Piraterifleman><!--突击步枪-->
-  <character.Piratescavenger>海盗清道夫</character.Piratescavenger><!--榴弹发射器/LMG+奇奇怪怪的近战武器-->
-  <character.Piratescavengerpod>Pirate Scavenger Pod</character.Piratescavengerpod><!--单人跳帮-->
+  <character.Piratescavenger>清道夫</character.Piratescavenger><!--榴弹发射器/LMG+奇奇怪怪的近战武器-->
+  <character.Piratescavengerpod>清道夫跳帮舱</character.Piratescavengerpod><!--单人跳帮-->
   <character.Piratesharpshooter>收割者</character.Piratesharpshooter><!--精确步枪/408不同弹种随机-->
   <character.Piratesharpshooter>猎杀小组跳帮舱</character.Piratesharpshooter><!--Piratesharpshooter+Piraterifleman-->
-  <character.Pirateveteran>Pirateveteran</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮-->
-  <character.Pirateveteran>Pirateveteran Pod</character.Pirateveteran><!--Pirateveteran+Pirateforerunner-->
+  <character.Pirateveteran>红湮</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮-->
+  <character.Pirateveteran>死光小组跳帮舱</character.Pirateveteran><!--Pirateveteran+Pirateforerunner-->
   <!--Coalition-->
   <character.Coalitionantisub>标枪分队轰击者</character.Coalitionantisub><!--双持轨道炮-->
   <character.Coalitionheavy>标枪分队救赎者</character.Coalitionheavy><!--盾+手炮/链炮-->
@@ -448,4 +448,8 @@
   <missiondescription.assaultonseparatismstation>摧毁位于[location1]站点，该站点为塞壬小队的补给站，摧毁它以切断分离主义的补给线。</missiondescription.assaultonseparatismstation>
   <missionheader0.assaultonseparatismstation>分离主义站点已被摧毁</missionheader0.assaultonseparatismstation>
   <missionmessage0.assaultonseparatismstation>补给线已经被切断。</missionmessage0.assaultonseparatismstation>
+  <missionname.assaultonstation>突袭海盗站点</missionname.assaultonstation>
+  <missiondescription.assaultonstation>摧毁位于[location1]站点，该站点已经被海盗占领，请肃清该站点。</missiondescription.assaultonstation>
+  <missionheader0.assaultonstation>站点已被摧毁</missionheader0.assaultonstation>
+  <missionmessage0.assaultonstation>我们的船只以后能够继续安全地通过该通道。</missionmessage0.assaultonstation>
 </infotexts>
