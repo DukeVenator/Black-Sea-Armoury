@@ -480,8 +480,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" volume="2"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" frequencymultiplier="0.9" volume="2"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" frequencymultiplier="1.1" volume="2"/>
       <StatusEffect type="OnUse">
         <Explosion range="100.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
@@ -758,8 +756,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" volume="1.8" selectionmode="Random"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" frequencymultiplier="0.9" volume="1.8"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" frequencymultiplier="1.1" volume="1.8"/>
       <StatusEffect type="OnUse">
         <Explosion range="180.0" force="3.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="5.0" />
       </StatusEffect>
@@ -942,8 +938,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-8S-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -1063,8 +1057,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -1386,8 +1378,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -1487,8 +1477,6 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" volume="1.5"/>
-      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" frequencymultiplier="1.1" volume="1.5"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
