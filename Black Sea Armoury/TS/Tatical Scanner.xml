@@ -366,7 +366,7 @@
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <SkillModifier skillidentifier="medical" skillvalue="10" />
-      <damagemodifier afflictionidentifiers="burn,blunttrauma,lacerations,gunshotwound,bitewounds,stun" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="burn,blunttrauma,lacerations,gunshotwound,bitewounds,stun" armorsector="0.0,360.0" damagemultiplier="0.25" />
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" />
       <sprite name="Armored helmet Wearable" texture="%ModDir%/TS/BC3.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidewearablesoftype="hair" sourcerect="208,214,92,81" origin="0.6,0.6" />
     </Wearable>
@@ -495,7 +495,7 @@
       <sprite name="Battle Armor 3 Left Leg" texture="%ModDir%/TS/BC.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Left Shoe" texture="%ModDir%/TS/BC.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Battle Armor 3 Right Shoe" texture="%ModDir%/TS/BC.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds,bleeding" damagemultiplier="0.6" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,bleeding" damagemultiplier="0.8" />
 	    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.6" probabilitymultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" />
