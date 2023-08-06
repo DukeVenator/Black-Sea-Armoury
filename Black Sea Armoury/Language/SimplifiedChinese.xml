@@ -365,7 +365,7 @@
   <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s-->
   <character.Pirategunnerpod>突袭小组跳帮舱</character.Pirategunnerpod><!--Pirategunner+Piratescavenger-->
   <character.Pirateheavy>钢炉</character.Pirateheavy><!--盾+手炮/LMG-->
-  <character.Pirateheavypod>液压机小组跳帮舱</character.Pirateheavypod><!--单人跳帮-->
+  <character.Pirateheavypod>液压机跳帮舱</character.Pirateheavypod><!--单人跳帮-->
   <character.Piratemarksman>告密者</character.Piratemarksman><!--步枪-->
   <character.Piratenuker>熔毁</character.Piratenuker><!--小核弹-->
   <character.Piraterifleman>征讨者</character.Piraterifleman><!--突击步枪-->
