@@ -443,7 +443,7 @@
     </Projectile>
   </Item>
   <!--.408 Kraken Pentrator Rounds  DMR -->
-  <Item name="SPAR-408 DMR" identifier="spar-408" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.2" impactsoundtag="impact_metal_heavy">
+  <Item name="SPAR-408 DMR" identifier="spar-408" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="40" />
     <Price baseprice="3800" sold="false" minleveldifficulty="40">
@@ -485,7 +485,7 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
         <Conditional recoilstabilized="lte 0" />
-        <Affliction identifier="blunttrauma" strength="15" LimbSpecific="true" probability="0.1" LimbSpecific="true"/>
+        <Affliction identifier="blunttrauma" strength="15" LimbSpecific="true" probability="0.1"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
         <Conditional skillrequirement="true" weapons="lt 75" />
@@ -514,12 +514,12 @@
       <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="408ammo"/>
       <RequiredSkill identifier="weapons" level="75" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
       <Containable items="408ammo" hide="true"/>
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="flashlight" hide="false" itempos="30,1" setactive="true" />
+        <Containable items="flashlight" hide="true" itempos="30,1" setactive="true" />
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
@@ -921,7 +921,7 @@
     </Projectile>
   </Item>
   <!--8×74  SDMR-->
-  <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
     <Price baseprice="2600" sold="false">
@@ -945,7 +945,7 @@
     <InventoryIcon texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,0,326,69" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,0,326,69" depth="0.55" origin="0.5,0.5" />
     <Body width="326" height="69" density="50" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="80,8" handle1="-80,-25" handle2="-30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="90,8" handle1="-90,-25" handle2="-78,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.2" reloadnoskill="0.55" reloadskillrequirement="50" holdtrigger="true" barrelpos="150,13" spread="5.8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -996,12 +996,12 @@
       <RequiredItems items="spar_20magazine" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
       <Containable items="spar_20magazine" itempos="-22,-10" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+        <Containable items="flashlight" hide="true" itempos="24,4" setactive="true"/>
       </SubContainer>
     </ItemContainer>
     <ItemContainer capacity="1" maxstacksize="1" spawnwithid="8sround_bw">
@@ -1041,7 +1041,7 @@
     </Projectile>
   </Item>
   <!--8×74  DMR-->
-  <Item name="SPAR-8 DMR" identifier="spar-8" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="SPAR-8 DMR" identifier="spar-8" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
     <Price baseprice="1500" sold="false" minleveldifficulty="20">
@@ -1067,7 +1067,7 @@
     <InventoryIcon texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,70,280,69" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,70,280,69" depth="0.55" origin="0.5,0.5" />
     <Body width="280" height="69" density="50" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="85,8" handle1="-72,-25" handle2="-32,10" holdangle="-50" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="77,8" handle1="-74,-25" handle2="-34,10" holdangle="-50" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="128,0" spread="7" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -1117,12 +1117,12 @@
       <RequiredItems items="8ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
       <Containable items="8ammo" itempos="-22,-4" />
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+        <Containable items="flashlight" hide="true" itempos="24,4" setactive="true"/>
       </SubContainer>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
@@ -1370,7 +1370,7 @@
     </Projectile>
   </Item>
   <!--5.56×45 AR A-->
-  <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.2" impactsoundtag="impact_metal_light">
+  <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.2" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="880" sold="false" minleveldifficulty="0">
@@ -1466,8 +1466,34 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <Item name="5.56×45 mm AP" identifier="556aapround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.4">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.2" />
+        <Affliction identifier="bleeding" strength="4" />
+        <Affliction identifier="stun" strength="0.05" probability="0.5"/>
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
   <!--5.56×45 AR C-->
-  <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.2" impactsoundtag="impact_metal_light">
+  <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.06" />
     <Price baseprice="640" sold="false" minleveldifficulty="0">
@@ -1530,7 +1556,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="5.56 mm 30Rnd Mag" identifier="spar_30magazine" maxstacksize="8" scale="0.2" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,556ammo" impactsoundtag="impact_metal_light">
+  <Item name="5.56 mm 30Rnd Mag" identifier="spar_30magazine" maxstacksize="8" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,556ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-556" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
@@ -1566,7 +1592,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="5.56 mm 150Rnd Mag" identifier="spar_150magazine" maxstacksize="2" scale="0.2" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,556ammo" impactsoundtag="impact_metal_light">
+  <Item name="5.56 mm 150Rnd Mag" identifier="spar_150magazine" maxstacksize="2" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,556ammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="spar-556" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="spar-556a" minamount="1" maxamount="1" spawnprobability="1"/>
     <PreferredContainer primary="armcab" secondary="secarmcab"/>
@@ -1614,6 +1640,31 @@
         <Affliction identifier="gunshotwound" strength="11" />
         <Affliction identifier="gunshotwound" strength="4" probability="0.2" />
         <Affliction identifier="bleeding" strength="4" />
+        <Affliction identifier="stun" strength="0.05" probability="0.1"/>
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="5.56×45 mm AP" identifier="556apround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.4">
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="bleeding" strength="1" />
         <Affliction identifier="stun" strength="0.05" probability="0.1"/>
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">

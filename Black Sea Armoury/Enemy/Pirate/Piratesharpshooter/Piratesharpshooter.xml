@@ -51,6 +51,7 @@
     <Item Identifier="rum" />
     <Item Identifier="SG_ammo" />
     <Item Identifier="alientrinket1" amount="2"/>
+    <Item Identifier="scrap" amount="6"/>
     <Item slot="RightHand+LeftHand" Identifier="esg_bw_e" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
@@ -61,6 +62,7 @@
     <Item Identifier="rum" />
     <Item Identifier="spar_7magazine" />
     <Item Identifier="alientrinket1" amount="2"/>
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-408ap-hide"/>
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
@@ -71,6 +73,7 @@
     <Item Identifier="rum" />
     <Item Identifier="spar_7magazine_fmj" />
     <Item Identifier="alientrinket1" amount="2"/>
+    <Item Identifier="scrap" amount="5"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-408fmj-hide"/>
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
@@ -81,6 +84,7 @@
     <Item Identifier="rum" />
     <Item Identifier="spar_7magazine_jhp" />
     <Item Identifier="alientrinket1" amount="2"/>
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-408jhp-hide"/>
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />

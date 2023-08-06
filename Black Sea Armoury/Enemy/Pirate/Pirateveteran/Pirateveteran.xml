@@ -51,6 +51,7 @@
     <Item Identifier="rum" />
     <Item Identifier="cigar" />
     <Item Identifier="oxygen_cell_bw" amount="1"/>
+    <Item Identifier="scrap" amount="8"/>
     <Item slot="RightHand" Identifier="lasercannon_bp3_e" />
     <Item slot="LeftHand" Identifier="lasercannon_bp3_e" />
     <Item slot="Bag" Identifier="bandolierbw3" />
@@ -62,6 +63,7 @@
   <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="rum" />
     <Item Identifier="cigar" />
+    <Item Identifier="scrap" amount="4"/>
     <Item Identifier="oxygen_cell_bw" amount="2"/>
     <Item slot="RightHand" Identifier="lasercannon_bw_e" />
     <Item slot="LeftHand" Identifier="lasercannon_bw_e" />
@@ -75,6 +77,7 @@
     <Item Identifier="handcannonround" amount="6"/>
     <Item Identifier="rum" />
     <Item Identifier="oxygen_cell_bw" amount="1"/>
+    <Item Identifier="scrap" amount="6"/>
     <Item slot="RightHand" Identifier="lasercannon_bp3_e" />
     <Item slot="LeftHand" Identifier="handcannonbw_e" />
     <Item slot="Bag" Identifier="bandolierbw3" />
@@ -87,6 +90,7 @@
     <Item Identifier="cigar" />
     <Item Identifier="rum" />
     <Item Identifier="oxygen_cell_bw" amount="2"/>
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand" Identifier="prg_bw_e" />
     <Item slot="LeftHand" Identifier="lasercannon_bw_e" />
     <Item slot="Bag" Identifier="bandolierbw3" />

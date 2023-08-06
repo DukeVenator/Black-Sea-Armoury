@@ -56,6 +56,7 @@
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="lmgmagazine_bw" />
     <Item Identifier="assaultriflemagazine" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="assaultrifle_bae" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -70,5 +71,6 @@
     <Item slot="Head" Identifier="ballistichelmet1" />
     <Item Identifier="smgunique" />
     <Item Identifier="assaultriflemagazine" amount="2"/>
+    <Item Identifier="scrap" amount="1"/>
   </inventory>
 </Character>

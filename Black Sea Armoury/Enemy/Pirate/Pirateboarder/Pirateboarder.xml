@@ -53,7 +53,7 @@
   </ai>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="6">
     <Item Identifier="smgmagazine_bw" />
-    <Item Identifier="rum" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand" Identifier="smg_bw_e" />
     <Item slot="LeftHand" Identifier="smg_bw_e" />
     <Item slot="Card" Identifier="idcard" />
@@ -64,6 +64,7 @@
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="smgmagazine_bw" />
     <Item Identifier="lmgmagazine_bw_e" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand" Identifier="lmg_bw_e" />
     <Item slot="LeftHand" Identifier="smg_bw_e" />
     <Item slot="Card" Identifier="idcard" />
@@ -73,6 +74,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="spar_150magazine" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-556a-hide" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -81,6 +83,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="spar_150magazine" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="spar-556-hide" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -90,6 +93,7 @@
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="lmgmagazine_bw_e" />
     <Item Identifier="mudraptorshell" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand" Identifier="lmg_bw_e" />
     <Item slot="LeftHand" Identifier="smg_bw_e" />
     <Item slot="Card" Identifier="idcard" />

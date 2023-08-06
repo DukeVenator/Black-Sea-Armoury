@@ -51,7 +51,7 @@
     <Item Identifier="uex2" />
     <Item Identifier="fulguriumbatterycell" />
     <Item Identifier="hyperzine" />
-    <Item Identifier="rum" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="hammer_bw_e" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="armored_miningsuit_bw_e" />

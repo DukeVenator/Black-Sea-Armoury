@@ -49,6 +49,7 @@
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="riflebullet" amount="6"/>
     <Item Identifier="cigar" />
+    <Item Identifier="scrap" amount="2"/>
     <Item Identifier="fulguriumbatterycell" amount="2"/>
     <Item slot="RightHand+LeftHand" Identifier="rifle_bae" />
     <Item slot="Card" Identifier="idcard" />
@@ -60,6 +61,7 @@
     <Item Identifier="riflebullet" amount="6"/>
     <Item Identifier="rum" />
     <Item Identifier="hyperzine" />
+    <Item Identifier="scrap" amount="2"/>
     <Item slot="RightHand+LeftHand" Identifier="rifle_bae" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />

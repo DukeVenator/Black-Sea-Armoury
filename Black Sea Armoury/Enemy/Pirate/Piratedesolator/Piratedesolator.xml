@@ -50,7 +50,7 @@
   </ai>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="5">
     <Item Identifier="fulguriumbatterycell" />
-    <Item Identifier="rum" amount="1"/>
+    <Item Identifier="scrap" amount="2"/>
     <Item Identifier="cigar" />
     <Item slot="RightHand" Identifier="rg_bw_n_dirty" />
     <Item slot="Card" Identifier="idcard" />

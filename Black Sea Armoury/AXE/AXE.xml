@@ -203,7 +203,7 @@
     <InventoryIcon texture="%ModDir%/AXE/hammeruex.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/AXE/hammeruex.png" depth="0.8" sourcerect="0,0,64,64" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+    <ItemContainer hideitems="true" capacity="0" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true"></StatusEffect>
       <StatusEffect type="OnUse" target="Usetarget" disabledeltatime="true">
         <Affliction identifier="blunttrauma" strength="40" penetration="0.5" />

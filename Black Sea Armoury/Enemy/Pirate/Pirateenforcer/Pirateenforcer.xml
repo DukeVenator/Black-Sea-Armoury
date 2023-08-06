@@ -54,6 +54,7 @@
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
     <Item Identifier="bw_shotgun_drum" />
     <Item Identifier="mudraptorshell" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
@@ -62,7 +63,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="bw_shotgun_drum" />
-    <Item Identifier="rum" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_sge" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -71,7 +72,7 @@
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="4">
     <Item Identifier="shotgunshellbw" amount="10"/>
-    <Item Identifier="rum" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="shotgununiquebw_e" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -86,6 +87,7 @@
     <Item slot="Head" Identifier="ballistichelmetbw" />
     <Item Identifier="shotgunshellbw" amount="10"/>
     <Item Identifier="shotgununique" />
+    <Item Identifier="scrap" amount="1"/>
   </inventory>
 
 </Character>

@@ -49,7 +49,7 @@
   </ai>
 <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="bw_grenade_drum" />
-    <Item Identifier="rum" amount="1" />
+    <Item Identifier="scrap" amount="2"/>
     <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_ge" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
@@ -60,7 +60,7 @@
   <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="bw_shotgun_drum" />
     <Item Identifier="mudraptorshell" />
-    <Item Identifier="rum" amount="1" />
+    <Item Identifier="scrap" amount="1"/>
     <Item slot="RightHand+LeftHand" Identifier="grenadelauncher_bw_ge" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />

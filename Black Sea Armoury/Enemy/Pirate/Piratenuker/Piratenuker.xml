@@ -52,6 +52,7 @@
     <Item Identifier="rum" />
     <Item Identifier="dirtybomb" amount="4"/>
     <Item Identifier="40mmnuke" amount="4"/>
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand" Identifier="rg_bw_n_nuke" />
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="corsairar_bw_e" />

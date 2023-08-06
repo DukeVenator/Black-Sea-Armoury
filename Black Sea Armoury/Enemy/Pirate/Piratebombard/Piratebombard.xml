@@ -50,7 +50,7 @@
   </ai>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="cannonshell_bw" />
-    <Item Identifier="scrap" />
+    <Item Identifier="scrap" amount="2"/>
     <Item Identifier="rum" />
     <Item slot="RightHand+LeftHand" Identifier="battlecannon_bw_e" />
     <Item slot="Card" Identifier="idcard" />

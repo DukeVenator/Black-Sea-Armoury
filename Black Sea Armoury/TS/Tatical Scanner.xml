@@ -760,7 +760,7 @@
   </Item>
   <!-- 14.5mm Flare Round Clip -->
   <Item name="" identifier="revolverammobw3" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,revolverammobw3,gunsmith" impactsoundtag="impact_metal_light" maxstacksize="10">
-    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="2">
+    <Fabricate suitablefabricators="fabricator" requiredtime="1" amount="4">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="flashpowder" />
       <RequiredItem identifier="steel" />

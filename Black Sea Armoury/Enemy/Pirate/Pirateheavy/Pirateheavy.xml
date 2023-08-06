@@ -54,6 +54,7 @@
   <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
     <Item Identifier="cigar" />
     <Item Identifier="lmgmagazine_bw" />
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand" Identifier="lmg_bw_e" />
     <Item slot="LeftHand" Identifier="shield_bw" />
     <Item slot="Bag" Identifier="bandolierbw3" />
@@ -65,6 +66,7 @@
   <inventory arrowslot="9" Slots="Card, Head, Bag, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
     <Item Identifier="handcannonround" amount="6"/>
     <Item Identifier="oxygen_cell_bw" />
+    <Item Identifier="scrap" amount="4"/>
     <Item slot="RightHand" Identifier="handcannonbw_e" />
     <Item slot="LeftHand" Identifier="shield_bw" />
     <Item slot="Bag" Identifier="bandolierbw3" />
