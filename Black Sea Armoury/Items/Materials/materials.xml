@@ -21,9 +21,9 @@
       </Price>
       <Fabricate suitablefabricators="fabricator" requiredtime="10">
         <RequiredSkill identifier="mechanical" level="50" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
         <RequiredItem identifier="steel" amount="2" />
-        <RequiredItem identifier="physicorium" mincondition="0.2" usecondition="true"/>
+        <RequiredItem identifier="physicorium" mincondition="0.5" usecondition="true"/>
       </Fabricate>
       <Deconstruct time="10">
         <Item identifier="titaniumaluminiumalloy"  amount="4" copycondition="true" />

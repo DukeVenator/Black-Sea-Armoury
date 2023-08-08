@@ -117,7 +117,7 @@
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="270,26" spread="6" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.25">
+    <RangedWeapon barrelpos="270,26" spread="10" unskilledspread="30" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.25">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
@@ -143,7 +143,6 @@
         <Conditional recoilstabilized="lte 0" />
         <Affliction identifier="stun" strength="0.75" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-400" />
       <StatusEffect type="Always" target="This" Condition="5">
         <Conditional condition="gt 0" />
       </StatusEffect>
@@ -190,11 +189,9 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="3" severlimbsprobability="0.15" itemdamage="10" targetforce="0.5" penetration="0.72">
-        <Affliction identifier="gunshotwound" strength="24.5" />
-        <Affliction identifier="gunshotwound" strength="14" probability="0.4" />
-        <Affliction identifier="lacerations" strength="15"/>
-        <Affliction identifier="lacerations" strength="8" probability="0.2" />
+      <Attack structuredamage="3" severlimbsprobability="0.15" itemdamage="10" targetforce="0.5" penetration="0.5">
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="lacerations" strength="10"/>
         <Affliction identifier="bleeding" strength="22"/>
         <Affliction identifier="bleeding" strength="30" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" />
@@ -280,6 +277,11 @@
       <RequiredItem identifier="sst_bw" amount="4"/>
       <RequiredItem identifier="amu_bw" amount="2"/>
       <RequiredItem identifier="steel" amount="1"/>
+      
+      <RequiredItem identifier="camp6_bw" amount="5"/>
+      <RequiredItem identifier="steel" amount="5"/>
+      <RequiredItem identifier="amu_bw" amount="5"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="5"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
