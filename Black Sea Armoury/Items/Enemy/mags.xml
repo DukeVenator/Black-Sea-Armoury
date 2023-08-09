@@ -239,14 +239,11 @@
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="40" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.25">
+      <Attack structuredamage="40" severlimbsprobability="0.10" itemdamage="10" targetforce="0.5" penetration="0.5">
         <Affliction identifier="gunshotwound" strength="20" />
-        <Affliction identifier="gunshotwound" strength="8" probability="0.4" />
-        <Affliction identifier="lacerations" strength="15"/>
-        <Affliction identifier="lacerations" strength="4.5" probability="0.2" />
+        <Affliction identifier="lacerations" strength="10"/>
         <Affliction identifier="bleeding" strength="10"/>
-        <Affliction identifier="bleeding" strength="10" probability="0.15" />
-        <Affliction identifier="stun" strength="0.1" />
+        <Affliction identifier="stun" strength="0.05" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
