@@ -319,11 +319,17 @@
   <entityname.pio_bw2_e>Pirate Pioneer</entityname.pio_bw2_e>
   <entityname.armored_hardsuit_bw_e>X01</entityname.armored_hardsuit_bw_e>
   <entityname.armored_hardsuit_bw2_e>X01 Veteran</entityname.armored_hardsuit_bw2_e>
+  <entityname.armored_miningsuit_bw3_e>modified Hercules</entityname.armored_miningsuit_bw3_e>
+  <entityname.knight_hardsuit_bw_e>Corrupted Knight</entityname.knight_hardsuit_bw_e>
+  <entityname.clownexosuitbw_e>Funkoverlord 4000</entityname.clownexosuitbw_e>
   <entitydescription.corsairar_bw_e>This suit is locked by biometric authentication.</entitydescription.corsairar_bw_e>
   <entitydescription.armored_miningsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_miningsuit_bw_e>
   <entitydescription.pio_bw2_e>This suit is locked by biometric authentication.</entitydescription.pio_bw2_e>
   <entitydescription.armored_hardsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw_e>
   <entitydescription.armored_hardsuit_bw2_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw2_e>
+  <entitydescription.armored_miningsuit_bw3_e>This suit is locked by biometric authentication.</entitydescription.armored_miningsuit_bw3_e>
+  <entitydescription.knight_hardsuit_bw_e>Why do we resist embracing the Husk?</entitydescription.knight_hardsuit_bw_e>
+  <entitydescription.clownexosuitbw_e>Why so serious?</entitydescription.clownexosuitbw_e>
   <!--Enemy Characters-->
   <character.Pirateantisub>Pirate AntiSub</character.Pirateantisub>
   <character.Pirateboarder>Pirate Boarder</character.Pirateboarder>
@@ -352,6 +358,10 @@
   <character.Separatistgunner>Separatist Gunner</character.Separatistgunner>
   <character.Separatistsharpshooter>Separatist Sharpshooter</character.Separatistsharpshooter>
   <character.Separatistbombard>Separatist Bombard</character.Separatistbombard>
+  <character.Corruptedknight>Corrupted Knight</character.Corruptedknight>
+  <character.Cultistdevoter>Cultist Devoter</character.Cultistdevoter>
+  <character.Cultistzealot>Cultist Zealot</character.Cultistzealot>
+  <character.Technoprankster>Techno Prankster</character.Technoprankster>
   <!--Mission text-->
   <missionheader.killtarget>Targets terminated</missionheader.killtarget>
   <missionmessage.killmessage>The Targets have been neutralized. Navigate the submarine out of the cavern to claim the reward.</missionmessage.killmessage>
@@ -359,6 +369,14 @@
   <missiondescription.killnuker>A group of elite separatists have defected to pirates with nuclear ordnance. While no casualties has been reported just yet, it is urgent to take out this threat. Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.killnuker>
   <missionsonarlabel.killnuker>Pirates</missionsonarlabel.killnuker>
   <missionsuccess.killnuker>You have reported that the stolen nuclear weapons have been properly disposed.</missionsuccess.killnuker>
+  <missionname.killbseclown>Techno Prankster</missionname.killbseclown>
+  <missiondescription.killbseclown>A rogue technology enthusiast from the Children of the Honkmother has harnessed Iron League technology purely for mischief. While their pranks are mostly harmless, this particular jest is causing serious damages on our supply lines. Find and kill him.</missiondescription.killbseclown>
+  <missionsonarlabel.killbseclown>Techno Prankster</missionsonarlabel.killbseclown>
+  <missionsuccess.killbseclown>He won't be bothering us anymore.</missionsuccess.killbseclown>
+  <missionname.clearruinskhusk>Corrupted Knight</missionname.clearruinskhusk>
+  <missiondescription.clearruinskhusk>A brainwashed genetic augmented soldier and some cultists has escaped with a cutting-edge secret suit,and fled into nearby alien ruin. Pursue him and eliminate the threat. It seems they have also been developing malicious equipment in secret collaboration with cultists.</missiondescription.clearruinskhusk>
+  <missionsuccess.clearruinskhusk>The Target have been neutralized.</missionsuccess.clearruinskhusk>
+  <missionsonarlabel.clearruinskhusk>Cultists</missionsonarlabel.clearruinskhusk>
   <missionname.killpirates>Mechanized Pirates</missionname.killpirates>
   <missiondescription.killpirates>According to our sources, there is a group of Pirates Mechs blocking the route from [location1] to [location2]. Get rid of those Mechs so that our vessels can continue traveling safely through the passage.Their mech suits are designed to withstand against most of submarines armaments ,so it is highly recommended to take on them with man-portable weaponry.</missiondescription.killpirates>
   <missionsonarlabel.killpirates>Pirates Raiders</missionsonarlabel.killpirates>

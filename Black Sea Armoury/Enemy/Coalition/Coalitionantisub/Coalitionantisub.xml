@@ -54,7 +54,7 @@
     <Item slot="RightHand" Identifier="prg_bw_e" />
     <Item slot="LeftHand" Identifier="prg_bw_e" />
     <Item slot="Card" Identifier="idcard" />
-    <Item slot="OuterClothes" Identifier="armored_hardsuit_bw_e" />
+    <Item slot="OuterClothes" Identifier="armored_miningsuit_bw3_e" />
     <Item slot="InnerClothes" Identifier="captainsuniformbw" />
     <Item slot="Head" Identifier="ballistichelmet1" />
   </inventory>

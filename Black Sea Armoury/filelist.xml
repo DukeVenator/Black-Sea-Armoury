@@ -59,6 +59,11 @@
   <Character file="%ModDir%/Enemy/Separatist/Separatistantisub/Separatistantisub.xml" />
   <Character file="%ModDir%/Enemy/Separatist/Separatistbombard/Separatistbombard.xml" />
   <Character file="%ModDir%/Enemy/Separatist/Separatistsharpshooter/Separatistsharpshooter.xml" />
+  <Character file="%ModDir%/Enemy/Separatist/Separatisthatchetman/Separatisthatchetman.xml" />
+  <Character file="%ModDir%/Enemy/Cultist/Corruptedknight/Corruptedknight.xml" />
+  <Character file="%ModDir%/Enemy/Cultist/Cultistzealot/Cultistzealot.xml" />
+  <Character file="%ModDir%/Enemy/Cultist/Cultistdevoter/Cultistdevoter.xml" />
+  <Character file="%ModDir%/Enemy/Clown/Technoprankster/Technoprankster.xml" />
   <NPCSets file="%ModDir%/Enemy/NPC/AbandonedOutpostNPC.xml" />
   <NPCSets file="%ModDir%/Enemy/NPC/MLCNPC.xml" />
   <Missions file="%ModDir%/Events/BAEMissions.xml" />
