@@ -51,8 +51,8 @@
     reward="9000"
     maxsonarmarkerdistance="20000">
     <monster character="Technoprankster" min="1" max="1"/>
-    <Reputation identifier="separatists" amount="10" />
-    <Reputation identifier="coalition" amount="10" />
+    <Reputation identifier="location" amount="10" />
+    <Reputation identifier="huskcult" amount="10" />
     <Reputation identifier="clowns" amount="-10" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,0,256,256" color="214,50,48"/>
     <LocationType from="AnyOutpost" to="None"/>
