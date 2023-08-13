@@ -14,7 +14,7 @@
     <monster character="Piratedesolator" min="1" max="1"/>
     <Reputation identifier="separatists" amount="3" />
     <Reputation identifier="coalition" amount="3" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
     <message header="missionheader.killtarget" text="missionmessage.killnuker"/>
@@ -35,10 +35,29 @@
     <monster character="Piratemarksman" min="1" max="1"/>
     <Reputation identifier="separatists" amount="5" />
     <Reputation identifier="coalition" amount="5" />
-    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+    <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,768,256,256" color="214,50,48"/>
     <LocationType from="Military" to="None"/>
     <LocationType from="Military" to="AnyOutpost"/>
     <message header="missionheader.killtarget" text="missionmessage.killnuker"/>
+  </MonsterMission>
+
+  <MonsterMission
+    identifier="killbseclown"
+    textidentifier="killbseclown"
+    tags="killmonster,killmonster_set2"
+    type="Monster"
+    difficulty="4"
+    commonness="50"
+    reward="9000"
+    maxsonarmarkerdistance="20000">
+    <monster character="Technoprankster" min="1" max="1"/>
+    <Reputation identifier="separatists" amount="10" />
+    <Reputation identifier="coalition" amount="10" />
+    <Reputation identifier="clowns" amount="-10" />
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="256,0,256,256" color="214,50,48"/>
+    <LocationType from="AnyOutpost" to="None"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
@@ -209,6 +228,7 @@
     maxsonarmarkerdistance="20000">
     <monster character="Separatistrifleman" min="2" max="4"/>
     <monster character="Separatistsharpshooter" min="1" max="1"/>
+    <monster character="Separatisthatchetman" min="1" max="1"/>
     <monster character="Separatistgunner" min="1" max="1"/>
     <monster character="Separatistveteran" min="1" max="1"/>
     <monster character="Separatistbombard" min="1" max="1"/>
@@ -229,6 +249,7 @@
     maxsonarmarkerdistance="20000">
     <monster character="Separatistantisub" min="2" max="3"/>
     <monster character="Separatistrifleman" min="2" max="3"/>
+    <monster character="Separatisthatchetman" min="2" max="2"/>
     <monster character="Separatistsharpshooter" min="1" max="1"/>
     <monster character="Separatistgunner" min="1" max="1"/>
     <monster character="Separatistveteran" min="1" max="1"/>
@@ -311,6 +332,7 @@
     maxsonarmarkerdistance="20000">
     <monster character="Separatistantisub" min="2" max="3"/>
     <monster character="Separatistrifleman" min="2" max="3"/>
+    <monster character="Separatisthatchetman" min="2" max="2"/>
     <monster character="Separatistsharpshooter" min="1" max="2"/>
     <monster character="Separatistgunner" min="1" max="2"/>
     <monster character="Separatistveteran" min="1" max="1"/>
@@ -341,6 +363,30 @@
     <Reputation identifier="coalition" amount="-10" />
     <Reputation identifier="separatists" amount="10" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
+  </MonsterMission>
+
+  <MonsterMission
+  type="Monster"
+  identifier="clearruinskhusk"
+  tags="alienruin,alienruinclear,killmonster,killmonster_set3"
+  difficulty="4"
+  commonness="50"
+  requireruin="true"
+  reward="10000"
+  spawntype="ruin"
+  spawnpointtag="husk"
+  maxsonarmarkerdistance="20000">
+  <monster character="Corruptedknight" min="1" max="1"/>
+  <monster character="Cultistzealot" min="0" max="2"/>
+  <monster character="Cultistdevoter" min="4" max="8"/>
+  <Reputation identifier="location" amount="10" />
+  <Reputation identifier="clowns" amount="10" />
+  <Reputation identifier="huskcult" amount="-20" />
+  <LocationType from="AnyOutpost" to="AnyOutpost"/>
+  <LocationType from="AnyOutpost" to="None"/>
+  <LocationType from="AnyOutpost" to="Lair"/>
+  <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,0,256,256" color="214,50,48"/>
+  <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <AbandonedOutpostMission
