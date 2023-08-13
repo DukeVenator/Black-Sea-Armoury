@@ -88,4 +88,14 @@
     <Item slot="InnerClothes" Identifier="pirateclothes" />
     <Item slot="Head" Identifier="ballistichelmet1" />
   </inventory>
+  <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="spar_50magazine" />
+    <Item Identifier="scrap" amount="2"/>
+    <Item Identifier="fulguriumbatterycell" />
+    <Item slot="RightHand+LeftHand" Identifier="spar-65-hide" />
+    <Item slot="Card" Identifier="idcard" />
+    <Item slot="OuterClothes" Identifier="corsairar_bw_e" />
+    <Item slot="InnerClothes" Identifier="pirateclothes" />
+    <Item slot="Head" Identifier="ballistichelmet1" />
+  </inventory>
 </Character>

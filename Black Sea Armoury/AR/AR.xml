@@ -2,20 +2,16 @@
 <Items>
   <!--monster-->
   <Item name="SPAR-408 DMR" identifier="spar-408ap-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
-    <Body width="300" height="124" density="40" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" />
+    <Sprite texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" depth="0.55" />
+    <Body width="318" height="64" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="90,14" handle1="-40,-16" handle2="-80,-16" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--60 rounds per minute-->
     <RangedWeapon reload="2" holdtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <StatusEffect type="OnUse" forceplaysounds="true">
-        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
-      </StatusEffect>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" volume="2"/>
       <StatusEffect type="OnUse">
         <Explosion range="100.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
@@ -35,20 +31,16 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-408 DMR" identifier="spar-408fmj-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
-    <Body width="300" height="124" density="40" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" />
+    <Sprite texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" depth="0.55" />
+    <Body width="318" height="64" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="90,14" handle1="-40,-16" handle2="-80,-16" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--60 rounds per minute-->
     <RangedWeapon reload="2"  oldtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <StatusEffect type="OnUse" forceplaysounds="true">
-        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
-      </StatusEffect>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" volume="2"/>
       <StatusEffect type="OnUse">
         <Explosion range="100.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
@@ -68,20 +60,16 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-408 DMR" identifier="spar-408jhp-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
-    <Body width="300" height="124" density="40" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" />
+    <Sprite texture="%ModDir%/AR/SPAR-408.png" sourcerect="1,3,318,64" depth="0.55" />
+    <Body width="318" height="64" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="90,14" handle1="-40,-16" handle2="-80,-16" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--60 rounds per minute-->
     <RangedWeapon reload="2"  oldtrigger="true" barrelpos="220,13" spread="1.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <StatusEffect type="OnUse" forceplaysounds="true">
-        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
-      </StatusEffect>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-408-01ROUND-Analog.ogg" type="OnUse" range="8000" volume="2"/>
       <StatusEffect type="OnUse">
         <Explosion range="100.0" force="8" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
@@ -101,28 +89,31 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-338 MG" identifier="spar-338-hide" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,436,230,72" depth="0.55" origin="0.5,0.5" />
-    <Body width="220" height="60" density="30" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="57,-5" handle1="-35,-10" handle2="26,10" holdangle="-30"/>
+    <Sprite texture="%ModDir%/AR/SPAR-338.png" sourcerect="0,0,541,163" depth="0.55" origin="0.5,0.5" />
+    <Body width="541" height="163" density="60" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="71,6" handle1="-110,-15" handle2="-25,-8" holdangle="-30"/>
     <!--500 rounds per minute-->
     <RangedWeapon reload="0.12" holdtrigger="true" barrelpos="100,16" spread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <StatusEffect type="OnUse" forceplaysounds="true">
-        <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="6000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="6000" />
-        <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="6000" />
-      </StatusEffect>
-      <StatusEffect type="OnUse">
-        <Explosion range="180.0" force="3.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="5.0" />
-      </StatusEffect>
+      <Sound file="%ModDir%/AR/Sounds/SPAR-338-01ROUND-Analog.ogg" type="OnUse" range="6000" volume="1.8" selectionmode="Random"/>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="338round_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-140" />
+      <StatusEffect type="Always" target="This" Condition="5">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="4.3" stackable="false" />
       <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="338ammo"/>
       <RequiredSkill identifier="weapons" level="75" />
     </RangedWeapon>
@@ -135,10 +126,10 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-8 SDMR" identifier="spar-8s-hide" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
-    <Body width="300" height="124" density="40" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,0,326,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,0,326,69" depth="0.55" origin="0.5,0.5" />
+    <Body width="326" height="69" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="90,8" handle1="-90,-25" handle2="-78,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.2" holdtrigger="true" barrelpos="220,13" spread="3.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -158,6 +149,16 @@
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-250" />
+      <StatusEffect type="Always" target="This" Condition="8">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.6" stackable="false" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_20magazine">
       <Containable items="spar_20magazine" />
@@ -168,20 +169,16 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-8 DMR" identifier="spar-8-hide" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LC/ESG.png" sourcerect="0,0,280,124" />
-    <Sprite texture="%ModDir%/LC/ESG.png" sourcerect="0,0,300,124" depth="0.55" />
-    <Body width="300" height="124" density="40" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,70,280,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AR/SPAR-8.png" sourcerect="0,70,280,69" depth="0.55" origin="0.5,0.5" />
+    <Body width="280" height="69" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="77,8" handle1="-74,-25" handle2="-34,10" holdangle="-50" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="220,13" spread="5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-8-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -191,6 +188,16 @@
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-200" />
+      <StatusEffect type="Always" target="This" Condition="8">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="2.3" stackable="false" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_20magazine">
       <Containable items="spar_20magazine" />
@@ -200,24 +207,72 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
+  <Item name="SPAR-65 AR" identifier="spar-65-hide" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light"  hideinmenus="true" nonplayerteaminteractable="true">
+    <InventoryIcon texture="%ModDir%/AR/SPAR-65.png" sourcerect="0,00,550,190" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AR/SPAR-65.png" sourcerect="0,00,550,190" depth="0.55" origin="0.5,0.5" />
+    <Body width="550" height="190" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="30,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <!--600 rounds per minute-->
+    <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="180,10" spread="6.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-65-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="65round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-260" />
+      <StatusEffect type="Always" target="This" Condition="10">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.3" stackable="false" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_50magazine">
+      <Containable items="spar_50magazine" />
+    </ItemContainer>
+    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="65round_bw">
+      <Containable items="65round_bw" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+  </Item>
   <Item name="SPAR-556A AR" identifier="spar-556a-hide" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light"  hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
-    <Body width="180" height="45" density="50" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-556.png" sourcerect="0,00,262,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AR/SPAR-556.png" sourcerect="0,00,262,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="262" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="30,-10" aimpos="70,5" handle1="-45,-10" handle2="-20,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
     <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="85,13" spread="6" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556A-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-200" />
+      <StatusEffect type="Always" target="This" Condition="10">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="3.3" stackable="false" />
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="556around_bw" spawnposition="ThisInventory" />
       </StatusEffect>
@@ -234,20 +289,16 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
   <Item name="SPAR-556C AR" identifier="spar-556-hide" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light"  hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
-    <Body width="180" height="45" density="50" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <InventoryIcon texture="%ModDir%/AR/SPAR-556.png" sourcerect="0,63,224,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/AR/SPAR-556.png" sourcerect="0,63,224,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="224" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="55,5" handle1="-25,-10" handle2="0,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--857 rounds per minute-->
     <RangedWeapon reload="0.07" holdtrigger="true" barrelpos="85,13" spread="8.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_4.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/JobGear/Security/WEAPONS_assaultRifle_5.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/AR/Sounds/SPAR-556-01ROUND-Analog.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random"/>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
@@ -257,6 +308,16 @@
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-150" />
+      <StatusEffect type="Always" target="This" Condition="10">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="20" disabledeltatime="true" delay="2.5" stackable="false" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" spawnwithid="spar_150magazine">
       <Containable items="spar_150magazine" />
@@ -901,8 +962,8 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="0.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.25">
-        <Affliction identifier="gunshotwound" strength="26" />
-        <Affliction identifier="gunshotwound" strength="15" probability="0.5" />
+        <Affliction identifier="gunshotwound" strength="24" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.5" />
         <Affliction identifier="lacerations" strength="12" probability="0.6" />
         <Affliction identifier="bleeding" strength="16"/>
         <Affliction identifier="bleeding" strength="12" probability="0.3" />
@@ -1018,8 +1079,8 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.7">
-        <Affliction identifier="gunshotwound" strength="28" />
-        <Affliction identifier="gunshotwound" strength="15" probability="0.6" />
+        <Affliction identifier="gunshotwound" strength="24" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.6" />
         <Affliction identifier="bleeding" strength="16" />
         <Affliction identifier="bleeding" strength="10" probability="0.3" />
         <Affliction identifier="stun" strength="0.25"/>
@@ -1170,7 +1231,7 @@
       <Price storeidentifier="merchantmilitary" sold="false" multiplier="0.9" minavailable="0" maxavailable="4" />
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="True">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="True" amount="2">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="camp6_bw" amount ="2"/>
       <RequiredItem identifier="steel" amount ="2"/>
@@ -1178,8 +1239,8 @@
       <RequiredItem identifier="plastic" amount ="2"/>
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="steel" amount ="2" mincondition="0.95"/>
-      <Item identifier="sst_bw" amount ="2" mincondition="0.95"/>
+      <Item identifier="steel" amount ="1" mincondition="0.95"/>
+      <Item identifier="sst_bw" amount ="1" mincondition="0.95"/>
     </Deconstruct>
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
@@ -1203,8 +1264,8 @@
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
         <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
-          <Affliction identifier="gunshotwound" strength="20" />
-          <Affliction identifier="gunshotwound" strength="12" probability="0.6" />
+          <Affliction identifier="gunshotwound" strength="16" />
+          <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
           <Affliction identifier="bleeding" strength="14" />
           <Affliction identifier="bleeding" strength="8" probability="0.3" />
           <Affliction identifier="stun" strength="0.15" probability="0.8"/>
@@ -1237,7 +1298,7 @@
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="titaniumaluminiumalloy"/>
       <RequiredItem identifier="amu_bw"/>
-      <RequiredItem identifier="spar-556"/>
+      <RequiredItem tag="spar-556"/>
     </Fabricate>
     <Deconstruct time="35">
       <Item identifier="titaniumaluminiumalloy"/>
@@ -1306,7 +1367,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.25">
-        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="gunshotwound" strength="16" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.2" />
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="bleeding" strength="8" probability="0.3" />
@@ -1476,7 +1537,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.2">
+      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.3">
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="bleeding" strength="7.5" probability="0.5" />
         <Affliction identifier="gunshotwound" strength="25" />
@@ -1500,7 +1561,7 @@
   <Item name="SPAR-556A AR" identifier="spar-556a" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.2" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <Price baseprice="640" sold="false" minleveldifficulty="0">
+    <Price baseprice="700" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1625,7 +1686,7 @@
   <Item name="SPAR-556C AR" identifier="spar-556" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,spar_556" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.06" />
-    <Price baseprice="480" sold="false" minleveldifficulty="0">
+    <Price baseprice="530" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -1634,12 +1695,12 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="75">
       <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="sst_bw" amount="1" />
       <RequiredItem identifier="amu_bw" amount="2" />
       <RequiredItem identifier="rubber" />
     </Fabricate>
     <Deconstruct time="35">
-      <Item identifier="steel" amount="1" />
+      <Item identifier="sst_bw" amount="1" />
       <Item identifier="amu_bw" amount="1" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/AR/SPAR-556.png" sourcerect="0,63,224,60" origin="0.5,0.5" />
@@ -1806,5 +1867,134 @@
         <Remove />
       </StatusEffect>
     </Projectile>
+  </Item>
+  <!--12 AS-->
+  <Item name="SPSG-15 AutoSG" identifier="spsg-15" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="550">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel"  amount="2"/>
+      <Item identifier="titaniumaluminiumalloy"/>
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="steel" amount="4"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+      <RequiredItem identifier="plastic" amount="2"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
+    <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
+    <Body width="272" height="64" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="1.1" barrelpos="95,13" spread="12" unskilledspread="20" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Content/Items/Weapons/TaserShot1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/TaserShot2.ogg" type="OnUse" range="1000" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <!-- Cocking sound, delayed by 1.0 seconds. -->
+      <StatusEffect type="OnUse" delay="1.1">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="500" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="500" />
+      </StatusEffect>
+      <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" hideitems="true" maxstacksize="15" containedstateindicatorstyle="bullet">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="shotgunammo" />
+    </ItemContainer>
+    <aitarget sightrange="0" soundrange="0" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item name="SPSG-4 AutoSG" identifier="spsg-4" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,stunner,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="600">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel"  amount="2"/>
+      <Item identifier="titaniumaluminiumalloy"/>
+      <Item identifier="amu_bw" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
+      <RequiredItem identifier="amu_bw"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
+    <Sprite texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" depth="0.55" />
+    <Body width="272" height="64" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="35,-10" handle1="-20,-6" handle2="26,12" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0" barrelpos="95,13" spread="12" unskilledspread="20" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Content/Items/Weapons/TaserShot1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/TaserShot2.ogg" type="OnUse" range="1000" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" Condition="0.1">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" delay="2.5">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="500" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-4000.0" />
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.5" stackable="false" />
+      <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" hideitems="true" maxstacksize="4" containedstateindicatorstyle="bullet">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="shotgunammo" />
+    </ItemContainer>
+    <aitarget sightrange="0" soundrange="0" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
 </Items>

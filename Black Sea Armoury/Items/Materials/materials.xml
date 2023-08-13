@@ -223,7 +223,7 @@
         <Item identifier="camp7_bw" commonness="0.08" />
       </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,384,64,64" />
-      <Sprite texture="Content/Items/minerals.png" sourcerect="175,220,50,33" depth="0.55" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Materials/minerals.png" sourcerect="175,220,50,33" depth="0.55" origin="0.5,0.5" />
       <Body width="45" height="20" density="25" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
         <!-- Remove the item when fully used -->

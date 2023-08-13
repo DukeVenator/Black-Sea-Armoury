@@ -104,6 +104,10 @@
   <entitydescription.spar_30magazine>30发 5.56×45mm 步枪弹匣，所使用钢芯弹。</entitydescription.spar_30magazine>
   <entityname.spar_150magazine>SPAR-556弹鼓(150)</entityname.spar_150magazine>
   <entitydescription.spar_150magazine>150发 5.56×45mm 步枪弹鼓，可在战术小队内充当火力压制的角色。</entitydescription.spar_150magazine>
+  <entityname.spsg-15>SPSG-15 特种突击霰弹枪</entityname.spsg-15>
+  <entitydescription.spsg-15>有着独特转轮式供弹机构的全自动无托霰弹枪，拥有高达15发的弹容量，使其成为室内CQB的最佳选择。</entitydescription.spsg-15>
+  <entityname.spsg-4>SPSG-4 特种"重锤"霰弹枪</entityname.spsg-4>
+  <entitydescription.spsg-4>SPSG-4 特种"重锤"霰弹枪通过特殊设计的燃气导轨能够瞬间发送两枚霰弹弹药，但击发后繁琐的复位机制使其泛用性大大降低。</entitydescription.spsg-4>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
   <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>
@@ -458,4 +462,5 @@
   <missiondescription.assaultonstation>摧毁位于[location1]站点，该站点已经被海盗占领，请肃清该站点。</missiondescription.assaultonstation>
   <missionheader0.assaultonstation>站点已被摧毁</missionheader0.assaultonstation>
   <missionmessage0.assaultonstation>我们的船只以后能够继续安全地通过该通道。</missionmessage0.assaultonstation>
+
 </infotexts>

@@ -9,7 +9,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="6">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="1" severlimbsprobability="0.35" itemdamage="2" targetforce="2" penetration="0.05">
-        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="8.5" />
         <Affliction identifier="gunshotwound" strength="4" probability="0.2" />
         <Affliction identifier="bleeding" strength="4" />
         <Affliction identifier="bleeding" strength="2" probability="0.2" />
@@ -69,7 +69,7 @@
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.08" />
     <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
-    <Price baseprice="220" sold="false" minleveldifficulty="0" displaynonempty="true">
+    <Price baseprice="60" sold="false" minleveldifficulty="0" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -80,16 +80,16 @@
       <Item identifier="smgmagazine_bw" mincondition="0.1" copycondition="true" />
       <Item identifier="smgmagazine_bw" mincondition="0.1" copycondition="true" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+    <Fabricate suitablefabricators="fabricator" requiredtime="6">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="smgmagazine_bw" />
       <RequiredItem identifier="smgmagazine_bw" />
     </Fabricate>
-    <Fabricate suitablefabricators="fabricator" requiredtime="1">
+    <Fabricate suitablefabricators="fabricator" requiredtime="38" amount ="3">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="magnesium" amount="2"/>
-      <RequiredItem identifier="lead" amount="2"/>
-      <RequiredItem identifier="steel" amount="2"/>
+      <RequiredItem identifier="magnesium"/>
+      <RequiredItem identifier="lead"/>
+      <RequiredItem identifier="steel"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/LMG/lmg mag.png" sourcerect="0,0,36,46" />
     <Sprite texture="%ModDir%/LMG/lmg mag.png" depth="0.54" sourcerect="0,0,35,45" origin="0.5,0.5" />
@@ -156,7 +156,7 @@
   </Item>
   <!-- Tactical LMG -->
   <Item name="" identifier="lmg_bw" category="Weapon" subcategory="Black Sea Armoury" description="" cargocontaineridentifier="metalcrate" tags="mgtype,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <Price baseprice="1050" sold="false" minleveldifficulty="0">
+    <Price baseprice="420" sold="false" minleveldifficulty="0">
       <Price storeidentifier="merchantoutpost" multiplier="1.5" />
       <Price storeidentifier="merchantcity" multiplier="1.25" />
       <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -164,13 +164,13 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="sst_bw" amount="2" />
+      <Item identifier="sst_bw"/>
       <Item identifier="amu_bw"/>
       <Item identifier="smg_bw" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="80">
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="sst_bw" amount="2" />
+      <RequiredItem identifier="sst_bw"/>
       <RequiredItem identifier="amu_bw"/>
       <RequiredItem identifier="smg_bw" />
     </Fabricate>

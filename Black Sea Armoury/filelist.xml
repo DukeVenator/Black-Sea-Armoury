@@ -28,6 +28,8 @@
   <Item file="%ModDir%/Items/Enemy/weapons.xml"/>
   <Item file="%ModDir%/Items/Enemy/suits.xml"/>
   <Item file="%ModDir%/Items/Enemy/mags.xml"/>
+  <Character file="%ModDir%/Enemy/Pirate/Piraterecruits/Piraterecruits.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Piraterecruits_melee/Piraterecruits_melee.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateforerunner/Pirateforerunner.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratedismantler/Piratedismantler.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateboarder/Pirateboarder.xml" />
