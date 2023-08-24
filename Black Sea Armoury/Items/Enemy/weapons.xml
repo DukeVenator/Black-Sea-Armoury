@@ -41,33 +41,6 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="2000" fadeouttime="1" />
   </Item>
-  <!-- Power AXE -->
-  <Item name="" identifier="bw_axe_e" aliases="axe" scale="0.5" category="Weapon" subcategory="Black Sea Armoury" tags="smgammotype,smallitem,weapon,gunsmith,meleeweapon,mountableweapon" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/AXE/AXE.png" sourcerect="0,0,300,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/AXE/AXE.png" sourcerect="0,0,300,100" depth="0.55" origin="0.8,0.35" />
-    <Body width="225" height="32" density="45" />
-    <MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="80" combatPriority="45" msg="ItemMsgPickUpSelect">
-      <Attack targetimpulse="6" severlimbsprobability="0.1" structuredamage="50" itemdamage="15" penetration="0.5">
-        <Affliction identifier="blunttrauma" strength="20" />
-        <Affliction identifier="lacerations" strength="30" />
-        <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="stun" strength="1.5" />
-        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
-        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
-      </Attack>
-      <StatusEffect type="OnNotContained" target="This">
-        <Remove />
-      </StatusEffect>
-    </MeleeWeapon>
-    <Quality>
-      <QualityStat stattype="FirepowerMultiplier" value="0.05" />
-      <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
-    </Quality>
-  </Item>
   <!-- Drum Hybrid Barrel grenade enemy-->
   <Item name="hybridg" identifier="grenadelauncher_bw_ge" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,shotgun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
     <InventoryIcon texture="%ModDir%/SG/SG.png" sourcerect="0,0,272,96" />
@@ -239,7 +212,7 @@
     <InventoryIcon texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/LMG/LMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="45" density="50" />
-    <Holdable slots="RightHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.1" barrelpos="85,13" spread="6" unskilledspread="24" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />

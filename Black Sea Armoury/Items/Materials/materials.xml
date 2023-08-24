@@ -217,8 +217,8 @@
         <Item identifier="lead" commonness="0.7" />
         <Item identifier="silicon" commonness="0.5" />
         <Item identifier="pta_bw" commonness="0.07" />
-        <Item identifier="sst_bw" commonness="0.3" />
-        <Item identifier="amu_bw" commonness="0.3" />
+        <Item identifier="sst_bw" commonness="0.4" />
+        <Item identifier="amu_bw" commonness="0.4" />
         <Item identifier="camp6_bw" commonness="0.2" />
         <Item identifier="camp7_bw" commonness="0.08" />
       </Deconstruct>

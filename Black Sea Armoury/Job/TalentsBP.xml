@@ -937,14 +937,21 @@
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
+        <!--<CharacterAbilityGivePermanentStat statidentifier="weapon,smallitem,mediumitem,provocative" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="weapon,tool,oxygensource,reactorfuel,mobilebattery,weldingfuel" stattype="IncreaseFabricationQuality" value="1" />-->
         <CharacterAbilityGivePermanentStat statidentifier="weapon" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="tool" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="oxygensource" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="reactorfuel" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="weldingfuel" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="mobilebattery" stattype="IncreaseFabricationQuality" value="1" />
+        <CharacterAbilityGivePermanentStat statidentifier="demolitionsexpert" stattype="IncreaseFabricationQuality" value="1" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ExplosionRadiusMultiplier" value="0.2"/>
         <CharacterAbilityGiveStat stattype="ExplosionDamageMultiplier" value="0.1"/>
-        <CharacterAbilityGivePermanentStat statidentifier="demolitionsexpert" stattype="IncreaseFabricationQuality" value="1" />
       </Abilities>
     </AbilityGroupEffect>
   </Talent>

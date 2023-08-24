@@ -277,11 +277,6 @@
       <RequiredItem identifier="sst_bw" amount="4"/>
       <RequiredItem identifier="amu_bw" amount="2"/>
       <RequiredItem identifier="steel" amount="1"/>
-      
-      <RequiredItem identifier="camp6_bw" amount="5"/>
-      <RequiredItem identifier="steel" amount="5"/>
-      <RequiredItem identifier="amu_bw" amount="5"/>
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="5"/>
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />

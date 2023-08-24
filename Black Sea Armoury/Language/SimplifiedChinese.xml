@@ -362,17 +362,17 @@
   <entitydescription.armored_hardsuit_bw2_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw2_e>
   <!--Enemy Characters-->
   <!--Pirate-->
-  <character.Pirateantisub>雷霆</character.Pirateantisub><!--轨道炮高爆/破片/EMP | 四海后-->
-  <character.Pirateboarder>风暴</character.Pirateboarder><!--CQB/LMG/556 | 一海-->
+  <character.Pirateantisub>雷霆</character.Pirateantisub><!--轨道炮高爆/破片/EMP | 二海后-->
+  <character.Pirateboarder>风暴</character.Pirateboarder><!--CQB/LMG/556 | 二海-->
   <character.Piratebombard>屠夫</character.Piratebombard><!--伐木炮 | 四海后-->
   <character.Piratedesolator>污钢</character.Piratedesolator><!--轨道炮脏弹 | 二海深渊/三海后-->
-  <character.Piratedismantler>碾灭者</character.Piratedismantler><!--大锤 | 一海-->
-  <character.Piratedismantlerpod>粉碎小组跳帮舱</character.Piratedismantlerpod><!--大锤+小锤跳帮 | 一海-->
-  <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--Doom喷/弹鼓喷-->
+  <character.Piratedismantler>碾灭者</character.Piratedismantler><!--大锤 | 二海-->
+  <character.Piratedismantlerpod>粉碎小组跳帮舱</character.Piratedismantlerpod><!--大锤+小锤跳帮 | 二海-->
+  <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--弹鼓喷/-4/-15-->
   <character.Pirateenforcerpod>强袭跳帮舱</character.Pirateenforcerpod><!--单人跳帮-->
   <character.Pirateforerunner>粉碎者</character.Pirateforerunner><!--小锤 | 一海-->
-  <character.Pirategrenadier>雷暴</character.Pirategrenadier><!--弹鼓榴弹-->
-  <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s | 二海后-->
+  <character.Pirategrenadier>雷暴</character.Pirategrenadier><!--弹鼓榴弹 | 二海-->
+  <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s | 三海后-->
   <character.Pirategunnerpod>突袭小组跳帮舱</character.Pirategunnerpod><!--Pirategunner+Piratescavenger-->
   <character.Pirateheavy>钢炉</character.Pirateheavy><!--盾+手炮/LMG-->
   <character.Pirateheavypod>液压机跳帮舱</character.Pirateheavypod><!--单人跳帮-->

@@ -426,7 +426,7 @@
     </Fabricate>
     <Body width="150" height="60" density="40" />
     <Holdable slots="Any,RightHand" controlpose="true" aimpos="60,0" handle1="-62,-16" handle2="-10,-6" msg="ItemMsgPickUpSelect" />
-    <RepairTool firedamage="0.0" structurefixamount="4.25" range="150" barrelpos="35,10" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="-0.425" targetforce="10">
+    <RepairTool firedamage="0.0" structurefixamount="4.25" range="300" barrelpos="35,10" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="-0.425" targetforce="10">
       <RequiredItems items="batterycell,fulguriumbatterycell,oxygen_cell_bw" type="Contained" msg="ItemMsgWeldingFuelRequired" />
       <ParticleEmitter particle="weld" particlespersecond="50" copyentityangle="true" />
       <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />

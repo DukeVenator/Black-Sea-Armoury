@@ -1,4 +1,4 @@
-﻿<PiratedismantlerpodSwimSlow
+﻿<PiraterecruitspodSwimFast
   UseSineMovement="False"
   Flip="False"
   FlipCooldown="1"
@@ -22,6 +22,6 @@
   HeadTorque="50"
   TorsoTorque="100"
   FootTorque="25"
-  AnimationType="SwimSlow"
+  AnimationType="SwimFast"
   ArmIKStrength="1"
   HandIKStrength="1" />

@@ -31,7 +31,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/PR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -159,7 +159,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/MA/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/MA/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -356,7 +356,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/BR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
@@ -567,7 +567,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD2.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/BR/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
@@ -711,7 +711,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/BR/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/BR/BODY2.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
@@ -855,7 +855,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/ST/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.4">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/ST/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,360"></sprite>
@@ -1013,7 +1013,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PI/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/PI/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -1166,7 +1166,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/PI2/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/PI2/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -1297,7 +1297,7 @@
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
             <Conditional IsDead="false" />
           </StatusEffect>
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/MA2/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -1389,7 +1389,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/EL/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.5,0.5">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/EL/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -1536,7 +1536,7 @@
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
             <Conditional IsDead="false" />
           </StatusEffect>
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/MA2/BODY2.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
@@ -1612,7 +1612,7 @@
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true">
       <sprite texture="%ModDir%/BA/AP/HEAD.png" limb="Head" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inheritorigin="false" inherittexturescale="true" sourcerect="0,0,220,240" origin="0.7,0.55">
         <LightComponent range="400.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
-          <LightTexture texture="%ModDir%/Boarding Shield/pointlight_ultra.png" origin="0.05, 0.5" size="1.0,1.0" />
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0, 0.5" size="1.0,1.0" />
         </LightComponent>
       </sprite>
       <sprite texture="%ModDir%/BA/AP/BODY.png" limb="Torso" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.51,0.46" sourcerect="0,0,360,320"></sprite>
