@@ -989,7 +989,7 @@
   </Item>
   <!--pio_bw Pioneer Custom -->
   <Item name="" identifier="pio_bw" aliases="worker hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="1500" minleveldifficulty="25">
+    <Price baseprice="2100" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
       <Price locationtype="research" multiplier="1.25" sold="false" />
@@ -998,12 +998,15 @@
     </Price>
     <Deconstruct time="30">
       <Item identifier="pio_bw2" />
+      <Item identifier="sst_bw"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="sst_bw" amount ="2"/>
       <RequiredItem identifier="pio_bw2" />
+      <RequiredItem identifier="rubber" amount ="2"/>
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
@@ -1135,7 +1138,7 @@
   </Item>
   <!-- Pioneer -->
   <Item name="" identifier="pio_bw2" aliases="worker hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="2100" minleveldifficulty="35">
+    <Price baseprice="1600" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="true" minavailable="0" maxavailable="1"/>
       <Price locationtype="research" multiplier="1.25" sold="false" />
@@ -1144,7 +1147,6 @@
     </Price>
     <Deconstruct time="30">
       <Item identifier="titaniumaluminiumalloy" amount ="2"/>
-      <Item identifier="sst_bw"/>
       <Item identifier="amu_bw" amount ="2"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
@@ -1152,11 +1154,10 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount ="4"/>
-      <RequiredItem identifier="sst_bw" amount ="2"/>
+      <RequiredItem identifier="titaniumaluminiumalloy" amount ="3"/>
       <RequiredItem identifier="amu_bw" amount ="4"/>
       <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="rubber" />
+      <RequiredItem identifier="rubber" amount ="2"/>
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PI2.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
