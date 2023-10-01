@@ -368,7 +368,7 @@
   <MonsterMission
   type="Monster"
   identifier="clearruinskhusk"
-  tags="alienruin,alienruinclear,killmonster,killmonster_set3"
+  tags="killmonster,killmonster_set3"
   difficulty="4"
   commonness="50"
   requireruin="true"
