@@ -90,7 +90,7 @@
     <monster character="Pirateboarder" min="2" max="3"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.killtaget" text="missionmessage.killmessage"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
