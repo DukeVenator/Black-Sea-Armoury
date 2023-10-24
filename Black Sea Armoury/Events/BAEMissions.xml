@@ -375,13 +375,13 @@
   <MonsterMission
   type="Monster"
   identifier="clearruinskhusk"
-  tags="alienruin,alienruinclear,killmonster,killmonster_set3"
+  tags="killmonster,killmonster_set3"
   difficulty="4"
   commonness="50"
   requireruin="true"
   reward="10000"
   spawntype="ruin"
-  spawnpointtag="husk"
+  spawnpointtag="fractalguardian"
   maxsonarmarkerdistance="20000">
   <monster character="Corruptedknight" min="1" max="1"/>
   <monster character="Cultistzealot" min="0" max="2"/>
