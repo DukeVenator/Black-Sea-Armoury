@@ -608,16 +608,16 @@
     <Description tag="talentdescription.olympian_bw" />
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.meleeattackmultiplier" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.rangedspreadreduction" color="gui.orange" />
-      <Replace tag="[amount]" value="20" color="gui.green" />
+      <Replace tag="[amount]" value="50" color="gui.green" />
     </Description>
     <AbilityGroupInterval interval="0.05">
       <Abilities>
-        <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" maxvalue="0.05" skillidentifier="all" />
-        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" maxvalue="0.2" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" maxvalue="0.2" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="RangedSpreadReduction" maxvalue="0.5" skillidentifier="all" />
       </Abilities>
     </AbilityGroupInterval>
     <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -725,16 +725,16 @@
     <Description tag="talentdescription.olympian_bw" />
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.maximumhealthmultiplier" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.MovementSpeed" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <AbilityGroupInterval interval="0.05">
       <Abilities>
-        <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" maxvalue="0.05" skillidentifier="all" />
-        <CharacterAbilityModifyStat stattype="MovementSpeed" maxvalue="0.05" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" maxvalue="0.2" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="MovementSpeed" maxvalue="1.2" skillidentifier="all" />
       </Abilities>
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
@@ -896,21 +896,21 @@
     <Description tag="talentdescription.olympian_bw" />
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.RepairToolStructureRepairMultiplier" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.MedicalItemEffectivenessMultiplier" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <Description tag="talentdescription.additionalstattype">
       <Replace tag="[stattype]" value="stattypenames.RepairSpeed" color="gui.orange" />
-      <Replace tag="[amount]" value="5" color="gui.green" />
+      <Replace tag="[amount]" value="20" color="gui.green" />
     </Description>
     <AbilityGroupInterval interval="0.05">
       <Abilities>
-        <CharacterAbilityModifyStat stattype="RepairToolStructureRepairMultiplier" maxvalue="0.05" skillidentifier="all" />
-        <CharacterAbilityModifyStat stattype="MedicalItemEffectivenessMultiplier" maxvalue="0.05" skillidentifier="all" />
-        <CharacterAbilityModifyStat stattype="CPRBoost" maxvalue="0.05" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="RepairToolStructureRepairMultiplier" maxvalue="0.2" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="MedicalItemEffectivenessMultiplier" maxvalue="0.2" skillidentifier="all" />
+        <CharacterAbilityModifyStat stattype="CPRBoost" maxvalue="0.2" skillidentifier="all" />
       </Abilities>
     </AbilityGroupInterval>
     <AbilityGroupInterval interval="0.9">
@@ -990,7 +990,7 @@
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="RepairToolStructureDamageMultiplier" value="100" />
+        <CharacterAbilityGiveStat stattype="RepairToolStructureDamageMultiplier" value="2" />
         <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="10" />
         <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="10" />
       </Abilities>

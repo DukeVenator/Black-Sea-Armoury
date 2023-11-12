@@ -333,20 +333,10 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="pta_bw" amount ="2"/>
       <RequiredItem identifier="handheldsonar" />
       <RequiredItem identifier="fpgacircuit" />
       <RequiredItem identifier="corsairar_bw" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
-      <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="handheldsonar" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="pio_bw" />
     </Fabricate>
     <InventoryIcon texture="SYS.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/BA.png" sourcerect="9,16,297,297" depth="0.55" origin="0.5,0.52" />
@@ -1152,8 +1142,6 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredSkill identifier="mechanical" level="50" />
-      <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount ="3"/>
       <RequiredItem identifier="amu_bw" amount ="4"/>
       <RequiredItem identifier="fpgacircuit" />
@@ -1276,15 +1264,11 @@
       <Item identifier="armored_miningsuit_bw" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
-      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="mechanical" level="80" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="oxygen_cell_bw" />
-      <RequiredItem identifier="oxygen_cell_bw" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="pio_bw" />
+      <RequiredItem identifier="oxygen_cell_bw" amount ="2"/>
+      <RequiredItem identifier="pta_bw" amount ="2"/>
+      <RequiredItem identifier="physicorium" amount ="2"/>
       <RequiredItem identifier="armored_miningsuit_bw" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />
@@ -1376,10 +1360,8 @@
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="relic_bw" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="physicorium" amount ="2"/>
+      <RequiredItem identifier="pta_bw" amount ="2"/>
       <RequiredItem tag="x01suit" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/BA/EL/SYS.png" sourcerect="0,0,256,256" />
@@ -1521,9 +1503,9 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="sst_bw" amount ="4"/>
+      <RequiredItem identifier="physicorium" amount ="2"/>
+      <RequiredItem identifier="pta_bw" amount ="2"/>
       <RequiredItem identifier="armored_miningsuit_bw2" />
     </Fabricate>
     <InventoryIcon texture="SYSP.png" sourcerect="0,0,256,256" />

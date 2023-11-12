@@ -16,8 +16,8 @@
       <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="5000" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Sweep" PrioritizeSubCenter="False" SweepDistance="1500" SweepStrength="5" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
       <SwarmBehavior mindistfromclosest="300" maxdistfromcenter="5000" cohesion="0.5" />
     </ai>
-    <sound File="%ModDir%/Dropod/warning.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
-    <sound File="%ModDir%/Dropod/warning.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
+    <sound File="%ModDir%/items/Dropod/warning.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+    <sound File="%ModDir%/items/Dropod/warning.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
     <damageemitter drawontop="True" Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="10" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
     <bloodemitter Particle="blackblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
     <bloodemitter Particle="blackwaterblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />

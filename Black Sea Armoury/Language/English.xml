@@ -49,6 +49,21 @@
   <talentname.custommachinebw>Modified machinery</talentname.custommachinebw>
   <talentdescription.crafthighqualityhmgbw>The quality of the machine gun weapons you make is improved [qualitybonus].</talentdescription.crafthighqualityhmgbw>
   <!--New Job.xml-->
+  <talenttree.bwpl_offense>Mastery of Slaughter</talenttree.bwpl_offense>
+  <talenttree.bwpl_defense>Fearless Bastion</talenttree.bwpl_defense>
+  <talenttree.bwpl_logistic>Tactical Logistics</talenttree.bwpl_logistic>
+  <talentname.olympian_offense>Combat Energization</talentname.olympian_offense>
+  <talentname.olympian_defense>Damage Mitigation</talentname.olympian_defense>
+  <talentname.olympian_logistic>Logistical Safeguard</talentname.olympian_logistic>
+  <talentname.drsubmarinebw>Field Medic</talentname.drsubmarinebw>
+  <talentname.offense_system>Assault Core</talentname.offense_system>
+  <talentname.defense_system>Fortress Core</talentname.defense_system>
+  <talentname.logistic_system>Logistics Core</talentname.logistic_system>
+  <talentname.revengesquad_offense>Desperate Assault</talentname.revengesquad_offense>
+  <talentname.revengesquad_deffense>Redemption Shield</talentname.revengesquad_deffense>
+  <talentname.warlordbw_offense>Ace</talentname.warlordbw_offense>
+  <talentname.warlordbw_deffense>Armor Citadel</talentname.warlordbw_deffense>
+  <talentname.miracleworker_bw>Leadership</talentname.miracleworker_bw>
   <stattypenames.rangedspreadreduction>Reduction to spread</stattypenames.rangedspreadreduction>
   <stattypenames.MedicalItemEffectivenessMultiplier>More potent medical items</stattypenames.MedicalItemEffectivenessMultiplier>
   <talentdescription.olympian_bw>You gain an additional percentage to the following attributes equal to the lowest of all your skills:</talentdescription.olympian_bw>
@@ -70,21 +85,44 @@
   <talentname.apolloassistsystem_bw>Apollo Assistance System</talentname.apolloassistsystem_bw>
   <talentdescription.apolloassistsystem_bw> When driving Apollo, inflict additional 100% chemical burns, and after healing the wounded, the wounded will be assisted by Apollo nanobots within 60 seconds. </talentdescription.apolloassistsystem_bw>
   <!--AR.xml-->
+  <entityname.spar-408>SPAR-408 Special Precision Sniper Rifle</entityname.spar-408>
   <entitydescription.spar-408>A precision marksman rifle designed by the Iron Alliance to annihilate high-threat targets. </entitydescription.spar-408>
+  <entityname.spar_7magazine>SPAR-408 Kraken Armor-Piercing Magazine(7)</entityname.spar_7magazine>
   <entitydescription.spar_7magazine>7 rounds of .408 rifle magazines, the armor-piercing rounds used are enough to penetrate the armor of most creatures. </entitydescription.spar_7magazine>
-  <entitydescription.spar_7magazine_fmj>7 rounds .408 rifle magazine, using full metal jacket bullets capable of inflicting a lot of damage inside the target. </entitydescription.spar_7magazine_fmj>
+  <entityname.spar_7magazine_fmj>SPAR-408 Kun Full Metal Jacket Magazine(7)</entityname.spar_7magazine_fmj>
+  <entitydescription.spar_7magazine_fmj>7 rounds .408 rifle magazine, using full metal jacket bullets capable of inflicting a lot of damage inside the target.</entitydescription.spar_7magazine_fmj>
+  <entityname.spar_7magazine_jhp>SPAR-408 Scylla Full Metal Jacket Hollow Point Magazine(7)</entityname.spar_7magazine_jhp>
   <entitydescription.spar_7magazine_jhp>7 rounds of .408 rifle magazines, using full metal jacketed hollow point bullets, capable of inflicting massive damage and massive stopping power inside the target. </entitydescription.spar_7magazine_jhp>
-  <entitydescription.spar-338>A precise and deadly machine gun designed by the League of Steel to defend against the ever-increasing danger of monsters. </entitydescription.spar-338>
+  <entityname.spar-338>SPAR-338 Special Machine Gun</entityname.spar-338>
+  <entitydescription.spar-338>A precise and deadly machine gun designed by the League of Steel to defend against the ever-increasing danger of monsters.</entitydescription.spar-338>
+  <entityname.spar_24magazine>SPAR-338 Magazine (24)</entityname.spar_24magazine>
   <entitydescription.spar_24magazine>24 rounds titanium .338 Lapua Magnum magazine. </entitydescription.spar_24magazine>
+  <entityname.spar_60magazine>SPAR-338 Magazine (60)</entityname.spar_60magazine>
   <entitydescription.spar_60magazine>60 rounds titanium .338 Lapua Magnum Extended machine gun magazine for suppressing fire. </entitydescription.spar_60magazine>
-  <entitydescription.spar-8s>A fully automatic squad precision marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration. </entitydescription.spar-8s>
+  <entityname.spar-8s>SPAR-8S Special Automatic Team Sniper Rifle</entityname.spar-8s>
+  <entitydescription.spar-8s>A fully automatic squad precision marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration.</entitydescription.spar-8s>
+  <entityname.spar-8>SPAR-8 Special Precision Sniper Rifle</entityname.spar-8>
   <entitydescription.spar-8>A fully automatic precision marksman rifle designed by the Iron Alliance, favored by elite troops. </entitydescription.spar-8>
-  <entitydescription.spar_45magazine>45 rounds of titanium alloy 8×75mm rifle magazine, the sniper armor-piercing bullets used are only suitable for standard models. </entitydescription.spar_45magazine>
-  <entitydescription.spar_20magazine>20 rounds of titanium alloy 8×75mm rifle magazine, used for sniper armor-piercing bullets. </entitydescription.spar_20magazine>
-  <entitydescription.spar-556a> An assault rifle designed in the early days of the Alliance of Iron and Steel. It is an improved version with an extended barrel. </entitydescription.spar-556a>
-  <entitydescription.spar-556> An assault rifle designed in the early days of the Iron Alliance. Due to lack of experience, it refers to the firearms developed by the current mainstream assault rifles in the alliance. However, it has been criticized for lacking sufficient stopping power. </entitydescription.spar-556>
-  <entitydescription.spar_30magazine>30 rounds of 5.56×45mm rifle magazine, using steel core bullets. </entitydescription.spar_30magazine>
-  <entitydescription.spar_150magazine>150 rounds of 5.56×45mm rifle magazines, which can be used as fire suppression in tactical teams. </entitydescription.spar_150magazine>
+  <entityname.spar_45magazine>SPAR-8 Magazine (45)</entityname.spar_45magazine>
+  <entitydescription.spar_45magazine>A 45-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds, suitable for standard models.</entitydescription.spar_45magazine>
+  <entityname.spar_20magazine>SPAR-8 Magazine (20)</entityname.spar_20magazine>
+  <entitydescription.spar_20magazine>A 20-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds.</entitydescription.spar_20magazine>
+  <entityname.spar-65>SPAR-65 Special Assault Rifle</entityname.spar-65>
+  <entitydescription.spar-65>Based on the SPAR-556A, this rifle features a 65mm heavy barrel and optimized ergonomic design.</entitydescription.spar-65>
+  <entityname.spar_50magazine>SPAR-65 Drum Magazine (50)</entityname.spar_50magazine>
+  <entitydescription.spar_50magazine>A 50-round 6.5×52mm rifle drum magazine that serves as a firepower suppressor within tactical teams.</entitydescription.spar_50magazine>
+  <entityname.spar-556a>SPAR-556A Special Assault Rifle</entityname.spar-556a>
+  <entitydescription.spar-556a>An assault rifle designed by the Steel Alliance during its early formation, later upgraded with an extended barrel.</entitydescription.spar-556a>
+  <entityname.spar-556>SPAR-556 Special Assault Rifle</entityname.spar-556>
+  <entitydescription.spar-556>An assault rifle designed during the early formation of the Steel Alliance, criticized for lacking sufficient stopping power.</entitydescription.spar-556>
+  <entityname.spar_30magazine>SPAR-556 Magazine (30)</entityname.spar_30magazine>
+  <entitydescription.spar_30magazine>A 30-round 5.56×45mm rifle magazine using steel-core rounds.</entitydescription.spar_30magazine>
+  <entityname.spar_150magazine>SPAR-556 Drum Magazine (150)</entityname.spar_150magazine>
+  <entitydescription.spar_150magazine>A 150-round 5.56×45mm rifle drum magazine capable of providing firepower suppression within tactical teams.</entitydescription.spar_150magazine>
+  <entityname.spsg-15>SPSG-15 Special Assault Shotgun</entityname.spsg-15>
+  <entitydescription.spsg-15>A fully automatic, stockless shotgun with a unique revolving magazine mechanism, boasting a capacity of up to 15 rounds, making it an ideal choice for indoor CQB.</entitydescription.spsg-15>
+  <entityname.spsg-4>SPSG-4 Special "Heavy Hammer" Shotgun</entityname.spsg-4>
+  <entitydescription.spsg-4>The SPSG-4 "Heavy Hammer" shotgun can instantly fire two shotgun rounds using a specially designed gas track, but its complex reset mechanism significantly reduces its versatility.</entitydescription.spsg-4>
   <!--AXE.xml-->
   <entityname.PFbw>Power Combat System</entityname.PFbw>
   <entitydescription.PFbw>All Iron League recruits are trained in hand-to-hand combat.</entitydescription.PFbw>
@@ -414,6 +452,24 @@
   <missionname.abandonedoutpostassassinatebae>Outpost assassination</missionname.abandonedoutpostassassinatebae>
   <missiondescription.abandonedoutpostassassinatebae>Contact with [location1] was recently lost, and there have been reports about a notorious group of heavily armed outlaws having claimed it as their base. There's a bounty on the head of the group's leader's – eliminate the leader to claim the reward.</missiondescription.abandonedoutpostassassinatebae>
   <missionsuccess.abandonedoutpostassassinatebae>The leader of the bandit group has been successfully eliminated.</missionsuccess.abandonedoutpostassassinatebae>
+  <missionname.assaultonmechlabs>Assault on Black Sea Mecha Labs [Hell Difficulty]</missionname.assaultonmechlabs>
+  <missiondescription.assaultonmechlabs>XOF Transmission: Destroy the Black Sea Mecha Labs located at [location1]. Do not disappoint me. Mission Details: Numerous elite Black Sea Mecha guards and a few experimental mechas are present. Security forces are equipped with heavy guards and sharpshooters. Plan the assault carefully, leave no survivors, and destroy the facility.</missiondescription.assaultonmechlabs>
+  <missionheader0.assaultonmechlabs> Black Sea Mecha Labs Have Been Destroyed</missionheader0.assaultonmechlabs>
+  <missionmessage0.assaultonmechlabs> Black Sea Mecha Labs have been destroyed. XOF is pleased with your performance. Evacuate before the elite forces arrive and leave no trace behind.</missionmessage0.assaultonmechlabs>
+  <missionsuccess.assaultonmechlabs> Assault Successful</missionsuccess.assaultonmechlabs>
+  <missionfailure.assaultonmechlabs> Assault Failed</missionfailure.assaultonmechlabs>
+  <missionname.assaultoncoalitionstation>Assault on Coalition Secret Station [Hell Difficulty]</missionname.assaultoncoalitionstation>
+  <missiondescription.assaultoncoalitionstation>Destroy the site located at [location1]. The site is equipped with the Alliance Shield Team, but the possibility of receiving support from the Javelin Team cannot be ruled out.</missiondescription.assaultoncoalitionstation>
+  <missionheader0.assaultoncoalitionstation>Alliance Secret Station Has Been Destroyed</missionheader0.assaultoncoalitionstation>
+  <missionmessage0.assaultoncoalitionstation>The Alliance Secret Station has been destroyed. According to reliable sources, the nearby Javelin Team is en route to provide support.</missionmessage0.assaultoncoalitionstation>
+  <missionname.assaultonseparatismstation>Assault on Separatist Station [Extreme Difficulty]</missionname.assaultonseparatismstation>
+  <missiondescription.assaultonseparatismstation>Destroy the site located at [location1]. This station serves as a supply point for the Siren Team. Destroy it to cut off the separatists' supply line.</missiondescription.assaultonseparatismstation>
+  <missionheader0.assaultonseparatismstation>Separatist Station Has Been Destroyed</missionheader0.assaultonseparatismstation>
+  <missionmessage0.assaultonseparatismstation>The supply line has been cut off.。</missionmessage0.assaultonseparatismstation>
+  <missionname.assaultonstation>Assault on Pirate Station [Extreme Difficulty]</missionname.assaultonstation>
+  <missiondescription.assaultonstation>Destroy the site located at [location1]. The station has been occupied by pirates. Clear the area.</missiondescription.assaultonstation>
+  <missionheader0.assaultonstation>The station has been destroyed.</missionheader0.assaultonstation>
+  <missionmessage0.assaultonstation>Our ships can now safely pass through this channel。</missionmessage0.assaultonstation>
   <missionfailure.abandonedoutpostassassinatebae>Eliminating the leader of the bandit group failed.</missionfailure.abandonedoutpostassassinatebae>
   <missionheader0.abandonedoutpostassassinatebae>Bandit leader killed</missionheader0.abandonedoutpostassassinatebae>
   <missionmessage0.abandonedoutpostassassinatebae>The leader of the bandit group has been successfully eliminated. Undock from the outpost to complete the mission.</missionmessage0.abandonedoutpostassassinatebae>

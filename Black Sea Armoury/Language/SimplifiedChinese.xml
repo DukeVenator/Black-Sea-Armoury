@@ -49,6 +49,21 @@
   <talentname.custommachinebw>改装机械</talentname.custommachinebw>
   <talentdescription.crafthighqualityhmgbw>你制造的机枪武器品质提升[qualitybonus]。</talentdescription.crafthighqualityhmgbw>
   <!--New Job.xml-->
+  <talenttree.bwpl_offense>杀戮专家</talenttree.bwpl_offense><!--Mastery of Slaughter-->
+  <talenttree.bwpl_defense>无畏堡垒</talenttree.bwpl_defense><!--Fearless Bastion-->
+  <talenttree.bwpl_logistic>战术补给</talenttree.bwpl_logistic><!--Tactical Logistics-->
+  <talentname.olympian_offense>战斗供能</talentname.olympian_offense><!--Combat Energization-->
+  <talentname.olympian_defense>损伤缓解</talentname.olympian_defense><!--Damage Mitigation-->
+  <talentname.olympian_logistic>后勤保障</talentname.olympian_logistic><!--Logistical Safeguard-->
+  <talentname.drsubmarinebw>战地医疗</talentname.drsubmarinebw><!--Field Medic-->
+  <talentname.offense_system>强袭核心</talentname.offense_system><!--Assault Core-->
+  <talentname.defense_system>堡垒核心</talentname.defense_system><!--Fortress Core-->
+  <talentname.logistic_system>辅助核心</talentname.logistic_system><!--Logistics Core-->
+  <talentname.revengesquad_offense>绝命冲锋</talentname.revengesquad_offense><!--Desperate Assault-->
+  <talentname.revengesquad_deffense>救赎之盾</talentname.revengesquad_deffense><!--Redemption Shield-->
+  <talentname.warlordbw_offense>深渊王牌</talentname.warlordbw_offense><!--Ace-->
+  <talentname.warlordbw_deffense>装甲堡垒</talentname.warlordbw_deffense><!--Armor Citadel-->
+  <talentname.miracleworker_bw>联队指挥学</talentname.miracleworker_bw><!--Leadership-->
   <stattypenames.rangedspreadreduction>散布减少</stattypenames.rangedspreadreduction>
   <stattypenames.MedicalItemEffectivenessMultiplier>医疗物资效果提高</stattypenames.MedicalItemEffectivenessMultiplier>
   <talentdescription.olympian_bw>以下属性可获得等同于你最低技能等级的属性加成</talentdescription.olympian_bw>
@@ -159,7 +174,9 @@
   <entityname.rgcbw>雷霆炮辅助装置(Thunder Cannon Support Device)</entityname.rgcbw>
   <entitydescription.rgcbw>可以装载4发轨道炮炮弹或雷霆炮。</entitydescription.rgcbw>
   <entityname.shield_bw>登舰盾(Boarding Shield)</entityname.shield_bw>
+  <entityname.arsenal_bw>黑海武库(Black Sea Arsenal)</entityname.arsenal_bw>
   <entitydescription.shield_bw>装甲是越厚越好。 </entitydescription.shield_bw>
+  <entitydescription.arsenal_bw>随身携带的黑海武库，能携带大量军火也能作为攻坚的尖盾。背负时能为机甲提供额外电源和火控系统。</entitydescription.arsenal_bw>
   <entityname.harpoongunbw>连发鱼叉枪(Rapid Harpoongun)</entityname.harpoongunbw>
   <entitydescription.harpoongunbw>快速连射鱼叉枪。使用鱼叉。 </entitydescription.harpoongunbw>
   <entityname.spearbw>碎裂鱼叉(Tattered Spear)</entityname.spearbw>
@@ -384,7 +401,7 @@
   <character.Piratesharpshooter>收割者</character.Piratesharpshooter><!--精确步枪/408不同弹种随机-->
   <character.Piratesharpshooterpod>猎杀小组跳帮舱</character.Piratesharpshooterpod><!--Piratesharpshooter+Piraterifleman-->
   <character.Pirateveteran>红湮</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮 | 四海深渊-->
-  <character.Pirateveteran>死光小组跳帮舱</character.Pirateveteran><!--Pirateveteran+Pirateforerunner-->
+  <character.Pirateveteranpod>死光小组跳帮舱</character.Pirateveteranpod><!--Pirateveteran+Pirateforerunner-->
   <!--Coalition-->
   <character.Coalitionantisub>标枪分队轰击者</character.Coalitionantisub><!--双持轨道炮-->
   <character.Coalitionheavy>标枪分队救赎者</character.Coalitionheavy><!--盾+手炮/链炮-->
@@ -444,23 +461,27 @@
   <missionname.abandonedoutpostassassinatebae>前哨站刺杀行动</missionname.abandonedoutpostassassinatebae>
   <missiondescription.abandonedoutpostassassinatebae>Contact with [location1] was recently lost, and there have been reports about a notorious group of heavily armed outlaws having claimed it as their base. There's a bounty on the head of the group's leader's – eliminate the leader to claim the reward.</missiondescription.abandonedoutpostassassinatebae>
   <missionsuccess.abandonedoutpostassassinatebae>强盗团伙的首领已被成功消灭</missionsuccess.abandonedoutpostassassinatebae>
-  <missionname.assaultonmechlabs>突袭黑海机甲实验室</missionname.assaultonmechlabs>
+  <missionname.assaultonmechlabs>突袭黑海机甲实验室[地狱难度]</missionname.assaultonmechlabs>
   <missiondescription.assaultonmechlabs>XOF传讯：摧毁位于[location1]黑海机甲实验室, 不要让我失望。任务细节：大量精锐黑海机甲守卫以及少量试验型机甲，安保力量配备了重装守卫和精确射手，请谨慎安排突袭计划，不留活口，并且摧毁该站点。</missiondescription.assaultonmechlabs>
   <missionheader0.assaultonmechlabs>黑海机甲实验室已被摧毁</missionheader0.assaultonmechlabs>
   <missionmessage0.assaultonmechlabs>黑海机甲实验室已被摧毁，XOF对你很满意，现在赶在精锐部队抵达前撤离，不要留下任何痕迹。</missionmessage0.assaultonmechlabs>
   <missionsuccess.assaultonmechlabs>突袭成功</missionsuccess.assaultonmechlabs>
   <missionfailure.assaultonmechlabs>突袭失败</missionfailure.assaultonmechlabs>
-  <missionname.assaultoncoalitionstation>突袭联盟秘密站点</missionname.assaultoncoalitionstation>
+  <missionname.assaultoncoalitionstation>突袭联盟秘密站点[地狱难度]</missionname.assaultoncoalitionstation>
   <missiondescription.assaultoncoalitionstation>摧毁位于[location1]站点，该站点配备了联盟尖盾小队，但不排除获得标枪小队的支援。</missiondescription.assaultoncoalitionstation>
   <missionheader0.assaultoncoalitionstation>联盟秘密站点已被摧毁</missionheader0.assaultoncoalitionstation>
   <missionmessage0.assaultoncoalitionstation>联盟秘密站点已被摧毁，据可靠消息，附近的标枪小队正前往支援。</missionmessage0.assaultoncoalitionstation>
-  <missionname.assaultonseparatismstation>突袭分离主义站点</missionname.assaultonseparatismstation>
+  <missionname.assaultonseparatismstation>突袭分离主义站点[极其困难]</missionname.assaultonseparatismstation>
   <missiondescription.assaultonseparatismstation>摧毁位于[location1]站点，该站点为塞壬小队的补给站，摧毁它以切断分离主义的补给线。</missiondescription.assaultonseparatismstation>
   <missionheader0.assaultonseparatismstation>分离主义站点已被摧毁</missionheader0.assaultonseparatismstation>
   <missionmessage0.assaultonseparatismstation>补给线已经被切断。</missionmessage0.assaultonseparatismstation>
-  <missionname.assaultonstation>突袭海盗站点</missionname.assaultonstation>
+  <missionname.assaultonstation>突袭海盗站点[极其困难]</missionname.assaultonstation>
   <missiondescription.assaultonstation>摧毁位于[location1]站点，该站点已经被海盗占领，请肃清该站点。</missiondescription.assaultonstation>
   <missionheader0.assaultonstation>站点已被摧毁</missionheader0.assaultonstation>
   <missionmessage0.assaultonstation>我们的船只以后能够继续安全地通过该通道。</missionmessage0.assaultonstation>
+
+
+
+
 
 </infotexts>

@@ -2,7 +2,7 @@
 <Items>
 <!-- Drop pod -->
   <Item name="Pirategunner_Pod" identifier="BW_P_gunner" nameidentifier="BW_P_gunner" translationidentifier="BW_P_gunner" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -38,7 +38,7 @@
     </Projectile>
   </Item>
   <Item name="Piratedismantler_Pod" identifier="BW_P_dismantler" nameidentifier="BW_P_dismantler" translationidentifier="BW_P_dismantler" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -78,7 +78,7 @@
     </Projectile>
   </Item>
   <Item name="Pirateveteran_Pod" identifier="BW_P_veteran" nameidentifier="BW_P_veteran" translationidentifier="BW_P_veteran" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -114,7 +114,7 @@
     </Projectile>
   </Item>
   <Item name="Piratesharpshooter_Pod" identifier="BW_P_sharpshooter" nameidentifier="BW_P_sharpshooter" translationidentifier="BW_P_sharpshooter" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -150,7 +150,7 @@
     </Projectile>
   </Item>
   <Item name="Piratescavenger_Pod" identifier="BW_P_cavenger" nameidentifier="BW_P_cavenger" translationidentifier="BW_P_cavenger" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="100" itemdamage="10" severlimbsprobability="2.0" penetration="0.3">
@@ -184,7 +184,7 @@
     </Projectile>
   </Item>
   <Item name="Pirateheavy_Pod" identifier="BW_P_heavy" nameidentifier="BW_P_heavy" translationidentifier="BW_P_heavy" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -219,7 +219,7 @@
     </Projectile>
   </Item>
   <Item name="Pirateenforcer_Pod" identifier="BW_P_enforcer" nameidentifier="BW_P_enforcer" translationidentifier="BW_P_enforcer" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
@@ -254,7 +254,7 @@
     </Projectile>
   </Item>
   <Item name="Piraterecruits_Pod" identifier="BW_P_Piraterecruits" nameidentifier="BW_P_Piraterecruits" translationidentifier="BW_P_Piraterecruits" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
     <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">

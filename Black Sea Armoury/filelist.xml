@@ -16,7 +16,7 @@
   <Item file="%ModDir%/AXE/AXE.xml" />
   <Item file="%ModDir%/TS/Tatical Scanner.xml" />
   <Item file="%ModDir%/Boarding Shield/Shield.xml" />
-  <Item file="%ModDir%/AR/AR.xml" />
+  <Item file="%ModDir%/items/AR/AR.xml" />
   <Afflictions file="%ModDir%/Skill/Afflictions.xml" />
   <Text file="%ModDir%/Language/English.xml" />
   <Text file="%ModDir%/Language/TraditionalChinese.xml" />
@@ -69,7 +69,7 @@
   <Missions file="%ModDir%/Events/BAEMissions.xml" />
   <RandomEvents file="%ModDir%/Events/BAErandommissionevents.xml" />
   <RandomEvents file="%ModDir%/Events/BAErandomcampaignevents.xml" />
-  <item file="%ModDir%/Dropod/Droppod.xml" />
+  <item file="%ModDir%/Items/Dropod/Droppod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirategunnerpod/Pirategunnerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratedismantlerpod/Piratedismantlerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateveteranpod/Pirateveteranpod.xml" />
