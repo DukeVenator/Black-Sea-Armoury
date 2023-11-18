@@ -120,8 +120,8 @@
   </Item>
   <!-- LMG Bullet (Bullet for Linked 7.62mm magazine) for enemy -->
   <Item name="Lmg Rounde" identifier="lmground_bw_e" category="Misc" interactthroughwalls="true" tags="hmgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
@@ -216,8 +216,8 @@
   </Item>
     <!-- 14.5 Ammo Box -->
   <Item name="sicklemag" identifier="HMG1_mag_bw_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="ammobox,smallitem,HMG1_mag_bw,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="2">
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="HMG1_ammo_bw_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="HMG1_ammo_bw_e" />
@@ -233,8 +233,8 @@
   </Item>
   <!-- HMG Bullet enemy increased structure damage-->
   <Item name="hmgbe" identifier="HMG1_ammo_bw_e" aliases="HMG Ammo Box" scale="0.5" tags="ammobox,smallitem,HMG1_ammo_bw,gunsmith,hmgammotype" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" maxstacksize="30" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="3">
@@ -265,8 +265,8 @@
   </Item>
   <!-- Rocket Shell (Axe Rocket Cannon Magazine) enemy -->
   <Item name="rocketmag" identifier="cannonshell_bw_e" aliases="Rocketbox" scale="0.5" tags="ammo,mediumitem,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" hideinmenus="true" maxstacksize="2">
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cannonshell_bwr_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="cannonshell_bwr_e" />
@@ -602,8 +602,8 @@
   </Item>  
   <!-- Experimental Chaingun Ammo Box -->
   <Item name="chaingunammo" identifier="chaingun_ammo_bw_e" aliases="Chaingun Ammo Box" scale="0.5" tags="ammobox,smallitem,mobilecontainer,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="True">
-    <Sprite texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
-    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
+    <Sprite texture="%ModDir%/items/HMG/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
+    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/items/HMG/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
       <StatusEffect type="Always" target="This" targetitemcomponent="ContainedSprite" setvalue="true" sourcerect="0,0,95,70">
         <Conditional condition="eq 0" />
       </StatusEffect>
@@ -624,8 +624,8 @@
   </Item>
   <!-- Chaingun Bullet for enemy-->
   <Item name="Experimental Chaingun Round" identifier="chaingun_round_bw_e" category="Misc" interactthroughwalls="true" tags="smallitem,round,hmgammotype" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="6" maxtargetstohit="2" removeonhit="false">
@@ -806,8 +806,8 @@
   </Item>
     <!-- Rocket Shell (Axe Rocket Cannon Magazine) enemy -->
     <Item name="huskrocketmag" identifier="huskshell_bw_e" aliases="Rocketbox" scale="0.5" tags="ammo,mediumitem,gunsmith" description="" category="Equipment" linkable="false" impactsoundtag="impact_metal_heavy" hideinmenus="true" maxstacksize="2">
-      <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-      <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+      <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+      <Sprite texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
       <Body width="30" height="40" density="50" />
       <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cannonshell_bwr_e" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
         <Containable items="huskshell_bwr_e" />

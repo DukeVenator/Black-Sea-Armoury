@@ -463,17 +463,13 @@
     <Description tag="talentdescription.deadeyebw">
       <Replace tag="[powerincrease]" value="10" color="gui.green" />
     </Description>
-    <Description tag="talentdescription.gainitem">
-      <Replace tag="[amount]" value="1" color="gui.green" />
-      <Replace tag="[itemname]" value="entityname.SG_ammo" color="gui.orange" />
-    </Description>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,1" sheetelementsize="128,128" />
     <AbilityGroupEffect abilityeffecttype="OnAttack">
       <Conditions>
         <AbilityConditionAttackData tags="deadeyebw" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.1"/>
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupInterval>
@@ -963,6 +959,12 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.pio_bw" color="gui.orange"/>
     </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.pio_bw_med" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.armored_hardsuit_bw_med" color="gui.orange"/>
+    </Description>
     <Description tag="talentdescription.firemanscarry"/>
     <Description tag="talentdescription.increaseappliedbuffduration">
       <Replace tag="[amount]" value="10" color="gui.green" />
@@ -975,6 +977,8 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="bandolierbw2"/>
     <AddedRecipe itemidentifier="pio_bw"/>
+    <AddedRecipe itemidentifier="pio_bw_med"/>
+    <AddedRecipe itemidentifier="armored_hardsuit_bw_med"/>
   </Talent>
   <Talent identifier="custommachinebw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,2" sheetelementsize="128,128" />
@@ -1025,9 +1029,6 @@
   </Talent>
   <Talent identifier="drsubmarinebw">
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="0,6" sheetelementsize="128,128"/>
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="新的医疗武器？" color="gui.orange" />
-    </Description>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.handcannonbw,entityname.handcannon,entityname.handcannonround" color="gui.orange" />
     </Description>

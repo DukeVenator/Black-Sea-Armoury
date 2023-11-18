@@ -5,7 +5,7 @@
   <Talents file="%ModDir%/Job/TalentsBP.xml" />
   <Afflictions file="%ModDir%/Job/AfflictionsBP.xml" />
   <Particles file="%ModDir%/Particles/ParticlePrefabs.xml" />
-  <Item file="%ModDir%/Chaingun/Guns.xml" />
+  <Item file="%ModDir%/items/HMG/Guns.xml" />
   <Item file="%ModDir%/LMG/Guns.xml" />
   <Item file="%ModDir%/PRG/PRG.xml" />
   <Item file="%ModDir%/BA/BA.xml" />
@@ -78,8 +78,10 @@
   <Character file="%ModDir%/Enemy/Pirate/Pirateenforcerpod/Pirateenforcerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateheavypod/Pirateheavypod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piraterecruitspod/Piraterecruitspod.xml" />
+  <Character file="%ModDir%/Enemy/Coalition/Coalitiongunnerpod/Coalitiongunnerpod.xml" />
+  <Character file="%ModDir%/Enemy/Coalition/Coalitionheavypod/Coalitionheavypod.xml" />
+  <Character file="%ModDir%/Enemy/Coalition/Coalitionriflemanpod/Coalitionriflemanpod.xml" />
+  <Character file="%ModDir%/Enemy/Coalition/Coalitionveteranpod/Coalitionveteranpod.xml" />
+  <Character file="%ModDir%/Enemy/Coalition/Coalitioneyeofear/Coalitioneyeofear.xml" />
   <item file="%ModDir%/Items/Materials/materials.xml" />
-  <Character file="%ModDir%/Enemy/Pirate/Pirateexperimental/Pirateexperimental.xml" />
-  <Character file="%ModDir%/Enemy/Pirate/Pirateexperimental2/Pirateexperimental2.xml" />
-  <Character file="%ModDir%/Enemy/Pirate/Pirateexperimentallargedemo/Pirateexperimentallargedemo.xml" />
 </contentpackage>

@@ -18,10 +18,10 @@
       <RequiredItem identifier="physicorium" />
       <RequiredItem identifier="HMG1_bw" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/6G.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/HMG/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir%/Chaingun/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
+      <sprite name="CG Worn" texture="%ModDir%/items/HMG/6G.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -110,10 +110,10 @@
       <RequiredItem identifier="plastic" amount="2"/>
       <RequiredItem identifier="rubber" amount="2"/>/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/HMG1.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/HMG/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir%/chaingun/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
+      <sprite name="CG Worn" texture="%ModDir%/items/HMG/HMG1.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.25" />
     </Wearable>
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -183,8 +183,8 @@
       <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
     <Deconstruct time="1"></Deconstruct>
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="Any,RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="4" removeonhit="false" maxtargetstohit="2">
@@ -239,8 +239,8 @@
       <RequiredItem identifier="amu_bw" amount="4"/>
       <RequiredItem identifier="steel" amount="2"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="HMG1_ammo_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="HMG1_ammo_bw" />
@@ -278,8 +278,8 @@
       <RequiredItem identifier="amu_bw" amount="2"/>
       <RequiredItem identifier="steel" amount="1"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <InventoryIcon texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/14.5 ammo box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="HMG1_ammo_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="HMG1_ammo_bw" />
@@ -322,10 +322,10 @@
       <RequiredItem identifier="thermalartifact" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="CG Worn" texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
+      <sprite name="CG Worn" texture="%ModDir%/items/HMG/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.2" />
     </Wearable>
-    <InventoryIcon texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/chaingun/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun.png" sourcerect="0,0,640,280" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun.png" sourcerect="0,0,640,280" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="140,-120" aimpos="160,-120" handle1="-60,-6" handle2="120,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="250,13" spread="6.5" unskilledspread="16" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.05">
@@ -418,8 +418,8 @@
       <RequiredItem identifier="amu_bw" amount="4"/>
       <RequiredItem identifier="plastic" amount="2"/>
     </Fabricate>
-    <Sprite texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
-    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/Chaingun/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
+    <Sprite texture="%ModDir%/items/HMG/chain gun ammo box.png" depth="0.54" sourcerect="0,0,95,72" origin="0.5,0.5" />
+    <ContainedSprite allowedcontainertags="weapon" texture="%ModDir%/items/HMG/chain gun ammo box.png" depth="0.54" sourcerect="0,0,96,72" origin="0.5,0.5">
       <StatusEffect type="Always" target="This" targetitemcomponent="ContainedSprite" setvalue="true" sourcerect="0,0,95,70">
         <Conditional condition="eq 0" />
       </StatusEffect>
@@ -440,8 +440,8 @@
   </Item>
   <!-- Chaingun Bullet -->
   <Item name="Experimental Chaingun Round" identifier="chaingun_round_bw" category="Misc" interactthroughwalls="true" tags="smallitem,round,hmgammotype,mountableweapon" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" spread="6" maxtargetstohit="2" removeonhit="false">

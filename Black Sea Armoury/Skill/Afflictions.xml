@@ -162,6 +162,14 @@
     </Effect>
     <Icon texture="%ModDir%/BA/ICON/PR.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
   </Affliction>
+  <Affliction name="" identifier="Med_sys" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-5">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.10" />
+      <StatValue stattype="PoisonMultiplier" value="0.5"/>
+      <StatValue stattype="CPRBoost" value="0.25"/>
+    </Effect>
+    <Icon texture="%ModDir%/BA/ICON/PR.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
   <Affliction name="" identifier="Apollo_sys" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="10">
     <Effect minstrength="0" maxstrength="10" strengthchange="-5">
       <StatValue stattype="GeneticMaterialTaintedProbabilityReductionOnCombine" value="1" />

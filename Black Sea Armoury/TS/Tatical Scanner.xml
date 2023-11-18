@@ -678,8 +678,8 @@
   </Item>
   <!-- 14.5mm Normal Bullet (Bullet for 14.5mm Round Clip) -->
   <Item name="round1" identifier="revolverroundbw" category="Weapon" subcategory="Black Sea Armoury" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw,gunsmith,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true">
@@ -729,8 +729,8 @@
   </Item>
   <!-- 14.5mm Concussion Bullet (Bullet for 14.5mm Concussion Round Clip) -->
   <Item name="round2" identifier="revolverroundbw2" category="Weapon" subcategory="Black Sea Armoury" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw2,gunsmith,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round2.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true">
@@ -787,8 +787,8 @@
   </Item>
   <!-- 14.5mm Flare Bullet (Bullet for 14.5mm Flare Round Clip) -->
   <Item name="round3" identifier="revolverroundbw3" category="Weapon" subcategory="Black Sea Armoury" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverroundbw3,pistolammoitem" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round3.png" sourcerect="0,0,4,4" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round3.png" sourcerect="0,0,4,4" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round3.png" sourcerect="0,0,4,4" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round3.png" sourcerect="0,0,4,4" origin="0.5,0.5" />
     <Body width="29" height="10" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="18.0">

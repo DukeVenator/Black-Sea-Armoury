@@ -35,7 +35,7 @@
   <talentdescription.laststand>当你的生命低于[health]%时，会快速回复生命值。</talentdescription.laststand>
   <talentname.implacablebw>钢铁意志</talentname.implacablebw>
   <talentname.deadeyebw>死眼绝射</talentname.deadeyebw>
-  <talentdescription.deadeyebw>当你使用试验狙击炮时，攻击提升[powerincrease]%。你也能更快地从出血状态中恢复过来。每当你完成一项任务，获得以下补给。 </talentdescription.deadeyebw>
+  <talentdescription.deadeyebw>当你使用精确射手步枪或狙击炮时，攻击和穿透率提升[powerincrease]%。你也能更快地从出血状态中恢复过来。</talentdescription.deadeyebw>
   <talentname.stonewallbw>持盾护卫</talentname.stonewallbw>
   <talentdescription.stonewallbw>当你受到攻击后，[seconds]内你的物理伤害抗性提升[physicaldamagereduction]%，击晕抗性提升[stunresistance]%，近战伤害提升[amount]%。</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>权限许可</talentname.munitionsexpertisebw>
@@ -123,6 +123,28 @@
   <entitydescription.spsg-15>有着独特转轮式供弹机构的全自动无托霰弹枪，拥有高达15发的弹容量，使其成为室内CQB的最佳选择。</entitydescription.spsg-15>
   <entityname.spsg-4>SPSG-4 特种"重锤"霰弹枪</entityname.spsg-4>
   <entitydescription.spsg-4>SPSG-4 特种"重锤"霰弹枪通过特殊设计的燃气导轨能够瞬间发送两枚霰弹弹药，但击发后繁琐的复位机制使其泛用性大大降低。</entitydescription.spsg-4>
+  <entityname.spsg-8>SPSG-8 特种"撕裂"霰弹枪</entityname.spsg-8>
+  <entitydescription.spsg-8>SPSG-8 特种"撕裂"霰弹枪更长的枪口以及改进自动化机构实现更强的火力</entitydescription.spsg-8>
+  <entityname.mph_bw>4 英寸多用途"臭臭"榴弹炮</entityname.mph_bw>
+  <entitydescription.mph_bw>4 英寸多用途"臭臭"榴弹炮能够发射特制4 英寸榴弹炮以应对不同的情况</entitydescription.mph_bw>
+  <entityname.mph_ammo_cyanide>4 英寸 "普鲁士蓝"榴弹</entityname.mph_ammo_cyanide>
+  <entitydescription.mph_ammo_cyanide>剧毒氰化氢和氰化钾混合榴弹，能够使范围内目标急性氰化物中毒</entitydescription.mph_ammo_cyanide>
+  <entityname.mph_ammo_cyanide_d>4 英寸 "普鲁士蓝"榴弹(延迟引信)</entityname.mph_ammo_cyanide_d>
+  <entitydescription.mph_ammo_cyanide_d>剧毒氰化氢和氰化钾混合榴弹，能够使范围内目标急性氰化物中毒。使用延迟引信，在碰撞后1.5秒后引爆。</entitydescription.mph_ammo_cyanide_d>
+  <entityname.mph_ammo_stun>4 英寸 "黑日"榴弹</entityname.mph_ammo_stun>
+  <entitydescription.mph_ammo_stun>能够产生巨大的闪光和声爆，迫使目标失去能力，并且释放麻痹毒剂使目标失去行动能力</entitydescription.mph_ammo_stun>
+  <entityname.mph_ammo_stun_d>4 英寸 "黑日"榴弹(延迟引信)</entityname.mph_ammo_stun_d>
+  <entitydescription.mph_ammo_stun_d>能够产生巨大的闪光和声爆，迫使目标失去能力，并且释放麻痹毒剂使目标失去行动能力。使用延迟引信，在碰撞后1.5秒后引爆。</entitydescription.mph_ammo_stun_d>
+  <entityname.mph_ammo_radiation>4 英寸 "辐寿"榴弹</entityname.mph_ammo_radiation>
+  <entitydescription.mph_ammo_radiation>能够产生辐射云，使目标区域任何物品严重污染</entitydescription.mph_ammo_radiation>
+  <entityname.mph_ammo_radiation_d>4 英寸 "辐寿"榴弹(延迟引信)</entityname.mph_ammo_radiation_d>
+  <entitydescription.mph_ammo_radiation_d>能够产生辐射云，使目标区域任何物品严重污染。使用延迟引信，在碰撞后1.5秒后引爆。</entitydescription.mph_ammo_radiation_d>
+  <entityname.mph_ammo_emp>4 英寸 "电涌"榴弹</entityname.mph_ammo_emp>
+  <entitydescription.mph_ammo_emp>能够产生强大的EMP脉冲波，瘫痪一切电力设施</entitydescription.mph_ammo_emp>
+  <entityname.mph_ammo_exp>4 英寸 "暴雷"榴弹</entityname.mph_ammo_exp>
+  <entitydescription.mph_ammo_exp>爆炸就是艺术</entitydescription.mph_ammo_exp>
+  <entityname.mph_ammo_exp_vt>4 英寸 "暴雷"榴弹(VT)</entityname.mph_ammo_exp_vt>
+    <entitydescription.mph_ammo_exp_vt>爆炸就是艺术，使用近炸引信在目标附近引爆并产生金属风暴，对除发射者外的一切目标进行切割。</entitydescription.mph_ammo_exp_vt>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
   <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>
@@ -168,6 +190,10 @@
   <entitydescription.armored_miningsuit_bw3>重型军用工程机甲改装，稍微改善速度与试验型能量循环炉。</entitydescription.armored_miningsuit_bw3>
   <entityname.apollo_bw>阿波罗(Apollo)</entityname.apollo_bw>
   <entitydescription.apollo_bw>轻型战地医师机甲，可以携带大量医疗物资，在战场中快速移动，并且对药物和研究提供巨量加成。</entitydescription.apollo_bw>
+  <entityname.armored_hardsuit_bw_med>X01战斗装甲(战斗医疗)</entityname.armored_hardsuit_bw_med>
+  <entitydescription.armored_hardsuit_bw_med>为了执行多种军事任务而诞生的先进装甲，使用X01氧气电池。附加有着自动健康监控系统。</entitydescription.armored_hardsuit_bw_med>
+  <entityname.pio_bw_med>先锋式改二型</entityname.pio_bw_med>
+    <entitydescription.pio_bw_med>专精于医疗救助。使用氧气瓶。</entitydescription.pio_bw_med>
   <!--Shield.xml-->
   <entityname.bwapc>逆向工程外星电池(Reverse Engineering Alien Power Cell)</entityname.bwapc>
   <entitydescription.bwapc>人工增强的外星电池。 </entitydescription.bwapc>
@@ -201,7 +227,6 @@
   <entityname.rg_bw>雷霆炮(Thunder Cannon)</entityname.rg_bw>
   <entitydescription.rg_bw>强行改装成携带式的船舰主炮，存在诸多缺点。使用核弹以外的轨道炮炮弹。 </entitydescription.rg_bw>
   <!--Guns.xml-->
-  <entityname.HMG1_boss>革命</entityname.HMG1_boss>
   <entityname.HMG1_bp6>革命(Revolution)</entityname.HMG1_bp6>
   <entitydescription.HMG1_bp6>军用改装提高枪管的综合性能。</entitydescription.HMG1_bp6>
   <entityname.HMG1_bw>镰刀重机枪(Sickle HMG)</entityname.HMG1_bw>
@@ -361,6 +386,8 @@
   <Afflictiondescription.sup4>攻击速度提高20%，生命值提高25%，物理伤害减免20%。</Afflictiondescription.sup4>
   <Afflictionname.sup4>武库支援系统</Afflictionname.sup4>
   <Afflictiondescription.sup4>攻击速度提高20%，生命值提高25%，物理伤害减免20%。</Afflictiondescription.sup4>
+  <Afflictionname.Med_sys>战地医师系统</Afflictionname.Med_sys>
+  <Afflictiondescription.Med_sys>生命值提高10%，毒药效果增加50%。</Afflictiondescription.Med_sys>
   <Afflictionname.Apollo_sys>战地医师系统</Afflictionname.Apollo_sys>
   <Afflictiondescription.Apollo_sys>生命值提高10%，毒药效果增加100%，基因合并时无污染风险。</Afflictiondescription.Apollo_sys>
   <Afflictionname.bedsidemanner_bw>阿波罗支援系统</Afflictionname.bedsidemanner_bw>
@@ -372,11 +399,17 @@
   <entityname.pio_bw2_e>Pirate Pioneer</entityname.pio_bw2_e>
   <entityname.armored_hardsuit_bw_e>X01</entityname.armored_hardsuit_bw_e>
   <entityname.armored_hardsuit_bw2_e>X01 Veteran</entityname.armored_hardsuit_bw2_e>
+  <entityname.armored_miningsuit_bw3_e>modified Hercules</entityname.armored_miningsuit_bw3_e>
+  <entityname.knight_hardsuit_bw_e>Corrupted Knight</entityname.knight_hardsuit_bw_e>
+  <entityname.clownexosuitbw_e>Funkoverlord 4000</entityname.clownexosuitbw_e>
   <entitydescription.corsairar_bw_e>This suit is locked by biometric authentication.</entitydescription.corsairar_bw_e>
   <entitydescription.armored_miningsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_miningsuit_bw_e>
   <entitydescription.pio_bw2_e>This suit is locked by biometric authentication.</entitydescription.pio_bw2_e>
   <entitydescription.armored_hardsuit_bw_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw_e>
   <entitydescription.armored_hardsuit_bw2_e>This suit is locked by biometric authentication.</entitydescription.armored_hardsuit_bw2_e>
+  <entitydescription.armored_miningsuit_bw3_e>This suit is locked by biometric authentication.</entitydescription.armored_miningsuit_bw3_e>
+  <entitydescription.knight_hardsuit_bw_e>Why do we resist embracing the Husk?</entitydescription.knight_hardsuit_bw_e>
+  <entitydescription.clownexosuitbw_e>Why so serious?</entitydescription.clownexosuitbw_e>
   <!--Enemy Characters-->
   <!--Pirate-->
   <character.Pirateantisub>雷霆</character.Pirateantisub><!--轨道炮高爆/破片/EMP | 二海后-->
@@ -417,35 +450,42 @@
   <character.Separatistgunner>塞壬小队协奏曲</character.Separatistgunner><!--镰刀T2-->
   <character.Separatistsharpshooter>塞壬小队奏鸣曲</character.Separatistsharpshooter><!--精确步枪-->
   <character.Separatistbombard>塞壬小队进行曲</character.Separatistbombard><!--伐木炮-->
+  <!--Cultist-->
+  <character.Corruptedknight>堕落骑士</character.Corruptedknight>
+  <character.Cultistdevoter>异教徒虔诚者</character.Cultistdevoter>
+  <character.Cultistzealot>异教徒狂热者</character.Cultistzealot>
+  <character.Technoprankster>科学怪人</character.Technoprankster>
+  <!--BOSS-->
+  <character.Coalitioneyeofear>恐惧之眼</character.Coalitioneyeofear>
   <!--Mission text-->
   <missionheader.killtarget>目标被消灭</missionheader.killtarget>
   <missionmessage.killmessage>目标被消灭已经被肃清了。驾驶潜水艇离开洞穴以领取奖励。</missionmessage.killmessage>
   <missionname.killnuker>核能危机</missionname.killnuker>
-  <missiondescription.killnuker>一群精英分裂主义分子带着核弹投奔了海盗。虽然目前还没有伤亡的报告，但需要立刻消除这一威胁。他们的机甲可以抵御大部分潜艇的武器装备，所以强烈建议使用手持武器来对付他们。</missiondescription.killnuker>
+  <missiondescription.killnuker>一群精英分裂主义分子带着核弹投奔了海盗。虽然目前还没有伤亡的报告，但需要立刻消除这一威胁。他们的机甲可以抵御大部分潜艇的武器装备，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.killnuker>
   <missionsonarlabel.killnuker>海盗小队</missionsonarlabel.killnuker>
   <missionsuccess.killnuker>被盗的核武器已被妥善处理。</missionsuccess.killnuker>
   <missionname.killpirates>海盗机械化部队</missionname.killpirates>
-  <missiondescription.killpirates>根据我们的线报，有一群海盗机甲部队封锁了从[location1]到[location2]的通道. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.killpirates>
+  <missiondescription.killpirates>根据我们的线报，有一群海盗机甲部队封锁了从[location1]到[location2]的通道. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲被设计成能够抵御大多数潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.killpirates>
   <missionsonarlabel.killpirates>海盗突击队</missionsonarlabel.killpirates>
   <missionsuccess.killpirates>海盗们已经被消灭了。这条路线应该又是安全的。</missionsuccess.killpirates>
   <missionname.killtraitors>机械化叛徒</missionname.killtraitors>
-  <missiondescription.killtraitors>我们机械化部队的军官带着最先进的武器投奔了海盗。我们要求在局势进一步恶化之前消灭他。他们的机甲被设计成可以抵御大部分潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.killtraitors>
+  <missiondescription.killtraitors>我们机械化部队的军官带着最先进的武器投奔了海盗。我们要求在局势进一步恶化之前消灭他。他们的机甲被设计成可以抵御大部分潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.killtraitors>
   <missionsonarlabel.killtraitors>叛徒</missionsonarlabel.killtraitors>
   <missionsuccess.killtraitors>该官员和他的团队已被肃清。</missionsuccess.killtraitors>
   <missionname.separatistex1>分离主义巡逻队</missionname.separatistex1>
-  <missiondescription.separatistex1>根据我们的线报，有一群分离主义机甲部队在[location1]到[location2]的通道上游荡. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.separatistex1>
+  <missiondescription.separatistex1>根据我们的线报，有一群分离主义机甲部队在[location1]到[location2]的通道上游荡. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.separatistex1>
   <missionsonarlabel.separatistex1>分离主义巡逻队</missionsonarlabel.separatistex1>
   <missionsuccess.separatistex1>分裂主义分子们已经被消灭了。这条路线应该又是安全的。</missionsuccess.separatistex1>
   <missionname.killseparatist>分离主义军事演习</missionname.killseparatist>
-  <missiondescription.killseparatist>根据我们的线报，有一群分离主义机械化部队在[location1]到[location2]的通道上进行军事演习. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.killseparatist>
+  <missiondescription.killseparatist>根据我们的线报，有一群分离主义机械化部队在[location1]到[location2]的通道上进行军事演习. 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.killseparatist>
   <missionsonarlabel.killseparatist>分离主义部队</missionsonarlabel.killseparatist>
   <missionsuccess.killseparatist>分裂主义分子们已经被消灭了。这条路线应该又是安全的。</missionsuccess.killseparatist>
   <missionname.coalitionex1>联盟巡逻队</missionname.coalitionex1>
-  <missiondescription.coalitionex1>根据我们的消息, 有一群联盟机甲部队在[location1]到[location2]的通道上游荡.让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.coalitionex1>
+  <missiondescription.coalitionex1>根据我们的消息, 有一群联盟机甲部队在[location1]到[location2]的通道上游荡.让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.coalitionex1>
   <missionsonarlabel.coalitionex1>联盟巡逻队</missionsonarlabel.coalitionex1>
   <missionsuccess.coalitionex1>联盟巡逻队已经被消灭了。这条路线应该又是安全的。</missionsuccess.coalitionex1>
   <missionname.killcoalition>联盟军事演习</missionname.killcoalition>
-  <missiondescription.killcoalition>根据我们的消息，联盟的机械化部队在[地点1]到[地点2]的路线上进行军事演习。 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，所以强烈建议用手持武器来对付他们。</missiondescription.killcoalition>
+  <missiondescription.killcoalition>根据我们的消息，联盟的机械化部队在[地点1]到[地点2]的路线上进行军事演习。 让这些机甲消失，以便我们的船只能够继续安全地通过通道。他们的机甲服被设计成能够抵御大多数潜艇的武器，强烈建议使用手持反巨兽武器或者大口径反舰武器来对付他们。</missiondescription.killcoalition>
   <missionsonarlabel.killcoalition>联盟部队</missionsonarlabel.killcoalition>
   <missionsuccess.killcoalition>联盟部队已被消灭。这条路线应该又是安全的。</missionsuccess.killcoalition>
   <missionname.separatistattackbae>消息接入中</missionname.separatistattackbae>
@@ -479,9 +519,5 @@
   <missiondescription.assaultonstation>摧毁位于[location1]站点，该站点已经被海盗占领，请肃清该站点。</missiondescription.assaultonstation>
   <missionheader0.assaultonstation>站点已被摧毁</missionheader0.assaultonstation>
   <missionmessage0.assaultonstation>我们的船只以后能够继续安全地通过该通道。</missionmessage0.assaultonstation>
-
-
-
-
 
 </infotexts>

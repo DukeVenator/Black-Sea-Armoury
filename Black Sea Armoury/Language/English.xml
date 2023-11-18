@@ -35,7 +35,7 @@
   <talentdescription.laststand> When your life is lower than [health]%, you will quickly restore your health. </talentdescription.laststand>
   <talentname.implacablebw>Iron Will</talentname.implacablebw>
   <talentname.deadeyebw>I See Dead Eye</talentname.deadeyebw>
-  <talentdescription.deadeyebw>When you launch an Experimental Precise Gun,damage increases [powerincrease]%.You can also recover from bleeding faster.Whenever you complete a task,get the following supplies.</talentdescription.deadeyebw>
+  <talentdescription.deadeyebw>When you launch an Experimental Precise Gun and Designated Marksman Rifle,damage and penetration increases [powerincrease]%.You can also recover from bleeding faster.</talentdescription.deadeyebw>
   <talentname.stonewallbw>Shield Barrier</talentname.stonewallbw>
   <talentdescription.stonewallbw>When you are attacked,within [seconds] your physical damage resistance increases [physicaldamagereduction]%,stun resistance increases [stunresistance]%,and melee damage increases [amount]%.</talentdescription.stonewallbw>
   <talentname.munitionsexpertisebw>High Permission</talentname.munitionsexpertisebw>
@@ -85,8 +85,8 @@
   <talentname.apolloassistsystem_bw>Apollo Assistance System</talentname.apolloassistsystem_bw>
   <talentdescription.apolloassistsystem_bw> When driving Apollo, inflict additional 100% chemical burns, and after healing the wounded, the wounded will be assisted by Apollo nanobots within 60 seconds. </talentdescription.apolloassistsystem_bw>
   <!--AR.xml-->
-  <entityname.spar-408>SPAR-408 Special Precision Sniper Rifle</entityname.spar-408>
-  <entitydescription.spar-408>A precision marksman rifle designed by the Iron Alliance to annihilate high-threat targets. </entitydescription.spar-408>
+  <entityname.spar-408>SPAR-408 Special Designated Marksman Rifle</entityname.spar-408>
+  <entitydescription.spar-408>A designated marksman rifle designed by the Iron Alliance to annihilate high-threat targets. </entitydescription.spar-408>
   <entityname.spar_7magazine>SPAR-408 Kraken Armor-Piercing Magazine(7)</entityname.spar_7magazine>
   <entitydescription.spar_7magazine>7 rounds of .408 rifle magazines, the armor-piercing rounds used are enough to penetrate the armor of most creatures. </entitydescription.spar_7magazine>
   <entityname.spar_7magazine_fmj>SPAR-408 Kun Full Metal Jacket Magazine(7)</entityname.spar_7magazine_fmj>
@@ -94,15 +94,15 @@
   <entityname.spar_7magazine_jhp>SPAR-408 Scylla Full Metal Jacket Hollow Point Magazine(7)</entityname.spar_7magazine_jhp>
   <entitydescription.spar_7magazine_jhp>7 rounds of .408 rifle magazines, using full metal jacketed hollow point bullets, capable of inflicting massive damage and massive stopping power inside the target. </entitydescription.spar_7magazine_jhp>
   <entityname.spar-338>SPAR-338 Special Machine Gun</entityname.spar-338>
-  <entitydescription.spar-338>A precise and deadly machine gun designed by the League of Steel to defend against the ever-increasing danger of monsters.</entitydescription.spar-338>
+  <entitydescription.spar-338>A precise and deadly machine gun designed by the Iron Alliance to defend against the ever-increasing danger of monsters.</entitydescription.spar-338>
   <entityname.spar_24magazine>SPAR-338 Magazine (24)</entityname.spar_24magazine>
   <entitydescription.spar_24magazine>24 rounds titanium .338 Lapua Magnum magazine. </entitydescription.spar_24magazine>
   <entityname.spar_60magazine>SPAR-338 Magazine (60)</entityname.spar_60magazine>
   <entitydescription.spar_60magazine>60 rounds titanium .338 Lapua Magnum Extended machine gun magazine for suppressing fire. </entitydescription.spar_60magazine>
   <entityname.spar-8s>SPAR-8S Special Automatic Team Sniper Rifle</entityname.spar-8s>
-  <entitydescription.spar-8s>A fully automatic squad precision marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration.</entitydescription.spar-8s>
-  <entityname.spar-8>SPAR-8 Special Precision Sniper Rifle</entityname.spar-8>
-  <entitydescription.spar-8>A fully automatic precision marksman rifle designed by the Iron Alliance, favored by elite troops. </entitydescription.spar-8>
+  <entitydescription.spar-8s>A fully automatic squad designated marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration.</entitydescription.spar-8s>
+  <entityname.spar-8>SPAR-8 Special Designated Marksman Rifle</entityname.spar-8>
+  <entitydescription.spar-8>A fully automatic designated marksman rifle designed by the Iron Alliance, favored by elite troops. </entitydescription.spar-8>
   <entityname.spar_45magazine>SPAR-8 Magazine (45)</entityname.spar_45magazine>
   <entitydescription.spar_45magazine>A 45-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds, suitable for standard models.</entitydescription.spar_45magazine>
   <entityname.spar_20magazine>SPAR-8 Magazine (20)</entityname.spar_20magazine>
@@ -123,6 +123,20 @@
   <entitydescription.spsg-15>A fully automatic, stockless shotgun with a unique revolving magazine mechanism, boasting a capacity of up to 15 rounds, making it an ideal choice for indoor CQB.</entitydescription.spsg-15>
   <entityname.spsg-4>SPSG-4 Special "Heavy Hammer" Shotgun</entityname.spsg-4>
   <entitydescription.spsg-4>The SPSG-4 "Heavy Hammer" shotgun can instantly fire two shotgun rounds using a specially designed gas track, but its complex reset mechanism significantly reduces its versatility.</entitydescription.spsg-4>
+  <entityname.spsg-8>SPSG-8 Special "Ripper" Shotgun</entityname.spsg-8>
+  <entitydescription.spsg-8>The SPSG-8 Special "Ripper" Shotgun features a longer barrel and improved automatic mechanism for increased firepower.</entitydescription.spsg-8>
+  <entityname.mph_bw>4-Inch Multi-Purpose "Stinky" Grenade Launcher</entityname.mph_bw>
+  <entitydescription.mph_bw>The 4-inch Multi-Purpose "Stinky" Grenade Launcher can fire specially designed 4-inch grenades to address different situations.</entitydescription.mph_bw>
+  <entityname.mph_ammo_cyanide>4-Inch "Prussian Blue" Grenade</entityname.mph_ammo_cyanide>
+  <entitydescription.mph_ammo_cyanide>A toxic mixture of hydrogen cyanide and potassium cyanide, causing acute cyanide poisoning within the target area.</entitydescription.mph_ammo_cyanide>
+  <entityname.mph_ammo_stun>4-Inch "Black Sun" Grenade</entityname.mph_ammo_stun>
+  <entitydescription.mph_ammo_stun>Capable of generating intense flash and sound bursts, forcing targets to lose ability and releasing a paralyzing agent to immobilize them.</entitydescription.mph_ammo_stun>
+  <entityname.mph_ammo_radiation>4-Inch "Radiance" Grenade</entityname.mph_ammo_radiation>
+  <entitydescription.mph_ammo_radiation>Capable of creating a radiation cloud, severely contaminating the targeted area with radiation.</entitydescription.mph_ammo_radiation>
+  <entityname.mph_ammo_emp>4-Inch "Electro Surge" Grenade</entityname.mph_ammo_emp>
+  <entitydescription.mph_ammo_emp>Capable of producing a powerful EMP pulse, disabling all electrical facilities.</entitydescription.mph_ammo_emp>
+  <entityname.mph_ammo_exp>4-Inch "Thunderclap" Grenade</entityname.mph_ammo_exp>
+  <entitydescription.mph_ammo_exp>Art Is Explosion!</entitydescription.mph_ammo_exp>
   <!--AXE.xml-->
   <entityname.PFbw>Power Combat System</entityname.PFbw>
   <entitydescription.PFbw>All Iron League recruits are trained in hand-to-hand combat.</entitydescription.PFbw>
@@ -175,6 +189,8 @@
   <entitydescription.rgcbw>Can load 4 railgun shell or thunder cannon.</entitydescription.rgcbw>
   <entityname.shield_bw>Boarding Shield</entityname.shield_bw>
   <entitydescription.shield_bw>More armor,more safety.</entitydescription.shield_bw>
+  <entityname.arsenal_bw>Black Sea Arsenal</entityname.arsenal_bw>
+  <entitydescription.arsenal_bw>The portable Black Sea Arsenal carries a vast array of weaponry and doubles as an assault spear. When worn, it provides additional power and fire control systems for mechs.</entitydescription.arsenal_bw>
   <entityname.harpoongunbw>Rapid Harpoongun</entityname.harpoongunbw>
   <entitydescription.harpoongunbw>Fast fire harpoongun.use spear.</entitydescription.harpoongunbw>
   <entityname.spearbw>Tattered Spear</entityname.spearbw>
@@ -203,8 +219,10 @@
   <entitydescription.HMG1_bp6>Military reformation improve barrage performance.</entitydescription.HMG1_bp6>
   <entityname.HMG1_bw>Sickle HMG</entityname.HMG1_bw>
   <entitydescription.HMG1_bw>Heavy rapid-fire weapon,but need cooldown after barrage fire 14.5mm rounds and cooldown slow without forced cooling.</entitydescription.HMG1_bw>
-  <entityname.HMG1_mag_bw>14.5 Ammo Box</entityname.HMG1_mag_bw>
+  <entityname.HMG1_mag_bw>14.5 Ammo Box 200 rounds</entityname.HMG1_mag_bw>
+  <entityname.HMG1_mag_bw_h>14.5 Ammo Box 100 rounds</entityname.HMG1_mag_bw_h>
   <entitydescription.HMG1_mag_bw>Old-fashioned high penetration rounds.</entitydescription.HMG1_mag_bw>
+  <entitydescription.HMG1_mag_bw_h>Old-fashioned high penetration rounds.</entitydescription.HMG1_mag_bw_h>
   <entityname.minichaingun_bw>Experimental Chaingun</entityname.minichaingun_bw>
   <entitydescription.minichaingun_bw>Heavy weapon,but very expensive.Use experimental chaingun ammo box.</entitydescription.minichaingun_bw>
   <entityname.chaingun_ammo_bw>Experimental Chaingun Ammo Box</entityname.chaingun_ammo_bw>

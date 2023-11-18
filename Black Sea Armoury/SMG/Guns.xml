@@ -2,8 +2,8 @@
 <Items>
   <!-- SMG Bullet (Bullet for 7.62mm Magazine) -->
   <Item name="Smg Round" identifier="smground_bw" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" tags="smgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
@@ -156,8 +156,8 @@
   </Item>
   <!-- Autofilled SMG Bullet (Bullet for Autofilled 7.62mm Magazine) -->
   <Item name="Smg Round2" identifier="smground_bw2" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" tags="smgammotype,smallitem,round" impactsoundtag="impact_metal_light" scale="0.2" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
-    <Sprite texture="%ModDir%/Chaingun/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,8" depth="0.55" />
+    <Sprite texture="%ModDir%/items/HMG/chaingun round.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
     <Body width="160" height="10" density="15" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">

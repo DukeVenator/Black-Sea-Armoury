@@ -94,7 +94,7 @@
     <monster characterfile="Pirategunnerpod" min="0" max="1"/>
     <Reputation identifier="location" amount="3" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
-    <message header="missionheader.killtaget" text="missionmessage.killmessage"/>
+    <message header="missionheader.killtarget" text="missionmessage.killmessage"/>
   </MonsterMission>
 
   <MonsterMission
@@ -125,7 +125,7 @@
     type="Monster"
     difficulty="3"
     commonness="100"
-    reward="5000"
+    reward="4500"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="1" max="1"/>
     <monster character="Pirateboarder" min="2" max="3"/>
@@ -147,7 +147,7 @@
     type="Monster"
     difficulty="4"
     commonness="100"
-    reward="7000"
+    reward="5000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
     <monster character="Pirateboarder" min="2" max="2"/>
@@ -169,9 +169,9 @@
     textidentifier="killtraitors"
     tags="killmonster,killmonster_set3"
     type="Monster"
-    difficulty="4"
+    difficulty="3"
     commonness="100"
-    reward="6000"
+    reward="4500"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateveteran" min="1" max="1"/>
     <monster character="Piraterifleman" min="1" max="1"/>
@@ -190,7 +190,7 @@
     type="Monster"
     difficulty="4"
     commonness="100"
-    reward="9000"
+    reward="6000"
     maxsonarmarkerdistance="20000">
     <monster character="Pirateantisub" min="2" max="2"/>
     <monster character="Pirategrenadier" min="1" max="1"/>
@@ -213,7 +213,7 @@
     tags="combatcoalitionvsseparatists"
     difficulty="3"
     commonness="50"
-    reward="4000"
+    reward="5000"
     maxsonarmarkerdistance="20000">
     <monster character="Separatistrifleman" min="2" max="4"/>
     <monster character="Separatistsharpshooter" min="1" max="1"/>
@@ -271,9 +271,9 @@
     type="Monster"
     identifier="coalitionex1"
     tags="combatseparatistsvscoalition"
-    difficulty="3"
+    difficulty="5"
     commonness="50"
-    reward="4000"
+    reward="6000"
     maxsonarmarkerdistance="20000">
     <monster character="Coalitionrifleman" min="2" max="4"/>
     <monster character="Coalitionsharpshooter" min="1" max="1"/>
@@ -289,7 +289,7 @@
     identifier="coalitionex2"
     textidentifier="killcoalition"
     tags="combatseparatistsvscoalition"
-    difficulty="3"
+    difficulty="5"
     commonness="50"
     reward="8000"
     maxsonarmarkerdistance="20000">
@@ -297,7 +297,7 @@
     <monster character="Coalitionheavy" min="1" max="2"/>
     <monster character="Coalitionsharpshooter" min="1" max="1"/>
     <monster character="Coalitiongunner" min="1" max="1"/>
-    <monster character="Coalitionveteran" min="1" max="1"/>
+    <monster character="Coalitionveteran" min="1" max="2"/>
     <Reputation identifier="coalition" amount="-8" />
     <Reputation identifier="separatists" amount="8" />
     <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,768,256,256" color="214,50,48"/>
@@ -309,7 +309,7 @@
     identifier="coalitionex3"
     textidentifier="killcoalition"
     tags="combatseparatistsvscoalition"
-    difficulty="4"
+    difficulty="5"
     commonness="50"
     reward="10000"
     maxsonarmarkerdistance="20000">
@@ -318,7 +318,7 @@
     <monster character="Coalitionheavy" min="2" max="3"/>
     <monster character="Coalitionsharpshooter" min="1" max="1"/>
     <monster character="Coalitiongunner" min="1" max="1"/>
-    <monster character="Coalitionveteran" min="1" max="1"/>
+    <monster character="Coalitionveteran" min="1" max="2"/>
     <monster character="Coalitionannihilator" min="1" max="1"/>
     <Reputation identifier="coalition" amount="-10" />
     <Reputation identifier="separatists" amount="10" />
