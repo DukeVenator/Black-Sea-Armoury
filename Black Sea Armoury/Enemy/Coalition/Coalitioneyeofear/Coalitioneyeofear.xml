@@ -38,6 +38,9 @@
     <Item amount="1" Identifier="rum" />
     <Item Identifier="cigar" />
   </inventory>
+  <StatusEffect type="OnActive" target="this" >
+    <Sound file="%ModDir%/Enemy/Coalition/Coalitioneyeofear/Boss_Eye.ogg" type="OnUse" range="8000" loop="true" volume="6"/>
+  </StatusEffect>
   <StatusEffect type="OnActive" target="this" Interval="90" spawnItemRandomly="True">
     <Conditional inwater="true" />
     <SpawnItem identifiers="Coalitionheavy_Pod" spawnposition="This" Impulse ="50" count="1" spread="360" />

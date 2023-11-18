@@ -1277,8 +1277,8 @@
     </LightComponent>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-    <!-- husk DOOM for enemy-->
-    <Item name="huskdoomenemy" identifier="huskshotgununiquebw_e" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun,mountableweapon" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true" allowasextracargo="true">
+  <!-- husk DOOM for enemy-->
+  <Item name="huskdoomenemy" identifier="huskshotgununiquebw_e" category="Weapon" subcategory="Black Sea Armoury" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,shotgun,mountableweapon" description="" Scale="0.6" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true" allowasextracargo="true">
       <InventoryIcon texture="%ModDir%/SG/SG2.png" sourcerect="0,0,182,52" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/SG/SG2.png" sourcerect="0,0,184,52" depth="0.55" origin="0.5,0.5" />
       <Body width="180" height="45" density="50" />
@@ -1321,7 +1321,7 @@
         <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
       </LightComponent>
     </Item>
-    <!--clown railgun-->
+  <!--clown railgun-->
   <Item name="thunderfunk" identifier="rg_bw_n_funk" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.8" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Autoshogun Worn" texture="%ModDir%/BT/RG2.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,1.1" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
