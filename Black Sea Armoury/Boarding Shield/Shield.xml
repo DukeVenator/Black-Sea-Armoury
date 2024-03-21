@@ -110,11 +110,15 @@
       <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
       <SlotIcon slotindex="2" texture="Content/UI/ContainerIndicators.png" sourcerect="16,64,120,24" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="Content/UI/CommandUIAtlas.png" sourcerect="639,926,128,80" origin="0.5,0.5" />
       <SubContainer capacity="3" maxstacksize="1">
-        <Containable items="weapon" />
+        <Containable items="weapon,smallitem,mph_ammo,ammo,ammobox"/>
       </SubContainer>
-      <SubContainer capacity="9">
-        <Containable items="smallitem" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilecontainer"/>
+      </SubContainer>
+      <SubContainer capacity="11">
+        <Containable items="smallitem,mph_ammo,ammo"/>
       </SubContainer>
     </ItemContainer>
     <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">

@@ -13,10 +13,15 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Pirategunnerpod" count="1" spread="4" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
         <SpawnCharacter speciesname="Pirategunner" count="1" spread="4" />
         <SpawnCharacter speciesname="Piratescavenger" count="1" spread="4" />
-        <Remove />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -31,9 +36,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -49,14 +51,15 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6" OnlyInside="true">
-        <SpawnCharacter speciesname="Piratedismantler" count="1" spread="4" />
-        <SpawnCharacter speciesname="Pirateforerunner" count="1" spread="4" />
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="8" OnlyOutside="true">
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
         <SpawnCharacter speciesname="Piratedismantlerpod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Piratedismantler" count="1" spread="4" />
+        <SpawnCharacter speciesname="Pirateforerunner" count="1" spread="4" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -71,9 +74,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -89,10 +89,15 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Pirateveteranpod" count="1" spread="2" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
         <SpawnCharacter speciesname="Pirateforerunner" count="1" spread="4" />
         <SpawnCharacter speciesname="Pirateveteran" count="1" spread="4" />
-        <Remove />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -107,9 +112,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -125,10 +127,15 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Piratesharpshooterpod" count="1" spread="2" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
         <SpawnCharacter speciesname="Piratesharpshooter" count="1" spread="4" />
         <SpawnCharacter speciesname="Piraterifleman" count="1" spread="4" />
-        <Remove />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -143,9 +150,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -161,9 +165,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Piratescavenger" count="1" spread="4" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Piratescavengerpod" count="1" spread="2" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Piratescavenger" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -177,9 +186,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -195,9 +201,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Pirateheavy" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Pirateheavypod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Pirateheavy" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -212,9 +223,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -230,9 +238,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Pirateenforcerpod" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Pirateenforcerpod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Pirateenforcer" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -247,9 +260,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -265,9 +275,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Piraterecruits" count="1" spread="1" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Piraterecruitspod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Piraterecruits" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -282,9 +297,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -300,9 +312,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Coalitionheavy" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Coalitionheavypod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Coalitionheavy" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -317,9 +334,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -335,9 +349,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Coalitiongunner" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Coalitiongunnerpod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Coalitiongunner" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -352,9 +371,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -370,9 +386,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Coalitionveteran" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Coalitionveteranpod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Coalitionveteran" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -387,9 +408,6 @@
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
       </StatusEffect>
     </Projectile>
   </Item>
@@ -405,9 +423,14 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="6">
-        <SpawnCharacter speciesname="Coalitionrifleman" count="1" spread="2" />
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Coalitionriflemanpod" count="1" spread="4" />
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Coalitionrifleman" count="1" spread="2" />
+        <Remove/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -423,9 +446,6 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
     </Projectile>
   </Item>
   <Item name="Coalitionheavy_Pod" identifier="Coalitionheavy_Pod" nameidentifier="BW_C_heavy" translationidentifier="BW_C_heavy" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
@@ -440,7 +460,7 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1">
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1" Interval="6">
         <SpawnCharacter speciesname="Coalitionheavypod" count="1" spread="2" />
         <Remove />
       </StatusEffect>
@@ -475,7 +495,7 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1">
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1" Interval="6">
         <SpawnCharacter speciesname="Coalitiongunnerpod" count="1" spread="2" />
         <Remove />
       </StatusEffect>
@@ -510,7 +530,7 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1">
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1" Interval="6">
         <SpawnCharacter speciesname="Coalitionveteranpod" count="1" spread="2" />
         <Remove />
       </StatusEffect>
@@ -545,7 +565,7 @@
       <StatusEffect type="OnActive" target="This" lifetime="0.5">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1">
+      <StatusEffect type="OnActive" target="This" stackable="false" delay="0.1" Interval="6">
         <SpawnCharacter speciesname="Coalitionriflemanpod" count="1" spread="2" />
         <Remove />
       </StatusEffect>

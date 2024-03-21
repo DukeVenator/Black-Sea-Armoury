@@ -68,7 +68,7 @@
   <NPCSets file="%ModDir%/Enemy/NPC/MLCNPC.xml" />
   <Missions file="%ModDir%/Events/BAEMissions.xml" />
   <RandomEvents file="%ModDir%/Events/BAErandommissionevents.xml" />
-  <RandomEvents file="%ModDir%/Events/BAErandomcampaignevents.xml" />
+  <RandomEvents file="%ModDir%/Events/BSArandomcampaignevents.xml" />
   <item file="%ModDir%/Items/Dropod/Droppod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirategunnerpod/Pirategunnerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piratedismantlerpod/Piratedismantlerpod.xml" />

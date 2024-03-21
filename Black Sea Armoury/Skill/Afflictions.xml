@@ -226,4 +226,8 @@
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
     <Effect minstrength="0" maxstrength="10" strengthchange="-5"/>
   </AfflictionHusk>
+  <Affliction name="" identifier="Shield_sys" description="" type="buff" isbuff="true" limbspecific="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-5" resistancefor="damage" minresistance="0" maxresistance="1"/>
+    <Icon texture="%ModDir%/BA/ICON/PR.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
 </Afflictions>

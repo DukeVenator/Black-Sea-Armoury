@@ -15,6 +15,26 @@
     <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="5000" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Sweep" PrioritizeSubCenter="False" SweepDistance="1500" SweepStrength="5" SweepSpeed="1" CircleStartDistance="5000" CircleRotationSpeed="1" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <SwarmBehavior mindistfromclosest="300" maxdistfromcenter="5000" cohesion="0.5" />
   </ai>
+  <StatusEffect type="OnDeath" target="This">
+    <SpawnCharacter speciesname="Piratedismantler" count="1" spread="1" />
+    <SpawnCharacter speciesname="Pirateforerunner" count="1" spread="1" />
+    <Remove />
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="OnImpact" target="This" Interval="5">
+    <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+    <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+    <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+    <Explosion range="400.0" ballastfloradamage="200" structuredamage="350" itemdamage="1000" force="25" severlimbsprobability="4" decal="explosion" decalsize="0.75" penetration="0.8">
+      <Affliction identifier="explosiondamage" strength="200" />
+      <Affliction identifier="burn" strength="80"/>
+      <Affliction identifier="bleeding" strength="40"/>
+      <Affliction identifier="lacerations" strength="40" />
+      <Affliction identifier="gunshotwound" strength="12" probability="0.8" />
+      <Affliction identifier="stun" strength="10" />
+    </Explosion>
+    <Affliction identifier="explosiondamage" strength="1000"/>
+  </StatusEffect>
   <sound File="%ModDir%/Items/Dropod/warning.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
   <sound File="%ModDir%/Items/Dropod/warning.ogg" State="Attack" Range="3000" Volume="1" Tags="" />
   <damageemitter drawontop="True" Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="10" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />

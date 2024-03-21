@@ -144,7 +144,11 @@
   <entityname.mph_ammo_exp>4 英寸 "暴雷"榴弹</entityname.mph_ammo_exp>
   <entitydescription.mph_ammo_exp>爆炸就是艺术</entitydescription.mph_ammo_exp>
   <entityname.mph_ammo_exp_vt>4 英寸 "暴雷"榴弹(VT)</entityname.mph_ammo_exp_vt>
-    <entitydescription.mph_ammo_exp_vt>爆炸就是艺术，使用近炸引信在目标附近引爆并产生金属风暴，对除发射者外的一切目标进行切割。</entitydescription.mph_ammo_exp_vt>
+  <entitydescription.mph_ammo_exp_vt>爆炸就是艺术，使用近炸引信在目标附近引爆并产生金属风暴，对除发射者外的一切目标进行切割。</entitydescription.mph_ammo_exp_vt>
+  <entityname.mph_ammo_base>4 英寸 榴弹</entityname.mph_ammo_base>
+  <entitydescription.mph_ammo_base>未填装战斗部，但被这玩意捅到怎么想都很糟糕吧。</entitydescription.mph_ammo_base>
+  <entityname.mph_ammo_heathesh>4 英寸 串联破甲碎甲榴弹</entityname.mph_ammo_heathesh>
+  <entitydescription.mph_ammo_heathesh>通过破甲战斗部击穿装甲再在内部引爆碎甲弹，无论对装甲和巨兽都极其有效。</entitydescription.mph_ammo_heathesh>
   <!--AXE.xml-->
   <entityname.PFbw>强力近战系统(Power Combat System)</entityname.PFbw>
   <entitydescription.PFbw>所有钢铁联盟的新兵都接受过徒手格斗的训练。</entitydescription.PFbw>
@@ -418,8 +422,8 @@
   <character.Piratedesolator>污钢</character.Piratedesolator><!--轨道炮脏弹 | 二海深渊/三海后-->
   <character.Piratedismantler>碾灭者</character.Piratedismantler><!--大锤 | 二海-->
   <character.Piratedismantlerpod>粉碎小组跳帮舱</character.Piratedismantlerpod><!--大锤+小锤跳帮 | 二海-->
-  <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--弹鼓喷/-4/-15-->
-  <character.Pirateenforcerpod>强袭跳帮舱</character.Pirateenforcerpod><!--单人跳帮-->
+  <character.Pirateenforcer>强袭者</character.Pirateenforcer><!--弹鼓喷/-4/-15 | 二海-->
+  <character.Pirateenforcerpod>强袭跳帮舱</character.Pirateenforcerpod><!--单人跳帮 | 二海-->
   <character.Pirateforerunner>粉碎者</character.Pirateforerunner><!--小锤 | 一海-->
   <character.Pirategrenadier>雷暴</character.Pirategrenadier><!--弹鼓榴弹 | 二海-->
   <character.Pirategunner>突袭者</character.Pirategunner><!--镰刀/-338/-8/-8s | 三海后-->
@@ -430,7 +434,7 @@
   <character.Piratenuker>熔毁</character.Piratenuker><!--小核弹-->
   <character.Piraterifleman>征讨者</character.Piraterifleman><!--突击步枪-->
   <character.Piratescavenger>清道夫</character.Piratescavenger><!--榴弹发射器/LMG+奇奇怪怪的近战武器-->
-  <character.Piratescavengerpod>清道夫跳帮舱</character.Piratescavengerpod><!--单人跳帮 | 一海-->
+  <character.Piratescavengerpod>清道夫跳帮舱</character.Piratescavengerpod><!--单人跳帮 | 二海-->
   <character.Piratesharpshooter>收割者</character.Piratesharpshooter><!--精确步枪/408不同弹种随机-->
   <character.Piratesharpshooterpod>猎杀小组跳帮舱</character.Piratesharpshooterpod><!--Piratesharpshooter+Piraterifleman-->
   <character.Pirateveteran>红湮</character.Pirateveteran><!--双持激光炮/双持激光炮T2/激光炮T2+手炮/激光炮+轨道炮 | 四海深渊-->

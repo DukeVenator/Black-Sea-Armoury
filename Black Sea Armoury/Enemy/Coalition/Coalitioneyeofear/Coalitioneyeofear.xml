@@ -41,7 +41,10 @@
   <StatusEffect type="OnActive" target="this" >
     <Sound file="%ModDir%/Enemy/Coalition/Coalitioneyeofear/Boss_Eye.ogg" type="OnUse" range="8000" loop="true" volume="6"/>
   </StatusEffect>
-  <StatusEffect type="OnActive" target="this" Interval="90" spawnItemRandomly="True">
+  <StatusEffect type="OnActive" target="this" Interval="120">
+    <SpawnCharacter speciesname="EPod" count="1" spread="4" TotalMaxCount="2"/>
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this" Interval="120" spawnItemRandomly="True">
     <Conditional inwater="true" />
     <SpawnItem identifiers="Coalitionheavy_Pod" spawnposition="This" Impulse ="50" count="1" spread="360" />
     <SpawnItem identifiers="Coalitiongunner_Pod" spawnposition="This" Impulse ="50" count="1" spread="360" />

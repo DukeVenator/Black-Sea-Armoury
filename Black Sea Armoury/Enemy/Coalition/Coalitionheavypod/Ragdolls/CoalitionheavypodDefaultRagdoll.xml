@@ -1,4 +1,4 @@
-﻿<Ragdoll type="Coalitionheavypod" Texture="%ModDir%/items/Dropod/ES_RUSH.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="1" JointScale="1" TextureScale="0.4" ColliderHeightFromFloor="45" ImpactTolerance="20" CanEnterSubmarine="False" CanWalk="False" Draggable="True" MainLimb="Torso">
+﻿<Ragdoll type="Coalitionheavypod" Texture="%ModDir%/items/Dropod/ES_RUSH.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="1" JointScale="1" TextureScale="0.4" ColliderHeightFromFloor="45" ImpactTolerance="10" CanEnterSubmarine="False" CanWalk="False" Draggable="True" MainLimb="Torso">
   <collider Name="Main Collider" Radius="42" Height="0" Width="1" BodyType="Dynamic" />
   <limb Name="Main" ID="0" Type="Torso" Notes="" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="340" Width="380" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <sprite SourceRect="0,22,1001,947" Origin="0.50,0.50" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
@@ -12,11 +12,6 @@
         <RemoveCharacter />
       </StatusEffect>
     </attack>
-    <StatusEffect type="OnDeath" target="This">
-      <SpawnCharacter speciesname="Coalitionheavy" count="1" spread="1" />
-      <Remove />
-      <RemoveCharacter />
-    </StatusEffect>
   </limb>
   <limb Name="Head (1)" ID="1" Type="Head" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="85" Width="85" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05">
     <sprite SourceRect="0,100,100,100" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
