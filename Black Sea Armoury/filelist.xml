@@ -22,6 +22,7 @@
   <Text file="%ModDir%/Language/TraditionalChinese.xml" />
   <Text file="%ModDir%/Language/SimplifiedChinese.xml" />
   <Text file="%ModDir%/Language/Russian.xml" />
+  <Text file="%ModDir%/Language/Japanese.xml" />
   <Item file="%ModDir%/Enemy/Over.xml" />
   <Character file="%ModDir%/Enemy/Fractalguardian/Fractalguardian.xml" />
   <Character file="%ModDir%/Enemy/Fractalguardian2/Fractalguardian2.xml" />

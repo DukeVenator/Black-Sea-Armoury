@@ -423,7 +423,7 @@
       <Character identifier="bandit_piobae" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
       <Character identifier="bandit_medicbae" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" />
       <Character identifier="bandit_bae" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
-      <Character identifier="banditleader_heavy" from="abandonedoutpostnpcs" moduleflags="crewmodule" />
+      <Character identifier="banditleader_heavy" from="abandonedoutpostnpcsbae" moduleflags="crewmodule" />
       <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true"/>
@@ -456,7 +456,7 @@
       <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="researchmodule" />
       <Character identifier="bandit_armored" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" multiplayeronly="true"/>
       <Character identifier="bandit_piobaeg" from="abandonedoutpostnpcsbae" moduleflags="engineeringmodule" />
-      <Character identifier="bandit_piobae" from="abandonedoutpostnpcs" moduleflags="securitymodule" />
+      <Character identifier="bandit_piobae" from="abandonedoutpostnpcsbae" moduleflags="securitymodule" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="heartofgold" campaignonly="true"/>
     <message header="missionheader0.abandonedoutpostassassinatebae" text="missionmessage0.abandonedoutpostassassinatebae"/>

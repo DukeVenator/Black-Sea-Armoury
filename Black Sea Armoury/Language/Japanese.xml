@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Japanese" nowhitespace="false" translatedname="日本語">
+  <!--Job.xml-->
+  <jobName.Pilot>アイアンライダー</jobName.Pilot>
+  <jobdescription.Pilot>アイアンリーグの精鋭であるアイアンライダーは、エウロパに暮す人類の守護者としての役割を担っている。</jobdescription.Pilot>
+  <talenttree.bwbr1>ガンソードの祈り</talenttree.bwbr1>
+  <talenttree.bwbr2>アイアンカルト</talenttree.bwbr2>
+  <talenttree.bwbr3>テクノバーバリアン</talenttree.bwbr3>
+  <talentname.advancedsplicingbw>エイリアンコンカラー</talentname.advancedsplicingbw>
+  <talentname.collegeathleticsbw>フィジカルアスリート</talentname.collegeathleticsbw>
+  <talentname.bountyhunterbw>執行人</talentname.bountyhunterbw>
+  <talentdescription.crafthighqualitypistols>製作した拳銃の品質が[qualitybonus]高くなる。</talentdescription.crafthighqualitypistols>
+  <talentdescription.bountyhunterbw>拳銃またはアイアンフィストを使用した攻撃によるダメージが[probability]%アップし、[armorpenetration]%の貫通力を得る。</talentdescription.bountyhunterbw>
+  <talentname.justascratchbw>強化骨格</talentname.justascratchbw>
+  <talentdescription.quickdrawbw>最後の攻撃から [seconds] 以上経過している場合、パワーコンバットシステムで与えるダメージが [damage] 倍になる。</talentdescription.quickdrawbw>
+  <talentname.sailorwithnonamebw>オールドセイラー</talentname.sailorwithnonamebw>
+  <talentname.tumblebw>スペアアーム</talentname.tumblebw>
+  <talentdescription.tumblebw>ピストルとアイアンフィストによる初回攻撃力が [damage]% 上昇する。</talentdescription.tumblebw>
+  <talentname.firstaidtrainingbw>応急処置</talentname.firstaidtrainingbw>
+  <talentname.physicalconditioningbw>肉体</talentname.physicalconditioningbw>
+  <talentname.trustbuildingbw>ベテラン</talentname.trustbuildingbw>
+  <talentdescription.trustbuildingbw>ミッションを完了する度に、ヘルスが [smallgain]% 上昇する。もし乗員が全て生存していた場合、[largegain]% 上昇する。最大で [maxgain]% まで上昇する。</talentdescription.trustbuildingbw>
+  <talentname.buccaneerbw>白兵戦</talentname.buccaneerbw>
+  <talentname.enforcerbw>リロードハンター</talentname.enforcerbw>
+  <talentdescription.enforcerbw>ショットガンでの攻撃時ダメージが [damage]% 上昇し、[armorpenetration]% の貫通率を得る。</talentdescription.enforcerbw>
+  <talentname.steelruler>スチール・ルーラー</talentname.steelruler>
+  <talentdescription.steelruler>メックスーツ装着時、攻撃力が[value]% 、[stattype] が [amount]% 上昇し、受けるダメージは [value]% 減少する。</talentdescription.steelruler>
+  <talentname.bythebookbw>傭兵</talentname.bythebookbw>
+  <talentname.navydiverbw>水中活動</talentname.navydiverbw>
+  <talentname.deepseaslayerbw>深海のハンター</talentname.deepseaslayerbw>
+  <talentname.olympianbw>戦闘の達人</talentname.olympianbw>
+  <talentname.warlordbw>エース</talentname.warlordbw>
+  <talentdescription.chanceofextraweapondamagebw2>武器を使用すると、与えるダメージが [probability]% 上昇し、 [armorpenetration]% の貫通率を得る。</talentdescription.chanceofextraweapondamagebw2>
+  <talentname.laststand>ラストスタンド</talentname.laststand>
+  <talentdescription.laststand> ヘルスが [health]% を下回ると、 急速に回復する。 </talentdescription.laststand>
+  <talentname.implacablebw>鉄の意志</talentname.implacablebw>
+  <talentname.deadeyebw>死の眼差し</talentname.deadeyebw>
+  <talentdescription.deadeyebw>試作型高精度ライフルのダメージが [powerincrease]% 上昇する。また、出血の回復が早くなる。ミッション完了時に追加の物資を獲得する。</talentdescription.deadeyebw>
+  <talentname.stonewallbw>シールドバリア</talentname.stonewallbw>
+  <talentdescription.stonewallbw>攻撃を受けると、 [seconds] 秒間物理ダメージ耐性が [physicaldamagereduction]% 、スタン耐性が [stunresistance]% 、近接武器による攻撃力が [amount]% 上昇する。</talentdescription.stonewallbw>
+  <talentname.munitionsexpertisebw>上位権限</talentname.munitionsexpertisebw>
+  <talentname.gunsmithbw>職人</talentname.gunsmithbw>
+  <talentdescription.gunsmithbw>作成するアイテムの品質が [qualitybonus] 上昇する。</talentdescription.gunsmithbw>
+  <talentname.duelistbw>ハートオブザストーム</talentname.duelistbw>
+  <talentdescription.chanceofextraweapondamagebw>CQBSMGまたはパワーアックスで攻撃すると、[probability]% の確率でダメージが2倍になり、 [amount]% の貫通率を得る。</talentdescription.chanceofextraweapondamagebw>
+  <talentname.optimizedpowerflowbw>改造サーキット</talentname.optimizedpowerflowbw>
+  <talentdescription.optimizedpowerflowbw>タレットの消費電力とチャージ速度が電気工学スキルの [statamount]% 分減少する。</talentdescription.optimizedpowerflowbw>
+  <talentdescription.crafthighqualitylaserbw>作成するエネルギー兵器の品質が [qualitybonus] 上昇する。</talentdescription.crafthighqualitylaserbw>
+  <talentname.custommachinebw>改造機器</talentname.custommachinebw>
+  <talentdescription.crafthighqualityhmgbw>作成するマシンガンの品質が [qualitybonus] 上昇する。</talentdescription.crafthighqualityhmgbw>
+  <!--AXE.xml-->
+  <entityname.PFbw>パワーコンバットシステム</entityname.PFbw>
+  <entitydescription.PFbw>アイアンリーグでは全員白兵戦の訓練を受ける。</entitydescription.PFbw>
+  <entityname.stunbatonbw>ヒートサーベル</entityname.stunbatonbw>
+  <entitydescription.stunbatonbw>X01酸素セルが装填されたヒートサーベルは強力なスタン武器だが、装甲に対しては効果がない。</entitydescription.stunbatonbw>
+  <entityname.hammer_bw>サンダーハンマー</entityname.hammer_bw>
+  <entitydescription.hammer_bw>高密度のハンマー。 成形爆薬を装填することで貫通力が増す。戦闘ではあまり効果的ではない。</entitydescription.hammer_bw>
+  <entityname.uex2>ハンマーデトネーター</entityname.uex2>
+  <entitydescription.uex2>サンダーハンマー用の成形爆薬。怪我をしない為にも慎重に取り扱うこと。</entitydescription.uex2>
+  <entityname.bw_axe>アイアンリーグ式乗船斧</entityname.bw_axe>
+  <entitydescription.bw_axe>サンダーハンマーよりは時間がかかるもののより安全に潜水艦の装甲を破壊できる他、 装甲に対しても恐ろしく効果的である。</entitydescription.bw_axe>
+  <entityname.bwgs>ウィンタースター</entityname.bwgs>
+  <entitydescription.bwgs>古代のロングソード。その重い刀身は装甲に対して抜群の威力を発揮する。</entitydescription.bwgs>
+  <entityname.tachi>コンクエスト</entityname.tachi>
+  <entitydescription.tachi>エキゾチックな湾曲した刃。 素早い斬撃は装甲に対しては効果が薄いものの、生物に対しては非常に効果的。</entitydescription.tachi>
+  <!--BA.xml-->
+  <entityname.corsairar_bw>コルセア</entityname.corsairar_bw>
+  <entitydescription.corsairar_bw>古い時代遅れの軍用アームスーツ。駆け出しのアイアンライダーや反乱分子が使用する。あまり効率的ではないが、酸素タンクで動作する。</entitydescription.corsairar_bw>
+  <entityname.armored_miningsuit_bw>ハンマーマイニングアーマー</entityname.armored_miningsuit_bw>
+  <entitydescription.armored_miningsuit_bw>高圧環境での採掘用のアームスーツ。フルグリウムバッテリーを使用する。専用のコンテナを搭載可能。</entitydescription.armored_miningsuit_bw>
+  <entityname.toolbox_bw>ハンマーコンテナ</entityname.toolbox_bw>
+  <entitydescription.toolbox_bw>この頑丈なコンテナは危険物や鉱石を安全に運ぶことができる。</entitydescription.toolbox_bw>
+  <entityname.armored_hardsuit_bw>X01バトルアーマー</entityname.armored_hardsuit_bw>
+  <entitydescription.armored_hardsuit_bw>機動性を妨げることなく優れた防御力を発揮する、近代的なアームスーツ。武器を1つまで格納できるユニバーサルホルスター搭載。アイアンライダーの一般的な装備。動作にはX01酸素セルが必要。</entitydescription.armored_hardsuit_bw>
+  <entityname.oxygen_cell_bw>X01酸素セル</entityname.oxygen_cell_bw>
+  <entitydescription.oxygen_cell_bw>アイアンリーグのテクノロジーの根幹を担っている。大容量のフルグリウムバッテリーと酸素鉱石を使用した最先端の酸素供給システムにより、バトルアーマーへの電力供給と酸素供給を同時に行えるようになっている。衝撃や爆発に対しては強いものの、無敵という訳ではない。</entitydescription.oxygen_cell_bw>
+  <entityname.laser_bw>レーザー</entityname.laser_bw>
+  <entityname.armored_hardsuit_bwl>X01指揮官機</entityname.armored_hardsuit_bwl>
+  <entitydescription.armored_hardsuit_bwl>分隊長やベテラン将校向けに通信能力とセンサー機能が改良されている。この機体と通信が途絶えると方向感覚を失うことになる為、新米のアイアンライダーの訓練にも使用される。</entitydescription.armored_hardsuit_bwl>
+  <entityname.armored_hardsuit_bw2>X01ベテランアーマー</entityname.armored_hardsuit_bw2>
+  <entitydescription.armored_hardsuit_bw2>高度にカスタマイズされたバトルアーマー。着用者毎に専用のカスタマイズがされている。標準的なバトルアーマーよりも防御性能が向上しているが、決定的な違いはサーマルビジョンが搭載されていることである。</entitydescription.armored_hardsuit_bw2>
+  <entityname.knight_hardsuit_bw>シルバーナイト</entityname.knight_hardsuit_bw>
+  <entitydescription.knight_hardsuit_bw>アイアンリーグの科学者が、エイリアンの遺跡で発見された用途不明の素材を用いて秘密裏に開発した謎のアームスーツ。まるで生きているかのように着用者とリンクし、エウロパの深海に存在する毒や寄生虫への耐性を獲得する。正常に動作させるにはエイリアンパワーセルやそれらの素材から作られた専用のパワーセルが必要。バッテリーを切らさないように...</entitydescription.knight_hardsuit_bw>
+  <entityname.pio_bw>パイオニアカスタム</entityname.pio_bw>
+  <entitydescription.pio_bw>パイオニアは危険なエウロパで任務を遂行する者にとっては優れたアームスーツだったが、十分な装甲を備えているとは言えなかった。このパイオニアカスタムでは防御力の向上が図られているものの、その分重く嵩張り機動力が低下した。あまり効率的ではないが、酸素タンクで動作する。 </entitydescription.pio_bw>
+  <entityname.pio_bw2>パイオニア</entityname.pio_bw2>
+  <entitydescription.pio_bw2>パイオニアシリーズはアイアンリーグのエンジニアがエウロパで活動する為に設計された。アイアンリーグの一般的なスーツと異なり、潜水艦や基地の修理、メンテナンスを効率的に行えるようになっている。酸素タンクで動作する。</entitydescription.pio_bw2>
+  <entityname.armored_miningsuit_bw2>ヘラクレス</entityname.armored_miningsuit_bw2>
+  <entitydescription.armored_miningsuit_bw2>ヘラクレスは重火器を運用する為に設計されており、重く防御力に優れている。その分着用者への圧迫感は凄まじく、水中での機動性も劣悪である。しかしそのお陰でアイアンリーグの重火器の反動を吸収することができる。また、小型のクレーンアームと弾薬用の内部ストレージが搭載されている。</entitydescription.armored_miningsuit_bw2>
+  <entityname.corsairar_bp>X00プロトタイプアーマー</entityname.corsairar_bp>
+  <entitydescription.corsairar_bp>極めて高い攻撃性能を持つ実験用プロトタイプ。動作にはX01酸素セルが必要。</entitydescription.corsairar_bp>
+  <entityname.armored_miningsuit_bw3>ヘラクレスMk.II</entityname.armored_miningsuit_bw3>
+  <entitydescription.armored_miningsuit_bw3>ヘラクレスは兵器プラットフォームとして優れているが、その機動性の低さから素早い敵に翻弄されることがあった。そこで再設計が行われ、弾薬管理システムと装填補助装置が取り除かれ、より強力な推進システムが搭載された。それでもまだ信じられないほど機動性が低いものの、少なくとも日が暮れるまでには目的地に到達できるようになった。</entitydescription.armored_miningsuit_bw3>
+  <!--Shield.xml-->
+  <entityname.bwapc>リバースエンジニアリングエイリアンパワーセル</entityname.bwapc>
+  <entitydescription.bwapc>人間が作り出したエイリアンパワーセル</entitydescription.bwapc>
+  <entityname.rgcbw>サンダーキャノンサポートデバイス</entityname.rgcbw>
+  <entitydescription.rgcbw>レールガンの弾頭を4発、またはサンダーキャノンを格納できる。</entitydescription.rgcbw>
+  <entityname.shield_bw>乗船盾</entityname.shield_bw>
+  <entitydescription.shield_bw>装甲は厚い程良い。</entitydescription.shield_bw>
+  <entityname.harpoongunbw>ラピッドハープーンガン</entityname.harpoongunbw>
+  <entitydescription.harpoongunbw>速射式のハープーンガン。銛を使用する。</entitydescription.harpoongunbw>
+  <entityname.spearbw>タッタードスピア</entityname.spearbw>
+  <entitydescription.spearbw>特殊な貫通力の高い銛。</entitydescription.spearbw>
+  <entityname.plasmacutterbw>MEGAプラズマ</entityname.plasmacutterbw>
+  <entitydescription.plasmacutterbw>最新の切断用工具。生ものを切るのにも使える。</entitydescription.plasmacutterbw>
+  <entityname.bwpower>エイリアンチャージャー</entityname.bwpower>
+  <entitydescription.bwpower>エイリアンパワーセルを充電できる。</entitydescription.bwpower>
+  <entityname.ancientweaponbw>コンカラー</entityname.ancientweaponbw>
+  <entitydescription.ancientweaponbw>強力なエネルギー兵器。装填するエイリアンパワーセルの種類によって性能が変わる。</entitydescription.ancientweaponbw>
+  <entityname.relic_bw>遺物の欠片</entityname.relic_bw>
+  <entityname.cell_bw>閉鎖式循環型セル</entityname.cell_bw>
+  <entitydescription.cell_bw>エイリアンの技術が組み込まれたこのバッテリーは、ハンマー、コルセア、パイオニアに対して無限の動力を供給する。</entitydescription.cell_bw>
+  <!--Boarding Torpedo.xml-->
+  <entityname.boarding_torpedo_bw>ボーディングとるぴーど</entityname.boarding_torpedo_bw>
+  <entitydescription.boarding_torpedo_bw>先鋒は赤だ、ウワアアア!</entitydescription.boarding_torpedo_bw>
+  <entityname.jetscooterbw>エンジニアリングモーター</entityname.jetscooterbw>
+  <entitydescription.jetscooterbw>重メック用の補助動力。</entitydescription.jetscooterbw>
+  <entityname.divingknifebw>アーマーブレイカー</entityname.divingknifebw>
+  <entitydescription.divingknifebw>小型の単分子ブレードは、実際にダメージを与えることができる。</entitydescription.divingknifebw>
+  <entityname.railbw>チタンレールガン弾頭</entityname.railbw>
+  <entityname.rg_bw>サンダーキャノン</entityname.rg_bw>
+  <entitydescription.rg_bw>レールガンを無理矢理携行式へと改造した為、欠点も多い。核弾頭以外のレールガン弾頭を使用できる。</entitydescription.rg_bw>
+  <!--Guns.xml-->
+  <entityname.HMG1_bp6>レボリューション</entityname.HMG1_bp6>
+  <entitydescription.HMG1_bp6>軍により改良され連射性能が向上した。</entitydescription.HMG1_bp6>
+  <entityname.HMG1_bw>シックルHMG</entityname.HMG1_bw>
+  <entitydescription.HMG1_bw>14.5mm弾を連射することができるものの、クールダウンが必要。強制クールダウンを行わないと余計に時間がかかる。</entitydescription.HMG1_bw>
+  <entityname.HMG1_mag_bw>14.5mm弾薬ボックス</entityname.HMG1_mag_bw>
+  <entitydescription.HMG1_mag_bw>古き良き高貫通弾。</entitydescription.HMG1_mag_bw>
+  <entityname.minichaingun_bw>試作型チェーンガン</entityname.minichaingun_bw>
+  <entitydescription.minichaingun_bw>非常に高価な重火器。試作型チェーンガン弾薬を使用する。</entitydescription.minichaingun_bw>
+  <entityname.chaingun_ammo_bw>試作型チェーンガン弾薬</entityname.chaingun_ammo_bw>
+  <entitydescription.chaingun_ammo_bw>1000発もの弾丸が地獄の雨の如く降り注ぐ。</entitydescription.chaingun_ammo_bw>
+  <entityname.chaingun_round_bw>Experimental Chaingun Round</entityname.chaingun_round_bw>
+  <!--Laser Cannon.xml-->
+  <entityname.lasercannon_bw>試作型レーザーキャノン</entityname.lasercannon_bw>
+  <entitydescription.lasercannon_bw>重レーザー兵器。生物と鋼鉄の両方に効果的。建造物やドアに対しても強い。使用するにはX01酸素セルが必要。</entitydescription.lasercannon_bw>
+  <entityname.explosivespearbw>アイアンフィスト</entityname.explosivespearbw>
+  <entitydescription.explosivespearbw>単発式の武器だが、重い一撃を与える。</entitydescription.explosivespearbw>
+  <entityname.ifbw>フィスト</entityname.ifbw>
+  <entityname.esg_bw>試作型高精度ライフル</entityname.esg_bw>
+  <entitydescription.esg_bw>連合の特殊作戦向けに開発された。高精度ライフル弾を使用する。</entitydescription.esg_bw>
+  <entityname.SG_ammo>高精度ライフル弾クリップ</entityname.SG_ammo>
+  <entityname.esg_bw2>試作型高精度ライフルMk.II</entityname.esg_bw2>
+  <entitydescription.esg_bw2>改良されたことで照準速度が向上している。高精度ライフル弾を使用する。</entitydescription.esg_bw2>
+  <entityname.lasercannon_bp3>ディザスター</entityname.lasercannon_bp3>
+  <entitydescription.lasercannon_bp3>コンパクトなフレームを持つ改良型レーザーキャノン。オーバーヒートしやすいという欠点を持つ。</entitydescription.lasercannon_bp3>
+  <!--Guns.xml-->
+  <entityname.lmground_bw>Lmg Round</entityname.lmground_bw>
+  <entityname.lmground_bw2>Lmg Round2</entityname.lmground_bw2>
+  <entityname.lmgmagazine_bw>連結型7.62mmマガジン</entityname.lmgmagazine_bw>
+  <entitydescription.lmgmagazine_bw>トリガーハッピー!!!</entitydescription.lmgmagazine_bw>
+  <entityname.lmgmagazine_bw2>連結型自動装填式7.62mmマガジン</entityname.lmgmagazine_bw2>
+  <entitydescription.lmgmagazine_bw2>生体金属により無限の弾薬を実現したが、威力が半減してしまっている。</entitydescription.lmgmagazine_bw2>
+  <entityname.lmg_bw>タクティカルLMG</entityname.lmg_bw>
+  <entitydescription.lmg_bw>信頼性の高い自動小銃で、ソフトターゲットに効果的。連結型7.62mmマガジンを使用する。</entitydescription.lmg_bw>
+  <!--PRG.xml-->
+  <entityname.battlecannon_bw>アックスロケットキャノン</entityname.battlecannon_bw>
+  <entitydescription.battlecannon_bw>HEロケットを発射する重砲。ロケット弾を使用する。</entitydescription.battlecannon_bw>
+  <entityname.cannonshell_bw>ロケット弾</entityname.cannonshell_bw>
+  <entitydescription.cannonshell_bw>前線に嵐を巻き起こせ。着弾時に火傷ダメージを与える。</entitydescription.cannonshell_bw>
+  <entityname.prg_bw>試作型携行式レールガン</entityname.prg_bw>
+  <entitydescription.prg_bw>連合の特殊作戦向けに開発された肩当式のレールガン。扱い辛く高価だが威力は折り紙付き。</entitydescription.prg_bw>
+  <entityname.prg_ammo>試作型PRGストーム弾</entityname.prg_ammo>
+  <entitydescription.prg_ammo>直進式のレールガン向け徹甲弾頭。</entitydescription.prg_ammo>
+  <!--SG.xml-->
+  <entityname.shotgunshellbw>ダブルショットガンシェル</entityname.shotgunshellbw>
+  <entityname.shotgununiquebw>DOOM</entityname.shotgununiquebw>
+  <entitydescription.shotgununiquebw>ダブルバレルショットガン。ダブルショットガンシェルを使用する。</entitydescription.shotgununiquebw>
+  <entityname.grenadelauncher_bw>ドラムハイブリッドバレル</entityname.grenadelauncher_bw>
+  <entitydescription.grenadelauncher_bw>連合の自動ショットガン。25mmグレネード弾またはショットガンシェルを使用する。</entitydescription.grenadelauncher_bw>
+  <entityname.bw_shotgun_drum>ドラム式ショットガンシェル</entityname.bw_shotgun_drum>
+  <entitydescription.bw_shotgun_drum>ショットガン向けのバックショット。</entitydescription.bw_shotgun_drum>
+  <entityname.bw_shotgun_shell>ドラムショットガンシェル</entityname.bw_shotgun_shell>
+  <entitydescription.bw_shotgun_shell>ショットガン向けのバックショット。</entitydescription.bw_shotgun_shell>
+  <entityname.bw_grenade_drum>ドラム式25㎜グレネード</entityname.bw_grenade_drum>
+  <entitydescription.bw_grenade_drum>爆発するぞ!!!</entitydescription.bw_grenade_drum>
+  <entityname.bw_grenade>ドラム式25㎜グレネード</entityname.bw_grenade>
+  <entitydescription.bw_grenade>Fire in the hole!!!</entitydescription.bw_grenade>
+  <!--Mods\BWeapons\SMG\Guns.xml-->
+  <entityname.smground_bw>Smg Round</entityname.smground_bw>
+  <entityname.smgmagazine_bw>7.62mmマガジン</entityname.smgmagazine_bw>
+  <entitydescription.smgmagazine_bw>お供。</entitydescription.smgmagazine_bw>
+  <entityname.smg_bw>CQB SMG</entityname.smg_bw>
+  <entitydescription.smg_bw>取り回しが効く自動小銃。2丁持ちができる。7.62mmマガジンを使用する。</entitydescription.smg_bw>
+  <entityname.smgmagazine_bw2>(LEGACY WILL BE REMOVED)7.62mm Autofilled magazine</entityname.smgmagazine_bw2>
+  <entitydescription.>生体金属により無限の弾薬を実現したが、威力が半減してしまっている。</entitydescription.>
+  <entityname.smground_bw2>Smg Round2</entityname.smground_bw2>
+  <!--tactical Scanner.xml-->
+  <entityname.divingsuitlockerbw>エプロン</entityname.divingsuitlockerbw>
+  <entityname.shellbagbw>ドレッドノートサポートシステム</entityname.shellbagbw>
+  <entitydescription.shellbagbw>船内での戦闘を行う歩兵向けの補助装備。高い水圧には耐えられない。動作にはX01酸素セルが必要。</entitydescription.shellbagbw>
+  <entityname.shellshieldbw>ドレッドノートPCIA</entityname.shellshieldbw>
+  <entitydescription.shellshieldbw>高圧化での使用を想定した将校向けの装備で、動きは遅いものの頑丈。動作にはX01酸素セルが必要。</entitydescription.shellshieldbw>
+  <entityname.ballistichelmetbw>アーマーヘルメット</entityname.ballistichelmetbw>
+  <entitydescription.ballistichelmetbw>軽歩兵の象徴。サルベージできない。</entitydescription.ballistichelmetbw>
+  <entityname.captainscapbw>ミリタリーキャップ</entityname.captainscapbw>
+  <entitydescription.captainscapbw>指揮官の象徴。サルベージできない。</entitydescription.captainscapbw>
+  <entityname.weldingtoolbw>スマートアーク</entityname.weldingtoolbw>
+  <entitydescription.weldingtoolbw>システムが自動で生物に対するダメージを回避してくれる。バッテリー、フルグリウムバッテリー、X01酸素セルで動作する。</entitydescription.weldingtoolbw>
+  <entityname.captainsuniformbw>バトルアーマー</entityname.captainsuniformbw>
+  <entitydescription.captainsuniformbw>忠義の象徴。サルベージできない。</entitydescription.captainsuniformbw>
+  <entityname.tatical_scanner>タクティカルスキャナー</entityname.tatical_scanner>
+  <entitydescription.tatical_scanner>状況を分析できるだけでなく、緊急時の薬剤投与も可能。</entitydescription.tatical_scanner>
+  <entityname.revolver_bw>デッドロック</entityname.revolver_bw>
+  <entitydescription.revolver_bw>昔ながらの武器。2丁持ちができる。14.5mm弾を使用。</entitydescription.revolver_bw>
+  <entityname.revolverammobw>14.5mm弾クリップ</entityname.revolverammobw>
+  <entityname.revolverammobw2>14.5mmコンカッション弾クリップ</entityname.revolverammobw2>
+  <entityname.revolverammobw3>14.5mmフレア弾クリップ</entityname.revolverammobw3>
+  <entityname.coilgunammo_bw>LEGACY Coilgun Ammunition Box(Red)</entityname.coilgunammo_bw>
+  <entityname.coilgunammo_bw2>LEGACY Coilgun Ammunition Box(Yellow)</entityname.coilgunammo_bw2>
+  <entityname.coilgunboltbw>coilgunboltbw</entityname.coilgunboltbw>
+  <entityname.coilgunboltbw2>coilgunboltbw2</entityname.coilgunboltbw2>
+  <entityname.bandolierbw>タクティカル弾帯ベルト</entityname.bandolierbw>
+  <entitydescription.bandolierbw>勇気の象徴。遠距離武器の攻撃速度が増加する。解体できない。</entitydescription.bandolierbw>
+  <entityname.bandolierbw2>タクティカルサポートシステム</entityname.bandolierbw2>
+  <entitydescription.bandolierbw2>勇気の象徴。遠近両方の武器による攻撃速度が増加する。解体できない。</entitydescription.bandolierbw2>
+  <entityname.bandolierbw3>シールドサポートシステム</entityname.bandolierbw3>
+  <entitydescription.bandolierbw3>勇気の象徴。防御力と遠距離武器の攻撃速度が増加する。解体できない。</entitydescription.bandolierbw3>
+  <entityname.bandolierbw4>アサルトサポートシステム</entityname.bandolierbw4>
+  <entitydescription.bandolierbw4>勇気の象徴。近距離武器の攻撃速度と遠近両方の攻撃に対する防御力が増加する。解体できない。</entitydescription.bandolierbw4>
+  <entityname.handcannonbw>ピースキーパー</entityname.handcannonbw>
+  <entitydescription.handcannonbw>この大口径ハンドキャノンは見るからに脅威的である。</entitydescription.handcannonbw>
+  <!--Affliction-->
+  <Afflictionname.architect>技師</Afflictionname.architect>
+  <Afflictiondescription.architect>修理速度とヘルスが25%増加。</Afflictiondescription.architect>
+  <Afflictionname.architect2>要塞技師</Afflictionname.architect2>
+  <Afflictiondescription.architect2>修理速度が25%増加し、ヘルスが50%増加する。自身を非常にゆっくりと回復する。</Afflictiondescription.architect2>
+  <Afflictionname.Swift>俊敏</Afflictionname.Swift>
+  <Afflictiondescription.Swift>攻撃速度が20%増加。</Afflictiondescription.Swift>
+  <Afflictionname.Alienpw>強靭</Afflictionname.Alienpw>
+  <Afflictiondescription.Alienpw>ヘルスが50%増加し、自身を非常にゆっくりと回復する。</Afflictiondescription.Alienpw>
+  <Afflictionname.X01>先進型装甲</Afflictionname.X01>
+  <Afflictiondescription.X01>与えるダメージが10%増加し、ヘルスが10%増加する。</Afflictiondescription.X01>
+  <Afflictionname.X01>生体装甲</Afflictionname.X01>
+  <Afflictiondescription.X01>与えるダメージが10%増加し、ヘルスが20%増加する。自身を非常にゆっくりと回復する。</Afflictiondescription.X01>
+  <Afflictionname.Hammer>自己修復</Afflictionname.Hammer>
+  <Afflictiondescription.Hammer>ヘルスが25%増加し、自身を非常にゆっくりと回復する。</Afflictiondescription.Hammer>
+  <Afflictionname.PCIA>生体健康管理システム</Afflictionname.PCIA>
+  <Afflictiondescription.PCIA>自身を非常にゆっくりと回復する。</Afflictiondescription.PCIA>
+  <Afflictionname.DEFbw>追加装甲</Afflictionname.DEFbw>
+  <Afflictiondescription.DEFbw>ヘルスが50%増加し、物理ダメージ耐性が30%増加する。</Afflictiondescription.DEFbw>
+  <Afflictionname.DEFbw2>補強装甲</Afflictionname.DEFbw2>
+  <Afflictiondescription.DEFbw2>ヘルスが25%増加し、物理ダメージ耐性が15%増加する。</Afflictiondescription.DEFbw2>
+  <Afflictionname.Swift2>アサルトアーマー</Afflictionname.Swift2>
+  <Afflictiondescription.Swift2>与えるダメージが10%、攻撃速度が20%、ヘルスが25%増加する。</Afflictiondescription.Swift2>
+  <Afflictionname.steelruler>スチール・ルーラー</Afflictionname.steelruler>
+  <Afflictionname.quickdrawingbw>一撃必殺</Afflictionname.quickdrawingbw>
+  <Afflictionname.stonewallbw>戦線維持</Afflictionname.stonewallbw>
+  <Afflictionname.sup1>サポートシステム</Afflictionname.sup1>
+  <Afflictiondescription.sup1>遠距離攻撃速度が20%増加。</Afflictiondescription.sup1>
+  <Afflictionname.sup2>サポートシステム</Afflictionname.sup2>
+  <Afflictiondescription.sup2>攻撃速度が20%増加。</Afflictiondescription.sup2>
+  <Afflictionname.sup3>アサルトサポートシステム</Afflictionname.sup3>
+  <Afflictiondescription.sup3>攻撃速度が20%、ヘルスが25%、物理ダメージ耐性が15%増加する。</Afflictiondescription.sup3>
+  <entityname.railgunshellbw2>空の弾頭</entityname.railgunshellbw2>
+  <!--Enemy Characters equipments-->
+  <entityname.corsairar_bw_e>コルセア海賊仕様</entityname.corsairar_bw_e>
+  <entityname.armored_miningsuit_bw_e>強化型マイニングアーマー</entityname.armored_miningsuit_bw_e>
+  <entityname.pio_bw2_e>パイオニア海賊仕様</entityname.pio_bw2_e>
+  <entityname.armored_hardsuit_bw_e>X01</entityname.armored_hardsuit_bw_e>
+  <entityname.armored_hardsuit_bw2_e>X01ベテラン</entityname.armored_hardsuit_bw2_e>
+  <entityname.armored_miningsuit_bw3_e>改造型ヘラクレス</entityname.armored_miningsuit_bw3_e>
+  <entityname.knight_hardsuit_bw_e>コラプトナイト</entityname.knight_hardsuit_bw_e>
+  <entityname.clownexosuitbw_e>Funkoverlord 4000</entityname.clownexosuitbw_e>
+  <entitydescription.corsairar_bw_e>このスーツは生体認証によりロックされている。</entitydescription.corsairar_bw_e>
+  <entitydescription.armored_miningsuit_bw_e>このスーツは生体認証によりロックされている。</entitydescription.armored_miningsuit_bw_e>
+  <entitydescription.pio_bw2_e>このスーツは生体認証によりロックされている。</entitydescription.pio_bw2_e>
+  <entitydescription.armored_hardsuit_bw_e>このスーツは生体認証によりロックされている。</entitydescription.armored_hardsuit_bw_e>
+  <entitydescription.armored_hardsuit_bw2_e>このスーツは生体認証によりロックされている。</entitydescription.armored_hardsuit_bw2_e>
+  <entitydescription.armored_miningsuit_bw3_e>このスーツは生体認証によりロックされている。</entitydescription.armored_miningsuit_bw3_e>
+  <entitydescription.knight_hardsuit_bw_e>ハスクを受け容れよ。</entitydescription.knight_hardsuit_bw_e>
+  <entitydescription.clownexosuitbw_e>何でしかめ面しているんだ？</entitydescription.clownexosuitbw_e>
+  <!--Enemy Characters-->
+  <character.Pirateantisub>パイレーツアンチサブ</character.Pirateantisub>
+  <character.Pirateboarder>パイレーツボーダー</character.Pirateboarder>
+  <character.Piratebombard>パイレーツボンバード</character.Piratebombard>
+  <character.Piratedismantler>パイレーツディスマントラー</character.Piratedismantler>
+  <character.Pirateforerunner>パイレーツフォアランナー</character.Pirateforerunner>
+  <character.Pirategunner>パイレーツガンナー</character.Pirategunner>
+  <character.Piratemarksman>パイレーツマークスマン</character.Piratemarksman>
+  <character.Pirategrenadier>パイレーツグレネーダー</character.Pirategrenadier>
+  <character.Piratenuker>パイレーツアンチサブ</character.Piratenuker>
+  <character.Piraterifleman>パイレーツライフルマン</character.Piraterifleman>
+  <character.Piratesharpshooter>パイレーツシャープシューター</character.Piratesharpshooter>
+  <character.Pirateveteran>パイレーツベテラン</character.Pirateveteran>
+  <character.Piratedesolator>パイレーツデソレイター</character.Piratedesolator>
+  <character.Piratescavenger>パイレーツスカベンジャー</character.Piratescavenger>
+  <character.Coalitionantisub>コアリションアンチサブ</character.Coalitionantisub>
+  <character.Coalitionheavy>コアリションヘビー</character.Coalitionheavy>
+  <character.Coalitiongunner>コアリションガンナー</character.Coalitiongunner>
+  <character.Coalitionsharpshooter>コアリションシャープシューター</character.Coalitionsharpshooter>
+  <character.Coalitionannihilator>コアリションアナイレイター</character.Coalitionannihilator>
+  <character.Coalitionveteran>コアリションオフィサー</character.Coalitionveteran>
+  <character.Coalitionrifleman>コアリションライフルマン</character.Coalitionrifleman>
+  <character.Separatistrifleman>セパレーティストライフルマン</character.Separatistrifleman>
+  <character.Separatistantisub>セパレーティストアンチサブ</character.Separatistantisub>
+  <character.Separatistveteran>セパレーティストベテラン</character.Separatistveteran>
+  <character.Separatistgunner>セパレーティストガンナー</character.Separatistgunner>
+  <character.Separatistsharpshooter>セパレーティストシャープシューター</character.Separatistsharpshooter>
+  <character.Separatistbombard>セパレーティストボンバード</character.Separatistbombard>
+  <character.Corruptedknight>コラプトナイト</character.Corruptedknight>
+  <character.Cultistdevoter>カルティストデヴォーター</character.Cultistdevoter>
+  <character.Cultistzealot>カルティストジーロット</character.Cultistzealot>
+  <character.Technoprankster>テクノプランクスター</character.Technoprankster>
+  <!--Mission text-->
+  <missionheader.killtarget>ターゲットを破壊</missionheader.killtarget>
+  <missionmessage.killmessage>ターゲットは破壊された。洞窟の外に移動して報酬を受け取れ。</missionmessage.killmessage>
+  <missionname.killnuker>原子力非常事態</missionname.killnuker>
+  <missiondescription.killnuker>分離派の精鋭部隊が核兵器を手土産に海賊へと寝返った。今のところ被害報告はないものの、一刻も早くこの脅威を排除しなければならない。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.killnuker>
+  <missionsonarlabel.killnuker>海賊</missionsonarlabel.killnuker>
+  <missionsuccess.killnuker>奪われた核兵器は適切に処理された。</missionsuccess.killnuker>
+  <missionname.killbseclown>テクノプランクスター</missionname.killbseclown>
+  <missiondescription.killbseclown>ホンクマザーを信奉する技術者の一人がアイアンリーグのテクノロジーを悪用し始めた。 殆どのいたずらは無害であるとされているものの、彼のいたずらにより我々の補給線は致命的な損害を被っている。彼を見つけ出し殺害して欲しい。</missiondescription.killbseclown>
+  <missionsonarlabel.killbseclown>テクノプランクスター</missionsonarlabel.killbseclown>
+  <missionsuccess.killbseclown>もう彼に煩わされることはないだろう。</missionsuccess.killbseclown>
+  <missionname.clearruinskhusk>コラプトナイト</missionname.clearruinskhusk>
+  <missiondescription.clearruinskhusk>強化人間の兵士がハスク教団によって洗脳され、最先端の装備を奪い近くの遺跡へと逃げ込んだ。 彼らを追跡して排除して欲しい。彼らは他にも教団と結託して邪悪な兵器を多数開発していたようだ。</missiondescription.clearruinskhusk>
+  <missionsuccess.clearruinskhusk>ターゲットは排除された。</missionsuccess.clearruinskhusk>
+  <missionsonarlabel.clearruinskhusk>カルト集団</missionsonarlabel.clearruinskhusk>
+  <missionname.killpirates>機械化海賊</missionname.killpirates>
+  <missiondescription.killpirates>情報によると、アームスーツを纏った海賊達が[location1] から [location2]へのルートを塞いでいる。艦船が安全に航行できるよう、彼らを排除せよ。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.killpirates>
+  <missionsonarlabel.killpirates>海賊</missionsonarlabel.killpirates>
+  <missionsuccess.killpirates>海賊達は排除された。ルートは再び安全になるはずだ。</missionsuccess.killpirates>
+  <missionname.killtraitors>機械化部隊の裏切り者</missionname.killtraitors>
+  <missiondescription.killtraitors>我々の機械化部隊の士官が最新鋭の武装と共に海賊へと寝返った。これ以上事態が悪化する前にこの士官を排除してもらいたい。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.killtraitors>
+  <missionsonarlabel.killtraitors>裏切り者</missionsonarlabel.killtraitors>
+  <missionsuccess.killtraitors>士官と彼の部下を排除した。 </missionsuccess.killtraitors>
+  <missionname.separatistex1>分離派パトロール部隊</missionname.separatistex1>
+  <missiondescription.separatistex1>情報によると、分離派の機械化部隊が [location1] から [location2]へのルートを巡回している。 艦船が安全に航行できるよう、彼らを排除せよ。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.separatistex1>
+  <missionsonarlabel.separatistex1>分離派パトロール部隊</missionsonarlabel.separatistex1>
+  <missionsuccess.separatistex1>分離派の兵士を排除した。ルートは再び安全になるはずだ。</missionsuccess.separatistex1>
+  <missionname.killseparatist>分離派の軍事演習</missionname.killseparatist>
+  <missiondescription.killseparatist>情報によると、分離派の機械化部隊が [location1] から [location2]へのルート上で軍事演習を行っている。艦船が安全に航行できるよう、彼らを排除せよ。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.killseparatist>
+  <missionsonarlabel.killseparatist>分離派機械化部隊</missionsonarlabel.killseparatist>
+  <missionsuccess.killseparatist>分離派の兵士を排除した。ルートは再び安全になるはずだ。</missionsuccess.killseparatist>
+  <missionname.coalitionex1>連合パトロール部隊</missionname.coalitionex1>
+  <missiondescription.coalitionex1>情報によると、連合の機械化部隊が [location1] から [location2]へのルートを巡回している。 艦船が安全に航行できるよう、彼らを排除せよ。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.coalitionex1>
+  <missionsonarlabel.coalitionex1>連合パトロール部隊</missionsonarlabel.coalitionex1>
+  <missionsuccess.coalitionex1>連合の兵士を排除した。ルートは再び安全になるはずだ。</missionsuccess.coalitionex1>
+  <missionname.killcoalition>連合の軍事演習</missionname.killcoalition>
+  <missiondescription.killcoalition>情報によると、連合の機械化部隊が [location1] から [location2]へのルート上で軍事演習を行っている。艦船が安全に航行できるよう、彼らを排除せよ。彼らのスーツは対潜戦闘を意図して作られている為、携行火器を使用することを推奨する。</missiondescription.killcoalition>
+  <missionsonarlabel.killcoalition>連合機械化部隊</missionsonarlabel.killcoalition>
+  <missionsuccess.killcoalition>連合の兵士を排除した。ルートは再び安全になるはずだ。</missionsuccess.killcoalition>
+  <missionname.separatistattackbae>受信メッセージ</missionname.separatistattackbae>
+  <missiondescription.separatistattackbae>「この通路は木星分離派によって奪還された。すぐに道を引き返せ。さもなくば、お前ら独裁者どもが生きて帰れないようにしてやる。」</missiondescription.separatistattackbae>
+  <missionname.coalitionattackbae>受信メッセージ</missionname.coalitionattackbae>
+  <missiondescription.coalitionattackbae>「ここで終わりだ、裏切り者！連合軍への反逆は死をもって償ってもらう！」</missiondescription.coalitionattackbae>
+  <missionname.abandonedoutposthumansbae>前哨基地の奪還</missionname.abandonedoutposthumansbae>
+  <missiondescription.abandonedoutposthumansbae>[location1]との連絡が途絶えた。何者かによって占領された恐れがある。前哨基地の原子炉を破壊し、不法占拠者を追い払い、二度と戻ってこないようにしろ。</missiondescription.abandonedoutposthumansbae>
+  <missionsuccess.abandonedoutposthumansbae>不法占拠者を追い出すことに成功した。</missionsuccess.abandonedoutposthumansbae>
+  <missionfailure.abandonedoutposthumansbae>前哨基地の原子炉の破壊に失敗した。</missionfailure.abandonedoutposthumansbae>
+  <missionheader0.abandonedoutposthumansbae>原子炉破壊完了</missionheader0.abandonedoutposthumansbae>
+  <missionmessage0.abandonedoutposthumansbae>原子炉は破壊された。これで再び前哨基地を占拠しようとする者はいないだろう。前哨基地から離脱し、ミッションを完了せよ。</missionmessage0.abandonedoutposthumansbae>
+  <missionname.abandonedoutpostassassinatebae>前哨基地の暗殺</missionname.abandonedoutpostassassinatebae>
+  <missiondescription.abandonedoutpostassassinatebae>[location1]との連絡が途絶え、悪名高い重武装の盗賊団がそこを拠点にしているという報告があった。盗賊団のリーダーの首に懸賞金がかかっている。リーダーを排除して、報酬を受け取れ。</missiondescription.abandonedoutpostassassinatebae>
+  <missionsuccess.abandonedoutpostassassinatebae>[location1]との連絡が途絶え、悪名高い盗賊団がそこを拠点にしているという報告があった。盗賊団のリーダーの首に懸賞金がかかっている。リーダーを排除して、報酬を受け取れ。</missionsuccess.abandonedoutpostassassinatebae>
+  <missionfailure.abandonedoutpostassassinatebae>盗賊団のリーダーの排除は失敗した。</missionfailure.abandonedoutpostassassinatebae>
+  <missionheader0.abandonedoutpostassassinatebae>盗賊リーダーの排除完了</missionheader0.abandonedoutpostassassinatebae>
+  <missionmessage0.abandonedoutpostassassinatebae>盗賊団のリーダーの排除に成功した。前哨基地から離脱し、ミッションを完了せよ。</missionmessage0.abandonedoutpostassassinatebae>
+</infotexts>
