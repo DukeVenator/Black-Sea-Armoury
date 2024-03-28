@@ -496,8 +496,8 @@
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="cyanidepoisoning" strength="80" />
           <Affliction identifier="durationincrease" strength="150" />
-          <Affliction identifier="stun" strength="2" />
         </Explosion>
+        <SpawnItem identifiers="cyanide_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -542,8 +542,8 @@
           <Affliction identifier="burn" strength="20" />
           <Affliction identifier="cyanidepoisoning" strength="80" />
           <Affliction identifier="durationincrease" strength="150" />
-          <Affliction identifier="stun" strength="2" />
         </Explosion>
+        <SpawnItem identifiers="cyanide_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -558,6 +558,68 @@
         <Remove />
       </StatusEffect>
     </Projectile>
+  </Item>
+  <Item name="cyanide aerogel" identifier="cyanide_aerogel" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+    <!-- Use this for debugging: sourcerect="185,159,41,17" -->
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
+    <Body radius="50" bodytype="kinematic"/>
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="5">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.3" scalemax="0.5" anglemin="0" anglemax="360" velocity="0.1" copyentityangle="false"/>
+      </StatusEffect>
+      <!-- make the body dynamic outside subs, so subs don't get blocked by it -->
+      <StatusEffect type="InWater" target="This" BodyType="Dynamic">
+        <Conditional CurrentHull="eq null" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="150" delay="0.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="20"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="180" delay="1" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="16"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="1.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="14"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="12"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="10"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="8"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="8"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="4" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="6"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="cyanidepoisoning" strength="6"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" delay="5">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
   </Item>
   <Item name="mph_ammo_stun" identifier="mph_ammo_stun" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
     <PreferredContainer primary="metalcrate" />
@@ -596,6 +658,7 @@
           <Affliction identifier="durationincrease" strength="150" />
           <Affliction identifier="incrementalstun" strength="250" />
         </Explosion>
+        <SpawnItem identifiers="paralysis_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -644,6 +707,7 @@
           <Affliction identifier="durationincrease" strength="150" />
           <Affliction identifier="incrementalstun" strength="250" />
         </Explosion>
+        <SpawnItem identifiers="paralysis_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -658,6 +722,68 @@
         <Remove />
       </StatusEffect>
     </Projectile>
+  </Item>
+  <Item name="paralysis aerogel" identifier="paralysis_aerogel" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+    <!-- Use this for debugging: sourcerect="185,159,41,17" -->
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
+    <Body radius="50" bodytype="kinematic"/>
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="5">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.3" scalemax="0.5" anglemin="0" anglemax="360" velocity="0.1" copyentityangle="false"/>
+      </StatusEffect>
+      <!-- make the body dynamic outside subs, so subs don't get blocked by it -->
+      <StatusEffect type="InWater" target="This" BodyType="Dynamic">
+        <Conditional CurrentHull="eq null" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="150" delay="0.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="20"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="180" delay="1" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="16"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="1.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="14"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="12"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="10"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="8"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="8"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="4" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="6"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="paralysis" strength="6"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" delay="5">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
   </Item>
   <Item name="mph_ammo_radiation" identifier="mph_ammo_radiation" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
     <PreferredContainer primary="metalcrate" />
@@ -690,10 +816,10 @@
         <Explosion range="550.0" structuredamage="10" itemdamage="10" force="2.0">
           <Affliction identifier="explosiondamage" strength="20" />
           <Affliction identifier="burn" strength="20" />
-          <Affliction identifier="stun" strength="5" />
           <Affliction identifier="radiationsickness" strength="100" />
           <Affliction identifier="durationincrease" strength="150" />
         </Explosion>
+        <SpawnItem identifiers="radiation_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -736,10 +862,10 @@
         <Explosion range="550.0" structuredamage="10" itemdamage="10" force="2.0">
           <Affliction identifier="explosiondamage" strength="20" />
           <Affliction identifier="burn" strength="20" />
-          <Affliction identifier="stun" strength="5" />
           <Affliction identifier="radiationsickness" strength="100" />
           <Affliction identifier="durationincrease" strength="150" />
         </Explosion>
+        <SpawnItem identifiers="radiation_aerogel" spawnposition="This" />
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -754,6 +880,68 @@
         <Remove />
       </StatusEffect>
     </Projectile>
+  </Item>
+  <Item name="radiation aerogel" identifier="radiation_aerogel" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+    <!-- Use this for debugging: sourcerect="185,159,41,17" -->
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <!-- Without a body, the item wouldn't stay inside the sub, and could go through sub walls from the outside -->
+    <Body radius="50" bodytype="kinematic"/>
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="5">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.3" scalemax="0.5" anglemin="0" anglemax="360" velocity="0.1" copyentityangle="false"/>
+      </StatusEffect>
+      <!-- make the body dynamic outside subs, so subs don't get blocked by it -->
+      <StatusEffect type="InWater" target="This" BodyType="Dynamic">
+        <Conditional CurrentHull="eq null" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="150" delay="0.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="40"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="180" delay="1" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="36"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="1.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="34"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="32"/>
+        <Affliction identifier="slow" strength="40"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="200" delay="2.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="30"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="28"/>
+        <Affliction identifier="slow" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="220" delay="3.5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="28"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="4" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="26"/>
+        <Affliction identifier="slow" strength="10"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This,NearbyCharacters" range="240" delay="5" stackable="false" disabledeltatime="true">
+        <Affliction identifier="radiationsickness" strength="20"/>
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" delay="5">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
   </Item>
   <Item name="mph_ammo_emp" identifier="mph_ammo_emp" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
     <PreferredContainer primary="metalcrate" />
@@ -1033,6 +1221,57 @@
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnActive" target="This" Condition="-100" delay="0.3" stackable="false"/>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="5" velocitymin="-10" velocitymax="-300" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="4" velocitymin="10" velocitymax="400" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="50" velocitymax="900" scalemin="1" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="false" anglemin="0" anglemax="360" particleamount="5" velocitymin="50" velocitymax="400" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="10">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="mph_ammo_breaching" identifier="mph_ammo_breaching" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,gunsmith,mph_ammo" Scale="0.36" impactsoundtag="impact_metal_light" description="" maxstacksize="2">
+    <PreferredContainer primary="metalcrate" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="80" />
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredItem identifier="oxygentank" amount ="2"/>
+      <RequiredItem identifier="sst_bw" amount ="2"/>
+      <RequiredItem identifier="mph_ammo_base"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,64,16" />
+    <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,65,16" depth="0.55" />
+    <Body width="160" height="32" density="12" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="20.0" severlimbsprobability="1" DoesStick="true">
+      <Attack structuredamage="1" itemdamage="1" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="30" />
+        <Affliction identifier="stun" strength="5" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" Condition="0.0" setvalue="true" delay ="1.5">
+        <Conditional hastag="eq door" />
+        <Explosion range="20.0" structuredamage="10" itemdamage="10" force="5">
+          <Affliction identifier="explosiondamage" strength="10" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="this" condition="-100" delay ="1.5">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="50.0" structuredamage="10" itemdamage="10" force="1">
+          <Affliction identifier="explosiondamage" strength="10" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
@@ -1426,7 +1665,7 @@
     <Body width="541" height="163" density="60" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="71,6" handle1="-110,-15" handle2="-25,-8" holdangle="-30"/>
     <!--500 rounds per minute-->
-    <RangedWeapon reload="0.12"  reloadnoskill="0.2" reloadskillrequirement="75" holdtrigger="true" barrelpos="100,16" spread="8" unskilledspread="15" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
+    <RangedWeapon reload="0.12"  reloadnoskill="0.2" reloadskillrequirement="75" holdtrigger="true" barrelpos="100,16" spread="13" unskilledspread="35" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -1568,7 +1807,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.25">
+      <Attack structuredamage="1" targetforce="3" itemdamage="4" severlimbsprobability="0.1" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="24" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.5" />
         <Affliction identifier="lacerations" strength="12" probability="0.6" />
@@ -1685,7 +1924,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.7">
+      <Attack structuredamage="1" targetforce="2.8" itemdamage="3" severlimbsprobability="0.36" penetration="0.7">
         <Affliction identifier="gunshotwound" strength="24" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.6" />
         <Affliction identifier="bleeding" strength="16" />
@@ -1734,7 +1973,7 @@
     <Body width="280" height="69" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-15" aimpos="77,8" handle1="-74,-25" handle2="-34,10" holdangle="-50" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
-    <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="128,0" spread="7" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" reloadnoskill="0.18" reloadskillrequirement="50" holdtrigger="true" barrelpos="128,0" spread="8" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -1867,7 +2106,7 @@
       <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
       <Projectile characterusable="false" hitscan="true" removeonhit="true">
         <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-        <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
+        <Attack structuredamage="1" targetforce="2.5" itemdamage="3" severlimbsprobability="0.36" penetration="0.4">
           <Affliction identifier="gunshotwound" strength="16" />
           <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
           <Affliction identifier="bleeding" strength="14" />
@@ -1919,7 +2158,7 @@
     <Body width="550" height="190" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="30,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--600 rounds per minute-->
-    <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="180,10" spread="6.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.1" reloadnoskill="0.25" reloadskillrequirement="50" holdtrigger="true" barrelpos="180,10" spread="10.5" unskilledspread="14" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -1976,7 +2215,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.25">
+      <Attack structuredamage="1" targetforce="2" itemdamage="3" severlimbsprobability="0.1" penetration="0.25">
         <Affliction identifier="gunshotwound" strength="16" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.2" />
         <Affliction identifier="bleeding" strength="10" />
@@ -2246,7 +2485,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.12">
+      <Attack structuredamage="1" targetforce="1.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.12">
         <Affliction identifier="gunshotwound" strength="14" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.2" />
         <Affliction identifier="bleeding" strength="7" />
@@ -2273,7 +2512,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.4">
+      <Attack structuredamage="1" targetforce="1.8" itemdamage="3" severlimbsprobability="0.1" penetration="0.4">
         <Affliction identifier="gunshotwound" strength="10" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.2" />
         <Affliction identifier="bleeding" strength="4" />
@@ -2318,7 +2557,7 @@
     <Body width="224" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="55,5" handle1="-25,-10" handle2="0,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <!--857 rounds per minute-->
-    <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="89,10" spread="10.5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.07" reloadnoskill="0.14" reloadskillrequirement="50" holdtrigger="true" barrelpos="89,10" spread="12.5" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
@@ -2434,7 +2673,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
-      <Attack structuredamage="1" targetforce="0.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.07">
+      <Attack structuredamage="1" targetforce="1.5" itemdamage="3" severlimbsprobability="0.1" penetration="0.07">
         <Affliction identifier="gunshotwound" strength="11" />
         <Affliction identifier="gunshotwound" strength="4" probability="0.2" />
         <Affliction identifier="bleeding" strength="4" />
@@ -2706,5 +2945,326 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.1" />
     </Quality>
     <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <!--.300BLK SMG @apc300/MCX RATTLER LT-->
+  <Item name="AG-300 " identifier="asmg-300" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.11" barrelpos="14,6" spread="16" unskilledspread="32" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="300ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="300ammo"/>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name=".300 24Rnd Mag" identifier="asmg-24magazine" maxstacksize="8" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,300ammo" impactsoundtag="impact_metal_light">
+    <Price baseprice="56" sold="false" minleveldifficulty="0" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" maxavailable="16" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" amount="2">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="steel"/>
+    </Fabricate>
+    <Deconstruct time="15"/>
+    <InventoryIcon texture="%ModDir%/items/AR/SPAR-556.png" sourcerect="273,77,19,32" />
+    <Sprite texture="%ModDir%/items/AR/SPAR-556.png" depth="0.54" sourcerect="273,77,19,32" origin="0.5,0.5" />
+    <Body width="19" height="32" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="300round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="300round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-4.18" disabledeltatime="true">
+        <SpawnItem identifiers="300round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name=".300 round" identifier="300round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="2" itemdamage="3" severlimbsprobability="0.1" penetration="0.05">
+        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.2" />
+        <Affliction identifier="bleeding" strength="14" />
+        <Affliction identifier="bleeding" strength="8" probability="0.3" />
+        <Affliction identifier="stun" strength="0.15" probability="0.6"/>
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <!--.50 LB SMG @Desert Eagle-->
+  <Item name="AG-50" identifier="asmg-50" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="10">
+      <Item identifier="sst_bw"/>
+      <Item identifier="amu_bw"/>
+      <Item identifier="smg_bw" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="80">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="sst_bw"/>
+      <RequiredItem identifier="amu_bw"/>
+      <RequiredItem identifier="smg_bw" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.18" barrelpos="14,6" spread="22" unskilledspread="40" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="50ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="50ammo"/>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name=".50 16Rnd Mag" identifier="asmg-16magazine" maxstacksize="2" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,50ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="spar-65" minamount="1" maxamount="1" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" secondary="secarmcab"/>
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="330" sold="false" minleveldifficulty="0" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" amount="2">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="camp6_bw" amount="1"/>
+      <RequiredItem identifier="lead" amount="4"/>
+      <RequiredItem identifier="sst_bw" amount="1"/>
+      <RequiredItem identifier="plastic" amount="2"/>
+    </Fabricate>
+    <Deconstruct time="15"/>
+    <InventoryIcon texture="%ModDir%/items/AR/SPAR-556.png" sourcerect="268,5,31,50" />
+    <Sprite texture="%ModDir%/items/AR/SPAR-556.png" depth="0.54" sourcerect="268,5,31,50" origin="0.4,0.5" />
+    <Body width="31" height="50" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="45round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="45round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-6.26" disabledeltatime="true">
+        <SpawnItem identifiers="45round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name=".50 round" identifier="50round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="3" itemdamage="1" severlimbsprobability="0.25" penetration="0">
+        <Affliction identifier="gunshotwound" strength="26" />
+        <Affliction identifier="gunshotwound" strength="10" probability="0.4" />
+        <Affliction identifier="bleeding" strength="16" />
+        <Affliction identifier="bleeding" strength="10" probability="0.3" />
+        <Affliction identifier="stun" strength="0.25"/>
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <!--.45 SMG @auto-pist-->
+  <Item name="AG-45 " identifier="asmg-45" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="10">
+      <Item identifier="sst_bw"/>
+      <Item identifier="amu_bw"/>
+      <Item identifier="smg_bw" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="80">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="sst_bw"/>
+      <RequiredItem identifier="amu_bw"/>
+      <RequiredItem identifier="smg_bw" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.12" barrelpos="14,6" spread="15.5" unskilledspread="35" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="45ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+      <Containable items="45ammo"/>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="24,4" setactive="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+    <LightComponent range="500.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" flicker="0.1">
+      <StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+      <LightTexture texture="Content/Lights/lightcone.png" origin="-0.07, 0.5" size="1.0,1.0" />
+    </LightComponent>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name=".45 50Rnd Mag" identifier="asmg-50magazine" maxstacksize="2" scale="0.5" category="Weapon" allowasextracargo="true" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,45ammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="spar-65" minamount="1" maxamount="1" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" secondary="secarmcab"/>
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="330" sold="false" minleveldifficulty="0" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" amount="2">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="camp6_bw" amount="1"/>
+      <RequiredItem identifier="lead" amount="4"/>
+      <RequiredItem identifier="sst_bw" amount="1"/>
+      <RequiredItem identifier="plastic" amount="2"/>
+    </Fabricate>
+    <Deconstruct time="15"/>
+    <InventoryIcon texture="%ModDir%/items/AR/SPAR-556.png" sourcerect="268,5,31,50" />
+    <Sprite texture="%ModDir%/items/AR/SPAR-556.png" depth="0.54" sourcerect="268,5,31,50" origin="0.4,0.5" />
+    <Body width="31" height="50" density="25" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="45round_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="45round_bw" />
+      <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
+        <SpawnItem identifiers="45round_bw" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+  </Item>
+  <Item name=".45 round" identifier="45round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+      <Attack structuredamage="1" targetforce="2" itemdamage="1" severlimbsprobability="0.12" penetration="0">
+        <Affliction identifier="gunshotwound" strength="16" />
+        <Affliction identifier="gunshotwound" strength="8" probability="0.15" />
+        <Affliction identifier="bleeding" strength="12" />
+        <Affliction identifier="bleeding" strength="8" probability="0.3" />
+        <Affliction identifier="stun" strength="0.2" probability="0.6"/>
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
   </Item>
 </Items>

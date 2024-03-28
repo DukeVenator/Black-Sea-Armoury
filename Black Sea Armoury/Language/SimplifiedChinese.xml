@@ -119,6 +119,12 @@
   <entitydescription.spar_30magazine>30发 5.56×45mm 步枪弹匣，所使用钢芯弹。</entitydescription.spar_30magazine>
   <entityname.spar_150magazine>SPAR-556弹鼓(150)</entityname.spar_150magazine>
   <entitydescription.spar_150magazine>150发 5.56×45mm 步枪弹鼓，可在战术小队内充当火力压制的角色。</entitydescription.spar_150magazine>
+  <entityname.ag-300>AG-300 特种冲锋枪</entityname.ag-300>
+  <entitydescription.ag-300>为特勤战术队应对室内CQC环境所研制的亚音速冲锋枪，被联盟长钉分队审判者大量使用。</entitydescription.ag-300>
+  <entityname.ag-45>AG-45 冲锋枪</entityname.ag-45>
+  <entitydescription.ag-45>广泛用于潜艇内的防御性武器，拥有较高的停止作用以及较低的后坐力，受安保公司的喜爱。</entitydescription.ag-45>
+  <entityname.ag-50>AG-50 突击冲锋枪</entityname.ag-50>
+  <entitydescription.ag-50>使用高装药的.510弹药，难以控制的枪械，拥有极高的停止作用。</entitydescription.ag-50>
   <entityname.spsg-15>SPSG-15 特种突击霰弹枪</entityname.spsg-15>
   <entitydescription.spsg-15>有着独特转轮式供弹机构的全自动无托霰弹枪，拥有高达15发的弹容量，使其成为室内CQB的最佳选择。</entitydescription.spsg-15>
   <entityname.spsg-4>SPSG-4 特种"重锤"霰弹枪</entityname.spsg-4>
