@@ -1080,8 +1080,9 @@
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
         <SpawnItem identifier="prg_ammo" spawnposition="ThisInventory" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
-        <SpawnItem identifier="prg_ammo" spawnposition="ThisInventory" />
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer" spawnItemRandomly="True">
+        <SpawnItem identifier="feye_depthchargeshell" spawnposition="ThisInventory" />
+        <SpawnItem identifier="feye_depthchargeshell_emp" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
@@ -1373,7 +1374,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--Coalitioneyeofear railgun-->
-  <Item name="" identifier="feye_depthchargeshell" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
+  <Item name="Boom" identifier="feye_depthchargeshell" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
     <Deconstruct time="10">
       <Item identifier="iron" />
       <Item identifier="uex" />
@@ -1460,5 +1461,4 @@
       </StatusEffect>
     </Projectile>
   </Item>
-
 </Items>

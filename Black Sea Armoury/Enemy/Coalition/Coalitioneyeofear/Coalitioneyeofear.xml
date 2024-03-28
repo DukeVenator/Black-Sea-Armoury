@@ -44,7 +44,7 @@
   <StatusEffect type="OnActive" target="this" Interval="120">
     <SpawnCharacter speciesname="EPod" count="1" spread="4" TotalMaxCount="2"/>
   </StatusEffect>
-  <StatusEffect type="OnActive" target="this" Interval="120" spawnItemRandomly="True">
+  <StatusEffect type="OnActive" target="this" Interval="180" spawnItemRandomly="True">
     <Conditional inwater="true" />
     <SpawnItem identifiers="Coalitionheavy_Pod" spawnposition="This" Impulse ="50" count="1" spread="360" />
     <SpawnItem identifiers="Coalitiongunner_Pod" spawnposition="This" Impulse ="50" count="1" spread="360" />
